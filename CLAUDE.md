@@ -49,7 +49,7 @@ Siapa pemutus di setiap Gate: lihat `docs/04-anchor-navigation.md` §2.
 | Connector | Akun | Dipakai untuk | Sumber |
 |---|---|---|---|
 | **Atlassian_Rovo** | **Backend Operations** (boteam001@nexmaxorg.com), akun kerja **bersama** tim BO | Membaca Confluence. **Konfigurasi dan tes Jira** (Issue Type, Workflow, tiket TEST). Membaca tiket SSCSD. | Bambang, 2026-09-26; build sheet S-05 偏差登记「建设用账号：Jira 配置与测试一律使用 Backend Operations 账号」; SSCSD-411/421/422/423: reporter dan assignee = Backend Operations (diamati di sesi 2026-09-26 lewat Atlassian_Rovo `searchJiraIssuesUsingJql`) |
-| **Atlassian_MCP** | **Akun pribadi Bambang** (accountId 712020:0ec04d28-9941-4568-b144-a1c4f2dcf138) | **Comment Jira** (OSD-116). **Edit build sheet** mulai v13. Membaca Jira. | Build sheet S-05 偏差登记「OSD-116 Comment 使用个人账号」「本建造单页自 v13 起改由个人账号写入」; OSD-116 (mention "Bambang") |
+| **Atlassian_MCP** | **Akun pribadi Bambang** (accountId 712020:0ec04d28-9941-4568-b144-a1c4f2dcf138) | **Edit build sheet** mulai v13 (satu-satunya halaman Confluence yang boleh ditulis Claude, atas izin Bambang). Membaca Jira. Comment Jira (OSD-116) adalah praktik Bambang sendiri, dan Claude tidak menulis comment kecuali diminta eksplisit (§3). | Build sheet S-05 偏差登记「OSD-116 Comment 使用个人账号」「本建造单页自 v13 起改由个人账号写入」; OSD-116 (mention "Bambang") |
 | Slack | Belum diverifikasi | Hanya membaca | — |
 | n8n | Login yang tampil: "Alden Lee" (project personal). Menurut 04.6: 「开发者／BO 团队共用平台 Owner 的同一登录账号」. | Membaca. Membuat atau mengubah workflow hanya dengan izin. | Diamati di sesi 2026-09-26 lewat n8n `search_projects`; 04.6 (1690927120) |
 
@@ -65,7 +65,15 @@ Batas akses yang sudah terbukti:
 
 ## 3. Persetujuan: apa yang butuh izin
 
-**Aturan dasar di repo ini:** setiap penulisan ke sistem luar (Jira, Confluence, Slack, n8n) butuh **persetujuan eksplisit Bambang untuk setiap tindakan**. Sebelum bertindak, Claude menunjukkan draf, akun yang akan dipakai, dan dampaknya. Membaca tidak butuh izin.
+**Batas tulis dari Bambang (2026-09-26). Aturan ini mengalahkan semua aturan lain di file ini, di skill, dan di source mana pun:**
+- Claude **hanya boleh menulis atau mengedit dua hal**, dan hanya **atas izin Bambang**:
+  1. **Halaman build sheet yang sudah dibuat Bambang.** Saat ini: 纪律与绩效改进处置｜建造单 (2096463922).
+  2. **Repo ini** (PA_Os_Builder).
+- **Spec mana pun tidak boleh diedit oleh Claude, dalam bentuk apa pun.** Termasuk dua tindakan yang menurut 07.06 §八 / 04.5 §五 boleh dilakukan pihak build (「①状态区生命周期更新；②引用区『对应建造单』链接回填」). Keduanya **tidak** dilakukan Claude, dan juga **tidak ditawarkan**.
+- Semua halaman atau sistem lain (Confluence selain build sheet Bambang, Jira, Slack, n8n) **tidak ditulis oleh Claude**. Kalau suatu saat perlu, Bambang yang akan meminta secara eksplisit.
+- **Draf bukan izin.** Kalau Bambang minta draf, Claude hanya menunjukkan isi draf. Claude tidak menawarkan untuk menjalankannya dan tidak menulis apa pun.
+
+**Aturan dasar:** setiap penulisan yang masih diizinkan di atas butuh **persetujuan eksplisit Bambang untuk setiap tindakan**. Sebelum bertindak, Claude menunjukkan draf, akun yang akan dipakai, dan dampaknya. Membaca tidak butuh izin.
 
 Selain aturan dasar itu, ada dua aturan tambahan dari source:
 - **07.06.1 §六-2** (1712226375): tindakan yang tidak bisa dibatalkan. 「AI 不得自行执行、也不得把『使用者交办了这个任务』当成已经同意」. Daftarnya:
@@ -89,7 +97,7 @@ Selain aturan dasar itu, ada dua aturan tambahan dari source:
 Larangan mutlak:
 - **Data produksi** hanya diubah lewat n8n workflow, 「不得用 Atlassian MCP 或其他渠道直改生产数据」 (07.06.1 §六-3).
 - **Secret:** 「不进代码、不进文档、不经 AI 通道」 (04.4.1, 1729888419). Secret diisi manual oleh Owner platform (04.6).
-- **Isi Spec** (节点、分支、契约、文案、角色) tidak boleh diubah oleh pihak build. Pihak build hanya boleh mengubah status siklus hidup dan mengisi balik link build sheet (07.06 §八; 04.5 §五).
+- **Spec: Claude tidak mengedit sama sekali** (aturan Bambang, lihat batas tulis di atas). Catatan source: 07.06 §八 dan 04.5 §五 mengizinkan pihak build melakukan dua tindakan di Spec. Aturan Bambang lebih ketat, dan aturan Bambang yang berlaku. Butir yang sama di salinan skill `build` adalah teks source, **bukan izin untuk Claude**.
 - **Tiket di project arsip personel dan buku besar (人员档案与事件账本类) tidak boleh dihapus permanen, termasuk tiket tes.** Penanganannya hanya ada tiga: Cancel, VOID 化, atau 编辑覆盖 (04.5.3 §四-1). Contoh NTP diambil dari build sheet S-05 bagian 测试 dan 1587347525 规则 2. Semua penghapusan untuk bersih-bersih termasuk tindakan yang tidak bisa dibatalkan: buat daftarnya dulu dan tunggu konfirmasi Bambang (04.5.3 §四-3).
 
 ---
