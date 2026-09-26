@@ -131,6 +131,7 @@ Sumber: 04.5.3 (1729626578, lastModified 2026-09-25). Bagian 测试 di build she
 - **Dilarang mengirim ke:** #sscos-hr (C0BHL8AE68G), #epic-nse-1045-squad (C0BKUAGTKP1), #general (C06411GVD5K).
 - Penanda tes di Slack: `🧪 【SSCOS 测试 · 请勿处理 ｜ TEST — do not action】`.
 - `test_workflow` n8n akan benar-benar mengirim. Nonaktifkan node tulis/kirim, atau isi pinData secara eksplisit (07.06.1 E6).
+  - Cara membuktikannya (07.06.1 E6 验收, versi 2026-09-26): baca ulang objek tujuan, lalu periksa **setiap node yang menulis atau mengirim**. Node yang benar-benar jalan menghasilkan balasan sungguhan (nomor tiket, ts pesan) dan butuh ratusan milidetik. Waktu 0 berarti node itu di-pin atau dinonaktifkan. 「执行记录顶层的 pinData 字段不作判据」.
 
 ---
 

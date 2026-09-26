@@ -24,7 +24,7 @@ Sumber:
 - Anchor 04 §二 (1676804100)
 - OS 开发流｜流程 Spec §三 节点表 (1729200354)
 
-⚠️ **OS 开发流 Spec berstatus 「草拟」**: 「生命周期状态：草拟（v39；频道口径 2026-09-10）」 (1729200354 §二). Setiap kali dipakai, baca versi terbarunya.
+⚠️ **OS 开发流 Spec berstatus 「草拟」**: 「生命周期状态：草拟（v40；频道口径 2026-09-26）」 (1729200354 §二, dibaca ulang 2026-09-26 sore. v39→v40 hanya mengubah channel: 治理频道 #nos-governance C0C0S5CD1S9; node, pemutus, dan marker tidak berubah). Setiap kali dipakai, baca versi terbarunya.
 
 | # | Tahap (Anchor 04 §二) | Node OS 开发流 | Jira (Epic/Feature) | Siapa yang memutuskan | Mode |
 |---|---|---|---|---|---|

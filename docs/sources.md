@@ -51,10 +51,10 @@ Aturan pemakaian:
 | 1744896004 | 07.04｜结构审计指南 | Sep 16, 2026 |
 | 1744306526 | 07.05｜对齐指南 | Sep 15, 2026 |
 | 1730347066 | 07.06｜建设指南 (sumber Skill `build`) | Sep 15, 2026 |
-| 1712226375 | 07.06.1｜开发规则与避坑指南 | 2026-09-25 |
+| 1712226375 | 07.06.1｜开发规则与避坑指南 (dibaca ulang 2026-09-26 sore: hanya E6 bagian 验收 yang berubah) | 2026-09-26 |
 | 1744896024 | 07.07｜验收审计指南 (placeholder) | Sep 16, 2026 |
 | 1736736804 | 07.08｜使用者指南设计 Skill (placeholder) | Aug 16, 2026 |
-| 1729200354 | OS 开发流｜流程 Spec (status 草拟 v39) | Sep 10, 2026 |
+| 1729200354 | OS 开发流｜流程 Spec (status 草拟 v40; dibaca ulang 2026-09-26 sore: hanya revisi channel 第五批) | 2026-09-26 |
 | 1587347525 | NOS V1｜信息架构与分工（Claude Code 入口） | Jul 13, 2026 |
 | 1674379396 | NOS｜知识库架构方案 | Jul 19, 2026 |
 | 1721204759 | 01｜Console API 与 Claude Tag | Aug 05, 2026 |
@@ -68,7 +68,7 @@ Changelog dan indeks run 07.0x.1 / 07.0x.2 / 07.0x.3 juga dibaca. Semuanya appen
 | 2088304658 | BO｜盘点与切分 | Sep 17, 2026 |
 | 2076934175 | xLoop｜盘点与切分 | 2026-09-25 |
 | 2115174416 | CRM \| 盘点与切分 (judul memakai tanda garis tegak setengah lebar; isi kosong) | 2026-09-25/26 |
-| 2096463922 | **纪律与绩效改进处置｜建造单** (build sheet S-05, dibaca seluruhnya; salinan lokal 524 baris termasuk header) | 2026-09-26 |
+| 2096463922 | **纪律与绩效改进处置｜建造单** (build sheet S-05, dibaca seluruhnya; salinan lokal 524 baris termasuk header. Dicek ulang 2026-09-26 sore: isi identik) | 2026-09-26 |
 
 Halaman BLM Lite (2046460048, 2046460069, 2047705135, 1760198660) juga terbaca. Halaman-halaman ini **diabaikan** karena merupakan jalur terpisah dari OS 开发流.
 
