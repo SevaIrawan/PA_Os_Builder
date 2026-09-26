@@ -81,7 +81,7 @@ Halaman BLM Lite (2046460048, 2046460069, 2047705135, 1760198660) juga terbaca. 
 ## Slack
 | Channel | Rentang | Catatan |
 |---|---|---|
-| #nos-bo (C0BRSTNNY4A) | 2026-08-21 sampai 2026-09-26 | 30 pesan utama, 11 thread, 42 balasan. Lampiran Canvas tidak dibaca. |
+| #nos-bo (C0BRSTNNY4A) | 2026-08-21 17:08 sampai **2026-09-26 12:52 +07** | 30 pesan utama, 11 thread, 42 balasan. Lampiran Canvas tidak dibaca. **Pesan sesudah 12:52 tidak termasuk.** Contohnya pesan Kent 14:34, 「共用零件单独成批、先建先发」, lihat `docs/evidence/2026-09-26-live-checks.md` E7. |
 
 ## Tidak dapat diakses (= dilarang)
 | pageId | Judul | Hasil |

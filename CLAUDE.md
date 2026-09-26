@@ -35,8 +35,8 @@ Aturan ini ada karena kesalahan sebelumnya: kesimpulan tanpa dasar membuat peker
 |---|---|---|
 | **Bambang** (pengguna) | Anggota departemen Backend Operations (BO). Builder S-05. | Bambang, 2026-09-26; OSD-116 c50071 (serah terima dari Kent) |
 | Kent | **HOD BO** (atasan Bambang). Schema Owner 04.10. | Bambang, 2026-09-26; 04.10 (1738735636) |
-| Alden | Owner platform (04.4/04.6/04.7/04.8/04.9). Tanda tangan teknis N9. | Anchor 04 §六; OS 开发流 Spec N9 |
-| Kayden | Tanda tangan bisnis N9. Owner 04.0–04.3 dan 04.5. | Anchor 04 §六; OS 开发流 Spec N9 |
+| Alden | Owner 04.4, 04.4.1, 04.5.2, 04.5.3, dan 04.6–04.9 (platform). Tanda tangan teknis N9. | Anchor 04 §六; OS 开发流 Spec N9 |
+| Kayden | Owner 04.0–04.3, 04.5, dan 04.5.1. Tanda tangan bisnis N9. | Anchor 04 §六; OS 开发流 Spec N9 |
 | Felix_HR | Owner/desainer Spec S-05 (HR) | OSD-116 c49003; build sheet S-05 |
 | Geri | Jalur resign (NSE-1137). Membangun entry `qa01CkZBQfx8eLsK`. | OSD-116 c50381; build sheet S-05 |
 
@@ -75,20 +75,22 @@ Selain aturan dasar itu, ada dua aturan tambahan dari source:
   - notifikasi ke karyawan sungguhan atau pengiriman nyata pertama
   - mengaktifkan workflow (juga butuh persetujuan Owner platform)
   - 「记不清是否在清单内，就先问」
-- **Lima kelas yang butuh persetujuan Alden** (#nos-bo, thread 1789704362.435989, balasan 1790159495.872119, Alden, 2026-09-23):
+- **Lima kelas yang butuh persetujuan Alden. Statusnya masih DRAF**: judulnya sendiri 「权责判定标准初稿」 (#nos-bo, thread 1789704362.435989, balasan 1790159495.872119, Alden, 2026-09-23). Kent memasukkannya ke Canvas draf 04.10 v3 (F0C32N7MYR1, balasan 1790163869.066139). Draf ini **belum ada** di salinan 04.10 yang dibaca (lastModified Sep 22).
   1. mengubah objek bersama yang sudah dipakai alur lain, **bila perubahan itu mengubah perilaku alur lain** (「且改完会改变别人的行为」)
   2. izin/visibilitas
   3. penghapusan
   4. mengaktifkan otomasi
   5. data asli >20 record
 
-  Pesan yang sama juga menyebut: persetujuan harian 04.10 dipegang 「由 Kent 以 Schema Owner 审批」. Untuk kelima kelas ini, Claude juga memberi tahu Bambang. Lihat `docs/open-issues.md` K-1.
+  Di pesan yang sama: persetujuan harian 04.10 dipegang 「由 Kent 以 Schema Owner 审批」. Alden menegaskannya lagi pada 2026-09-24 (balasan 1790228926.781229): sisi 主单 SSCSD masuk 04.10 di bawah persetujuan Kent, 「我只在五类风险时点头」.
+- **Aturan sementara untuk field arsip karyawan (NTP/TCL)**: masih ikut 04.8, dan 「审批线写出来前照昨天那句先找我」 (Alden, 1790228926.781229). "Kalimat kemarin" yang dimaksud: 「BO 起草、我点头、再建」 (Alden, 1790160397.275109, 2026-09-23).
+- Untuk semua butir di atas, Claude memberi tahu Bambang. Keputusan akhir tetap di tangan Bambang. Lihat `docs/open-issues.md` K-1.
 
 Larangan mutlak:
 - **Data produksi** hanya diubah lewat n8n workflow, 「不得用 Atlassian MCP 或其他渠道直改生产数据」 (07.06.1 §六-3).
 - **Secret:** 「不进代码、不进文档、不经 AI 通道」 (04.4.1, 1729888419). Secret diisi manual oleh Owner platform (04.6).
 - **Isi Spec** (节点、分支、契约、文案、角色) tidak boleh diubah oleh pihak build. Pihak build hanya boleh mengubah status siklus hidup dan mengisi balik link build sheet (07.06 §八; 04.5 §五).
-- **Tiket di project arsip personel dan buku besar (人员档案与事件账本类, contohnya NTP) tidak boleh dihapus permanen, termasuk tiket tes.** Penanganannya hanya ada tiga: Cancel, VOID 化, atau 编辑覆盖 (04.5.3 §四-1). Semua penghapusan untuk bersih-bersih termasuk tindakan yang tidak bisa dibatalkan: buat daftarnya dulu dan tunggu konfirmasi Bambang (04.5.3 §四-3).
+- **Tiket di project arsip personel dan buku besar (人员档案与事件账本类) tidak boleh dihapus permanen, termasuk tiket tes.** Penanganannya hanya ada tiga: Cancel, VOID 化, atau 编辑覆盖 (04.5.3 §四-1). Contoh NTP diambil dari build sheet S-05 bagian 测试 dan 1587347525 规则 2. Semua penghapusan untuk bersih-bersih termasuk tindakan yang tidak bisa dibatalkan: buat daftarnya dulu dan tunggu konfirmasi Bambang (04.5.3 §四-3).
 
 ---
 
@@ -118,10 +120,14 @@ Kalau standarnya tidak ada, buat laporan dengan format **标准缺口回报** (e
 
 ## 6. Tes
 
-Semua dari 04.5.3 (1729626578), sebagaimana dicatat di build sheet S-05 bagian 测试:
-- Tiket tes Jira wajib punya **dua penanda**, 「缺一视为未标识」: judul diawali `TEST｜`, **dan** subjek tiket menunjuk ke arsip tes (04.5.3 §三). Tes struktur tanpa subjek hanya memenuhi penanda pertama, dan hal ini wajib ditulis terus terang (build sheet S-05, contoh SSCSD-411).
+Sumber: 04.5.3 (1729626578, lastModified 2026-09-25). Bagian 测试 di build sheet S-05 memuat versi yang lebih lama. Kalau keduanya berbeda, **04.5.3 terbaru yang dibaca**.
+- Tiket tes Jira wajib punya **dua penanda**, 「两项须同时具备，任一缺失视为未标识」 (04.5.3 §三): judul diawali `TEST｜`, **dan** subjek tiket menunjuk ke arsip tes.
+  - Build sheet S-05 mencatat bahwa tes struktur tanpa subjek (SSCSD-411, dengan preseden GPM) hanya memenuhi penanda pertama. Ini ketegangan dengan 04.5.3, lihat `docs/open-issues.md` K-7. Claude tidak memutuskannya.
 - Tiket tes di SSCSD untuk S-05 dibiarkan di status akhirnya dan tidak dihapus (build sheet S-05, 测试单登记). Untuk project arsip dan buku besar berlaku aturan di §3.
-- Whitelist Slack: DM diri sendiri, #nos-bo (C0BRSTNNY4A), #nos-ops (C0BBT5ZC9L6).
+- Whitelist Slack (04.5.3 §二):
+  - 甲: DM diri sendiri
+  - 乙: #nos-bo (C0BRSTNNY4A), #nos-ops (C0BBT5ZC9L6)
+  - 丙: #nos-governance (C0C0S5CD1S9), 「OS 开发流一族（时效件、N10 对齐）的测试频道」
 - **Dilarang mengirim ke:** #sscos-hr (C0BHL8AE68G), #epic-nse-1045-squad (C0BKUAGTKP1), #general (C06411GVD5K).
 - Penanda tes di Slack: `🧪 【SSCOS 测试 · 请勿处理 ｜ TEST — do not action】`.
 - `test_workflow` n8n akan benar-benar mengirim. Nonaktifkan node tulis/kirim, atau isi pinData secara eksplisit (07.06.1 E6).
@@ -136,6 +142,7 @@ Semua dari 04.5.3 (1729626578), sebagaimana dicatat di build sheet S-05 bagian �
 | `docs/04-anchor-navigation.md` | Peta navigasi, 8 tahap (3 Gate audit), node OS 开发流, Skill per tahap, dan tempat daftar |
 | `docs/open-issues.md` | Kontradiksi antar-source dan hal yang tidak diketahui. **Tidak boleh didamaikan sendiri.** |
 | `docs/sources.md` | Daftar source yang dibaca, termasuk yang dilarang |
+| `docs/evidence/` | Bukti hasil cek live (tool + waktu) untuk klaim "diamati di sesi" |
 | `.claude/skills/build/` | Salinan terkendali Skill 流程建设 (07.06 §八). Dipakai untuk "Build \| S-xx". |
 | `.claude/skills/nos-gate/` | Router Anchor 04 §七: dari key Jira ke Gate dan halaman yang wajib dibaca |
 | `.claude/skills/nos-check/` | Cek kesiapan lingkungan (07.06 环境就绪) dan cek drift snapshot/Skill terhadap Confluence |

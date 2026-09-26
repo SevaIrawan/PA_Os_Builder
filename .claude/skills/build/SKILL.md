@@ -21,23 +21,23 @@ description: Skill 流程建设 NOS untuk builder BO (tahap 开发 / OS开发流
 
 ## Langkah 1: jalankan sesuai halaman terbaru
 Setelah drift lolos, **ikuti isi halaman saat ini**, bukan ringkasan di file ini. Minimal:
-1. **Jira dulu** (Anchor 04 §七.1). Baca Feature alur ini (contoh S-05 = OSD-116): status, Parent Epic, link, dan comment terbaru. Tentukan comment terakhir yang sudah dibaca. Jangan pakai ringkasan lama.
+1. **Jira dulu** (Anchor 04, bagian 「AI 机器执行合同」 butir pertama). Baca Feature alur ini (contoh S-05 = OSD-116): status, Parent Epic, link, dan comment terbaru. Tentukan comment terakhir yang sudah dibaca. Jangan pakai ringkasan lama.
 2. Baca **07｜指南** (1704362028) bagian 「通用纪律」 dan 「标准缺口回报格式」, lalu **07.06 penuh**.
 3. Baca **07.06.1** (1712226375) 「主题速查」, lalu buka entri yang cocok dengan pekerjaan ini.
 4. Baca **Spec yang sudah dibekukan** beserta bukti freeze-nya (marker freeze di Feature Comment) dan **build sheet** alur ini. Keduanya versi terbaru.
-5. Jalankan 「开工前置四动作」 (a) sampai (d) dari 07.06, lalu susun **开工对齐清单** (e) dengan empat kolom tetap: 动作｜结果｜需流程 Owner 确认的问题｜建设者建议答案.
+5. Jalankan 「开工前置四动作」 dari 07.06, lalu susun **开工对齐清单** dengan empat kolom tetap: 动作｜结果｜需流程 Owner 确认的问题｜建设者建议答案.
 6. Cek **tabel blocker build sheet** (建设待办／阻塞表) baris demi baris. Untuk setiap baris, nyatakan apakah 「解除判据」-nya sudah terpenuhi. Sertakan bukti (pageId/comment id/hasil API). Kalau tidak ada bukti, statusnya tetap seperti di tabel.
 
 ## Aturan akun (dari CLAUDE.md §2)
 - Konfigurasi dan tes Jira (SSCSD dan lainnya) → **Atlassian_Rovo** (Backend Operations). Assignee ditulis eksplisit.
 - Comment Feature (contoh OSD-116) dan edit build sheet → **Atlassian_MCP** (akun pribadi Bambang).
 - **Setiap penulisan** (comment, edit halaman, transisi, membuat tiket, mengubah n8n) → tunjukkan draf, akun, dan dampaknya, lalu **tunggu persetujuan Bambang**. Setelah menulis, **baca ulang**.
-- Tindakan yang tidak bisa dibatalkan dan lima kelas Alden → CLAUDE.md §3 dan `docs/open-issues.md` K-1.
+- Tindakan yang tidak bisa dibatalkan dan lima kelas Alden (masih draf) → CLAUDE.md §3 dan `docs/open-issues.md` K-1.
 
 ## Keluaran standar
-- Status setiap item hanya boleh memakai enam label Anchor 04 §七.6, dan setiap item menyebut sumbernya.
+- Status setiap item hanya boleh memakai enam label dari Anchor 04 「AI 机器执行合同」, dan setiap item menyebut sumbernya.
 - Kutipan dalam 「」. Inferensi diberi label "inferensi, belum dikonfirmasi".
-- Kalau berhenti, sebutkan 阻塞对象, 阻塞人, dan 恢复条件 (Anchor 04 §七).
+- Kalau berhenti, sebutkan 阻塞对象, 阻塞人, dan 恢复条件 (Anchor 04 「强制停止条件」).
 
 ---
 

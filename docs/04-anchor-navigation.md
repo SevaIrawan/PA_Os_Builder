@@ -32,10 +32,10 @@ Sumber:
 | 2 | 切分审计 | N4 (mesin, n8n) → N5 (manusia) | Epic | Kayden **atau** Alden | OR (lihat kontradiksi K-2) |
 | 3 | 设计 | N6 (spawn Feature) → N7 | Feature | HOD / Owner alur | — |
 | 4 | 结构审计 | N8 (mesin) → N9 (manusia) | Feature | Tanda tangan bisnis Kayden **dan** teknis Alden | AND |
-| 5 | 对齐 | N10 (brief mesin) → N11 | Feature | Owner alur (N11) | — |
-| 6 | 开发 | N12 | Feature | Tim build BO | — |
+| 5 | 对齐 | N10 (brief mesin) → N11 | Feature | Anchor 04 §二: 「流程 Owner；跨部门时含相关 HOD／管理层」. N11: tanda tangan oleh HOD lintas departemen (lajur N11); pemutus dan freeze oleh Owner alur (「对齐裁决人（＝该流程 Owner）」) | — |
+| 6 | 开发 | N12 | Feature | Anchor 04 §二: 「Alden／BO 建造 Owner」. Lajur N12 di 1729200354: 「BO 建设团队」 | — |
 | 7 | 验收审计 | N13 (mesin) → N14 (manusia) | Feature | Kayden **atau** Alden | OR (lihat kontradiksi K-2) |
-| 8 | 上线 | N15 → N16 (penutupan) | Feature → Epic | Anchor 04 §二: 「流程 Owner＋BO 建造 Owner」. Lajur N15 di 1729200354: 部门 HOD bersama BO | — |
+| 8 | 上线 | N15 → N16 (penutupan) | Feature → Epic | Anchor 04 §二: 「流程 Owner＋BO 建造 Owner」. Lajur N15 di 1729200354: 「部门 HOD」; 执行载体: 「部门 HOD 与 BO 协作完成宣贯、上线…」 | — |
 
 Aturan yang sama untuk ketiga audit (Anchor 04 §二): 「机器通过不等于 Gate 通过」. Kalau mesin menolak, item otomatis dikembalikan ke tahap kerja sebelumnya. Kalau mesin meloloskan, item tetap di status audit dan menunggu keputusan manusia. Semua keputusan dicatat hanya di Jira Epic/Feature Comment, **bukan di Slack**.
 
@@ -43,7 +43,7 @@ Aturan yang sama untuk ketiga audit (Anchor 04 §二): 「机器通过不等于 
 
 | Marker | Tempat terlihat | Sumber |
 |---|---|---|
-| `OSD-RETURN/v1` | Semua pengembalian: otomatis N4, N8, N13 (n8n) dan manual N5, N9, N11, N14 (AI pemutus). Aturan 「一轮一标记」. | 1729200354 §三 |
+| `OSD-RETURN/v1` | Pengembalian di N4, N8, N13 (n8n) dan N5, N9, N11, N14 (AI pemutus). Aturan 「一轮一标记」. Pengembalian N15→N12 (masalah masa observasi) dan pengembalian otomatis WIP di N7 **tidak disebut** membawa marker. | 1729200354 §三 |
 | `OSD-CUT-MACHINE/v1` | Laporan N4 | 1729200354 §三 N4 |
 | `OSD-CUT-DECISION/v1` | Keputusan akhir N5 | 1729200354 §三 N5 |
 | `OSD-CUT-SPAWN/v2` | Epic Comment N6 | 1729200354 §三 N6 |
