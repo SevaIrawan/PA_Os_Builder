@@ -56,6 +56,7 @@ Siapa pemutus di setiap Gate: lihat `docs/04-anchor-navigation.md` §2.
 Batas akses yang sudah terbukti:
 - Akun pribadi Bambang **tidak bisa melihat** tiket SSCSD yang diuji. Atlassian_MCP `searchJiraIssuesUsingJql` dengan `key in (SSCSD-411, SSCSD-421, SSCSD-422, SSCSD-423)` mengembalikan 「Issue does not exist or you do not have permission to see it」 (diamati di sesi 2026-09-26).
 - Akun Backend Operations punya scope Jira `read:jira-work`/`write:jira-work` saja, **tanpa hak konfigurasi**. Konfigurasi dilakukan manual lewat UI lalu diverifikasi lewat API (build sheet S-05, 本轮实建与回读).
+- Di **UI** Jira, akun BO punya menu **Jira admin settings** (System, Jira apps, Spaces, Work items) dan **User management** (pernyataan Bambang 「aku admin disana」 + screenshot, 2026-09-26). Jadi batas di atas berlaku untuk API. Konfigurasi lewat UI dikerjakan Bambang. Punya akses admin **tidak sama** dengan boleh: membuat group baru butuh persetujuan level site (Kent OSD-116 c49545), dan perubahan izin/visibilitas termasuk lima kelas Alden yang masih draf (§3).
 - Menulis ke Confluence lewat akun BO berarti **mengganti seluruh halaman**. Risikonya, isi bisa rusak tanpa ketahuan. Itulah alasan build sheet diedit lewat akun pribadi (build sheet S-05 偏差登记).
 - Assignee harus ditulis eksplisit saat membuat tiket SSCSD. Kalau tidak, tiket otomatis diberikan ke Alden (build sheet S-05, 本轮踩坑).
 

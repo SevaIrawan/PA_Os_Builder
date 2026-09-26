@@ -70,18 +70,29 @@ Changelog dan indeks run 07.0x.1 / 07.0x.2 / 07.0x.3 juga dibaca. Semuanya appen
 | 2115174416 | CRM \| 盘点与切分 (judul memakai tanda garis tegak setengah lebar; isi kosong) | 2026-09-25/26 |
 | 2096463922 | **纪律与绩效改进处置｜建造单** (build sheet S-05, dibaca seluruhnya; salinan lokal 524 baris termasuk header. Dicek ulang 2026-09-26 sore: isi identik) | 2026-09-26 |
 
+### Dibaca untuk build kartu N07 dan perintah Kayden c50445 (2026-09-26 sore)
+| pageId | Judul | lastModified | Catatan |
+|---|---|---|---|
+| 1603633175 | NOS V1｜Notify 子流程调用契约 | 「about 2 hours ago」 | Versi v6 「已上线」. §9.1, §9.4, §9.5, §9.13, §9.14 dibaca. Bahwa ini halaman yang dimaksud Alden dengan 「C6」 adalah inferensi, belum dikonfirmasi. |
+| 1729888419 | 04.4.1 (dibaca ulang) | 「about 2 hours ago」 | Kunci batch 1A: `auditVisibility`, `noTransition`, dropdown, pengecekan "sudah diproses" |
+| 1676771343 | 04.3 (dibaca ulang) | Sep 24, 2026 | §六 berisi 处置角色组 dan 失效类/撤回类. Tool tidak mengembalikan nomor versi. |
+| 1743716419 | 员工离职｜建造单 | 2026-09-26 | Hanya dicari kata kunci `SSCOS｜HR` / HR Ops & Data |
+| 1711276058 | 员工离职｜流程 Spec | 2026-09-26 | Sama seperti di atas |
+| 1742766267 | Grade 自荐与直属上级推荐｜建造单 | 2026-09-26 | Sama seperti di atas. Preseden: condition tiket utama = group `SSCOS｜Service Accounts` |
+
 Halaman BLM Lite (2046460048, 2046460069, 2047705135, 1760198660) juga terbaca. Halaman-halaman ini **diabaikan** karena merupakan jalur terpisah dari OS 开发流.
 
 ## Jira
 | Objek | Connector / akun | Catatan |
 |---|---|---|
-| OSD-116 dan 187 comment-nya (c48791–c50514) | Atlassian_MCP / Bambang | Feature S-05, status 开发 |
+| OSD-116 dan 190 comment-nya (c48791–c50576) | Atlassian_MCP / Bambang | Feature S-05, status 开发. Dibaca ulang seluruhnya 2026-09-26 sore; comment terakhir Alden c50576 (17:55 +07), tiket `updated` 17:55:56 |
+| SSCSD-435 | Atlassian_Rovo / Backend Operations | Tiket TEST kartu N07, dibuat 2026-09-26, berakhir Rejected/Rejected (lihat `docs/evidence/2026-09-26-live-checks.md` E10–E15) |
 | SSCSD-411, 421, 422, 423 | Atlassian_Rovo / Backend Operations | Akun pribadi Bambang **tidak bisa** melihat tiket ini (JQL ditolak, 2026-09-26) |
 
 ## Slack
 | Channel | Rentang | Catatan |
 |---|---|---|
-| #nos-bo (C0BRSTNNY4A) | 2026-08-21 17:08 sampai **2026-09-26 12:52 +07** | 30 pesan utama, 11 thread, 42 balasan. Lampiran Canvas tidak dibaca. **Pesan sesudah 12:52 tidak termasuk.** Contohnya pesan Kent 14:34, 「共用零件单独成批、先建先发」, lihat `docs/evidence/2026-09-26-live-checks.md` E7. |
+| #nos-bo (C0BRSTNNY4A) | 2026-08-21 17:08 sampai **2026-09-26 14:34 +07** | 31 pesan utama (terakhir: Kent 14:34:37, 「共用零件单独成批、先建先发」), 11 thread. Ekspor pertama berhenti di 12:52. Pada 2026-09-26 sore, channel dibaca ulang, dan empat thread dibaca ulang langsung: 1790160390.243079 (上级缺位), 1790242043.098949 (标准缺口 S-19, balasan terakhir 14:21:50), 1789817804.263189, 1789798284.018609. Tujuh thread lain balasan terakhirnya sebelum 12:52, jadi diambil dari ekspor pertama. Lampiran Canvas tidak dibaca. |
 
 ## Tidak dapat diakses (= dilarang)
 | pageId | Judul | Hasil |

@@ -66,6 +66,18 @@
   - Nomor bagian dipakai sebagai rujukan kutipan, bukan sebagai langkah yang menggantikan halaman.
 - Apakah ini dianggap melanggar aturan 07.06 §八 perlu diputuskan Bambang.
 
+### K-9 · Siapa 「HR Ops & Data 角色组」 di Jira (perintah Kayden OSD-116 c50445)
+- **c50445** (Kayden, 2026-09-24): 「Abort Case（id 11）转态权限配给 HR Ops & Data 角色组；N07「确认重复」同口径。执行顺序请写死：先把主单转「已取消」，再取消未关子单」.
+- **04.3 §六** (1676771343, dibaca 2026-09-26), baris tabel: 「**主单**转入「已取消」（执行中止）｜仅服务账号、该主单所在 Project 的 Owner，与该 Spec 增补区 B 登记的处置角色组（如 S-05 的 HR Ops & Data）」.
+- **Halaman yang sama, 执法点**: 「Jira workflow Condition 不承担"限定哪个人有权批"的职责——它收紧为"仅服务账号可转态"。审批权校验发生在 Slack 审批卡的回传链路上」. Bunyi ini berbeda dengan baris tabel di atas.
+- **Preseden Grade** (1742766267): condition tiket utama = group `SSCOS｜Service Accounts` saja. Keputusan Alden c48475/c48531: 「主单侧只放服务账号，不放 Administrators」.
+- **Tidak ada source** di 15 halaman yang dicari (04.0, 04.1, 04.3, 04.7, 04.10, Spec S-05, build sheet S-05/resign/Grade, HR｜盘点与切分, dll.) yang memetakan HR Ops & Data ke group Jira tertentu.
+  - HR｜盘点与切分 (1745158181): 「HR Ops & Data 3人」, Function Lead Felix, tanpa nama anggota.
+  - Group HR yang ada di Jira: `SSCOS｜HR`. Anggota yang terbaca: Felix_HR dan Yuki Liew_HR, keduanya punya application role Jira Service Desk (E10). Di source, group ini hanya dipakai untuk trigger Automation N12 resign dan security level NTP 10344.
+  - Pengecekan ini dilakukan Atlassian_MCP `getJiraUser` hanya untuk Felix_HR dan Yuki Liew_HR. Apakah ada group lain untuk HR Ops & Data (akun lain, atau lewat User management) belum dicek. Menurut 07.06.1 E16, hasil yang tidak menemukan sesuatu bukan bukti bahwa hal itu tidak ada.
+- Menurut 04.3 (dibaca Claude), urutan 「主单先、子单后」 hanya ada sebagai kalimat Kayden. Teks 04.3 menulis 「在同一动作范围内」.
+- **Status:** 待决策. Yang berhak menjawab adalah Kayden (pemberi perintah, Owner 04.3). Bambang meminta item ini dilewati dulu (2026-09-26).
+
 ## B. Tidak diketahui atau tidak bisa diakses
 
 | # | Hal | Status | Alasan / sumber |
@@ -77,6 +89,7 @@
 | U-5 | Salinan 04.9.3 (1765015618) di scratchpad terpotong | Salinan tidak lengkap | Kalau dibutuhkan, buka ulang halamannya. |
 | U-6 | Tiga lampiran Canvas di #nos-bo (F0C2VSAATHA, F0C32N7MYR1, F0C2TLMGST1) | Belum dibaca | — |
 | U-7 | Isi 「pre-build alignment 7 categories」 | Daftarnya hanya ada di Slack | Nama item ini disebut Kent di OSD-116 c50071. Daftar tujuh kategorinya hanya ada di #nos-bo 1789549825.279199. Kent menulis 「我也已登进 build skill，Claude 会自动照跑」. Bahwa yang dimaksud adalah skill lokal tim adalah inferensi dari c50071 ("sync .claude/skills/build"), belum dikonfirmasi. Versi itu belum terlihat. Halaman 07.06 §三 (e) mengatur 「开工对齐清单」 sendiri. |
+| U-8 | Kata di catatan approval untuk 打回补件 | Belum diputuskan | Kartu N07 memberi `kind: reject` pada tombol 打回补件, sehingga catatan platform menulis 「决定 / Decision：不通过 Rejected｜打回补件」 (SSCSD-435 comment 50592). Kontrak 04.4.1 / Notify §9.1 hanya mengenal `approve`/`reject`. Apakah kata-katanya perlu diubah, Felix atau Alden yang menentukan. Dicatat di build sheet v50 (观察·不改). |
 
 ## C. Selesai
 (belum ada)
