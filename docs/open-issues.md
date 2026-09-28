@@ -163,6 +163,12 @@
 - Untuk S-05: 04.7 RT-HR-DISCIPLINARY-* 「Owner 部门 Project」＝HR; Spec Owner Felix (HR HOD).
 - Ditanyakan ke Alden: OSD-116 **c50670** butir 2. **Status:** 待决策. Claude tidak mengisi.
 
+### K-17 · Teks error di N05, N07, N20 memuat titik dua ASCII
+- **Aturan:** 04.4.4 §五 (2102067228): 「抛错文本一律不含半角冒号 —— n8n 在最后一个半角冒号处劈开 error 文本，前半永久丢失」. Kasus yang sama: Alden NSE-1137 c50349 (N3 离职), Geri c50584 (N7 离职, direproduksi exec 17235).
+- **Kondisi S-05** (`get_workflow_details`, 2026-09-28): teks `throw` di N05, N07, N20 diawali `'N05: '`, `'N07: '`, `'N20: '`. N07 juga memuat `got: `; N05 memuat marker `[[nos-s05-subject:<accountId>]]` yang berisi titik dua.
+- **Akibat bila aturan itu berlaku (inferensi, belum dikonfirmasi di S-05):** nos-ops hanya menerima potongan setelah titik dua terakhir; nama node dan key case bisa hilang.
+- **Status:** 待决策 (Bambang). Perbaikan = mengubah workflow, butuh izin per tindakan.
+
 ## B. Tidak diketahui atau tidak bisa diakses
 
 | # | Hal | Status | Alasan / sumber |
