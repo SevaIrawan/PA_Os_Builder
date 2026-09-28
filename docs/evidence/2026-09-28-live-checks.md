@@ -2,12 +2,13 @@
 
 Berisi hasil panggilan tool di sesi Claude Code yang sama dengan `2026-09-26-live-checks.md`. Penomoran E melanjutkan file itu. Nomor E di sini adalah nomor bukti repo, **bukan** entri 07.06.1.
 
-Semua penulisan (n8n N20, build sheet, comment NSE-1137) dilakukan atas perintah eksplisit Bambang di sesi ini:
+Semua penulisan (n8n N20, build sheet, comment NSE-1137 dan OSD-116) dilakukan atas perintah eksplisit Bambang di sesi ini:
 - 「Tambahkan upstreamEvent ke N20 dulu」
 - 「ya, update sticky note-nya」
 - 「ya, jalankan 1 dan 2」
 - 「jalankan keduanya」
 - 「Kirim lewat akun pribadi, cc Kent」
+- 「Kirim lewat akun pribadi, cc Alden, Felix, Kayden」
 
 Settings errorWorkflow/callerPolicy dipasang sendiri oleh Bambang lewat UI.
 
@@ -23,6 +24,10 @@ Settings errorWorkflow/callerPolicy dipasang sendiri oleh Bambang lewat UI.
 | E23 | n8n `test_workflow` / `get_execution` | Tes kering, data di-pin | **17373**: satu item kosong di Read Comments, lalu `alreadyTriggered:false` dan alur sampai ke Write Marker. Call dan Write Marker `executionTime: 0` (di-pin). **17374**: marker `[[nos-s05-term:TEST-N20-DRY-2:TEST-RESIGN-OLD]]`, `alreadyTriggered:true`, alur berhenti di "Already Triggered?". Node Call tidak dipin otomatis oleh tool (`prepare_test_pin_data`: "skipped"), jadi dipin secara eksplisit. Daftar eksekusi entry terbaca 0 sebelum dan sesudah tes. Menurut 07.06.1 E16, angka 0 ini tidak dipakai sebagai bukti tunggal. |
 | E24 | Atlassian_MCP `updateConfluenceContent` (akun pribadi Bambang) | Build sheet 2096463922, v51 → v52 | Satu dryRun, lalu tulis sungguhan. v52 dibuat 2026-09-28T01:14:41.690Z. Setelah `&quot;`/`&#39;` dinormalkan, baca ulang v52 sama persis dengan hasil dryRun. Perbedaan v51 ke v52 hanya 4 perubahan yang direncanakan: §五 7 paragraf, §一 sel status N20, 附表 baris 「先认领后动作」, §八 blok 「N20 干跑」. |
 | E25 | Atlassian_MCP `addOrEditJiraIssueComment` (akun pribadi Bambang, atas perintah 「Kirim lewat akun pribadi, cc Kent」) + `executeRead` `listJiraIssueComments` | NSE-1137, format html, mention Geri `712020:ab302e5c-…` dan Kent `62cfa6e1bb346bdf82fac8f6` | commentId **50631**. Body yang tersimpan sama dengan draf terakhir (4 butir; butir 2 = 「No objection」 plus dua pertanyaan). Baca ulang: author `Bambang` (`712020:0ec04d28-…`), created 2026-09-28T08:47:22.387+0700, `jsdPublic: true` (sama dengan c50575 dan c50590). |
+| E26 | Atlassian_Rovo `lookupJiraAccountId` (akun BO) + Atlassian_MCP `getJiraUser` expand groups (akun pribadi) | Cari grup dengan kata 「HR」, 「Ops」, 「Data」, 「SSCOS」, 「SSCOS｜H」; cek grup milik Tin HR | 「HR」 → grup `SSCOS｜HR` (groupId `e754a445-…`, label 「Jira Service Desk」). 「Ops」 dan 「Data」 → 0 grup. 「SSCOS」 → 17 grup (5 ditampilkan). Tin HR **bukan** anggota `SSCOS｜HR` (grupnya: confluence-users, jira-software-users, `SSCOS｜Entity - Nexmax_KH`). Tool tidak punya fungsi untuk membaca anggota grup. |
+| E27 | Screenshot Bambang, admin.atlassian.com (akun BO), 09:35–09:36 WIB | Groups, cari 「Hr」; buka grup `SSCOS｜HR` | Hanya satu grup: `SSCOS｜HR`, Members 2: **Felix_HR (Felix)** dan **Yuki Liew_HR**, keduanya Active. Description: None. |
+| E28 | Screenshot Bambang, Jira SSCSD (SSC Service Desk) Space settings (akun BO), 09:47–09:50 WIB | Permissions dan 「People and access」 | Izin diberikan lewat peran. Browse Projects diberikan ke Service Space Customer - Portal Access, Administrators, Service Desk Team, dan atlassian-addons-project-access. People and access: Alden = Administrators; Bot_SSC = Service Desk Team; `SSCOS｜BO` = Administrators; **`SSCOS｜HR` = Service Desk Team**. Baris 「Transition Issues」 tidak terlihat di screenshot. Bahwa Service Desk Team punya izin transisi adalah inferensi dari E14: Bot_SSC, yang hanya berperan Service Desk Team, berhasil menjalankan transisi 3 dan 4 di SSCSD-435. Belum dikonfirmasi dari baris izin itu sendiri. |
+| E29 | Atlassian_MCP `addOrEditJiraIssueComment` (akun pribadi Bambang, atas perintah 「Kirim lewat akun pribadi, cc Alden, Felix, Kayden」) + `executeRead` `listJiraIssueComments` | OSD-116, format html, mention Kent `62cfa6e1bb346bdf82fac8f6`, cc Alden `5b666de62c9bd83c037070ae`, Felix_HR `712020:e5c38f7f-…`, Kayden Lee `60c85cad2bd2140069d5a716` | commentId **50632**. Isi: konfirmasi pemakaian `SSCOS｜HR` untuk hak Abort Case (11) dan 确认重复 N07 (c50445), dengan dasar E26–E28, plus catatan selisih 3 orang (HR｜盘点) dan 2 anggota. Baca ulang: author `Bambang` (`712020:0ec04d28-…`), created 2026-09-28T09:59:00.674+0700, `jsdPublic: true`. |
 
 Batas bukti:
 - Credential Bot_SSC di node N20 tidak tampil lewat API.
