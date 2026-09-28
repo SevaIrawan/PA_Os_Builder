@@ -52,6 +52,12 @@
 - Nama komponen platform memakai format `NOS | Platform | …` (halaman yang sama, §六).
 - **Cek ulang 2026-09-28:** 04.4 (lastModified 2026-09-27) §十 masih 「`{流程名}｜{Spec 节点 ID}｜{模式编号或动作}`」, tanpa `n8n-` dan tanpa menyebut n8n. Judul bagiannya 「Automation 规则命名规范」. 04.4 tidak punya catatan perubahan, dan repo tidak menyimpan salinan penuh versi sebelumnya, jadi apa yang diubah pada 27/9 tidak terlihat dari halamannya. Menurut Alden (#nos-bo 1790567167.378069, 2026-09-28): 「04.4 §四 补了上面①②的机器读法（v34）」, yaitu cara mesin membaca Owner dari 维护说明 dan halaman SSOT daftar terkendali. Itu bukan §十. 04.9 §一 (Sep 26, dibaca penuh) masih merujuk 04.4 §十 dengan 「`{流程名}｜{节点 ID}｜{模式或动作}`」. 04.6 tidak dibaca ulang (lastModified tetap Sep 18). **Status:** 待决策, tidak berubah.
 
+- **Cek ulang 2026-09-28 malam:**
+  - 04.6 v22 §二-3 masih `…｜n8n-{动作}`. Kepala 04.6: 「第二节治理约束维持 V2 侧原文，修订提案见该节附注（🔲 待确认）」; catatan revisi itu tidak terlihat di teks halaman. Alden NSE-1137 c48376 menyebut 「04.6 §2, revision proposal 1」.
+  - Checklist 工程审 **v2** (#nos-bo 1790582937.947389, Alden, 2026-09-28 15:08) butir 5 tetap 「件名：合『{流程名}｜N{x}｜n8n-{动作}』…｜机」. Tempat resminya (07.07) masih menunggu Kayden, jadi masih usulan.
+  - Praktik di n8n (`search_workflows` "n8n-"): hanya 15 workflow OS开发流 yang memakai `n8n-`. 员工离职, Grade, 请假 tidak. Geri NSE-1137 c48263 (2026-08-14): 「Aligning names to the 04.4 §10 convention meant renaming N4 in n8n to 员工离职｜N4｜审批卡发送」.
+  - Ditanyakan ke Alden: OSD-116 **c50670** butir 1 (2026-09-28). Registrasi 04.9 S-05 menunggu jawaban ini.
+
 ### K-4 · Letak tombol Manual Trigger untuk tiket pemeliharaan (维护单)
 - **04.4 模式二** (1677066244): 「处理人在主单/子单卡片上点"标记文档需更新"」
 - **04.2 §六** (1676607500): 「处理人在自己所在的执行卡上用 Manual Trigger 按钮标记」
@@ -149,6 +155,13 @@
 - Alden adalah Owner SSCSD/V1, jadi c50647 bisa dibaca sebagai pelimpahan dari Owner. Tapi halaman 04.10 belum diubah, dan perubahan cakupan di Canvas 04.10 v3 masih menunggu 「点头」 Kayden (K-1). **Inferensi, belum dikonfirmasi.** Claude tidak mendamaikan.
 - **Format permintaan** (04.10 §五 langkah 1): Task di Project BO, ditugaskan ke Schema Owner, tiga isian 「要什么／哪条流程 Spec 哪一行需要／为何现有共享对象不够用」; 「口头／Slack 私聊不受理」.
 - **Status:** 待决策. Sebelum mengajukan Task ke Kent, tanyakan ke Bambang apakah konflik ini perlu disebut di Task.
+
+### K-16 · Isi kolom 「Owner 部门」 di indeks 04.9 untuk S-05
+- **04.9 v124** (1693089805): kolom 「Owner 部门」 ada di header indeks, tapi tidak didefinisikan di §一 maupun di halaman lain (CQL NOSM, #nos-bo, OSD-116, NSE-1137, NSE-1143; dicek 2026-09-28).
+- Satu-satunya petunjuk: Alden NSE-1143 c48482 (2026-08-18): 「04.9 登记表我会补一栏「建设归属」——这件挂了六天，就是因为登记时只写了 Owner 部门、没写谁建」. Jadi Owner 部门 bukan pembangun.
+- Isi yang ada tidak mengikuti satu pola: 请假 HR; 员工离职 **BO** dan Grade **BO** (padahal keduanya di indeks HR 04.5 §九 dan 04.7 「Owner 部门 Project」＝HR); OS开发流 「流程治理（Kayden）」.
+- Untuk S-05: 04.7 RT-HR-DISCIPLINARY-* 「Owner 部门 Project」＝HR; Spec Owner Felix (HR HOD).
+- Ditanyakan ke Alden: OSD-116 **c50670** butir 2. **Status:** 待决策. Claude tidak mengisi.
 
 ## B. Tidak diketahui atau tidak bisa diakses
 
