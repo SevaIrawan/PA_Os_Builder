@@ -80,6 +80,20 @@ Dasar: OSD-116 c50639 (Felix_HR, 2026-09-28 10:59 +07, kepada Alden), dibaca pen
 
 - Sebelum ditulis: baca ulang OSD-116 setelah c50644 untuk jawaban Alden atas syarat ② dan soal kata 打回补件.
 
+### P-5 · Keputusan Alden NSE-1137 c50645: status 14315 dan penanda "menunggu dilengkapi"
+
+Dasar: NSE-1137 c50645 (Alden, 2026-09-28 12:36 +07, kepada Geri, cc Kent dan Bambang), dibaca penuh.
+
+**① 页首附表, baris 「离职侧「系统触发入口」`qa01CkZBQfx8eLsK` 发布」: ditambahkan di akhir sel 「解除判据」 (status tetap 阻塞中)**
+
+> 【2026-09-28 补】解除判据后半「「待资料补齐」状态口径已定」已成立：Alden NSE-1137 c50645「no new status on 14315 — use the fallback, but mark "awaiting completion" with a field, not an internal marker」；「tickets created by the upstream entry land directly in Pending Sub-tickets. "Awaiting completion" = the actual last working day (`cf18140`) is empty; no separate internal marker.」前半「入口经 Alden 放行发布」尚未成立，本行仍阻塞中。
+
+**② 页首附表, baris 「Spec 增补区 A 表「离职单关联状态」由 N20／N21 系统写入」: ditambahkan di akhir sel 「解除判据」**
+
+> 【2026-09-28 补】Alden NSE-1137 c50645 点名：「@Bambang S-05 N21 reads the same field to tell whether completion is done.」即 N21 以离职主单 `cf18140`（实际离职日）是否已填判断资料是否补齐。「离职单关联状态」三值（已建单并关联／信息待补齐／信息已补齐）与 `cf18140` 的对应关系，Spec 与本页均未写明，建造侧不自拟，见 open-issues U-9。
+
+- Sebelum ditulis: baca ulang NSE-1137 setelah c50645 (jawaban Geri/Kent) dan cek apakah entry sudah diperbarui atau di-publish.
+
 ---
 
 ## Sudah ditulis
