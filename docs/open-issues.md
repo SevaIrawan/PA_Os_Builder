@@ -120,7 +120,8 @@
 - **Konflik:** pesan 24/9 (Kent membangun sekarang) dan c50558 26/9 (Alden akan membalas terpisah) tidak saling menjelaskan. Claude tidak mendamaikannya.
 - **Keputusan Bambang (2026-09-28):** c50595 (a) tidak dikoreksi; tunggu balasan Alden.
 - **Update 2026-09-28, Alden OSD-116 c50647 (a)** (15:11 +07, kepada Bambang, cc Kent dan Felix): 「since 9/24, SSCSD main-ticket fields go through the same 04.10 process — Kent approves and builds them; only the risk categories (making a field required on the shared screen, changing a shared object others already rely on, and the like) come to me. So please file the field list to @Kent as a 04.10 three-cell request.」 Ini sejalan dengan pesan Slack 24/9 butir 5, dan menggantikan arah c50234 (「→ Alden / V1」).
-- **Status:** terjawab oleh sumber (Alden c50647). Langkah berikutnya: permintaan 「04.10 three-cell request」 ke Kent. Format 04.10 harus dibaca penuh dulu sebelum membuat draf (CLAUDE.md §0.10). Dipindah ke bagian C.
+- **Status:** terjawab oleh sumber (Alden c50647). Langkah berikutnya: permintaan 「04.10 three-cell request」 ke Kent. Format 04.10 harus dibaca penuh dulu sebelum membuat draf (CLAUDE.md §0.10). 
+- **Update 2026-09-28 sore:** permintaan dikirim sebagai OSD-116 **c50658** (batch A, 8 item; evidence E35). Menunggu Kent: id field dan option.Dipindah ke bagian C.
 
 ### K-12 · Baris SUBMIT 04.7 masih memuat aturan 缺位 yang sudah dicabut di Spec
 - **04.7 v51** (2026-09-24), baris RT-HR-DISCIPLINARY-SUBMIT: 「提交资格＝仅可由该员工登记的Direct Supervisor提交，缺位由HR Ops & Data代为受理」.

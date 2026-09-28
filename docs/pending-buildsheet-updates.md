@@ -20,6 +20,7 @@ Sisa yang **belum** ditulis setelah v53:
 - **P-6.7**: D-13 (marker patroli, tunggu Geri c50631 dan K-10). Isi keputusan C-15 (Felix) dan isi §七 (C-26, keputusan Kayden 9/29) juga belum; yang sudah ditulis hanya catatan keadaannya.
 - **P-6.8**: semua item di sana masih menunggu keputusan Bambang (B-2, B-5, B-14, D-4, D-9, D-16, C-27, catatan versi dasar Spec v67).
 - Setelah Kent menjawab c50632: tambahkan 【补】 baru untuk transisi 9/11 dan baris Abort Case, lalu hitung ulang statistik 附表.
+- **P-9** (pengajuan field tiket utama c50658, koreksi C-15 soal 负责跟进人, label Warning di kartu).
 
 
 ### P-7 · Jawaban Alden OSD-116 c50647 (2026-09-28 15:11 +07)
@@ -68,6 +69,25 @@ Sudah dicek: OSD-116 s.d. c50648, NSE-1137 s.d. c50645, #nos-bo s.d. 16:36 (thre
 **④ 建设备注 07.06.1 命中条目: ditambahkan**
 
 > 【2026-09-28 补】07.06.1 v41 D1：「写入已发布的件，可能当场生效，也可能只存成草稿、线上仍跑旧版…事后以回读为准——versionId 等于 activeVersionId 才算已生效」（04.6 v22 §3.2 第 4 条同）。本流程四件均未发布，现不适用；发布后改件按此回读。
+
+### P-9 · Pengajuan field tiket utama ke Kent, OSD-116 c50658 (2026-09-28)
+
+Sudah dicek: OSD-116 s.d. c50658, NSE-1137 s.d. c50645, NSE-1126 c48074, Spec v67 (tabel A, ⓪区 六/十, N07, D-8), 04.10 v21, 04.4.1 v15, Notify v15 §9.14, createmeta SSCSD/14357, Canvas F0C32N7MYR1 v3; semua dibaca 2026-09-28.
+
+**① 页首附表, baris 「主单专属 Screen 未建」 (atau baris field tiket utama): ditambahkan**
+
+> 【2026-09-28 补】依 Alden c50647 (a)，主单字段三格申请已提交 Kent：OSD-116 c50658（批次 A，N07 审批卡回写的 8 项：HR判定依据、打回次数、打回原因与补件要求、取消原因、HR 确认处置工具、Warning 等级／结果、纪律记录有效期、PIP 参数）。复用不申请：Approved By `customfield_18061`。挂 Disciplinary Case 编辑屏、选填、不进任何 Request Type（#nos-bo 1790228926.781229 第 5 点）。去重候选交 Kent 定：Rejection Reason `customfield_18143`（同屏、无流程读写，NSE-1137 Geri）。批次 B（Final Outcome、离职单关联状态、下游流程触发状态、Show Cause回复截止日期、入口字段）另提。待 Kent 回字段与选项 id。
+
+**② 第三区 (字段) 「N07 卡 modal 与 Spec 增补区 A 表之差」 2026-09-28 补 之后: ditambahkan**
+
+> 【2026-09-28 补】上条①中「负责跟进人」：Spec ⓪区 十 将 PIP 参数该项写作「Direct Supervisor（无法解析→系统拦截并告警，转 HR 修正档案后重新解析）」，N16 Owner 亦为 Direct Supervisor——由系统解析，非 HR 录入，不设主单字段（c50658 已注明）。「到期日期」「纪律记录有效期」两项的卡上收集方式仍待 Felix。
+
+**③ 第三区 「select 类主单字段…Warning 等级＝Verbal／Written／Final Written」 2026-09-28 补 之后: ditambahkan**
+
+> 【2026-09-28 补】Warning 等级字段值按 Spec 增补区 A 表申请为「Verbal Warning／Written Warning／Final Written Warning」（与 Final Outcome 枚举、D-6 同；⓪区 为简写）。字段建成后，卡上 `o` 的 `v` 值改为与 Jira option 逐字一致（改件前经建造人批准）。
+
+- Sebelum ditulis: cek apakah Kent sudah menjawab c50658; kalau sudah, tambahkan id field dan option.
+- Catatan antrean: P-6.7 baris C-15 (「负责跟进人」 ke Felix) sudah dijawab Spec ⓪区 十; yang tersisa untuk Felix hanya 到期日期 dan 纪律记录有效期.
 
 ---
 
@@ -403,7 +423,7 @@ Setelah semua status ditulis, **hitung ulang** statistik 附表 (A-03).
 |---|---|---|
 | A-14 (C-10, D-2) | Baris 附表 Abort Case: sumber c50445, c50632, Felix c50644; transisi 9 「仅服务账号」 vs Kayden 「N07「确认重复」同口径」 (K-13); condition 9/11 dan baca ulang `isConditional` | Kent, jawaban c50632 (tulis bersama P-2) |
 | C-01 + §四 标题格式 | Nama Request Type dua bahasa dari Felix c50261 butir 1; yang tersisa: backfill 04.7 | Baca ulang 04.7 |
-| C-15 (keputusan) | Isi kartu: 到期日期, 负责跟进人, 纪律记录有效期 | Felix |
+| C-15 (keputusan) | Isi kartu: 到期日期, 纪律记录有效期 (负责跟进人 sudah dijawab Spec ⓪区 十, lihat P-9②) | Felix |
 | C-26 (isi) | Isi §七 | Keputusan Kayden (9/29) |
 | D-13 | Marker patroli 卡死／漏账 | Geri c50631 dan K-10 |
 

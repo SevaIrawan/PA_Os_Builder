@@ -127,7 +127,7 @@ Halaman BLM Lite (2046460048, 2046460069, 2047705135, 1760198660) juga terbaca. 
 ## Jira
 | Objek | Connector / akun | Catatan |
 |---|---|---|
-| OSD-116 dan 196 comment-nya (s.d. c50648) | Atlassian_MCP / Bambang | Feature S-05, status 开发. Dibaca seluruhnya 2026-09-28 oleh agen pembaca (191 comment s.d. c50595), lalu dicek lagi: c50639, c50644, c50647 (Alden 15:11, jawaban c50595) dan c50648 (Alden 15:29, dua syarat Felix; aturan 04.4.1 「判定依据」) dibaca penuh |
+| OSD-116 dan 197 comment-nya (s.d. c50658) | Atlassian_MCP / Bambang | Feature S-05, status 开发. Dibaca seluruhnya 2026-09-28 oleh agen pembaca (191 comment s.d. c50595), lalu dicek lagi: c50639, c50644, c50647 (Alden 15:11, jawaban c50595) dan c50648 (Alden 15:29, dua syarat Felix; aturan 04.4.1 「判定依据」) dibaca penuh. c50658 = pengajuan field tiket utama dari Bambang (lihat evidence E35) |
 | NSE-1137 dan 274 comment-nya (c48129–c50645) | Atlassian_MCP / Bambang | Tiket jalur 员工离职 (Geri). Dibaca seluruhnya 2026-09-26 dan 2026-09-28; comment terbaru c50645 (Alden, 2026-09-28 12:36 +07, dibaca penuh: keputusan 14315 fallback + `cf18140`) |
 | SSCSD-435 | Atlassian_Rovo / Backend Operations | Tiket TEST kartu N07, dibuat 2026-09-26, berakhir Rejected/Rejected (lihat `docs/evidence/2026-09-26-live-checks.md` E10–E15) |
 | SSCSD-411, 421, 422, 423 | Atlassian_Rovo / Backend Operations | Akun pribadi Bambang **tidak bisa** melihat tiket ini (JQL ditolak, 2026-09-26) |
