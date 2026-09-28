@@ -174,7 +174,8 @@
 - **Yang belum terverifikasi:** field mana yang dikirim Error Handler `VUIgv9Ujj1KEoIne` ke nos-ops. Workflow itu tidak bisa dibaca lewat MCP (「Workflow is not available in MCP」); tidak dicari jalan lain. Klaim 「nos-ops hanya menerima potongan belakang」 (04.4.4 §五, c50349, c50584) = pernyataan sumber, **belum dicek langsung**.
 - **Bukti dari S-05 sendiri:** belum ada. N07 dan N20 tidak punya execution error; satu-satunya execution error N05 (16341) berasal dari node Jira (404), bukan `throw` di Code.
 - **Usulan perbaikan:** titik dua di teks tetap → `：`; nilai dari luar disanitasi `String(s).replace(/:/g, '：')` (preseden N2 离职, Alden c49892). Uji: satu jalur error per workflow, baca `description`/`message`.
-- **Status:** 待决策 (Bambang). Perbaikan = mengubah workflow, butuh izin per tindakan.
+- **Perbaikan dikerjakan 2026-09-28** (perintah Bambang, evidence E44): N05 `9b2ea463`, N07 `5a66fd9c`, N20 `6971acbc`. Uji 17562/17563/17564: `description: null`, teks utuh di `message`. Masih terbuka: 8 dari 11 `throw` belum dijalankan; isi alert nos-ops belum terverifikasi.
+- **Status:** 已完成但未验收 (untuk S-05). Aturan 04.4.4 §五 sendiri tidak dipersoalkan.
 
 ## B. Tidak diketahui atau tidak bisa diakses
 

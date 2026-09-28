@@ -23,6 +23,7 @@ Sisa yang **belum** ditulis setelah v53:
 - **P-9** (pengajuan field tiket utama c50658, koreksi C-15 soal 负责跟进人, label Warning di kartu).
 - **P-10** (perubahan N07 dan tes kartu SSCSD-437～442).
 - **P-11** (settings N04/N05).
+- **P-12** (teks error tanpa titik dua ASCII di N05/N07/N20).
 
 
 ### P-7 · Jawaban Alden OSD-116 c50647 (2026-09-28 15:11 +07)
@@ -138,6 +139,20 @@ Sumber: evidence E40; 04.6 v22 §3.5 (「挂接有效的判据＝目标平台件
 > 【2026-09-28 补】上句「settings 未挂 errorWorkflow、未设 callerPolicy」已不成立：errorWorkflow＝`VUIgv9Ujj1KEoIne`，callerPolicy＝workflowsFromSameOwner。两项经 UI 设置，人：Bambang。API 回读：updatedAt 2026-09-28T14:53:41Z，versionId 未变（`ad14f33e-0434-4788-95cd-542abf56bd5d`），active false，节点 17 个未变。
 
 - Sebelum ditulis: baca ulang N04/N05 lewat API; kalau versionId berubah, pakai nilai terbaru.
+
+### P-12 · Teks error tanpa titik dua ASCII: N05, N07, N20 (2026-09-28 malam)
+
+Sumber: evidence E44; 04.4.4 §五; open-issues K-17.
+
+**① §五, setelah blok N05, N07, dan N20 masing-masing: ditambahkan (satu 【补】 per件)**
+
+> 【2026-09-28 补】依 04.4.4 §五「抛错文本一律不含半角冒号」改件（建造人批准，Claude 经 n8n MCP）：抛错文案中的半角冒号改全角「：」，外来值（入参、status、reason、idempotencyKey、JSON）经 `noColon` 转全角后再拼入。逻辑未改。N05 `Extract Subject AccountId`／`Alert Visibility Broken` → versionId `9b2ea463-f6be-476e-88a5-b62c074af375`；N07 `Validate Input`／`Build N07 Card`／`Check Notify Result` → `5a66fd9c-2630-4cae-8422-7d1099dbddc7`；N20 `Map Judgment To Dismissal Category`／`Check Entry Result` → `6971acbc-2413-4b1c-b3b7-2a501c1c9ea7`。三件 settings 未变、active false。
+
+**② §八 测试记录: ditambahkan**
+
+> 【2026-09-28 抛错文案去半角冒号·干跑】（test_workflow，Jira／HTTP／Notify 节点 pin）17562 N20（judgmentType「BAD:VALUE」）／17563 N07（issueKey「SSCSD:1」）／17564 N05（无 marker）：三例 `description` 为 null，全文落 `message`，外来值冒号显示为全角；均止于抛错节点，零写入零外发。对照 17235（N7 离职，改前形态）：冒号前后分入 `description`／`message`。边界：11 处抛错仅跑 3 处；nos-ops 告警正文未验（Error Handler 不可经 MCP 读取，手动执行不触发）。
+
+- Sebelum ditulis: baca ulang ketiga workflow lewat API; kalau versionId berubah, pakai nilai terbaru.
 
 ## Sudah ditulis
 
