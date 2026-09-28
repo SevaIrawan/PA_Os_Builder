@@ -2,11 +2,12 @@
 
 Berisi hasil panggilan tool di sesi Claude Code yang sama dengan `2026-09-26-live-checks.md`. Penomoran E melanjutkan file itu. Nomor E di sini adalah nomor bukti repo, **bukan** entri 07.06.1.
 
-Semua penulisan (n8n N20, build sheet) dilakukan atas perintah eksplisit Bambang di sesi ini:
+Semua penulisan (n8n N20, build sheet, comment NSE-1137) dilakukan atas perintah eksplisit Bambang di sesi ini:
 - 「Tambahkan upstreamEvent ke N20 dulu」
 - 「ya, update sticky note-nya」
 - 「ya, jalankan 1 dan 2」
 - 「jalankan keduanya」
+- 「Kirim lewat akun pribadi, cc Kent」
 
 Settings errorWorkflow/callerPolicy dipasang sendiri oleh Bambang lewat UI.
 
@@ -21,6 +22,7 @@ Settings errorWorkflow/callerPolicy dipasang sendiri oleh Bambang lewat UI.
 | E22 | n8n `update_workflow` (`setNodeSettings`) + `get_workflow_details` | "Read S-05 Case Comments" `alwaysOutputData: true` | versionId `8937d700-f71c-4a08-89df-305c9d935bad`, updatedAt 2026-09-28T01:06:58.193Z, `active: false` |
 | E23 | n8n `test_workflow` / `get_execution` | Tes kering, data di-pin | **17373**: satu item kosong di Read Comments, lalu `alreadyTriggered:false` dan alur sampai ke Write Marker. Call dan Write Marker `executionTime: 0` (di-pin). **17374**: marker `[[nos-s05-term:TEST-N20-DRY-2:TEST-RESIGN-OLD]]`, `alreadyTriggered:true`, alur berhenti di "Already Triggered?". Node Call tidak dipin otomatis oleh tool (`prepare_test_pin_data`: "skipped"), jadi dipin secara eksplisit. Daftar eksekusi entry terbaca 0 sebelum dan sesudah tes. Menurut 07.06.1 E16, angka 0 ini tidak dipakai sebagai bukti tunggal. |
 | E24 | Atlassian_MCP `updateConfluenceContent` (akun pribadi Bambang) | Build sheet 2096463922, v51 → v52 | Satu dryRun, lalu tulis sungguhan. v52 dibuat 2026-09-28T01:14:41.690Z. Setelah `&quot;`/`&#39;` dinormalkan, baca ulang v52 sama persis dengan hasil dryRun. Perbedaan v51 ke v52 hanya 4 perubahan yang direncanakan: §五 7 paragraf, §一 sel status N20, 附表 baris 「先认领后动作」, §八 blok 「N20 干跑」. |
+| E25 | Atlassian_MCP `addOrEditJiraIssueComment` (akun pribadi Bambang, atas perintah 「Kirim lewat akun pribadi, cc Kent」) + `executeRead` `listJiraIssueComments` | NSE-1137, format html, mention Geri `712020:ab302e5c-…` dan Kent `62cfa6e1bb346bdf82fac8f6` | commentId **50631**. Body yang tersimpan sama dengan draf terakhir (4 butir; butir 2 = 「No objection」 plus dua pertanyaan). Baca ulang: author `Bambang` (`712020:0ec04d28-…`), created 2026-09-28T08:47:22.387+0700, `jsdPublic: true` (sama dengan c50575 dan c50590). |
 
 Batas bukti:
 - Credential Bot_SSC di node N20 tidak tampil lewat API.
