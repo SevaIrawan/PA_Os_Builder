@@ -15,15 +15,12 @@ Versi build sheet terakhir yang dibaca: **v53** (2026-09-28T07:07:32Z).
 
 ## Antre
 
-Sisa yang **belum** ditulis setelah v53:
+Sisa yang **belum** ditulis setelah v54:
 - **P-4③** (kata 「打回补件」): Alden sudah menjawab di c50647, teksnya ada di P-7④.
 - **P-6.7**: D-13 (marker patroli, tunggu Geri c50631 dan K-10). Isi keputusan C-15 (Felix) dan isi §七 (C-26, keputusan Kayden 9/29) juga belum; yang sudah ditulis hanya catatan keadaannya.
 - **P-6.8**: semua item di sana masih menunggu keputusan Bambang (B-2, B-5, B-14, D-4, D-9, D-16, C-27, catatan versi dasar Spec v67).
 - Setelah Kent menjawab c50632: tambahkan 【补】 baru untuk transisi 9/11 dan baris Abort Case, lalu hitung ulang statistik 附表.
-- **P-9** (pengajuan field tiket utama c50658, koreksi C-15 soal 负责跟进人, label Warning di kartu).
-- **P-10** (perubahan N07 dan tes kartu SSCSD-437～442).
-- **P-11** (settings N04/N05).
-- **P-12** (teks error tanpa titik dua ASCII di N05/N07/N20).
+- Paragraf §八 `b28d0928005c` 「SSCSD 内 Disciplinary Case 现共 5 张」 sudah basi setelah SSCSD-437～442 (ditemukan saat menyusun v54; belum ada draf).
 
 
 ### P-7 · Jawaban Alden OSD-116 c50647 (2026-09-28 15:11 +07)
@@ -73,7 +70,21 @@ Sudah dicek: OSD-116 s.d. c50648, NSE-1137 s.d. c50645, #nos-bo s.d. 16:36 (thre
 
 > 【2026-09-28 补】07.06.1 v41 D1：「写入已发布的件，可能当场生效，也可能只存成草稿、线上仍跑旧版…事后以回读为准——versionId 等于 activeVersionId 才算已生效」（04.6 v22 §3.2 第 4 条同）。本流程四件均未发布，现不适用；发布后改件按此回读。
 
-### P-9 · Pengajuan field tiket utama ke Kent, OSD-116 c50658 (2026-09-28)
+## Sudah ditulis
+
+### v54 (2026-09-28T15:58:28Z, akun pribadi Bambang, perintah 「Tulis P-9 sampai P-12 ke build sheet」)
+P-9 (①②③), P-10 (①②③④), P-11 (①②), P-12 (①②). 18 operasi `insertNodeAfter`, semuanya tambahan; tidak ada teks lama yang diganti atau dihapus. Bukti: `docs/evidence/2026-09-28-live-checks.md` E46.
+
+Penyimpangan dari draf di bawah (diputuskan saat menyusun operasi, isi teks tidak berubah):
+- P-9②: draf menyebut 第三区, tetapi paragraf 「N07 卡 modal 与 Spec 增补区 A 表之差」 yang dituju ada di §五 (blok N07). Ditulis setelah paragraf itu (`b28d0928004d`).
+- P-10④: ditulis sekali sebagai paragraf di bawah tabel transisi §二, setelah paragraf 证据边界 (`9f5d66ab-…`), bukan di dalam sel baris 10 dan 11.
+- P-12①: teks gabungan dipecah jadi tiga 【补】, satu per workflow (N05, N07, N20), masing-masing dengan daftar nilai luar, nama node, versionId, dan waktunya sendiri.
+- Catatan: P-11② menyebut versionId N05 `ad14f33e` 「未变」. Itu benar saat settings disimpan; 【补】 P-12 tepat di bawahnya memuat versionId baru `9b2ea463`.
+- Belum ditangani (di luar P-9～P-12): paragraf §八 `b28d0928005c` 「SSCSD 内 Disciplinary Case 现共 5 张」 sekarang sudah basi (tiket tes bertambah SSCSD-437～442).
+
+Teks lengkap yang sudah ditulis (arsip, jangan ditulis ulang):
+
+#### P-9 · Pengajuan field tiket utama ke Kent, OSD-116 c50658 (2026-09-28)
 
 Sudah dicek: OSD-116 s.d. c50658, NSE-1137 s.d. c50645, NSE-1126 c48074, Spec v67 (tabel A, ⓪区 六/十, N07, D-8), 04.10 v21, 04.4.1 v15, Notify v15 §9.14, createmeta SSCSD/14357, Canvas F0C32N7MYR1 v3; semua dibaca 2026-09-28.
 
@@ -92,7 +103,7 @@ Sudah dicek: OSD-116 s.d. c50658, NSE-1137 s.d. c50645, NSE-1126 c48074, Spec v6
 - Sebelum ditulis: cek apakah Kent sudah menjawab c50658; kalau sudah, tambahkan id field dan option.
 - Catatan antrean: P-6.7 baris C-15 (「负责跟进人」 ke Felix) sudah dijawab Spec ⓪区 十; yang tersisa untuk Felix hanya 到期日期 dan 纪律记录有效期.
 
-### P-10 · N07: approverFieldId, label Warning, penanda tes, dan tes SSCSD-437～442 (2026-09-28 malam)
+#### P-10 · N07: approverFieldId, label Warning, penanda tes, dan tes SSCSD-437～442 (2026-09-28 malam)
 
 Sumber: evidence E36–E39; Alden OSD-116 c50647 ①／c50648; Spec v67 tabel A; 04.5.3 v17 §三／§五; Notify v15 §9.13／§9.14.
 
@@ -126,7 +137,7 @@ Sumber: evidence E36–E39; Alden OSD-116 c50647 ①／c50648; Spec v67 tabel A;
 
 ---
 
-### P-11 · Settings N04 dan N05 (2026-09-28 malam)
+#### P-11 · Settings N04 dan N05 (2026-09-28 malam)
 
 Sumber: evidence E40; 04.6 v22 §3.5 (「挂接有效的判据＝目标平台件已发布」).
 
@@ -140,7 +151,7 @@ Sumber: evidence E40; 04.6 v22 §3.5 (「挂接有效的判据＝目标平台件
 
 - Sebelum ditulis: baca ulang N04/N05 lewat API; kalau versionId berubah, pakai nilai terbaru.
 
-### P-12 · Teks error tanpa titik dua ASCII: N05, N07, N20 (2026-09-28 malam)
+#### P-12 · Teks error tanpa titik dua ASCII: N05, N07, N20 (2026-09-28 malam)
 
 Sumber: evidence E44; 04.4.4 §五; open-issues K-17.
 
@@ -154,7 +165,6 @@ Sumber: evidence E44; 04.4.4 §五; open-issues K-17.
 
 - Sebelum ditulis: baca ulang ketiga workflow lewat API; kalau versionId berubah, pakai nilai terbaru.
 
-## Sudah ditulis
 
 ### v53 (2026-09-28T07:07:32Z, akun pribadi Bambang, perintah 「Tulis halaman」)
 P-1 (①②③④), P-2, P-3, P-4 (①②; ② digabung ke catatan baris 模式九 A-04), P-5 (①②), dan P-6.1 sampai P-6.6. Item P-6.7 yang ditulis hanya catatan keadaan: A-14, C-10 dan D-2 mencatat 「Kent 未答」, C-01 memakai 04.7 v51 yang dibaca agen audit hari ini. Rincian: 92 operasi (87 tambahan, 5 ganti status), bukti `docs/evidence/2026-09-28-live-checks.md` E31–E32.
