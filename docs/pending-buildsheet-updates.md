@@ -9,21 +9,28 @@ Aturan:
 - Bahasa: Mandarin, mengikuti isi halaman.
 - Kalau item sudah ditulis ke build sheet, pindahkan ke bagian "Sudah ditulis" dan cantumkan versi halamannya.
 
-Versi build sheet terakhir yang dibaca: **v55** (2026-09-28T16:02:46Z).
+Versi build sheet terakhir yang dibaca: **v56** (2026-09-28T16:12:01Z).
 
 ---
 
 ## Antre
 
-Sisa yang **belum** ditulis setelah v55:
-- **P-7** (①②③④, direvisi terhadap v55) dan **P-8** (①③④; ② dibuang). Draf siap; syarat sebelum tulis ada di tiap butir.
-- **P-4③** (kata 「打回补件」): Alden sudah menjawab di c50647, teksnya ada di P-7④.
+Sisa yang **belum** ditulis setelah v56:
 - **P-6.7**: D-13 (marker patroli, tunggu Geri c50631 dan K-10). Isi keputusan C-15 (Felix) dan isi §七 (C-26, keputusan Kayden 9/29) juga belum; yang sudah ditulis hanya catatan keadaannya.
 - **P-6.8**: semua item di sana masih menunggu keputusan Bambang (B-2, B-5, B-14, D-4, D-9, D-16, C-27, catatan versi dasar Spec v67).
 - Setelah Kent menjawab c50632: tambahkan 【补】 baru untuk transisi 9/11 dan baris Abort Case, lalu hitung ulang statistik 附表.
 
 
-### P-7 · Jawaban Alden OSD-116 c50647 (2026-09-28 15:11 +07)
+## Sudah ditulis
+
+### v56 (2026-09-28T16:12:01Z, akun pribadi Bambang, perintah 「Tulis P-7 dan P-8 ke build sheet」)
+P-7 (①②③④, termasuk P-4③) dan P-8 (①③④; ② dibuang). 7 operasi `insertNodeAfter` (node baru `b28d09290070`～`0076`); teks lama tidak diubah. Bukti: `docs/evidence/2026-09-28-live-checks.md` E49.
+
+Syarat sebelum tulis, dicek 2026-09-28 sesaat sebelum menulis: OSD-116 terakhir masih c50670 (Alden belum menjawab, jadi P-7③ tetap 「待答」); #nos-bo tidak ada pesan baru setelah 16:30, thread 1790242043.098949 tanpa keputusan Kayden, thread 1789704362.435989 tanpa balasan setelah 16:36 (P-8③ tetap); keempat workflow `active: false` (P-8④ tetap).
+
+Teks lengkap yang sudah ditulis (arsip, jangan ditulis ulang):
+
+#### P-7 · Jawaban Alden OSD-116 c50647 (2026-09-28 15:11 +07)
 
 Dasar: OSD-116 c50647, dibaca penuh 2026-09-28. Sudah dicek: OSD-116 s.d. c50670 (tidak ada comment baru setelah c50670), NSE-1137 s.d. c50672, build sheet v55; semua 2026-09-28.
 
@@ -50,7 +57,7 @@ Revisi 2026-09-28 (setelah dicek terhadap v55): ① dan ② dipangkas karena seb
 
 - Kalimat terakhir bergantung pada P-8①. Tulis keduanya dalam versi yang sama.
 
-### P-8 · Alden OSD-116 c50648, 04.4.1 v15, 04.6 §四, 07.06.1 D1 (2026-09-28 sore)
+#### P-8 · Alden OSD-116 c50648, 04.4.1 v15, 04.6 §四, 07.06.1 D1 (2026-09-28 sore)
 
 Sudah dicek: OSD-116 s.d. c50670, NSE-1137 s.d. c50672, build sheet v55, 04.6 v22 dan 07.06.1 v41 (versi dicek ulang 2026-09-28, tidak berubah); sebelumnya #nos-bo s.d. 16:36 (thread 1789704362), 04.4.1 v15, Notify v15, 04.10 v21, 04.8 v23, 04.9 v124. **#nos-bo belum dibaca ulang setelah 16:36.**
 
@@ -73,8 +80,6 @@ Revisi 2026-09-28 (setelah dicek terhadap v55): ① diperbarui (「HR 判定依�
 > 【2026-09-28 补】07.06.1 v41 D1：「写入已发布的件，可能当场生效，也可能只存成草稿、线上仍跑旧版…事后以回读为准——versionId 等于 activeVersionId 才算已生效」（04.6 v22 §3.2 第 4 条同）。本流程四件均未发布，现不适用；发布后改件按此回读。
 
 - Sebelum ditulis: pastikan keempat workflow masih belum dipublikasikan.
-
-## Sudah ditulis
 
 ### v55 (2026-09-28T16:02:46Z, akun pribadi Bambang, perintah 「Tulis P-13 ke build sheet」)
 P-13. Satu operasi `insertNodeAfter` setelah `b28d0928005c` (node baru `b28d09290060`); teks lama tidak diubah. JQL dijalankan ulang tepat sebelum tulis, hasilnya tetap 10 tiket dengan status yang sama. Bukti: `docs/evidence/2026-09-28-live-checks.md` E48.
