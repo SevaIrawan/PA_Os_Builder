@@ -93,7 +93,8 @@
     - persetujuan harian sisi SSCSD dipegang Kent sebagai Schema Owner (Alden, #nos-bo 1790228926.781229). Ini masih draf dan belum masuk 04.10 (lihat K-1).
   - **OSD-116 c50632** (Bambang, 2026-09-28 09:59 WIB, akun pribadi, ditujukan ke Kent, cc Alden, Felix, Kayden): minta konfirmasi pemakaian `SSCOS｜HR` untuk condition transisi 11 dan 9. Isi condition: service account + `SSCOS｜HR` + Project Owner SSCSD (04.3 §六). Urutan: tiket utama dulu, lalu sub-tiket (c50445). Selisih 3 orang vs 2 anggota ikut disebut. **Belum ada jawaban.**
   - Catatan lama di build sheet (§二 baris transition 11): 「配置前须经 04.3 Owner（Kayden Lee）确认」. Konfirmasi itu sudah diberikan lewat c50445, tapi build sheet belum mencatatnya. Perlu dimasukkan ke `docs/pending-buildsheet-updates.md`.
-- **Status:** 待决策. Menunggu jawaban Kent atas c50632. Transisi 11 dan 9 belum dipasang condition.
+- **Felix_HR, OSD-116 c50644** (2026-09-28 11:55 +07, kepada Kent, cc Bambang, Alden, Kayden): 「盘点里 HR Ops & Data 是 3 人：Felix、Yuki、Tin（CAM）。Tin 现阶段只负责柬埔寨成员的 payroll 和招聘，不负责请假；绩效管理相关事项由 TL 直接负责，所以当时才没有加她进 SSCOS｜HR。该组保持 Felix 和 Yuki 两人即可，3 人与 2 人的差异就是这个原因。」 Felix menulisnya 「补充说明供你判断」, jadi keputusan memakai `SSCOS｜HR` tetap di tangan Kent.
+- **Status:** 待决策. Selisih 3 vs 2 sudah dijelaskan Felix (c50644). Konfirmasi Kent atas c50632 belum ada. Transisi 11 dan 9 belum dipasang condition.
 
 ### K-10 · Kapan marker `nos-s05-term` ditulis (N20)
 - **Build sheet S-05** (2096463922), tabel 暗号接口契约表 baris 「离职交接认领与审计」: 「建离职单**之前**先写 S-05 侧」. Aturan tabel yang sama: 「先认领后动作：任何写入口在执行写动作**之前**先写认领 marker」.
@@ -123,7 +124,7 @@
 | U-1 | Space **NW**: 00｜知识库治理 (1647870014) dan 05｜页面结构与字段词汇表 (1656783199) | **Dilarang** | Laporan agent pembaca di sesi 2026-09-26: Rovo mengembalikan 404, Atlassian_MCP `getConfluenceContent` mengembalikan 403 "Space is restricted". Bukti mentahnya tidak disimpan. Aturan Bambang: tidak ada akses berarti dilarang. |
 | U-3 | Skill lokal BO milik tim: `.claude/skills/build`, 主脑, 复盘官, `ledger/inbox` | Isinya tidak diketahui | Kent menyebutnya di #nos-bo (1789549825.279199, 1789704362.435989) dan OSD-116 c50071. Tidak ada di Confluence dan tidak bisa diakses dari sini. Skill `build` di repo ini dibangun **hanya** dari 07.06 §八. |
 | U-4 | Identitas akun connector Slack | Belum diverifikasi | Hanya dipakai untuk membaca. Menulis ke Slack butuh persetujuan per tindakan. |
-| U-8 | Kata di catatan approval untuk 打回补件 | Belum diputuskan | Kartu N07 memberi `kind: reject` pada tombol 打回补件, sehingga catatan platform menulis 「决定 / Decision：不通过 Rejected｜打回补件」 (SSCSD-435 comment 50592). Kontrak 04.4.1 / Notify §9.1 hanya mengenal `approve`/`reject`. Apakah kata-katanya perlu diubah, Felix atau Alden yang menentukan. Dicatat di build sheet v50 (观察·不改). |
+| U-8 | Kata di catatan approval untuk 打回补件 | Menunggu Alden | Kartu N07 memberi `kind: reject` pada tombol 打回补件, sehingga catatan platform menulis 「决定 / Decision：不通过 Rejected｜打回补件」 (SSCSD-435 comment 50592). Kontrak 04.4.1 / Notify §9.1 hanya mengenal `approve`/`reject`. Apakah kata-katanya perlu diubah, Felix atau Alden yang menentukan. Dicatat di build sheet v50 (观察·不改). **Felix_HR, OSD-116 c50639** (2026-09-28 10:59 +07, kepada Alden): 「请改成「打回补件 Return for info」，或至少去掉"不通过"」, karena 「Spec 里打回不是拒绝，也不计入通过/拒绝结果」. Kata itu dihasilkan platform dari `kind: reject`; kontrak 04.4.1 hanya mengenal approve/reject, jadi perubahannya tergantung Alden. |
 
 ## C. Selesai
 

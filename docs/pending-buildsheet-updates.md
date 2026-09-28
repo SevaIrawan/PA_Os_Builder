@@ -64,6 +64,22 @@ Dasar: lihat `docs/open-issues.md` K-11.
 
 - Sebelum ditulis: cek apakah Alden atau Kent sudah menjawab, dan apakah field atau Screen sudah dibangun.
 
+### P-4 · Keputusan Felix OSD-116 c50639: visibilitas internal (N07) dan syarat pencatat keputusan (N10/N14/N17)
+
+Dasar: OSD-116 c50639 (Felix_HR, 2026-09-28 10:59 +07, kepada Alden), dibaca penuh.
+
+**① §五, blok 【2026-09-26 补·N07 审批卡发送】: ditambahkan setelah butir 「卡形（依 c50558）…」**
+
+> 【2026-09-28 补】auditVisibility＝internal 已由流程 Owner 定案：Felix OSD-116 c50639 (2)「审批记录可见性：选 internal。记录里是 HR 的内部判断过程，主管该知道的结果已通过 D-2、D-16 等通知送达，案件对外状态他仍看得到。」上文「Felix 定前按 internal」为定案前口径，现行值不变。
+
+**② 页首附表: baris baru (建造侧待办), atau catatan di baris N10／N14／N17 §一 — letak dipilih saat penulisan setelah membaca versi terbaru**
+
+> 【2026-09-28 补】Felix OSD-116 c50639 (1) 接受「字段留最新一次、连续记录放主单评论流」，附两个条件：①「N10/N14/N17 由 S-05 代写的记录，要和 N07 一样带上实际做判断的人。History 作者只显示 Bot_SSC，谁判的只能靠这条记录。」②「请确认这些记录普通用户（含 HR）不能编辑或删除；如果做不到，请写明以字段修改历史为准。」①为建造侧在 N10／N14／N17 建件时的必做项；②问的是 Alden，待其答复。记录格式依 Alden c50558「格式写进平台契约 04.4.1」。
+
+**③ Terkait U-8 (kata 「打回补件」): tidak ditulis ke build sheet sekarang.** Felix di c50639 meminta Alden mengganti 「不通过 Rejected｜打回补件」 menjadi 「打回补件 Return for info」. Tunggu jawaban Alden, lalu perbarui catatan 「观察（不改）」 di §八 N07 实跑.
+
+- Sebelum ditulis: baca ulang OSD-116 setelah c50644 untuk jawaban Alden atas syarat ② dan soal kata 打回补件.
+
 ---
 
 ## Sudah ditulis
