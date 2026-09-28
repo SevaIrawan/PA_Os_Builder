@@ -29,8 +29,8 @@ Dasar: dibaca pada 2026-09-28.
 > 连点负向用例（同 idempotencyKey 第二张卡点击应只回「已处理」）**暂缓**：理由①N07 正式给 HR 用须第一批 A、B 与回写字段／Screen 均到位（c50558）；②第一批 B（10/1）改造审批入口前段（c50558 二③），现测的是即将替换的路径。并入 N07 端到端测试执行。
 
 **① 附表, baris yang sama: sel 「状态」**
-- Usulan: 「待办（建造侧提出·双签未表态）」 → **「已解封（2026-09-28·建造侧决定不自建；连点用例并入 N07 端到端）」**.
-- **Perlu konfirmasi Bambang sebelum ditulis.** Label status yang dipakai di 附表: 阻塞中／待办／已解封.
+- Diganti: 「待办（建造侧提出·双签未表态）」 → **「已解封（2026-09-28·建造侧决定不自建；连点用例并入 N07 端到端）」**.
+- **Disetujui Bambang** (2026-09-28, 「Perbaiki」 sebagai jawaban atas pertanyaan status ini). Label status yang dipakai di 附表: 阻塞中／待办／已解封.
 
 **② 暗号接口契约表, baris 「N07 审批动作认领」: ditambahkan di akhir sel status 「拟定·未建」**
 
