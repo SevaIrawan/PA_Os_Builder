@@ -164,9 +164,16 @@
 - Ditanyakan ke Alden: OSD-116 **c50670** butir 2. **Status:** 待决策. Claude tidak mengisi.
 
 ### K-17 · Teks error di N05, N07, N20 memuat titik dua ASCII
-- **Aturan:** 04.4.4 §五 (2102067228): 「抛错文本一律不含半角冒号 —— n8n 在最后一个半角冒号处劈开 error 文本，前半永久丢失」. Kasus yang sama: Alden NSE-1137 c50349 (N3 离职), Geri c50584 (N7 离职, direproduksi exec 17235).
-- **Kondisi S-05** (`get_workflow_details`, 2026-09-28): teks `throw` di N05, N07, N20 diawali `'N05: '`, `'N07: '`, `'N20: '`. N07 juga memuat `got: `; N05 memuat marker `[[nos-s05-subject:<accountId>]]` yang berisi titik dua.
-- **Akibat bila aturan itu berlaku (inferensi, belum dikonfirmasi di S-05):** nos-ops hanya menerima potongan setelah titik dua terakhir; nama node dan key case bisa hilang.
+- **Aturan:** 04.4.4 §五 (2102067228): 「抛错文本一律不含半角冒号 —— n8n 在最后一个半角冒号处劈开 error 文本，前半永久丢失」. Kasus yang sama: Alden NSE-1137 c50349 (N3 离职), Geri c50584 (N7 离职, exec 17235).
+- **Kondisi S-05** (`get_workflow_details`, 2026-09-28; N05 `ad14f33e`, N07 `5c304eb6`, N20 `8937d700`): 11 `throw` di 7 node Code memuat titik dua ASCII.
+  - N05: Extract Subject AccountId (`N05:` + marker `[[nos-s05-subject:…]]`), Alert Visibility Broken (`failed:`).
+  - N07: Validate Input ×4 (`N07:`, `got:`, `Spec:`), Build N07 Card ×2 (`probe:`, `N07:`, nilai `status`), Check Notify Result ×1 (`N07:`, `):`, `idempotencyKey` `SSCSD-x:rN`, `JSON.stringify`).
+  - N20: Map Judgment To Dismissal Category (`N20:`, nilai `judgmentType`), Check Entry Result (`N20:`, nilai `r.reason`).
+  - N04 tidak punya node Code.
+- **Yang teramati langsung** (`get_execution` 17235, N7 离职, hanya baca, 2026-09-28): teks `'N7 refused for SSCSD-DRY-NODATE: the main ticket has no …'` tersimpan sebagai `description`＝「N7 refused for SSCSD-DRY-NODATE」 (sebelum titik dua) dan `message`＝「the main ticket has no … [line 43]」 (sesudah titik dua); `stack` memuat teks utuh. Jadi di execution record bagian depan **tidak hilang**, tapi **terpisah** dari `message`. Teks itu hanya punya satu titik dua, jadi 「pertama atau terakhir」 tidak terbukti dari sini.
+- **Yang belum terverifikasi:** field mana yang dikirim Error Handler `VUIgv9Ujj1KEoIne` ke nos-ops. Workflow itu tidak bisa dibaca lewat MCP (「Workflow is not available in MCP」); tidak dicari jalan lain. Klaim 「nos-ops hanya menerima potongan belakang」 (04.4.4 §五, c50349, c50584) = pernyataan sumber, **belum dicek langsung**.
+- **Bukti dari S-05 sendiri:** belum ada. N07 dan N20 tidak punya execution error; satu-satunya execution error N05 (16341) berasal dari node Jira (404), bukan `throw` di Code.
+- **Usulan perbaikan:** titik dua di teks tetap → `：`; nilai dari luar disanitasi `String(s).replace(/:/g, '：')` (preseden N2 离职, Alden c49892). Uji: satu jalur error per workflow, baca `description`/`message`.
 - **Status:** 待决策 (Bambang). Perbaikan = mengubah workflow, butuh izin per tindakan.
 
 ## B. Tidak diketahui atau tidak bisa diakses
