@@ -113,12 +113,21 @@ Halaman BLM Lite (2046460048, 2046460069, 2047705135, 1760198660) juga terbaca. 
 | 2091876367, 1764524046, 1751547935, 2076508181, 2102067228, 1674707036 | 04.12, 04.11, 04.4.2, 04.4.3, 04.4.4, 01 | Sep 14 – Sep 23 (01: Jul 31) | Dibaca penuh; U-2 selesai |
 | Canvas F0C32N7MYR1, F0C2VSAATHA, F0C2TLMGST1 | #nos-bo | — | Dibaca penuh; U-6 selesai |
 | 2117435433 | 04.9.7｜详情：纪律与绩效改进处置 | 2026-09-28 (dibuat Alden) | Dibaca penuh 2026-09-28: hanya kalimat pengantar, belum ada blok H2 |
+| 1729888419 | 04.4.1 | v15 (2026-09-28 15:19 +07) | Dibaca penuh 2026-09-28 sore: bagian baru 「判定依据」 (覆盖写、评论流连续记录、查证以字段修改历史为准) |
+| 1603633175 | Notify 契约 | v15 (2026-09-28 15:19) | Dibaca penuh: §9.13 ditambah 「查证以字段修改历史为准」; sisanya sama dengan v14 |
+| 1712226375 | 07.06.1 | v41 (2026-09-28 15:19) | Dibaca penuh: hanya D1 berubah (写入已发布件是否生效以回读 versionId＝activeVersionId 为准) |
+| 1738735636 | 04.10 | v21 (2026-09-26) | Dibaca penuh 2026-09-28: format 三格 §五; konflik K-15 |
+| 1690140756 | 04.8 | v23 (2026-09-28 16:14) | Dibaca penuh: §四 审批线 dan 修复时限 1 个工作日 |
+| 1690927120 | 04.6 | v22 (2026-09-28 15:19) | Dibaca penuh: §3.2 butir 4 (回读判据), §四 权威分工 (值类＝Confluence, SLA＝Spec C 表 写进件 + 建造单登记) |
+| 1693089805 | 04.9 | v124 (2026-09-28 16:40) | Dibaca penuh; dibanding salinan 26/9: hanya baris Grade/OS 开发流 dan pembaca N07. Baris indeks S-05 belum ada |
+| Slack #nos-bo thread 1790242043.098949, 1789704362.435989 | — | balasan terakhir 15:29 dan 16:36 | Dibaca sampai balasan terakhir (Alden: 04.6 §四 v22; 工程审标准清单 v2; 04.8 §四 v23) |
+| Tidak dibaca (bukan sumber S-05) | Grade build sheet, 04.9.5, S-19 build sheet, halaman F1, 招聘 Spec, 请假政策 | berubah 2026-09-28 | Milik alur lain; dilewati sengaja, disampaikan ke Bambang |
 | 2096463922 | Build sheet S-05 | v53 (2026-09-28T07:07Z) | Diaudit baris per baris 2026-09-28 (v52); hasil audit ditulis sebagai v53 dan sudah dibaca ulang (evidence E32) |
 
 ## Jira
 | Objek | Connector / akun | Catatan |
 |---|---|---|
-| OSD-116 dan 195 comment-nya (s.d. c50647) | Atlassian_MCP / Bambang | Feature S-05, status 开发. Dibaca seluruhnya 2026-09-28 oleh agen pembaca (191 comment s.d. c50595), lalu dicek lagi: c50639, c50644 dan c50647 (Alden, 2026-09-28 15:11 +07, jawaban c50595 (a)(b)(c) dan soal kata 打回补件) dibaca penuh |
+| OSD-116 dan 196 comment-nya (s.d. c50648) | Atlassian_MCP / Bambang | Feature S-05, status 开发. Dibaca seluruhnya 2026-09-28 oleh agen pembaca (191 comment s.d. c50595), lalu dicek lagi: c50639, c50644, c50647 (Alden 15:11, jawaban c50595) dan c50648 (Alden 15:29, dua syarat Felix; aturan 04.4.1 「判定依据」) dibaca penuh |
 | NSE-1137 dan 274 comment-nya (c48129–c50645) | Atlassian_MCP / Bambang | Tiket jalur 员工离职 (Geri). Dibaca seluruhnya 2026-09-26 dan 2026-09-28; comment terbaru c50645 (Alden, 2026-09-28 12:36 +07, dibaca penuh: keputusan 14315 fallback + `cf18140`) |
 | SSCSD-435 | Atlassian_Rovo / Backend Operations | Tiket TEST kartu N07, dibuat 2026-09-26, berakhir Rejected/Rejected (lihat `docs/evidence/2026-09-26-live-checks.md` E10–E15) |
 | SSCSD-411, 421, 422, 423 | Atlassian_Rovo / Backend Operations | Akun pribadi Bambang **tidak bisa** melihat tiket ini (JQL ditolak, 2026-09-26) |

@@ -34,6 +34,10 @@
   - **Canvas F0C32N7MYR1** (「04.10§二 权责判定标准·提案 v3」, dibaca penuh): masih 「提案 v3」. Cakupan 主单侧 ditandai 「〔待定〕…待 Kayden＋Alden 对齐」. Isinya belum memuat koreksi Alden tanggal 24/9.
   - **Thread 1789704362.435989** (induk + 14 balasan, dibaca penuh): Kayden setuju dengan syarat (balasan 6, 1790155348.686929: 「等 Alden 点头…我这边的执行者就落页」). Alden mengubah cakupan dan meminta 「Kayden，请你点头」 (balasan 11, 1790228926.781229). Sampai balasan terakhir (2026-09-25) belum ada jawaban Kayden dan belum ada pemasangan ke 04.10.
   - **Status:** 待决策, tidak berubah.
+- **Update 2026-09-28 sore (dibaca penuh):**
+  - **Field arsip (NTP/TCL):** aturan persetujuan resmi sekarang ada di **04.8 §四 v23** (lihat CLAUDE.md §3). Ini bukan lima kelas Alden secara utuh; hanya berlaku untuk field arsip.
+  - **Field tiket utama SSCSD:** Alden OSD-116 c50647 (a): 「only the risk categories (making a field required on the shared screen, changing a shared object others already rely on, and the like) come to me」. Halaman 04.10 v21 belum memuat ini (lihat K-15).
+  - **04.10 v21** tetap tanpa lima kelas. Status K-1 untuk objek lain (Jira bersama selain field arsip): 待决策.
 
 ### K-2 · Siapa yang memutuskan audit 切分 (N5) dan 验收 (N14)
 - **Anchor 04 §一/§二** dan **OS 开发流 Spec N5/N14** (1729200354): 「Kayden 或 Alden」 (OR).
@@ -137,6 +141,13 @@
 - **Build sheet v52**, 偏差登记 (baris ±198): mengutip jalur manual sementara dari Felix c49317.
 - **Kent, OSD-116 c50381**: 「No interim manual path to design.」
 - Sumber: audit A (di luar cakupan butir 3, 2026-09-28). Claude tidak mendamaikan. **Status:** 待决策.
+
+### K-15 · Siapa yang memegang field tiket utama SSCSD: 04.10 v21 vs Alden c50647
+- **04.10 v21** (1738735636, lastModified 2026-09-26, dibaca penuh 2026-09-28): 「本页只承载执行卡／子单侧的共享字段；主单字段归 SSCSD/V1」; tabel 「主单侧对象（SSCSD 四形状、主单字段）｜SSCSD／V1 范畴，Owner：Alden」; 升级线 「涉 SSCSD 主单侧→Alden（V1）」.
+- **Alden, OSD-116 c50647 (a)** (2026-09-28 15:11): 「since 9/24, SSCSD main-ticket fields go through the same 04.10 process — Kent approves and builds them … So please file the field list to @Kent as a 04.10 three-cell request.」 c50648: 「「HR 判定依据」字段按 04.10 交 Kent 建」.
+- Alden adalah Owner SSCSD/V1, jadi c50647 bisa dibaca sebagai pelimpahan dari Owner. Tapi halaman 04.10 belum diubah, dan perubahan cakupan di Canvas 04.10 v3 masih menunggu 「点头」 Kayden (K-1). **Inferensi, belum dikonfirmasi.** Claude tidak mendamaikan.
+- **Format permintaan** (04.10 §五 langkah 1): Task di Project BO, ditugaskan ke Schema Owner, tiga isian 「要什么／哪条流程 Spec 哪一行需要／为何现有共享对象不够用」; 「口头／Slack 私聊不受理」.
+- **Status:** 待决策. Sebelum mengajukan Task ke Kent, tanyakan ke Bambang apakah konflik ini perlu disebut di Task.
 
 ## B. Tidak diketahui atau tidak bisa diakses
 

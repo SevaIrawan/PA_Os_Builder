@@ -46,6 +46,29 @@ Dasar: OSD-116 c50647, dibaca penuh 2026-09-28. Sudah dicek: OSD-116 s.d. c50647
 
 > 【2026-09-28 补】上文「不通过 Rejected｜打回补件」措辞：Felix OSD-116 c50639 请改；Alden c50647：「the Decision line of the approval record will show only the button's own label when one is set — e.g. 「打回补件 · Return for info」 instead of 「不通过 Rejected｜打回补件」. This ships with batch 1B on 10/1.」本侧不改件，10/1 后回读实际记录格式。Felix c50639 两项条件（记录带实际判断人；记录能否被编辑或删除），Alden c50647：「I will answer separately once I have checked the permissions.」
 
+
+### P-8 · Alden OSD-116 c50648, 04.4.1 v15, cek editmeta, 04.6 §四, 04.8 §四 (2026-09-28 sore)
+
+Sudah dicek: OSD-116 s.d. c50648, NSE-1137 s.d. c50645, #nos-bo s.d. 16:36 (thread 1789704362), 04.4.1 v15, Notify v15, 07.06.1 v41, 04.10 v21, 04.8 v23, 04.6 v22, 04.9 v124, editmeta SSCSD-435; semua dibaca 2026-09-28.
+
+**① §一 N10／N14／N17 (atau baris 附表 P-4②): ditambahkan**
+
+> 【2026-09-28 补】Felix OSD-116 c50639 两项条件已由 Alden c50648 答复：①「已写进平台规则（04.4.1「判定依据」一节）：在审批卡以外作出的判定（S-05 的 N10、N14、N17），由流程在主单按审批记录同一格式写一条评论，写明节点、时间、实际做判断的人、决定和判定依据。」②「「不能编辑或删除」做不到…以字段修改历史为准…每次判定同时写两个主单字段——「HR 判定依据」…和「Approved By」」。建造侧据此：N10／N14／N17 建件时每次判定写一条主单评论（可见性同 N07 卡 internal）并同时写「HR 判定依据」与 `customfield_18061`；「HR 判定依据」字段按 04.10 交 Kent 建（未建）。
+
+**② §五 N07 块: ditambahkan**
+
+> 【2026-09-28 补】Alden OSD-116 c50647／c50648：N07 审批卡 `approverFieldId` 填 `customfield_18061`（Approved By）。2026-09-28 以 Backend Operations 读 SSCSD-435（Disciplinary Case）editmeta：`customfield_18061` 在编辑屏，userpicker，operations＝set。本件现未设该键（待改件，改件前经建造人批准）。
+
+- Sebelum ditulis: kalau `approverFieldId` sudah dipasang, ganti kalimat terakhir dengan versionId baru dan hasil baca ulang.
+
+**③ §七: ditambahkan setelah 2026-09-28 补 yang sudah ada (C-26)**
+
+> 【2026-09-28 补】04.6 v22 §四（2026-09-28）已定部分口径：「SLA 时限数值：权威＝各流程 Spec 增补区 C 表；建设时照 C 表写进件，并在建造单登记所依据的 Spec 版本…机器不直接读取 C 表」；值类内容「权威定义＝Confluence 对应页面…n8n Data Table＝机读副本。流程件运行时只读表，不直接解析 Confluence 页面」。本流程非 SLA 类参数（纪律记录有效期、PIP 周期等）落哪一页，仍待 Kayden 03 条文（#nos-bo 1790242043.098949）。
+
+**④ 建设备注 07.06.1 命中条目: ditambahkan**
+
+> 【2026-09-28 补】07.06.1 v41 D1：「写入已发布的件，可能当场生效，也可能只存成草稿、线上仍跑旧版…事后以回读为准——versionId 等于 activeVersionId 才算已生效」（04.6 v22 §3.2 第 4 条同）。本流程四件均未发布，现不适用；发布后改件按此回读。
+
 ---
 
 ## Sudah ditulis

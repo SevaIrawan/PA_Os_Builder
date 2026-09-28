@@ -103,7 +103,7 @@ Selain aturan dasar itu, ada dua aturan tambahan dari source:
   5. data asli >20 record
 
   Di pesan yang sama: persetujuan harian 04.10 dipegang 「由 Kent 以 Schema Owner 审批」. Alden menegaskannya lagi pada 2026-09-24 (balasan 1790228926.781229): sisi 主单 SSCSD masuk 04.10 di bawah persetujuan Kent, 「我只在五类风险时点头」.
-- **Aturan sementara untuk field arsip karyawan (NTP/TCL)**: masih ikut 04.8, dan 「审批线写出来前照昨天那句先找我」 (Alden, 1790228926.781229). "Kalimat kemarin" yang dimaksud: 「BO 起草、我点头、再建」 (Alden, 1790160397.275109, 2026-09-23).
+- **Aturan persetujuan untuk field arsip karyawan (NTP/TCL)**: sekarang ada di 04.8 §四 (v23, 2026-09-28, dibaca penuh 2026-09-28): 「改已在用的档案字段（改选项或取值、设必填、缩小作用范围）、涉及档案可见性（issue security、权限）、删除字段、批量改真实档案超过 20 条，须平台 Owner 确认；其余（为本流程新增字段、挂本流程的屏、设为选填）由 Schema Owner 按 04.10 第五节建立并在第五节登记，平台 Owner 事后抽查。」 Alden (#nos-bo thread 1789704362.435989, 2026-09-28 16:36): 「过渡做法到此结束」. Aturan sementara sebelumnya (「审批线写出来前照昨天那句先找我」, 1790228926.781229; 「BO 起草、我点头、再建」, 1790160397.275109) sudah digantikan.
 - Untuk semua butir di atas, Claude memberi tahu Bambang. Keputusan akhir tetap di tangan Bambang. Lihat `docs/open-issues.md` K-1.
 
 Larangan mutlak:
