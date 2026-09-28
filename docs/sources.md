@@ -21,9 +21,9 @@ Aturan pemakaian:
 | 1676640265 | 04.0｜流程/执行层词汇表（SSOT · 双语） | Sep 19, 2026 |
 | 1676738564 | 04.1｜Project 类型与开设判定 | Sep 19, 2026 |
 | 1676607500 | 04.2｜单据体系 | Sep 19, 2026 |
-| 1676771343 | 04.3｜状态词汇表与 Workflow 配置规范 | Sep 24, 2026 |
-| 1677066244 | 04.4｜自动化配置模式库 | Sep 21, 2026 |
-| 1729888419 | 04.4.1｜模式九：Slack 审批卡回调（共享地基） | Sep 18, 2026 |
+| 1676771343 | 04.3｜状态词汇表与 Workflow 配置规范 (dibaca penuh 2026-09-28: baris 执行中止 memuat 处置角色组) | Sep 24, 2026 |
+| 1677066244 | 04.4｜自动化配置模式库 (dibaca ulang penuh 2026-09-28; tidak ada catatan perubahan di halaman, isi perubahan 27/9 tidak diketahui) | 2026-09-27 |
+| 1729888419 | 04.4.1｜模式九：Slack 审批卡回调（共享地基） (dibaca ulang 2026-09-26 dan 2026-09-28) | Sep 26, 2026 |
 | 1678573617 | 04.5｜流程 Spec 与建造单：编写与校验规范 | Sep 19, 2026 |
 | 1685979182 | 04.5.1｜流程 Spec 模板（示例：员工离职） | Sep 05, 2026 |
 | 1729626775 | 04.5.2｜建造单模板（示例：员工离职） | Sep 15, 2026 |
@@ -31,14 +31,14 @@ Aturan pemakaian:
 | 1690927120 | 04.6｜n8n 使用规范与环境需求 | Sep 18, 2026 |
 | 1691254793 | 04.7｜路由表（Router SSOT） | Sep 24, 2026 |
 | 1690140756 | 04.8｜档案登记表（Registry SSOT） | Sep 21, 2026 |
-| 1693089805 | 04.9｜n8n Workflow 登记表（SSOT） | 2026-09-25 |
-| 1764622422 | 04.9.1｜详情：平台 | Sep 21, 2026 |
+| 1693089805 | 04.9｜n8n Workflow 登记表（SSOT） (dibaca penuh 2026-09-28) | Sep 26, 2026 |
+| 1764622422 | 04.9.1｜详情：平台 (dibaca penuh 2026-09-28) | Sep 26, 2026 |
 | 1764163693 | 04.9.2｜详情：请假 | Aug 22, 2026 |
-| 1765015618 | 04.9.3｜详情：员工离职 (salinan scratchpad terpotong, lihat U-5) | 2026-09-25 |
-| 1764163642 | 04.9.4｜详情：OS 开发流 | 2026-09-25 |
-| 1765015681 | 04.9.5｜详情：Grade 自荐与直属上级推荐 (hanya bagian pengantar dan judul-judul yang dibaca) | 2026-09-25 |
+| 1765015618 | 04.9.3｜详情：员工离职 (dibaca penuh 2026-09-28; U-5 selesai) | Sep 26, 2026 |
+| 1764163642 | 04.9.4｜详情：OS 开发流 (dibaca penuh 2026-09-28) | Sep 26, 2026 |
+| 1765015681 | 04.9.5｜详情：Grade 自荐与直属上级推荐 (dibaca penuh 2026-09-28) | Sep 26, 2026 |
 | 1763573891 | 04.9.6｜详情：Salary·Improvement·运维 | Aug 22, 2026 |
-| 1738735636 | 04.10｜Jira 共享配置登记表与变更治理（SSOT） | Sep 22, 2026 |
+| 1738735636 | 04.10｜Jira 共享配置登记表与变更治理（SSOT） (dibaca penuh 2026-09-28; lima kelas Alden belum ada, lihat K-1) | Sep 26, 2026 |
 
 ### Keluarga 07 dan meta-process
 | pageId | Judul | lastModified |
@@ -68,7 +68,7 @@ Changelog dan indeks run 07.0x.1 / 07.0x.2 / 07.0x.3 juga dibaca. Semuanya appen
 | 2088304658 | BO｜盘点与切分 | Sep 17, 2026 |
 | 2076934175 | xLoop｜盘点与切分 | 2026-09-25 |
 | 2115174416 | CRM \| 盘点与切分 (judul memakai tanda garis tegak setengah lebar; isi kosong) | 2026-09-25/26 |
-| 2096463922 | **纪律与绩效改进处置｜建造单** (build sheet S-05, dibaca seluruhnya; salinan lokal 524 baris termasuk header. Dicek ulang 2026-09-26 sore: isi identik) | 2026-09-26 |
+| 2096463922 | **纪律与绩效改进处置｜建造单** (build sheet S-05. Ditulis v51 → v52 pada 2026-09-28 01:14:41Z; dicek 2026-09-28 pagi masih v52) | 2026-09-28 (v52) |
 
 ### Dibaca untuk build kartu N07 dan perintah Kayden c50445 (2026-09-26 sore)
 | pageId | Judul | lastModified | Catatan |
@@ -96,11 +96,28 @@ Objek n8n yang dibaca (tidak diubah): entry Geri `qa01CkZBQfx8eLsK` (E19).
 
 Halaman BLM Lite (2046460048, 2046460069, 2047705135, 1760198660) juga terbaca. Halaman-halaman ini **diabaikan** karena merupakan jalur terpisah dari OS 开发流.
 
+### Dibaca 2026-09-28 (riset perintah Kayden c50445, nos-check, dan permintaan Bambang 「baca semua document」)
+| pageId / objek | Judul | lastModified | Catatan |
+|---|---|---|---|
+| 1676804100 | Anchor 04 | Sep 05, 2026 | nos-check B1: isi sama persis dengan `docs/anchor-04.md` |
+| 1730347066 | 07.06 | Sep 15, 2026 | nos-check B2: 19 dari 19 butir skill sama, tidak ada 部署漂移 |
+| 2036858900 | 纪律与绩效改进处置｜流程 Spec (S-05) | Sep 24, 2026 | Dibaca untuk c50445 (⓪, B, N07, N28, 需技术确认 7). Spec tidak diedit |
+| 1691254793 | 04.7｜路由表 | Sep 24, 2026 | Baris RT-HR-DISCIPLINARY-*; tidak ada kolom anggota peran |
+| 1676640265, 1690140756, 1745158181 | 04.0, 04.8, HR｜盘点与切分 | Sep 19 / Sep 21 / Sep 24 | Tidak ada grup untuk HR Ops & Data; HR｜盘点: 「HR Ops & Data 3人」 |
+| 1711276058, 1743716419 | 员工离职 Spec dan build sheet | Sep 26, 2026 | Preseden grup `SSCOS｜HR` untuk trigger N12 |
+| 2047148201, 2075394050, 2063400992 | Spec S-19, 新人90天, 招聘执行 | Sep 24–25 | Hanya bagian HR Ops & Data |
+| 1543045179, 1690206246 | Title Ladder (F5, T3.7) | Sep 18 | Nama jabatan HR Ops & Data, bukan orang atau grup |
+| 1742766267 | Grade 建造单 | Sep 26, 2026 | Preseden condition grup `system:restrict-issue-transition`; dicari dengan kata kunci (±950 KB) |
+| 1603633175 | Notify 契约 | Sep 26, 2026 | v6, §9.4 已处理检查, §9.9 pembagian tugas |
+| 1712226375 | 07.06.1 | Sep 26, 2026 | A2 dan E9 |
+| 2091876367, 1764524046, 1751547935, 2076508181, 2102067228, 1674707036 | 04.12, 04.11, 04.4.2, 04.4.3, 04.4.4, 01 | Sep 14 – Sep 23 (01: Jul 31) | Dibaca penuh; U-2 selesai |
+| Canvas F0C32N7MYR1, F0C2VSAATHA, F0C2TLMGST1 | #nos-bo | — | Dibaca penuh; U-6 selesai |
+
 ## Jira
 | Objek | Connector / akun | Catatan |
 |---|---|---|
-| OSD-116 dan 190 comment-nya (c48791–c50576) | Atlassian_MCP / Bambang | Feature S-05, status 开发. Dibaca ulang seluruhnya 2026-09-26 sore; comment terakhir Alden c50576 (17:55 +07), tiket `updated` 17:55:56 |
-| NSE-1137 dan 272 comment-nya (c48129–c50590) | Atlassian_MCP / Bambang | Tiket jalur 员工离职 (Geri). Dibaca seluruhnya 2026-09-26. Dicek ulang 2026-09-28: comment terbaru masih c50590. |
+| OSD-116 dan 192 comment-nya (s.d. c50632) | Atlassian_MCP / Bambang | Feature S-05, status 开发. Dibaca seluruhnya 2026-09-28 oleh agen pembaca (191 comment s.d. c50595), lalu dicek lagi: comment terbaru c50632 (Bambang, 2026-09-28 09:59 +07) |
+| NSE-1137 dan 273 comment-nya (c48129–c50631) | Atlassian_MCP / Bambang | Tiket jalur 员工离职 (Geri). Dibaca seluruhnya 2026-09-26 dan 2026-09-28; comment terbaru c50631 (Bambang, 2026-09-28 08:47 +07) |
 | SSCSD-435 | Atlassian_Rovo / Backend Operations | Tiket TEST kartu N07, dibuat 2026-09-26, berakhir Rejected/Rejected (lihat `docs/evidence/2026-09-26-live-checks.md` E10–E15) |
 | SSCSD-411, 421, 422, 423 | Atlassian_Rovo / Backend Operations | Akun pribadi Bambang **tidak bisa** melihat tiket ini (JQL ditolak, 2026-09-26) |
 

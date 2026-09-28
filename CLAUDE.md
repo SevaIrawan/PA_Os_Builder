@@ -26,6 +26,17 @@ Aturan ini ada karena kesalahan sebelumnya: kesimpulan tanpa dasar membuat peker
 7. **Konflik antar-source tidak didamaikan sendiri** (Anchor 04, 权威使用原则). Catat di `docs/open-issues.md` lalu tanyakan.
 8. **File di `docs/` hanya snapshot atau peta.** Isinya bukan pengganti membaca halaman Confluence saat bekerja. Sebelum menulis ke halaman mana pun, ambil dulu versi terbarunya (07 §二「先查后写」).
 9. **Tanya dulu sebelum bertindak** (preferensi Bambang). Kalau ragu, tanyakan. Jangan berasumsi.
+10. **Baca semua source dulu sebelum membuat apa pun** (aturan Bambang, 2026-09-28). Aturan ini ada karena kesalahan nyata: OSD-116 c50595 (a) menanyakan ke Alden field dan Screen N07, padahal Alden sudah menjawabnya di #nos-bo 1790228926.781229 butir 5. Pesan itu bahkan sudah dikutip di file ini (§3), tapi butir 5-nya tidak dibaca.
+    Sebelum membuat draf pertanyaan, comment, keputusan, rekomendasi, atau perubahan konfigurasi:
+    - Cari topiknya di **semua** tempat berikut, dan baca **penuh**, bukan potongan:
+      - seluruh comment tiket Jira terkait (OSD-116, NSE-1137, dan tiket lain yang disebut);
+      - semua pesan dan **semua balasan thread** di #nos-bo, termasuk Canvas yang dilampirkan;
+      - halaman Confluence terkait, versi terbaru (CQL untuk kata kuncinya);
+      - build sheet, `docs/open-issues.md`, dan `docs/pending-buildsheet-updates.md`.
+    - Kalau satu pesan sudah dipakai sebagai sumber, baca **seluruh isi pesan itu**, bukan hanya kalimat yang dicari.
+    - Setiap draf wajib memuat baris 「Sudah dicek: …」 yang menyebut sumber, batas bacanya (comment id atau ts terakhir), dan tanggal bacanya.
+    - Kalau ada sumber yang belum dibaca penuh, sebutkan, dan **jangan kirim** draf sebelum sumber itu dibaca.
+    - Pertanyaan ke orang lain hanya boleh diajukan untuk hal yang **tidak ada** di sumber mana pun. Hal yang sudah dijawab dikutip, bukan ditanyakan ulang.
 
 ---
 
@@ -84,7 +95,7 @@ Selain aturan dasar itu, ada dua aturan tambahan dari source:
   - notifikasi ke karyawan sungguhan atau pengiriman nyata pertama
   - mengaktifkan workflow (juga butuh persetujuan Owner platform)
   - 「记不清是否在清单内，就先问」
-- **Lima kelas yang butuh persetujuan Alden. Statusnya masih DRAF**: judulnya sendiri 「权责判定标准初稿」 (#nos-bo, thread 1789704362.435989, balasan 1790159495.872119, Alden, 2026-09-23). Kent memasukkannya ke Canvas draf 04.10 v3 (F0C32N7MYR1, balasan 1790163869.066139). Draf ini **belum ada** di salinan 04.10 yang dibaca (lastModified Sep 22).
+- **Lima kelas yang butuh persetujuan Alden. Statusnya masih DRAF**: judulnya sendiri 「权责判定标准初稿」 (#nos-bo, thread 1789704362.435989, balasan 1790159495.872119, Alden, 2026-09-23). Kent memasukkannya ke Canvas draf 04.10 v3 (F0C32N7MYR1, balasan 1790163869.066139). Draf ini **belum ada** di 04.10: dicek ulang 2026-09-28 pada versi lastModified Sep 26, tidak ada kata 五类/审批线/权限／可见性/启用自动化/>20. Canvas v3 (dibaca penuh 2026-09-28) masih berlabel 「提案 v3」 dan menandai cakupan 主单侧 sebagai 〔待定〕. Alden (1790228926.781229) meminta Kayden 「点头」 atas perubahan cakupan; sampai balasan terakhir thread (2026-09-25) belum ada jawaban Kayden.
   1. mengubah objek bersama yang sudah dipakai alur lain, **bila perubahan itu mengubah perilaku alur lain** (「且改完会改变别人的行为」)
   2. izin/visibilitas
   3. penghapusan
@@ -153,6 +164,7 @@ Sumber: 04.5.3 (1729626578, lastModified 2026-09-25). Bagian 测试 di build she
 | `docs/open-issues.md` | Kontradiksi antar-source dan hal yang tidak diketahui. **Tidak boleh didamaikan sendiri.** |
 | `docs/sources.md` | Daftar source yang dibaca, termasuk yang dilarang |
 | `docs/evidence/` | Bukti hasil cek live (tool + waktu) untuk klaim "diamati di sesi" |
+| `docs/pending-buildsheet-updates.md` | Antrean draf update build sheet S-05, ditulis sekaligus dalam satu versi (permintaan Bambang, 2026-09-28). Draf, bukan izin menulis. |
 | `.claude/skills/build/` | Salinan terkendali Skill 流程建设 (07.06 §八). Dipakai untuk "Build \| S-xx". |
 | `.claude/skills/nos-gate/` | Router Anchor 04 §七: dari key Jira ke Gate dan halaman yang wajib dibaca |
 | `.claude/skills/nos-check/` | Cek kesiapan lingkungan (07.06 环境就绪) dan cek drift snapshot/Skill terhadap Confluence |

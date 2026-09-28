@@ -28,7 +28,12 @@
   - Selalu minta persetujuan Bambang (07.06.1).
   - Untuk lima kelas di atas, Claude juga menyebutkan bahwa menurut pesan Alden di Slack persetujuan Alden diperlukan.
   - Claude tidak menyimpulkan bahwa persetujuan salah satu pihak sudah cukup.
-  - Belum diverifikasi apakah lima kelas itu sudah ditulis di 04.10 atau 04.6.
+  - Belum diverifikasi apakah lima kelas itu sudah ditulis di 04.6.
+- **Cek ulang 2026-09-28:**
+  - **04.10** (1738735636, lastModified Sep 26, dibaca penuh): lima kelas **tidak ada**. Kata 五类, 审批线, 权限／可见性, 启用自动化, >20, 改变别人的行为, dan Kent 审批 tidak ditemukan. Sisi tiket utama masih 「主单侧对象（SSCSD 四形状、主单字段）｜SSCSD／V1 范畴，Owner：Alden」 dan 「涉 SSCSD 主单侧→Alden（V1）」. Perubahan 26/9 kemungkinan hanya baris field GOV customfield_18288 (inferensi, belum dikonfirmasi).
+  - **Canvas F0C32N7MYR1** (「04.10§二 权责判定标准·提案 v3」, dibaca penuh): masih 「提案 v3」. Cakupan 主单侧 ditandai 「〔待定〕…待 Kayden＋Alden 对齐」. Isinya belum memuat koreksi Alden tanggal 24/9.
+  - **Thread 1789704362.435989** (induk + 14 balasan, dibaca penuh): Kayden setuju dengan syarat (balasan 6, 1790155348.686929: 「等 Alden 点头…我这边的执行者就落页」). Alden mengubah cakupan dan meminta 「Kayden，请你点头」 (balasan 11, 1790228926.781229). Sampai balasan terakhir (2026-09-25) belum ada jawaban Kayden dan belum ada pemasangan ke 04.10.
+  - **Status:** 待决策, tidak berubah.
 
 ### K-2 · Siapa yang memutuskan audit 切分 (N5) dan 验收 (N14)
 - **Anchor 04 §一/§二** dan **OS 开发流 Spec N5/N14** (1729200354): 「Kayden 或 Alden」 (OR).
@@ -41,6 +46,7 @@
 - **Draf checklist engineering review v1 dari Alden** (#nos-bo, thread 1789704362.435989, balasan 1790323114.589099, 2026-09-25; draf, 「有意见再出 v2」) butir 5: 「件名：合『{流程名}｜N{x}｜n8n-{动作}』…｜机｜04.6 §二第 3 条」. Kalau draf itu berlaku, nama S-05 yang sekarang akan gagal cek mesin.
 - **Kondisi nyata S-05** (build sheet 2096463922 §五): `纪律与绩效改进处置｜N04｜路由分发`, tanpa `n8n-`.
 - Nama komponen platform memakai format `NOS | Platform | …` (halaman yang sama, §六).
+- **Cek ulang 2026-09-28:** 04.4 (lastModified 2026-09-27) §十 masih 「`{流程名}｜{Spec 节点 ID}｜{模式编号或动作}`」, tanpa `n8n-` dan tanpa menyebut n8n. Judul bagiannya 「Automation 规则命名规范」. 04.4 tidak punya catatan perubahan, dan repo tidak menyimpan salinan penuh versi sebelumnya, jadi apa yang diubah pada 27/9 tidak diketahui. 04.9 §一 (Sep 26, dibaca penuh) masih merujuk 04.4 §十 dengan 「`{流程名}｜{节点 ID}｜{模式或动作}`」. 04.6 tidak dibaca ulang (lastModified tetap Sep 18). **Status:** 待决策, tidak berubah.
 
 ### K-4 · Letak tombol Manual Trigger untuk tiket pemeliharaan (维护单)
 - **04.4 模式二** (1677066244): 「处理人在主单/子单卡片上点"标记文档需更新"」
@@ -104,13 +110,15 @@
 | # | Hal | Status | Alasan / sumber |
 |---|---|---|---|
 | U-1 | Space **NW**: 00｜知识库治理 (1647870014) dan 05｜页面结构与字段词汇表 (1656783199) | **Dilarang** | Laporan agent pembaca di sesi 2026-09-26: Rovo mengembalikan 404, Atlassian_MCP `getConfluenceContent` mengembalikan 403 "Space is restricted". Bukti mentahnya tidak disimpan. Aturan Bambang: tidak ada akses berarti dilarang. |
-| U-2 | 04.12 / 机读标记总清单 (2091876367), 04.11 (1764524046), 04.4.2 (1751547935), 04.4.3 (2076508181), 04.4.4 (2102067228), 01｜OS 模块模型与铁律 (1674707036) | Belum dibaca | Dirujuk oleh berbagai halaman: 04.12 oleh 07.07 dan build sheet; 04.11 oleh 07.06 dan build sheet; 04.4.2–04.4.4 oleh 04.4, 04.9.1, dan build sheet; 01 oleh 04.5, 04.2, 04.6, 04.5.1, dan OS 开发流 Spec. Belum dibuka di sesi ini. |
 | U-3 | Skill lokal BO milik tim: `.claude/skills/build`, 主脑, 复盘官, `ledger/inbox` | Isinya tidak diketahui | Kent menyebutnya di #nos-bo (1789549825.279199, 1789704362.435989) dan OSD-116 c50071. Tidak ada di Confluence dan tidak bisa diakses dari sini. Skill `build` di repo ini dibangun **hanya** dari 07.06 §八. |
 | U-4 | Identitas akun connector Slack | Belum diverifikasi | Hanya dipakai untuk membaca. Menulis ke Slack butuh persetujuan per tindakan. |
-| U-5 | Salinan 04.9.3 (1765015618) di scratchpad terpotong | Salinan tidak lengkap | Kalau dibutuhkan, buka ulang halamannya. |
-| U-6 | Tiga lampiran Canvas di #nos-bo (F0C2VSAATHA, F0C32N7MYR1, F0C2TLMGST1) | Belum dibaca | — |
 | U-7 | Isi 「pre-build alignment 7 categories」 | Daftarnya hanya ada di Slack | Nama item ini disebut Kent di OSD-116 c50071. Daftar tujuh kategorinya hanya ada di #nos-bo 1789549825.279199. Kent menulis 「我也已登进 build skill，Claude 会自动照跑」. Bahwa yang dimaksud adalah skill lokal tim adalah inferensi dari c50071 ("sync .claude/skills/build"), belum dikonfirmasi. Versi itu belum terlihat. Halaman 07.06 §三 (e) mengatur 「开工对齐清单」 sendiri. |
 | U-8 | Kata di catatan approval untuk 打回补件 | Belum diputuskan | Kartu N07 memberi `kind: reject` pada tombol 打回补件, sehingga catatan platform menulis 「决定 / Decision：不通过 Rejected｜打回补件」 (SSCSD-435 comment 50592). Kontrak 04.4.1 / Notify §9.1 hanya mengenal `approve`/`reject`. Apakah kata-katanya perlu diubah, Felix atau Alden yang menentukan. Dicatat di build sheet v50 (观察·不改). |
 
 ## C. Selesai
-(belum ada)
+
+| # | Hal | Penyelesaian (2026-09-28, dibaca lewat Atlassian_Rovo / Slack, hanya membaca) |
+|---|---|---|
+| U-2 | 04.12 (2091876367), 04.11 (1764524046), 04.4.2 (1751547935), 04.4.3 (2076508181), 04.4.4 (2102067228), 01｜OS 模块模型与铁律 (1674707036) | Keenamnya terbaca penuh, tanpa 404/403. Temuan untuk S-05: 04.12 hanya memuat marker OS 开发流 (OSD-*), **tidak** mengatur `[[nos-…]]`, jadi marker S-05 tetap di tabel 暗号 build sheet. 04.11 tidak punya baris domain S-05; baris HR = #sscos-hr (C0BHL8AE68G), yang termasuk red line tes 04.5.3. 04.4.2 (B6): konsumen terdaftar hanya 离职 dan Grade; pemanggil wajib 「收到 `ok:false` 必须告警 nos-ops 或走自身升级腿」 dan pendaftaran konsumen wajib sinkron dengan 04.9 §1.4. 04.4.3 dan 04.4.4 tidak dipakai S-05 sekarang. 01 berisi tiga 铁律 dan aturan modul. |
+| U-5 | Salinan 04.9.3 terpotong | 04.9.3 dibaca ulang penuh (Sep 26): 17 blok H2 (halaman menulis 「共 14 块」). Entry resign Geri `qa01CkZBQfx8eLsK` **tidak** terdaftar di 04.9 maupun 04.9.3 (per versi Sep 26); menurut 「先登记后启用」 workflow yang belum terdaftar tidak boleh diaktifkan. Ini sisi Geri, tidak dicatat sebagai temuan milik S-05. |
+| U-6 | Tiga Canvas #nos-bo | Ketiganya dibaca penuh. F0C32N7MYR1 = 「04.10§二 权责判定标准·提案 v3」 (lihat K-1). F0C2VSAATHA = 「三流程复盘」 (Kent, 2026-09-17), asal usulan matriks tanggung jawab. F0C2TLMGST1 = 「改动分级·三层文案·提案 v1」; butir tujuan 「04.10 §六」-nya sudah ditarik Kayden (balasan 1790155348.686929: 「改落 04.12」). |
