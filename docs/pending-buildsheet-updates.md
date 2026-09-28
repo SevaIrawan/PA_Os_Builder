@@ -44,6 +44,26 @@ Dasar: dibaca pada 2026-09-28.
 
 > 【2026-09-28 补｜原文保留不删】上段「副锁…均登记「未实现」」为 v5 口径。Notify 契约 v6 起副锁已实现（已处理检查，已上线），防重复改由平台承担，本侧不自建幂等闸；见页首附表对应行 2026-09-28 补。
 
+### P-2 · Catatan transition 11 (Abort Case): konfirmasi Owner 04.3 sudah ada
+
+Dasar: OSD-116 c50445 (Kayden, 2026-09-24): 「04.3 §六 已改好并复检通过（04.3 现 v35…）」, 「Abort Case（id 11）转态权限配给 HR Ops & Data 角色组；N07「确认重复」同口径…建造单登记依据 04.3 v35 §六」. 04.3 dibaca ulang 2026-09-28: baris 「主单转入「已取消」（执行中止）」 memuat 「该 Spec 增补区 B 登记的处置角色组（如 S-05 的 HR Ops & Data）」.
+
+**§二 transition 表, baris id 11: ditambahkan di akhir sel 「允许执行者」**
+
+> 【2026-09-28 补】上文「配置前须经 04.3 Owner（Kayden Lee）确认」已由 Kayden OSD-116 c50445 给出：04.3 v35 §六 执行中止行已加「该 Spec 增补区 B 登记的处置角色组（如 S-05 的 HR Ops & Data）」；执行顺序「先把主单转「已取消」，再取消未关子单」。HR Ops & Data 对应的 Jira 组无任何来源点名；现存唯一 HR 组为 SSCOS｜HR（成员 Felix_HR、Yuki Liew_HR，SSCSD 角色 Service Desk Team），已于 OSD-116 c50632 请 Kent 确认。确认前 condition 不配。
+
+- Sebelum ditulis: cek apakah Kent sudah menjawab c50632. Kalau sudah, isi paragraf ini disesuaikan dengan jawabannya.
+
+### P-3 · Koreksi catatan build sheet soal siapa yang membangun field tiket utama N07
+
+Dasar: lihat `docs/open-issues.md` K-11.
+
+**§一 配置对应表, baris N07: ditambahkan di akhir sel status**
+
+> 【2026-09-28 订正｜原文保留不删】上文 2026-09-26 补「回写主单字段仍待 Alden／V1 建字段与 Screen」与 #nos-bo 1790228926.781229 第 5 点（Alden，2026-09-24）不一致：「纪律处置那 5 个主单字段加屏幕…现在就请 Kent 按五类判、走第五节流程建；挂 Disciplinary Case 那张共用屏时，设成选填直接做，要设必填再找我」。Alden OSD-116 c50558（2026-09-26）另写「这件我另外回复」。两说并存，建造侧不调和，见 open-issues K-11。
+
+- Sebelum ditulis: cek apakah Alden atau Kent sudah menjawab, dan apakah field atau Screen sudah dibangun.
+
 ---
 
 ## Sudah ditulis

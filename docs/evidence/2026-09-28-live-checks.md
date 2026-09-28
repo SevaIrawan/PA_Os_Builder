@@ -10,6 +10,8 @@ Semua penulisan (n8n N20, build sheet, comment NSE-1137 dan OSD-116) dilakukan a
 - 「Kirim lewat akun pribadi, cc Kent」
 - 「Kirim lewat akun pribadi, cc Alden, Felix, Kayden」
 
+Pembacaan E30 dilakukan atas perintah 「Baca semua document, jangan ada satu pun yang tidak terbaca」 dan hanya membaca.
+
 Settings errorWorkflow/callerPolicy dipasang sendiri oleh Bambang lewat UI.
 
 | # | Tool (connector) | Panggilan | Hasil (dikutip dari respons) |
@@ -28,6 +30,7 @@ Settings errorWorkflow/callerPolicy dipasang sendiri oleh Bambang lewat UI.
 | E27 | Screenshot Bambang, admin.atlassian.com (akun BO), 09:35–09:36 WIB | Groups, cari 「Hr」; buka grup `SSCOS｜HR` | Hanya satu grup: `SSCOS｜HR`, Members 2: **Felix_HR (Felix)** dan **Yuki Liew_HR**, keduanya Active. Description: None. |
 | E28 | Screenshot Bambang, Jira SSCSD (SSC Service Desk) Space settings (akun BO), 09:47–09:50 WIB | Permissions dan 「People and access」 | Izin diberikan lewat peran. Browse Projects diberikan ke Service Space Customer - Portal Access, Administrators, Service Desk Team, dan atlassian-addons-project-access. People and access: Alden = Administrators; Bot_SSC = Service Desk Team; `SSCOS｜BO` = Administrators; **`SSCOS｜HR` = Service Desk Team**. Baris 「Transition Issues」 tidak terlihat di screenshot. Bahwa Service Desk Team punya izin transisi adalah inferensi dari E14: Bot_SSC, yang hanya berperan Service Desk Team, berhasil menjalankan transisi 3 dan 4 di SSCSD-435. Belum dikonfirmasi dari baris izin itu sendiri. |
 | E29 | Atlassian_MCP `addOrEditJiraIssueComment` (akun pribadi Bambang, atas perintah 「Kirim lewat akun pribadi, cc Alden, Felix, Kayden」) + `executeRead` `listJiraIssueComments` | OSD-116, format html, mention Kent `62cfa6e1bb346bdf82fac8f6`, cc Alden `5b666de62c9bd83c037070ae`, Felix_HR `712020:e5c38f7f-…`, Kayden Lee `60c85cad2bd2140069d5a716` | commentId **50632**. Isi: konfirmasi pemakaian `SSCOS｜HR` untuk hak Abort Case (11) dan 确认重复 N07 (c50445), dengan dasar E26–E28, plus catatan selisih 3 orang (HR｜盘点) dan 2 anggota. Baca ulang: author `Bambang` (`712020:0ec04d28-…`), created 2026-09-28T09:59:00.674+0700, `jsdPublic: true`. |
+| E30 | Atlassian_Rovo `getConfluencePage` / `searchConfluenceUsingCql`, Slack `slack_read_channel` / `slack_read_thread` / `slack_read_canvas`, Atlassian_MCP `getConfluenceContent` (semua hanya baca; lewat agen pembaca) | Permintaan Bambang 「Baca semua document, jangan ada satu pun yang tidak terbaca」 dan nos-check | Dibaca penuh: 04.9, 04.9.1, 04.9.3, 04.9.4, 04.9.5 (Sep 26); 04.12, 04.11, 04.4.2, 04.4.3, 04.4.4, 01 (tanpa 404/403); 04.4 (2026-09-27), 04.10 (Sep 26), 04.3 (Sep 24); 3 Canvas #nos-bo; seluruh #nos-bo: 31 pesan utama dan 12 thread dengan semua balasan, sampai Alden 1790567167.378069 (2026-09-28 10:46 +07). Anchor 04 sama persis dengan `docs/anchor-04.md`; salinan skill `build` sama dengan 07.06 §八 (19 butir). Build sheet masih v52. Space NW tidak dibuka (dilarang). Beberapa agen tidak menyimpan salinan halaman ke file dan tidak menghitung karakter persis; isinya tetap dibaca sampai akhir. |
 
 Batas bukti:
 - Credential Bot_SSC di node N20 tidak tampil lewat API.

@@ -22,7 +22,7 @@ Aturan pemakaian:
 | 1676738564 | 04.1｜Project 类型与开设判定 | Sep 19, 2026 |
 | 1676607500 | 04.2｜单据体系 | Sep 19, 2026 |
 | 1676771343 | 04.3｜状态词汇表与 Workflow 配置规范 (dibaca penuh 2026-09-28: baris 执行中止 memuat 处置角色组) | Sep 24, 2026 |
-| 1677066244 | 04.4｜自动化配置模式库 (dibaca ulang penuh 2026-09-28; tidak ada catatan perubahan di halaman, isi perubahan 27/9 tidak diketahui) | 2026-09-27 |
+| 1677066244 | 04.4｜自动化配置模式库 (dibaca ulang penuh 2026-09-28; menurut Alden #nos-bo 1790567167.378069 perubahannya v34 di §四, cara mesin membaca Owner) | 2026-09-27 |
 | 1729888419 | 04.4.1｜模式九：Slack 审批卡回调（共享地基） (dibaca ulang 2026-09-26 dan 2026-09-28) | Sep 26, 2026 |
 | 1678573617 | 04.5｜流程 Spec 与建造单：编写与校验规范 | Sep 19, 2026 |
 | 1685979182 | 04.5.1｜流程 Spec 模板（示例：员工离职） | Sep 05, 2026 |
@@ -124,7 +124,7 @@ Halaman BLM Lite (2046460048, 2046460069, 2047705135, 1760198660) juga terbaca. 
 ## Slack
 | Channel | Rentang | Catatan |
 |---|---|---|
-| #nos-bo (C0BRSTNNY4A) | 2026-08-21 17:08 sampai **2026-09-26 14:34 +07** | 31 pesan utama (terakhir: Kent 14:34:37, 「共用零件单独成批、先建先发」), 11 thread. Ekspor pertama berhenti di 12:52. Pada 2026-09-26 sore, channel dibaca ulang, dan empat thread dibaca ulang langsung: 1790160390.243079 (上级缺位), 1790242043.098949 (标准缺口 S-19, balasan terakhir 14:21:50), 1789817804.263189, 1789798284.018609. Tujuh thread lain balasan terakhirnya sebelum 12:52, jadi diambil dari ekspor pertama. Lampiran Canvas tidak dibaca. |
+| #nos-bo (C0BRSTNNY4A) | 2026-08-21 sampai **2026-09-28 10:46 +07** | **Dibaca penuh ulang 2026-09-28**: 31 pesan utama (terakhir Kent 1790408077.181699, 2026-09-26) dan 12 thread beserta semua balasannya (pagination 「no more messages」 di tiap thread). Balasan terbaru: Alden 1790567167.378069 (2026-09-28, thread 1789817804.263189: NSE-1282, 04.4 §四 v34, enam usulan teks untuk 04.2/04.3/04.5/07.03). Tiga Canvas yang dilampirkan dibaca penuh (U-6). Tidak ada Canvas lain. |
 
 ## Tidak dapat diakses (= dilarang)
 | pageId | Judul | Hasil |
