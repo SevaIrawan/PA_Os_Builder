@@ -113,7 +113,7 @@ Halaman BLM Lite (2046460048, 2046460069, 2047705135, 1760198660) juga terbaca. 
 | 2091876367, 1764524046, 1751547935, 2076508181, 2102067228, 1674707036 | 04.12, 04.11, 04.4.2, 04.4.3, 04.4.4, 01 | Sep 14 – Sep 23 (01: Jul 31) | Dibaca penuh; U-2 selesai |
 | Canvas F0C32N7MYR1, F0C2VSAATHA, F0C2TLMGST1 | #nos-bo | — | Dibaca penuh; U-6 selesai |
 | 2117435433 | 04.9.7｜详情：纪律与绩效改进处置 | 2026-09-28 (dibuat Alden) | Dibaca penuh 2026-09-28: hanya kalimat pengantar, belum ada blok H2 |
-| 2096463922 | Build sheet S-05 | v52 (2026-09-28T01:14Z) | Diaudit baris per baris 2026-09-28; hasilnya di `docs/pending-buildsheet-updates.md` P-6 |
+| 2096463922 | Build sheet S-05 | v53 (2026-09-28T07:07Z) | Diaudit baris per baris 2026-09-28 (v52); hasil audit ditulis sebagai v53 dan sudah dibaca ulang (evidence E32) |
 
 ## Jira
 | Objek | Connector / akun | Catatan |

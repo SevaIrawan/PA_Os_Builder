@@ -9,13 +9,28 @@ Aturan:
 - Bahasa: Mandarin, mengikuti isi halaman.
 - Kalau item sudah ditulis ke build sheet, pindahkan ke bagian "Sudah ditulis" dan cantumkan versi halamannya.
 
-Versi build sheet terakhir yang dibaca: **v52** (2026-09-28T01:14:41Z).
+Versi build sheet terakhir yang dibaca: **v53** (2026-09-28T07:07:32Z).
 
 ---
 
 ## Antre
 
-### P-1 · `nos-s05-review` tidak dibangun (keputusan Bambang, 2026-09-28)
+Sisa yang **belum** ditulis setelah v53:
+- **P-4③** (kata 「打回补件」): tunggu jawaban Alden atas Felix c50639.
+- **P-6.7**: D-13 (marker patroli, tunggu Geri c50631 dan K-10). Isi keputusan C-15 (Felix) dan isi §七 (C-26, keputusan Kayden 9/29) juga belum; yang sudah ditulis hanya catatan keadaannya.
+- **P-6.8**: semua item di sana masih menunggu keputusan Bambang (B-2, B-5, B-14, D-4, D-9, D-16, C-27, catatan versi dasar Spec v67).
+- Setelah Kent menjawab c50632: tambahkan 【补】 baru untuk transisi 9/11 dan baris Abort Case, lalu hitung ulang statistik 附表.
+
+---
+
+## Sudah ditulis
+
+### v53 (2026-09-28T07:07:32Z, akun pribadi Bambang, perintah 「Tulis halaman」)
+P-1 (①②③④), P-2, P-3, P-4 (①②; ② digabung ke catatan baris 模式九 A-04), P-5 (①②), dan P-6.1 sampai P-6.6. Item P-6.7 yang ditulis hanya catatan keadaan: A-14, C-10 dan D-2 mencatat 「Kent 未答」, C-01 memakai 04.7 v51 yang dibaca agen audit hari ini. Rincian: 92 operasi (87 tambahan, 5 ganti status), bukti `docs/evidence/2026-09-28-live-checks.md` E31–E32.
+
+Teks lengkap yang sudah ditulis (arsip, jangan ditulis ulang):
+
+#### P-1 · `nos-s05-review` tidak dibangun (keputusan Bambang, 2026-09-28)
 
 Dasar: dibaca pada 2026-09-28.
 - Notify 1603633175: baris v6 dan §9.4, §9.9.
@@ -46,7 +61,7 @@ Dasar: dibaca pada 2026-09-28.
 
 > 【2026-09-28 补｜原文保留不删】上段「副锁…均登记「未实现」」为 v5 口径。Notify 契约 v6 起副锁已实现（已处理检查，已上线），防重复改由平台承担，本侧不自建幂等闸；见页首附表对应行 2026-09-28 补。
 
-### P-2 · Catatan transition 11 (Abort Case): konfirmasi Owner 04.3 sudah ada
+#### P-2 · Catatan transition 11 (Abort Case): konfirmasi Owner 04.3 sudah ada
 
 Dasar: OSD-116 c50445 (Kayden, 2026-09-24): 「04.3 §六 已改好并复检通过（04.3 现 v35…）」, 「Abort Case（id 11）转态权限配给 HR Ops & Data 角色组；N07「确认重复」同口径…建造单登记依据 04.3 v35 §六」. 04.3 dibaca ulang 2026-09-28: baris 「主单转入「已取消」（执行中止）」 memuat 「该 Spec 增补区 B 登记的处置角色组（如 S-05 的 HR Ops & Data）」.
 
@@ -56,7 +71,7 @@ Dasar: OSD-116 c50445 (Kayden, 2026-09-24): 「04.3 §六 已改好并复检通�
 
 - Sebelum ditulis: cek apakah Kent sudah menjawab c50632. Kalau sudah, isi paragraf ini disesuaikan dengan jawabannya.
 
-### P-3 · Koreksi catatan build sheet soal siapa yang membangun field tiket utama N07
+#### P-3 · Koreksi catatan build sheet soal siapa yang membangun field tiket utama N07
 
 Dasar: lihat `docs/open-issues.md` K-11.
 
@@ -66,7 +81,7 @@ Dasar: lihat `docs/open-issues.md` K-11.
 
 - Sebelum ditulis: cek apakah Alden atau Kent sudah menjawab, dan apakah field atau Screen sudah dibangun.
 
-### P-4 · Keputusan Felix OSD-116 c50639: visibilitas internal (N07) dan syarat pencatat keputusan (N10/N14/N17)
+#### P-4 · Keputusan Felix OSD-116 c50639: visibilitas internal (N07) dan syarat pencatat keputusan (N10/N14/N17)
 
 Dasar: OSD-116 c50639 (Felix_HR, 2026-09-28 10:59 +07, kepada Alden), dibaca penuh.
 
@@ -82,7 +97,7 @@ Dasar: OSD-116 c50639 (Felix_HR, 2026-09-28 10:59 +07, kepada Alden), dibaca pen
 
 - Sebelum ditulis: baca ulang OSD-116 setelah c50644 untuk jawaban Alden atas syarat ② dan soal kata 打回补件.
 
-### P-5 · Keputusan Alden NSE-1137 c50645: status 14315 dan penanda "menunggu dilengkapi"
+#### P-5 · Keputusan Alden NSE-1137 c50645: status 14315 dan penanda "menunggu dilengkapi"
 
 Dasar: NSE-1137 c50645 (Alden, 2026-09-28 12:36 +07, kepada Geri, cc Kent dan Bambang), dibaca penuh.
 
@@ -96,7 +111,7 @@ Dasar: NSE-1137 c50645 (Alden, 2026-09-28 12:36 +07, kepada Geri, cc Kent dan Ba
 
 - Sebelum ditulis: baca ulang NSE-1137 setelah c50645 (jawaban Geri/Kent) dan cek apakah entry sudah diperbarui atau di-publish.
 
-### P-6 · Hasil audit baris per baris build sheet v52 (2026-09-28)
+#### P-6 · Hasil audit baris per baris build sheet v52 (2026-09-28)
 
 Asal: audit atas permintaan Bambang 「audit dengan teliti row per row… masuk list biar sekali update」. Disetujui masuk antrean: 「Ya, commit dan push」 (2026-09-28).
 Nomor audit: A = baris 1–128, B = 129–276, C = 277–467, D = 468–565 (nomor baris mengacu salinan markdown v52). Item yang dobel sudah digabung; nomor lain dicantumkan dalam kurung.
@@ -107,7 +122,7 @@ Aturan tulis tambahan untuk P-6:
 - Nomor versi halaman lain dan angka statistik **diambil ulang saat menulis**, karena beberapa halaman berubah pada 2026-09-28.
 - Kalau teks P-6 menyentuh baris yang sama dengan P-1…P-5, gabungkan dalam satu 【补】 supaya sumber yang sama tidak dikutip dua kali.
 
-#### P-6.1 · Fakta yang salah (订正)
+##### P-6.1 · Fakta yang salah (订正)
 
 **A-05 · 附表 「离职 Spec 系统触发接收入口」, kolom 依赖谁**
 > 【2026-09-28 订正｜原文保留不删】本行「依赖谁」所记「Kent（入口）」已由 Kent OSD-116 c50381 订正：「the entry is on the resignation side and is built by Geri (NSE-1137), defined in the resignation Spec. Bambang builds only the S-05 side: N20 calls the entry, N21 tracks completion. No interim manual path to design.」入口即 `qa01CkZBQfx8eLsK`，其发布另见本表「离职侧「系统触发入口」`qa01CkZBQfx8eLsK` 发布」行（阻塞中）；两行指向同一对象，本行状态不改，跟踪以该行为准。
@@ -127,7 +142,7 @@ Aturan tulis tambahan untuk P-6:
 > 【2026-09-28 补｜原文保留不删】上文 2026-09-22 补所记「待 04.3 Owner 答复页首附表 baris 19 的互斥条口径」：「baris 19」系误植，指本表「N28 案件失效中止的执行人」行。该口径已由 Kayden OSD-116 c50445 给出（04.3 v35 §六，见该行 2026-09-28 补）。`Abort Case`(11) 实跑与 `Create`(1)／`Complete`(10)／`Abort Case`(11) 三条转换属性 API 回读仍未做；原暂缓系使用者指示，是否恢复由建造人定。本行状态不变。
 - Untuk L455: tambahkan 【2026-09-28 补】「上文「建造单 baris 32」系误植，指页首附表「身份件」行。」 Periksa isi baris itu saat menulis.
 
-#### P-6.2 · Perubahan status 附表 (disetujui Bambang 2026-09-28)
+##### P-6.2 · Perubahan status 附表 (disetujui Bambang 2026-09-28)
 
 | Baris 附表 | Status baru | Dasar | Syarat sebelum ditulis |
 |---|---|---|---|
@@ -156,7 +171,7 @@ Setelah semua status ditulis, **hitung ulang** statistik 附表 (A-03).
 > 【2026-09-28 补｜原文保留不删】上文「现阶段无 n8n 件在建，未成阻塞」已不成立：N04／N05／N20／N07 四件已建（均 inactive）。平台侧已于 2026-09-28 建 04.9.7｜详情：纪律与绩效改进处置（pageId 2117435433，Alden；2026-09-28 实读仅导语「本页承载纪律与绩效改进处置族（S-05）全部详情块；新增本族件按主页 §一铁律登记：主页索引表加行＋本页加 H2 块」，无 H2 详情块），即 OSD-116 c50595 (b) 所问册落点。04.9 主页索引表本流程各件行与 04.9.7 各件详情块尚未加。依 04.9 §一「先登记后启用」，四件在登记前不得 active。
 - Baris 附表 baru: 事项 「本流程 n8n 件 04.9 登记（索引行＋04.9.7 详情块）」; 依赖谁 dan cara menulis ikut 04.9 §一 (baca saat menulis); status 待办.
 
-#### P-6.3 · Bagian atas halaman dan 附表: data basi / sudah terjawab
+##### P-6.3 · Bagian atas halaman dan 附表: data basi / sudah terjawab
 
 **A-01 · Header L1/L3 (versi Spec)**
 > 【2026-09-28 补｜原文保留不删】Spec 页现行为页面 v67（2026-09-24T09:40Z，Felix），即 Spec「自然语言版本迭代」表 v28（现行版）；上两段所记 v61／v62 为当时值，v63～v67 逐版差异本侧未比对。Felix OSD-116 c50486 原文：「S-05 Spec 已完成对应修订，页面现 v67（内部版本 v28）」「Spec 已冻结进开发，本轮修订按建设期注记处理，不重走结构审计（与 c50445 处理原则一致）」。Spec 页冻结状态行未变：「已冻结｜…｜冻结时间：2026-09-15」。此系流程 Owner 自述，建造侧照录、不代为背书。
@@ -203,7 +218,7 @@ Setelah semua status ditulis, **hitung ulang** statistik 附表 (A-03).
 **A-23 · 对照表 Collab, catatan Inz9 dan Marketing (di bawah tabel)**
 > 【2026-09-28 补｜原文保留不删】上表 Inz9、Marketing 两行备注「频道是否续用待确认」已由 Felix OSD-116 c50261 答复：「keeping both collab-hr-inz9 and collab-hr-marketing active, not merging into collab-hr-crm」；同条：「Seven department channels (CRM/Finance/FOZ/Inz9/Marketing/WealthPlus/Xloop): @sscos-bot has been added.」（页首附表对应行 2026-09-21 补已记）。04.11 登记仍待 Alden。
 
-#### P-6.4 · 暗号表, 偏差登记, 建设备注 (baris 129–276)
+##### P-6.4 · 暗号表, 偏差登记, 建设备注 (baris 129–276)
 
 **B-3 · `nos-s05-subject` (L145)**
 > 【2026-09-28 补｜原文保留不删】本行读侧已实建于 N05 `LJwiAZFfnuq6tmju`（inactive）：节点 "Extract Subject AccountId" 与 "Mark Candidate Match Result" 按本行语法取 accountId；本单查无该 marker 即抛错中止（不静默当作「无重复」）。写侧（N01／N03 建单件）未建，故 N05 在其建成并写入本 marker 之前无法真跑。
@@ -230,7 +245,7 @@ Setelah semua status ditulis, **hitung ulang** statistik 附表 (A-03).
 **B-16 · c50279 dan 04.10 v20 (L273)**
 > 【2026-09-28 补｜原文保留不删】上文两处「仍待 Alden 模式九扩展（c50279）」：Alden 已于 OSD-116 c50558 答复，c50576「第一批 A 已提前上线」；页首附表该行已转「已解封（2026-09-26·建设面）」，N07 发卡件已建并实测（SSCSD-435）。第一批 B（10/1）与主单回写字段／Screen 仍未具备，见该行。另：04.10 现行 v21，上文「v20」为当时值。
 
-#### P-6.5 · §一 sampai §七 (baris 277–467)
+##### P-6.5 · §一 sampai §七 (baris 277–467)
 
 **C-03 · §一 「统计」 dan status N04/N05**
 > 【2026-09-28 订正｜原文保留不删】上段「统计」为 2026-09-18 口径。其后：N04（`UBLsvYaSlCI3pLWs`）、N05（`LJwiAZFfnuq6tmju`）、N20（`ToIGnEJmksSPhC85`）已建骨架（见本区 2026-09-24 补），N07 审批卡发送件（`77PepnEWGqTOCI61`）已建并以 SSCSD-435 实跑（见 N07 行 2026-09-26 补）；四件均 inactive，均未在 04.9 登记为件（见第五区）。「阻塞 6」所含「N07 审批卡部分」之模式九阻塞已于 2026-09-26 解封（建设面；页首附表模式九行）。N04／N05 两行「状态」格原文未改，以本段为准。各类计数不在此重算。
@@ -293,7 +308,7 @@ Setelah semua status ditulis, **hitung ulang** statistik 附表 (A-03).
 > 【2026-09-28 补】本区仍待填。相关标准缺口：Kent #nos-bo 1790242043.098949（口径／参数页放哪、机器怎么读），Alden 1790407310.843309 提「机器只读数据表，不直接解析 Confluence 页面」、转写走 GOV 维护单、数据表登 04.9；Kayden 1790401062.118569 载「还没有做任何决定」、9/29 前给结论。本流程 Spec 含参考值（纪律记录有效期 Verbal 3 个月／Written 6 个月；PIP 周期 15／30／60／90 天），现 N07 卡 modal 直接写有 PIP 周期选项。哪些属政策参数、落何处，待该标准裁定后再填，建造侧不先行。
 - Sebelum ditulis: cek apakah Kayden sudah memutuskan.
 
-#### P-6.6 · §八 dan §九 (baris 468–565)
+##### P-6.6 · §八 dan §九 (baris 468–565)
 
 **D-1 · §八 尚未测试 baris 1** (D-14 untuk §九)
 > 【2026-09-28 补｜原文保留不删】本行 3／8／9 三条已于 2026-09-22 实跑（SSCSD-423／421／422，见上表 2026-09-22 行）；转换 3 另于 2026-09-26 经平台回调以 Bot_SSC 执行一次（SSCSD-435，执行 17298）。2026-09-28 以 Backend Operations 回读五张 TEST 单末态与上表一致。本行仅余 `Abort Case`(11)：转态权限 condition 待 Kent 答复 OSD-116 c50632（组 `SSCOS｜HR`）后配置，配置前不实跑。
@@ -334,7 +349,7 @@ Setelah semua status ditulis, **hitung ulang** statistik 附表 (A-03).
 **D-18 · Resolution 全覆盖 复核** (opsional)
 > 【2026-09-28 补】复核：SSCSD 内 `Disciplinary Case` 现共 5 张（SSCSD-411／421／422／423／435，均为 TEST 单），全部 statusCategory＝Done 且 resolution 非空（Done／Cancelled／Cancelled／Rejected／Rejected）。同一查询读出 5 张即为对照，非「看不见」。
 
-#### P-6.7 · Menunggu orang lain (jangan ditulis sebelum syaratnya terpenuhi)
+##### P-6.7 · Menunggu orang lain (jangan ditulis sebelum syaratnya terpenuhi)
 
 | Item | Isi | Menunggu |
 |---|---|---|
@@ -344,7 +359,7 @@ Setelah semua status ditulis, **hitung ulang** statistik 附表 (A-03).
 | C-26 (isi) | Isi §七 | Keputusan Kayden (9/29) |
 | D-13 | Marker patroli 卡死／漏账 | Geri c50631 dan K-10 |
 
-#### P-6.8 · Belum diputuskan Bambang (tidak masuk antrean tulis)
+##### P-6.8 · Belum diputuskan Bambang (tidak masuk antrean tulis)
 - **B-2:** teks 「写入侧已实建」 untuk `nos-s05-dup`, dan perubahan status 「拟定·未建」→「已建·inactive」.
 - **B-5:** `nos-s05-case` 「事件入口取 S-19 侧主单 key」 vs baris 附表 「S-19 侧建在绩效卡」. Inferensi, belum dikonfirmasi. Usul: diperiksa saat prebuild-scan N01.
 - **B-14:** tiga syarat E16 v40 dan penilaian probe N05. Kutipan harus dicocokkan dengan v40 dulu.
@@ -355,7 +370,3 @@ Setelah semua status ditulis, **hitung ulang** statistik 附表 (A-03).
 - **Catatan A-01:** apakah Spec v67 memicu kriteria 04.5 §6.1 「基线版本 ≠ 页面当前版本」? Inferensi, belum dikonfirmasi. Belum dijadikan item K.
 
 
----
-
-## Sudah ditulis
-(belum ada)
