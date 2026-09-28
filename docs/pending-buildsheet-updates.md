@@ -16,10 +16,35 @@ Versi build sheet terakhir yang dibaca: **v53** (2026-09-28T07:07:32Z).
 ## Antre
 
 Sisa yang **belum** ditulis setelah v53:
-- **P-4③** (kata 「打回补件」): tunggu jawaban Alden atas Felix c50639.
+- **P-4③** (kata 「打回补件」): Alden sudah menjawab di c50647, teksnya ada di P-7④.
 - **P-6.7**: D-13 (marker patroli, tunggu Geri c50631 dan K-10). Isi keputusan C-15 (Felix) dan isi §七 (C-26, keputusan Kayden 9/29) juga belum; yang sudah ditulis hanya catatan keadaannya.
 - **P-6.8**: semua item di sana masih menunggu keputusan Bambang (B-2, B-5, B-14, D-4, D-9, D-16, C-27, catatan versi dasar Spec v67).
 - Setelah Kent menjawab c50632: tambahkan 【补】 baru untuk transisi 9/11 dan baris Abort Case, lalu hitung ulang statistik 附表.
+
+
+### P-7 · Jawaban Alden OSD-116 c50647 (2026-09-28 15:11 +07)
+
+Dasar: OSD-116 c50647, dibaca penuh 2026-09-28. Sudah dicek: OSD-116 s.d. c50647, NSE-1137 s.d. c50645, build sheet v53.
+
+**① 页首附表, baris 「主单专属 Screen 未建」: ditambahkan di akhir sel 「依赖谁」 (atau 「解除判据」, dipilih saat menulis)**
+
+> 【2026-09-28 补】上文三说已由 Alden OSD-116 c50647 (a) 定：「since 9/24, SSCSD main-ticket fields go through the same 04.10 process — Kent approves and builds them; only the risk categories (making a field required on the shared screen, changing a shared object others already rely on, and the like) come to me. So please file the field list to @Kent as a 04.10 three-cell request.」建造侧下一步：按 04.10 格式向 Kent 提交字段清单（未提交）。同条：「Right now Jira has no Return Count, HR Decision Basis, Cancellation Reason, Final Outcome or Warning Level, and no fields yet for the initial PIP parameters.」
+
+**② §一 N07 (atau §五 blok N07): ditambahkan**
+
+> 【2026-09-28 补】Alden OSD-116 c50647 (a) 平台侧四点：①「No new approver field: use the existing Approved By (`customfield_18061`). It is already on the Disciplinary Case edit screen, so you can set `approverFieldId` now.」②「Any field the card writes back must be on the Disciplinary Case edit screen first, otherwise Jira rejects the whole write. Keep `noWrite` until then.」③写回形状：dropdown → `option`、multi-line → `adf`、number → `number`、person → `user`。④「Return count needs +1: the card can only write constants or values typed in the modal, not increments, so please have S-05 add one itself after the return transition.」现 N07 件未设 `approverFieldId`；打回次数 +1 属本流程新增建设项，承载件未定。
+
+- Sebelum ditulis: kalau `approverFieldId` sudah dipasang di N07, sesuaikan kalimat terakhir. Posisi `customfield_18061` di edit screen belum dicek sendiri, **inferensi, belum dikonfirmasi** (Alden yang menyatakan).
+
+**③ 页首附表, baris 「本流程 n8n 件 04.9 登记」: ditambahkan di akhir sel 「解除判据」**
+
+> 【2026-09-28 补】Alden OSD-116 c50647 (b)：「a 7th volume is open for S-05 — 04.9.7｜详情：纪律与绩效改进处置. Please register N04, N05, N07 and N20 per 04.9 §一: a row in the main-page index and a block in 04.9.7.」登记由本侧执行（建造单外页面，由建造人本人写入）。
+
+- Catatan untuk Bambang: menulis 04.9 / 04.9.7 bukan wewenang Claude (CLAUDE.md §3). Claude hanya bisa menyiapkan draf isinya.
+
+**④ §八 N07 实跑 「观察（不改）」: ditambahkan (menutup P-4③)**
+
+> 【2026-09-28 补】上文「不通过 Rejected｜打回补件」措辞：Felix OSD-116 c50639 请改；Alden c50647：「the Decision line of the approval record will show only the button's own label when one is set — e.g. 「打回补件 · Return for info」 instead of 「不通过 Rejected｜打回补件」. This ships with batch 1B on 10/1.」本侧不改件，10/1 后回读实际记录格式。Felix c50639 两项条件（记录带实际判断人；记录能否被编辑或删除），Alden c50647：「I will answer separately once I have checked the permissions.」
 
 ---
 
