@@ -76,7 +76,18 @@
   - Group HR yang ada di Jira: `SSCOS｜HR`. Anggota yang terbaca: Felix_HR dan Yuki Liew_HR, keduanya punya application role Jira Service Desk (E10). Di source, group ini hanya dipakai untuk trigger Automation N12 resign dan security level NTP 10344.
   - Pengecekan ini dilakukan Atlassian_MCP `getJiraUser` hanya untuk Felix_HR dan Yuki Liew_HR. Apakah ada group lain untuk HR Ops & Data (akun lain, atau lewat User management) belum dicek. Menurut 07.06.1 E16, hasil yang tidak menemukan sesuatu bukan bukti bahwa hal itu tidak ada.
 - Menurut 04.3 (dibaca Claude), urutan 「主单先、子单后」 hanya ada sebagai kalimat Kayden. Teks 04.3 menulis 「在同一动作范围内」.
-- **Status:** 待决策. Yang berhak menjawab adalah Kayden (pemberi perintah, Owner 04.3). Bambang meminta item ini dilewati dulu (2026-09-26).
+- **Pembaruan 2026-09-28** (bukti: `docs/evidence/2026-09-28-live-checks.md` E26–E29):
+  - **04.3 dibaca ulang langsung** (lastModified Sep 24). Baris 「主单转入「已取消」（执行中止）」 sudah memuat 「该 Spec 增补区 B 登记的处置角色组（如 S-05 的 HR Ops & Data）」. Syarat Kayden c50442 (「待 04.3 改完」) terpenuhi sesuai c50445 (04.3 v35).
+  - **Dua agen pembaca** memeriksa ulang 13 halaman Confluence, seluruh OSD-116 (191 comment), seluruh NSE-1137 (273 comment), dan #nos-bo. **Tidak ada source yang menyebut grup, peran, atau daftar orang untuk HR Ops & Data.**
+    - Satu-satunya daftar yang pernah direncanakan adalah 「interim fixed list」 di NSE-1137 c50382 ②. Daftar itu untuk mekanisme lain (penerima N13), dan sudah dicabut oleh Kayden (Slack #nos-bo 1790231960.408669, butir 3) dan Kent (NSE-1137 c50473).
+  - **Grup Jira:** satu-satunya grup HR adalah `SSCOS｜HR`, beranggota 2: Felix_HR dan Yuki Liew_HR (E27). Grup ini sudah masuk SSCSD dengan peran **Service Desk Team** (E28). Selisih dengan source: HR｜盘点与切分 menulis 「HR Ops & Data 3人」.
+  - **Pertanyaan diarahkan ke Kent, bukan Kayden.** Alasannya:
+    - pemetaan HR←`SSCOS｜HR` adalah keputusan Kent (c49545);
+    - Kent yang mengusulkan hak Abort untuk grup peran HR (c50228, c50255/c50257);
+    - persetujuan harian sisi SSCSD dipegang Kent sebagai Schema Owner (Alden, #nos-bo 1790228926.781229). Ini masih draf dan belum masuk 04.10 (lihat K-1).
+  - **OSD-116 c50632** (Bambang, 2026-09-28 09:59 WIB, akun pribadi, ditujukan ke Kent, cc Alden, Felix, Kayden): minta konfirmasi pemakaian `SSCOS｜HR` untuk condition transisi 11 dan 9. Isi condition: service account + `SSCOS｜HR` + Project Owner SSCSD (04.3 §六). Urutan: tiket utama dulu, lalu sub-tiket (c50445). Selisih 3 orang vs 2 anggota ikut disebut. **Belum ada jawaban.**
+  - Catatan lama di build sheet (§二 baris transition 11): 「配置前须经 04.3 Owner（Kayden Lee）确认」. Konfirmasi itu sudah diberikan lewat c50445, tapi build sheet belum mencatatnya. Perlu dimasukkan ke `docs/pending-buildsheet-updates.md`.
+- **Status:** 待决策. Menunggu jawaban Kent atas c50632. Transisi 11 dan 9 belum dipasang condition.
 
 ### K-10 · Kapan marker `nos-s05-term` ditulis (N20)
 - **Build sheet S-05** (2096463922), tabel 暗号接口契约表 baris 「离职交接认领与审计」: 「建离职单**之前**先写 S-05 侧」. Aturan tabel yang sama: 「先认领后动作：任何写入口在执行写动作**之前**先写认领 marker」.
