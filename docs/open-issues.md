@@ -84,7 +84,9 @@
 - **Bambang, NSE-1137 c50575**: marker 「is written only after your entry returns `ok:true` with an `issueKey`」.
 - **Geri, NSE-1137 c50585**: mengusulkan agar entry menulis klaim di case S-05 **sebelum** membuat tiket (「claim before create」), dan akan membangunnya 「unless someone objects」. Sampai 2026-09-28 (NSE-1137 dibaca sampai c50590) belum ada laporan bahwa ini sudah dibangun. Usulan ini dicatat di baris 附表 tersebut pada build sheet v52.
 - Claude tidak memilih salah satu. Yang memutuskan: pemutus baris 附表 itu (「双签」). Siapa pemegang 双签 untuk baris ini tidak ditulis di baris tersebut. Inferensi, belum dikonfirmasi: yang dimaksud mungkin penandatangan teknis (Alden) dan bisnis (Kayden).
-- **Status:** 待决策.
+- **Bambang, NSE-1137 c50631** (2026-09-28 08:47 WIB, akun pribadi, cc Kent): menjawab usulan c50585 dengan 「No objection」. Alasannya: usulan itu sesuai dengan aturan build sheet di baris 「离职交接认领与审计」. Bambang juga meminta Geri, sebelum membangun, mengirim dua hal: (1) marker persis yang akan ditulis di case S-05, untuk didaftarkan di tabel 暗号 build sheet S-05 dan dicek terhadap Check Already Triggered N20; (2) nilai yang dikembalikan entry kalau klaim sudah ada tetapi tiket 离职 belum dibuat, karena N20 hanya menerima `ok:true` + `issueKey` (c50494). Balasan Geri belum ada.
+- Jawaban c50631 **tidak** memutuskan kapan marker `nos-s05-term` milik N20 sendiri ditulis. Hal itu tetap menunggu 「双签」 di baris 附表.
+- **Status:** 待决策 (waktu penulisan marker N20). Balasan Geri atas c50631 (format marker dan nilai kembalian entry) juga masih ditunggu.
 
 ## B. Tidak diketahui atau tidak bisa diakses
 
