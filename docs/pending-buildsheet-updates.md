@@ -22,6 +22,7 @@ Sisa yang **belum** ditulis setelah v53:
 - Setelah Kent menjawab c50632: tambahkan 【补】 baru untuk transisi 9/11 dan baris Abort Case, lalu hitung ulang statistik 附表.
 - **P-9** (pengajuan field tiket utama c50658, koreksi C-15 soal 负责跟进人, label Warning di kartu).
 - **P-10** (perubahan N07 dan tes kartu SSCSD-437～442).
+- **P-11** (settings N04/N05).
 
 
 ### P-7 · Jawaban Alden OSD-116 c50647 (2026-09-28 15:11 +07)
@@ -123,6 +124,20 @@ Sumber: evidence E36–E39; Alden OSD-116 c50647 ①／c50648; Spec v67 tabel A;
 - Sebelum ditulis: ambil versi terbaru build sheet; cek apakah Kent sudah menjawab c50658.
 
 ---
+
+### P-11 · Settings N04 dan N05 (2026-09-28 malam)
+
+Sumber: evidence E40; 04.6 v22 §3.5 (「挂接有效的判据＝目标平台件已发布」).
+
+**① §五 N04 块, setelah 【2026-09-28 补·API 回读】: ditambahkan**
+
+> 【2026-09-28 补】上句「settings 未挂 errorWorkflow、未设 callerPolicy」已不成立：errorWorkflow＝`VUIgv9Ujj1KEoIne`（NOS | Platform | Error Handler (nos-ops)，active），callerPolicy＝workflowsFromSameOwner。两项经 UI 设置，人：Bambang。API 回读：updatedAt 2026-09-28T14:54:46Z，versionId 未变（`0aad8ecb-e97e-4297-9908-b6c15559fdca`），active false，节点 2 个未变。同次保存另带入 `binaryMode: separate`、`timeSavedMode: fixed`，为 UI 默认值。
+
+**② §五 N05 块, setelah 【2026-09-28 补·API 回读】: ditambahkan**
+
+> 【2026-09-28 补】上句「settings 未挂 errorWorkflow、未设 callerPolicy」已不成立：errorWorkflow＝`VUIgv9Ujj1KEoIne`，callerPolicy＝workflowsFromSameOwner。两项经 UI 设置，人：Bambang。API 回读：updatedAt 2026-09-28T14:53:41Z，versionId 未变（`ad14f33e-0434-4788-95cd-542abf56bd5d`），active false，节点 17 个未变。
+
+- Sebelum ditulis: baca ulang N04/N05 lewat API; kalau versionId berubah, pakai nilai terbaru.
 
 ## Sudah ditulis
 
