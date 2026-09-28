@@ -21,6 +21,7 @@ Sisa yang **belum** ditulis setelah v53:
 - **P-6.8**: semua item di sana masih menunggu keputusan Bambang (B-2, B-5, B-14, D-4, D-9, D-16, C-27, catatan versi dasar Spec v67).
 - Setelah Kent menjawab c50632: tambahkan 【补】 baru untuk transisi 9/11 dan baris Abort Case, lalu hitung ulang statistik 附表.
 - **P-9** (pengajuan field tiket utama c50658, koreksi C-15 soal 负责跟进人, label Warning di kartu).
+- **P-10** (perubahan N07 dan tes kartu SSCSD-437～442).
 
 
 ### P-7 · Jawaban Alden OSD-116 c50647 (2026-09-28 15:11 +07)
@@ -88,6 +89,38 @@ Sudah dicek: OSD-116 s.d. c50658, NSE-1137 s.d. c50645, NSE-1126 c48074, Spec v6
 
 - Sebelum ditulis: cek apakah Kent sudah menjawab c50658; kalau sudah, tambahkan id field dan option.
 - Catatan antrean: P-6.7 baris C-15 (「负责跟进人」 ke Felix) sudah dijawab Spec ⓪区 十; yang tersisa untuk Felix hanya 到期日期 dan 纪律记录有效期.
+
+### P-10 · N07: approverFieldId, label Warning, penanda tes, dan tes SSCSD-437～442 (2026-09-28 malam)
+
+Sumber: evidence E36–E39; Alden OSD-116 c50647 ①／c50648; Spec v67 tabel A; 04.5.3 v17 §三／§五; Notify v15 §9.13／§9.14.
+
+**① §五 N07 块: ditambahkan**
+
+> 【2026-09-28 补】N07 件改件两次（均经建造人批准，改后 API 回读）：①`approval.approverFieldId`＝`customfield_18061`（Approved By，Alden c50647 ①／c50648）；Warning 等级下拉值改为 Spec 增补区 A 表写法「Verbal Warning／Written Warning／Final Written Warning」——versionId `c02dba29-a445-4baf-ab09-171dff5753ae`。②04.5.3 §三「注入 blocks 首个 section block（加粗），压在卡片正文之上」：Notify 以 `'*' + title + '*'` 起首，原卡将测试标识放在正文、未加粗；改为测试单（标题 TEST｜ 起头）时 title＝统一测试标识、原卡标题移至正文首行并加粗，生产卡不变——versionId `5c304eb6-de09-4783-ad61-8f98e10a7d30`（2026-09-28T14:09:03Z），active false。上文「卡首行加 🧪」自此版起与实物一致。modal 字段仍全部 noWrite（主单字段待 Kent，OSD-116 c50658）。
+
+**② §八 测试记录: ditambahkan**
+
+> 【2026-09-28 N07 审批卡实跑（二）】（test_workflow，Trigger 与「Read Case」以该单实读值 pin，其余真跑；卡发建造人 DM，白名单甲）
+> ①SSCSD-437「通过·Warning」：发卡 17506，回调 17549；审批记录 comment 50662（jsdPublic false，含「Written Warning（Written Warning）」）；转换 Approve (2)→Pending Sub-tickets；cf18061＝建造人。
+> ②SSCSD-438「通过·PIP」：发卡 17508，回调 17551；comment 50663（jsdPublic false，七项全记）；同上。
+> ③SSCSD-439「确认重复」（matchedCaseKey＝SSCSD-435）：发卡 17510，回调 17552；Cancel as Duplicate (9)→Cancelled／Cancelled；comment 50664（jsdPublic false）；cf18061＝建造人（终态后写入成功）。
+> ④改测试标识后：SSCSD-441 第 3 轮卡（无打回补件按钮，17554）点「通过·Show Cause」（回调 17558，comment 50665）；SSCSD-442 点「通过·严重违纪」（17556／17559，comment 50666）；两单 cf18061＝建造人。建造人截图（21:11）核对：首行测试标识加粗、次行卡标题加粗、第 3 轮卡无打回补件——作 04.5.3 §五判据 1 真信核对记录。
+> ⑤437／438／441／442 于 Pending Sub-tickets 读可用转换：Complete (10)、Abort Case (11) 均 hasScreen false、isConditional false；随后以 Backend Operations 执行 Complete (10)→Completed／Done。
+> 边界：「Read Case」仍为 pin（测试工具强制），Bot_SSC 实读未测；modal 回写未测（noWrite）；打回次数 +1 未建。
+
+**③ §八 测试单登记: ditambahkan 5 baris**
+
+> SSCSD-437｜N07 通过·Warning＋approverFieldId｜末态 Completed / Done｜留存不删（04.5.3 §四）。建单时显式 assignee＝Backend Operations。
+> SSCSD-438｜N07 通过·PIP｜末态 Completed / Done｜同前。
+> SSCSD-439｜N07 确认重复｜末态 Cancelled / Cancelled｜同前。
+> SSCSD-441｜N07 第 3 轮卡＋通过·Show Cause＋测试标识加粗｜末态 Completed / Done｜同前。
+> SSCSD-442｜N07 通过·严重违纪｜末态 Completed / Done｜同前。
+
+**④ 第二区 转换表 行 10 与行 11: ditambahkan**
+
+> 【2026-09-28 补】API 回读（SSCSD-437 于 Pending Sub-tickets）：hasScreen false、isConditional false。行 10 另经 SSCSD-437／438／441／442 以 Backend Operations 实跑，Resolution 自动写 Done；执行者非「仅服务账号」所拟之 automation，转态权限仍未配置。
+
+- Sebelum ditulis: ambil versi terbaru build sheet; cek apakah Kent sudah menjawab c50658.
 
 ---
 
