@@ -150,7 +150,7 @@ Sumber: evidence E44; 04.4.4 §五; open-issues K-17.
 
 **② §八 测试记录: ditambahkan**
 
-> 【2026-09-28 抛错文案去半角冒号·干跑】（test_workflow，Jira／HTTP／Notify 节点 pin）17562 N20（judgmentType「BAD:VALUE」）／17563 N07（issueKey「SSCSD:1」）／17564 N05（无 marker）：三例 `description` 为 null，全文落 `message`，外来值冒号显示为全角；均止于抛错节点，零写入零外发。对照 17235（N7 离职，改前形态）：冒号前后分入 `description`／`message`。边界：11 处抛错仅跑 3 处；nos-ops 告警正文未验（Error Handler 不可经 MCP 读取，手动执行不触发）。
+> 【2026-09-28 抛错文案去半角冒号·干跑】（test_workflow，Jira／HTTP／Notify 节点 pin）17562 N20（judgmentType「BAD:VALUE」）／17563 N07（issueKey「SSCSD:1」）／17564 N05（无 marker）：三例 `description` 为 null，全文落 `message`，外来值冒号显示为全角；均止于抛错节点，零写入零外发。对照 17235（N7 离职，改前形态）：冒号前后分入 `description`／`message`。其余 8 处续跑 17565–17572（N05 可见性探针；N07 入参三处、控制探针、状态、Notify 未送达；N20 入口 `ok:false`），结果相同；`Call Notify`、`Call Resignation Upstream Trigger Entry` 均为 pin（耗时 0／1 ms）。11 处抛错全部跑过。边界：nos-ops 告警正文未验（Error Handler 不可经 MCP 读取，手动执行不触发）。
 
 - Sebelum ditulis: baca ulang ketiga workflow lewat API; kalau versionId berubah, pakai nilai terbaru.
 
