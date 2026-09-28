@@ -165,6 +165,7 @@ Sumber: 04.5.3 (1729626578, lastModified 2026-09-28, v17). Dibandingkan dengan v
 | `docs/sources.md` | Daftar source yang dibaca, termasuk yang dilarang |
 | `docs/evidence/` | Bukti hasil cek live (tool + waktu) untuk klaim "diamati di sesi" |
 | `docs/pending-buildsheet-updates.md` | Antrean draf update build sheet S-05, ditulis sekaligus dalam satu versi (permintaan Bambang, 2026-09-28). Draf, bukan izin menulis. |
+| `docs/pending-0409-registration.md` | Draf registrasi 04.9 untuk N04/N05/N07/N20 (4 baris indeks + 4 blok 04.9.7). Ditulis Bambang sendiri, menunggu jawaban Alden OSD-116 c50670. Draf, bukan izin menulis. |
 | `.claude/skills/build/` | Salinan terkendali Skill 流程建设 (07.06 §八). Dipakai untuk "Build \| S-xx". |
 | `.claude/skills/nos-gate/` | Router Anchor 04 §七: dari key Jira ke Gate dan halaman yang wajib dibaca |
 | `.claude/skills/prebuild-scan/` | 「建设前对齐扫描」 7 kategori dari Kent (#nos-bo 1789549825.279199). Wajib sebelum membangun node apa pun. Terpisah dari skill `build` karena tidak berasal dari 07.06 §八 |
