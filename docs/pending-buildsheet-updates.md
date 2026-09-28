@@ -20,7 +20,7 @@ Sisa yang **belum** ditulis setelah v54:
 - **P-6.7**: D-13 (marker patroli, tunggu Geri c50631 dan K-10). Isi keputusan C-15 (Felix) dan isi §七 (C-26, keputusan Kayden 9/29) juga belum; yang sudah ditulis hanya catatan keadaannya.
 - **P-6.8**: semua item di sana masih menunggu keputusan Bambang (B-2, B-5, B-14, D-4, D-9, D-16, C-27, catatan versi dasar Spec v67).
 - Setelah Kent menjawab c50632: tambahkan 【补】 baru untuk transisi 9/11 dan baris Abort Case, lalu hitung ulang statistik 附表.
-- Paragraf §八 `b28d0928005c` 「SSCSD 内 Disciplinary Case 现共 5 张」 sudah basi setelah SSCSD-437～442 (ditemukan saat menyusun v54; belum ada draf).
+- **P-13** (koreksi paragraf §八 `b28d0928005c` 「现共 5 张」 → 10 张).
 
 
 ### P-7 · Jawaban Alden OSD-116 c50647 (2026-09-28 15:11 +07)
@@ -69,6 +69,17 @@ Sudah dicek: OSD-116 s.d. c50648, NSE-1137 s.d. c50645, #nos-bo s.d. 16:36 (thre
 **④ 建设备注 07.06.1 命中条目: ditambahkan**
 
 > 【2026-09-28 补】07.06.1 v41 D1：「写入已发布的件，可能当场生效，也可能只存成草稿、线上仍跑旧版…事后以回读为准——versionId 等于 activeVersionId 才算已生效」（04.6 v22 §3.2 第 4 条同）。本流程四件均未发布，现不适用；发布后改件按此回读。
+
+### P-13 · Koreksi paragraf §八 「现共 5 张」 (2026-09-28 malam)
+
+Sudah dicek: build sheet v54 (paragraf `b28d0928005c` dan tabel 测试单登记 di atasnya), JQL Atlassian_Rovo akun Backend Operations `project = SSCSD AND issuetype = "Disciplinary Case"` (totalCount 10, tanpa halaman berikut; evidence E47), E37/E39; semua 2026-09-28.
+
+**§八, setelah paragraf `b28d0928005c` (teks lama tidak diubah): ditambahkan**
+
+> 【2026-09-28 补】上条「现共 5 张」已过时：同一查询（`project = SSCSD AND issuetype = "Disciplinary Case"`，Backend Operations 账号，2026-09-28 实读）现读出 10 张，均为 TEST 单：SSCSD-411／421／422／423／435／437／438／439／441／442。全部 statusCategory＝Done 且 resolution 非空（Done／Cancelled／Cancelled／Rejected／Rejected／Done／Done／Cancelled／Done／Done）。新增 5 张（437～442）见上方测试单登记。同一查询读出 10 张即为对照，非「看不见」。
+
+- Sengaja tidak ditulis: SSCSD-440 tidak ada di hasil. E37 mencatatnya sebagai persetujuan cuti F2, tetapi itu belum dicek langsung di Jira.
+- Sebelum ditulis: ambil versi terbaru build sheet dan jalankan ulang JQL; kalau jumlahnya berubah, perbarui teks.
 
 ## Sudah ditulis
 
