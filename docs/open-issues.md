@@ -78,6 +78,14 @@
 - Menurut 04.3 (dibaca Claude), urutan 「主单先、子单后」 hanya ada sebagai kalimat Kayden. Teks 04.3 menulis 「在同一动作范围内」.
 - **Status:** 待决策. Yang berhak menjawab adalah Kayden (pemberi perintah, Owner 04.3). Bambang meminta item ini dilewati dulu (2026-09-26).
 
+### K-10 · Kapan marker `nos-s05-term` ditulis (N20)
+- **Build sheet S-05** (2096463922), tabel 暗号接口契约表 baris 「离职交接认领与审计」: 「建离职单**之前**先写 S-05 侧」. Aturan tabel yang sama: 「先认领后动作：任何写入口在执行写动作**之前**先写认领 marker」.
+- **Build sheet yang sama, 【2026-09-24 补】**: 「现实建于入口返回 issueKey 之后写入」. Baris ini masuk ke 附表 sebagai 「本件与本页暗号接口契约表『先认领后动作』约束的适用」, status 「待办（建造侧提出·双签未表态）」.
+- **Bambang, NSE-1137 c50575**: marker 「is written only after your entry returns `ok:true` with an `issueKey`」.
+- **Geri, NSE-1137 c50585**: mengusulkan agar entry menulis klaim di case S-05 **sebelum** membuat tiket (「claim before create」), dan akan membangunnya 「unless someone objects」. Sampai 2026-09-28 (NSE-1137 dibaca sampai c50590) belum ada laporan bahwa ini sudah dibangun. Usulan ini dicatat di baris 附表 tersebut pada build sheet v52.
+- Claude tidak memilih salah satu. Yang memutuskan: pemutus baris 附表 itu (「双签」). Siapa pemegang 双签 untuk baris ini tidak ditulis di baris tersebut. Inferensi, belum dikonfirmasi: yang dimaksud mungkin penandatangan teknis (Alden) dan bisnis (Kayden).
+- **Status:** 待决策.
+
 ## B. Tidak diketahui atau tidak bisa diakses
 
 | # | Hal | Status | Alasan / sumber |

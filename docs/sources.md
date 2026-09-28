@@ -80,12 +80,27 @@ Changelog dan indeks run 07.0x.1 / 07.0x.2 / 07.0x.3 juga dibaca. Semuanya appen
 | 1711276058 | 员工离职｜流程 Spec | 2026-09-26 | Sama seperti di atas |
 | 1742766267 | Grade 自荐与直属上级推荐｜建造单 | 2026-09-26 | Sama seperti di atas. Preseden: condition tiket utama = group `SSCOS｜Service Accounts` |
 
+### Dibaca untuk N20 (2026-09-26 malam s.d. 2026-09-28)
+| pageId | Judul | lastModified | Catatan |
+|---|---|---|---|
+| 1712226375 | 07.06.1 (dibaca ulang 2026-09-28 oleh agent pembaca) | Sep 26, 2026 | E9 (0 item = cabang berhenti diam-diam), E16, C4, C7, D3, E7. `alwaysOutputData` tidak disebut di halaman ini. |
+| 1690927120 | 04.6 (dibaca ulang) | Sep 18, 2026 | §3.5 errorWorkflow dan 「拒绝执行不等于静默」 |
+| 1743716419 | 员工离职｜建造单 | Sep 26, 2026 | Baris 「零匹配路径原为静默 success」 (exec 8609/8610/8611). Dicari dengan kata kunci. |
+| 1740439566 | OS 开发流｜建造单 | Sep 26, 2026 | §八 #12 (N8 `alwaysOutputData`, exec 12223) |
+| 1742766267 | Grade 建造单 | Sep 26, 2026 | 第 43/45 条 (probe + `alwaysOutputData`). Dicari dengan kata kunci, halaman sekitar 950 KB. |
+| 1765015618, 1765015681, 1693089805 | 04.9.3 / 04.9.5 / 04.9 | Sep 26, 2026 | Pendaftaran fakta yang sama. 04.9.5 dan 04.9 dicari dengan kata kunci. |
+| 1677066244, 1730347066, 1603633175, 1674543105 | 04.4 / 07.06 / Notify / 坑档素材 | — | Tidak ada aturan 0 item di 04.4 dan 07.06. Notify dan 坑档素材 hanya membahas Data Table. |
+| 2096463922 | Build sheet S-05 | 2026-09-28 | Ditulis v51 → v52 (lihat `docs/evidence/2026-09-28-live-checks.md` E24) |
+
+Objek n8n yang dibaca (tidak diubah): entry Geri `qa01CkZBQfx8eLsK` (E19).
+
 Halaman BLM Lite (2046460048, 2046460069, 2047705135, 1760198660) juga terbaca. Halaman-halaman ini **diabaikan** karena merupakan jalur terpisah dari OS 开发流.
 
 ## Jira
 | Objek | Connector / akun | Catatan |
 |---|---|---|
 | OSD-116 dan 190 comment-nya (c48791–c50576) | Atlassian_MCP / Bambang | Feature S-05, status 开发. Dibaca ulang seluruhnya 2026-09-26 sore; comment terakhir Alden c50576 (17:55 +07), tiket `updated` 17:55:56 |
+| NSE-1137 dan 272 comment-nya (c48129–c50590) | Atlassian_MCP / Bambang | Tiket jalur 员工离职 (Geri). Dibaca seluruhnya 2026-09-26. Dicek ulang 2026-09-28: comment terbaru masih c50590. |
 | SSCSD-435 | Atlassian_Rovo / Backend Operations | Tiket TEST kartu N07, dibuat 2026-09-26, berakhir Rejected/Rejected (lihat `docs/evidence/2026-09-26-live-checks.md` E10–E15) |
 | SSCSD-411, 421, 422, 423 | Atlassian_Rovo / Backend Operations | Akun pribadi Bambang **tidak bisa** melihat tiket ini (JQL ditolak, 2026-09-26) |
 
