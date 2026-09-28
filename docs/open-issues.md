@@ -117,6 +117,26 @@
 - **Keputusan Bambang (2026-09-28):** c50595 (a) tidak dikoreksi; tunggu balasan Alden.
 - **Status:** 待决策, menunggu balasan Alden atas c50595.
 
+### K-12 · Baris SUBMIT 04.7 masih memuat aturan 缺位 yang sudah dicabut di Spec
+- **04.7 v51** (2026-09-24), baris RT-HR-DISCIPLINARY-SUBMIT: 「提交资格＝仅可由该员工登记的Direct Supervisor提交，缺位由HR Ops & Data代为受理」.
+- **Kayden, OSD-116 c50461** (2026-09-24): mencabut kalimat 「直属上级缺位时由 HR Ops & Data 代为受理提交…」.
+- **Felix, OSD-116 c50486**: 「S-05 Spec 已完成对应修订，页面现 v67（内部版本 v28）」.
+- Sumber: audit build sheet v52, temuan A-07 (2026-09-28). Isi baris 04.7 dibaca oleh agen audit; Claude tidak membuka ulang sendiri.
+- Claude tidak mendamaikan. Menurut catatan build sheet, isi baris kandidat itu wewenang Owner alur. **Status:** 待决策.
+
+### K-13 · Siapa yang boleh menjalankan transisi 9 (确认重复)
+- **Build sheet v52 §二**, baris transisi 9, kolom 允许执行者: 「仅服务账号」.
+- **Kayden, OSD-116 c50445**: 「Abort Case（id 11）转态权限配给 HR Ops & Data 角色组；N07「确认重复」同口径」.
+- **04.3 v35 §六**, paragraf 执法点: 「Jira workflow Condition 不承担"限定哪个人有权批"的职责——它收紧为"仅服务账号可转态"」. Paragraf ini berdiri berdampingan dengan tabel izin di bagian yang sama, yang menambahkan 处置角色组.
+- Saat ini transisi 9 dijalankan oleh callback platform dengan akun layanan (c50558).
+- Terkait K-9: grup mana yang dipakai masih menunggu jawaban Kent atas c50632.
+- Sumber: audit A-14, C-10 (2026-09-28). **Status:** 待决策. Condition untuk transisi 9 dan 11 tidak dipasang sebelum ada jawaban.
+
+### K-14 · Jalur manual sementara di 偏差登记
+- **Build sheet v52**, 偏差登记 (baris ±198): mengutip jalur manual sementara dari Felix c49317.
+- **Kent, OSD-116 c50381**: 「No interim manual path to design.」
+- Sumber: audit A (di luar cakupan butir 3, 2026-09-28). Claude tidak mendamaikan. **Status:** 待决策.
+
 ## B. Tidak diketahui atau tidak bisa diakses
 
 | # | Hal | Status | Alasan / sumber |

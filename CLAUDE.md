@@ -140,7 +140,7 @@ Kalau standarnya tidak ada, buat laporan dengan format **标准缺口回报** (e
 
 ## 6. Tes
 
-Sumber: 04.5.3 (1729626578, lastModified 2026-09-25). Bagian 测试 di build sheet S-05 memuat versi yang lebih lama. Kalau keduanya berbeda, **04.5.3 terbaru yang dibaca**.
+Sumber: 04.5.3 (1729626578, lastModified 2026-09-28, v17). Dibandingkan dengan versi 2026-09-25, yang berubah hanya syarat 2 pada pengecualian 「收件人就是主体」 di §二. Aturan di bawah tidak berubah (dicek 2026-09-28, audit D-17). Bagian 测试 di build sheet S-05 memuat versi yang lebih lama. Kalau keduanya berbeda, **04.5.3 terbaru yang dibaca**.
 - Tiket tes Jira wajib punya **dua penanda**, 「两项须同时具备，任一缺失视为未标识」 (04.5.3 §三): judul diawali `TEST｜`, **dan** subjek tiket menunjuk ke arsip tes.
   - Build sheet S-05 mencatat bahwa tes struktur tanpa subjek (SSCSD-411, dengan preseden GPM) hanya memenuhi penanda pertama. Ini ketegangan dengan 04.5.3, lihat `docs/open-issues.md` K-7. Claude tidak memutuskannya.
 - Tiket tes di SSCSD untuk S-05 dibiarkan di status akhirnya dan tidak dihapus (build sheet S-05, 测试单登记). Untuk project arsip dan buku besar berlaku aturan di §3.
