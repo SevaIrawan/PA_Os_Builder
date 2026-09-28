@@ -9,13 +9,14 @@ Aturan:
 - Bahasa: Mandarin, mengikuti isi halaman.
 - Kalau item sudah ditulis ke build sheet, pindahkan ke bagian "Sudah ditulis" dan cantumkan versi halamannya.
 
-Versi build sheet terakhir yang dibaca: **v53** (2026-09-28T07:07:32Z).
+Versi build sheet terakhir yang dibaca: **v55** (2026-09-28T16:02:46Z).
 
 ---
 
 ## Antre
 
 Sisa yang **belum** ditulis setelah v55:
+- **P-7** (①②③④, direvisi terhadap v55) dan **P-8** (①③④; ② dibuang). Draf siap; syarat sebelum tulis ada di tiap butir.
 - **P-4③** (kata 「打回补件」): Alden sudah menjawab di c50647, teksnya ada di P-7④.
 - **P-6.7**: D-13 (marker patroli, tunggu Geri c50631 dan K-10). Isi keputusan C-15 (Felix) dan isi §七 (C-26, keputusan Kayden 9/29) juga belum; yang sudah ditulis hanya catatan keadaannya.
 - **P-6.8**: semua item di sana masih menunggu keputusan Bambang (B-2, B-5, B-14, D-4, D-9, D-16, C-27, catatan versi dasar Spec v67).
@@ -24,50 +25,54 @@ Sisa yang **belum** ditulis setelah v55:
 
 ### P-7 · Jawaban Alden OSD-116 c50647 (2026-09-28 15:11 +07)
 
-Dasar: OSD-116 c50647, dibaca penuh 2026-09-28. Sudah dicek: OSD-116 s.d. c50647, NSE-1137 s.d. c50645, build sheet v53.
+Dasar: OSD-116 c50647, dibaca penuh 2026-09-28. Sudah dicek: OSD-116 s.d. c50670 (tidak ada comment baru setelah c50670), NSE-1137 s.d. c50672, build sheet v55; semua 2026-09-28.
 
-**① 页首附表, baris 「主单专属 Screen 未建」: ditambahkan di akhir sel 「依赖谁」 (atau 「解除判据」, dipilih saat menulis)**
+Revisi 2026-09-28 (setelah dicek terhadap v55): ① dan ② dipangkas karena sebagian sudah tertulis lewat P-9① dan P-10①; ③ ditambah status c50670; ④ kalimat terakhir diganti karena Alden sudah menjawab di c50648.
 
-> 【2026-09-28 补】上文三说已由 Alden OSD-116 c50647 (a) 定：「since 9/24, SSCSD main-ticket fields go through the same 04.10 process — Kent approves and builds them; only the risk categories (making a field required on the shared screen, changing a shared object others already rely on, and the like) come to me. So please file the field list to @Kent as a 04.10 three-cell request.」建造侧下一步：按 04.10 格式向 Kent 提交字段清单（未提交）。同条：「Right now Jira has no Return Count, HR Decision Basis, Cancellation Reason, Final Outcome or Warning Level, and no fields yet for the initial PIP parameters.」
+**① 页首附表, baris 「主单专属 Screen 未建」, sel 「依赖谁」: ditambahkan setelah 【补】 P-9① (`b28d09290001`)**
 
-**② §一 N07 (atau §五 blok N07): ditambahkan**
+> 【2026-09-28 补】上条出处：Alden OSD-116 c50647 (a)「since 9/24, SSCSD main-ticket fields go through the same 04.10 process — Kent approves and builds them; only the risk categories (making a field required on the shared screen, changing a shared object others already rely on, and the like) come to me. So please file the field list to @Kent as a 04.10 three-cell request.」同条：「Right now Jira has no Return Count, HR Decision Basis, Cancellation Reason, Final Outcome or Warning Level, and no fields yet for the initial PIP parameters.」c50647 (a) 所答为主单字段由谁审批与建；本行所记「本流程专属 Screen」是否另建、由谁建，c50647 未提及。本行状态不变。
 
-> 【2026-09-28 补】Alden OSD-116 c50647 (a) 平台侧四点：①「No new approver field: use the existing Approved By (`customfield_18061`). It is already on the Disciplinary Case edit screen, so you can set `approverFieldId` now.」②「Any field the card writes back must be on the Disciplinary Case edit screen first, otherwise Jira rejects the whole write. Keep `noWrite` until then.」③写回形状：dropdown → `option`、multi-line → `adf`、number → `number`、person → `user`。④「Return count needs +1: the card can only write constants or values typed in the modal, not increments, so please have S-05 add one itself after the return transition.」现 N07 件未设 `approverFieldId`；打回次数 +1 属本流程新增建设项，承载件未定。
+**② §五 N07 块: ditambahkan setelah 【补】 P-10① (`b28d09290009`)**
 
-- Sebelum ditulis: kalau `approverFieldId` sudah dipasang di N07, sesuaikan kalimat terakhir. Posisi `customfield_18061` di edit screen belum dicek sendiri, **inferensi, belum dikonfirmasi** (Alden yang menyatakan).
+> 【2026-09-28 补】Alden OSD-116 c50647 (a) 平台侧另三点（第 1 点 approverFieldId 已落实，见上条）：②「Any field the card writes back must be on the Disciplinary Case edit screen first, otherwise Jira rejects the whole write. Keep `noWrite` until then.」③「Pick the write shape by field type: dropdown → `option` (the value must match the Jira option exactly), multi-line → `adf`, number → `number`, person → `user`.」④「Return count needs +1: the card can only write constants or values typed in the modal, not increments, so please have S-05 add one itself after the return transition.」打回次数 +1 属本流程新增建设项，承载件未定。
 
-**③ 页首附表, baris 「本流程 n8n 件 04.9 登记」: ditambahkan di akhir sel 「解除判据」**
+**③ 页首附表, baris 「本流程 n8n 件 04.9 登记」: ditambahkan di akhir sel 「解除判据」 (`b28d09280018`)**
 
-> 【2026-09-28 补】Alden OSD-116 c50647 (b)：「a 7th volume is open for S-05 — 04.9.7｜详情：纪律与绩效改进处置. Please register N04, N05, N07 and N20 per 04.9 §一: a row in the main-page index and a block in 04.9.7.」登记由本侧执行（建造单外页面，由建造人本人写入）。
+> 【2026-09-28 补】Alden OSD-116 c50647 (b)：「a 7th volume is open for S-05 — 04.9.7｜详情：纪律与绩效改进处置. Please register N04, N05, N07 and N20 per 04.9 §一: a row in the main-page index and a block in 04.9.7.」登记由本侧执行（建造单外页面，由建造人本人写入）。登记前三点已于 OSD-116 c50670（2026-09-28）询 Alden：件名格式（04.9 §一／04.4 §十 与 04.6 §二-3「n8n-」两式）、索引「Owner 部门」列取值、04.9 主页 Notify 索引行调用方与 §三 导航缺 04.9.7；待答。
 
-- Catatan untuk Bambang: menulis 04.9 / 04.9.7 bukan wewenang Claude (CLAUDE.md §3). Claude hanya bisa menyiapkan draf isinya.
+- Catatan untuk Bambang: menulis 04.9 / 04.9.7 bukan wewenang Claude (CLAUDE.md §3). Claude hanya bisa menyiapkan draf isinya (`docs/pending-0409-registration.md`).
+- Sebelum ditulis: cek apakah Alden sudah menjawab c50670; kalau sudah, ganti 「待答」.
 
-**④ §八 N07 实跑 「观察（不改）」: ditambahkan (menutup P-4③)**
+**④ §八 N07 实跑 「观察（不改）」 (`5def9a821733`): ditambahkan (menutup P-4③)**
 
-> 【2026-09-28 补】上文「不通过 Rejected｜打回补件」措辞：Felix OSD-116 c50639 请改；Alden c50647：「the Decision line of the approval record will show only the button's own label when one is set — e.g. 「打回补件 · Return for info」 instead of 「不通过 Rejected｜打回补件」. This ships with batch 1B on 10/1.」本侧不改件，10/1 后回读实际记录格式。Felix c50639 两项条件（记录带实际判断人；记录能否被编辑或删除），Alden c50647：「I will answer separately once I have checked the permissions.」
+> 【2026-09-28 补】上文「不通过 Rejected｜打回补件」措辞：Felix OSD-116 c50639 请改；Alden c50647：「the Decision line of the approval record will show only the button's own label when one is set — e.g. 「打回补件 · Return for info」 instead of 「不通过 Rejected｜打回补件」. This ships with batch 1B on 10/1.」本侧不改件，10/1 后回读实际记录格式。Felix c50639 所附两项条件已由 Alden c50648 答复（见页首附表「模式九组件扩展（N07 审批交互）」行 2026-09-28 补）。
 
+- Kalimat terakhir bergantung pada P-8①. Tulis keduanya dalam versi yang sama.
 
-### P-8 · Alden OSD-116 c50648, 04.4.1 v15, cek editmeta, 04.6 §四, 04.8 §四 (2026-09-28 sore)
+### P-8 · Alden OSD-116 c50648, 04.4.1 v15, 04.6 §四, 07.06.1 D1 (2026-09-28 sore)
 
-Sudah dicek: OSD-116 s.d. c50648, NSE-1137 s.d. c50645, #nos-bo s.d. 16:36 (thread 1789704362), 04.4.1 v15, Notify v15, 07.06.1 v41, 04.10 v21, 04.8 v23, 04.6 v22, 04.9 v124, editmeta SSCSD-435; semua dibaca 2026-09-28.
+Sudah dicek: OSD-116 s.d. c50670, NSE-1137 s.d. c50672, build sheet v55, 04.6 v22 dan 07.06.1 v41 (versi dicek ulang 2026-09-28, tidak berubah); sebelumnya #nos-bo s.d. 16:36 (thread 1789704362), 04.4.1 v15, Notify v15, 04.10 v21, 04.8 v23, 04.9 v124. **#nos-bo belum dibaca ulang setelah 16:36.**
 
-**① §一 N10／N14／N17 (atau baris 附表 P-4②): ditambahkan**
+Revisi 2026-09-28 (setelah dicek terhadap v55): ① diperbarui (「HR 判定依据」 sudah diajukan di c50658) dan dipindah ke setelah paragraf yang masih menulis 「截至 c50644 未答」; ② **dibuang**, karena sudah tertutup P-10① (approverFieldId terpasang, versionId `c02dba29`/`5c304eb6`) dan P-10② (cf18061 berhasil ditulis di SSCSD-437～442); ③ dan ④ tetap.
 
-> 【2026-09-28 补】Felix OSD-116 c50639 两项条件已由 Alden c50648 答复：①「已写进平台规则（04.4.1「判定依据」一节）：在审批卡以外作出的判定（S-05 的 N10、N14、N17），由流程在主单按审批记录同一格式写一条评论，写明节点、时间、实际做判断的人、决定和判定依据。」②「「不能编辑或删除」做不到…以字段修改历史为准…每次判定同时写两个主单字段——「HR 判定依据」…和「Approved By」」。建造侧据此：N10／N14／N17 建件时每次判定写一条主单评论（可见性同 N07 卡 internal）并同时写「HR 判定依据」与 `customfield_18061`；「HR 判定依据」字段按 04.10 交 Kent 建（未建）。
+**① 页首附表, baris 「模式九组件扩展（N07 审批交互）」, sel 「解除判据」: ditambahkan setelah `b28d09280001`**
 
-**② §五 N07 块: ditambahkan**
+> 【2026-09-28 补】上条「②问 Alden，截至 c50644 未答」已答：Alden OSD-116 c50648 ①「已写进平台规则（04.4.1「判定依据」一节）：在审批卡以外作出的判定（S-05 的 N10、N14、N17），由流程在主单按审批记录同一格式写一条评论，写明节点、时间、实际做判断的人、决定和判定依据。」②「「不能编辑或删除」做不到：……所以按你给的退路，以字段修改历史为准，并补强一点：每次判定同时写两个主单字段——「HR 判定依据」（这次的依据）和「Approved By」（这次是谁判的）。」建造侧据此：N10／N14／N17 建件时每次判定写一条主单评论，并同时写「HR 判定依据」与 `customfield_18061`；评论可见性拟同 N07 审批记录 internal（建造侧拟，依 Felix c50639 (2)）。「HR 判定依据」已于 OSD-116 c50658 向 Kent 申请（批次 A 第 1 项），待建。本行状态不变。
 
-> 【2026-09-28 补】Alden OSD-116 c50647／c50648：N07 审批卡 `approverFieldId` 填 `customfield_18061`（Approved By）。2026-09-28 以 Backend Operations 读 SSCSD-435（Disciplinary Case）editmeta：`customfield_18061` 在编辑屏，userpicker，operations＝set。本件现未设该键（待改件，改件前经建造人批准）。
+**② (dibuang)**
 
-- Sebelum ditulis: kalau `approverFieldId` sudah dipasang, ganti kalimat terakhir dengan versionId baru dan hasil baca ulang.
-
-**③ §七: ditambahkan setelah 2026-09-28 补 yang sudah ada (C-26)**
+**③ §七: ditambahkan setelah 2026-09-28 补 yang sudah ada (`b28d09280053`, C-26)**
 
 > 【2026-09-28 补】04.6 v22 §四（2026-09-28）已定部分口径：「SLA 时限数值：权威＝各流程 Spec 增补区 C 表；建设时照 C 表写进件，并在建造单登记所依据的 Spec 版本…机器不直接读取 C 表」；值类内容「权威定义＝Confluence 对应页面…n8n Data Table＝机读副本。流程件运行时只读表，不直接解析 Confluence 页面」。本流程非 SLA 类参数（纪律记录有效期、PIP 周期等）落哪一页，仍待 Kayden 03 条文（#nos-bo 1790242043.098949）。
+
+- Sebelum ditulis: baca #nos-bo setelah 16:36 (2026-09-28). Kalau Kayden sudah memutuskan (dijadwalkan sebelum 9/29), kalimat terakhir harus diganti.
 
 **④ 建设备注 07.06.1 命中条目: ditambahkan**
 
 > 【2026-09-28 补】07.06.1 v41 D1：「写入已发布的件，可能当场生效，也可能只存成草稿、线上仍跑旧版…事后以回读为准——versionId 等于 activeVersionId 才算已生效」（04.6 v22 §3.2 第 4 条同）。本流程四件均未发布，现不适用；发布后改件按此回读。
+
+- Sebelum ditulis: pastikan keempat workflow masih belum dipublikasikan.
 
 ## Sudah ditulis
 
