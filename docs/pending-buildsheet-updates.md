@@ -15,12 +15,11 @@ Versi build sheet terakhir yang dibaca: **v53** (2026-09-28T07:07:32Z).
 
 ## Antre
 
-Sisa yang **belum** ditulis setelah v54:
+Sisa yang **belum** ditulis setelah v55:
 - **P-4③** (kata 「打回补件」): Alden sudah menjawab di c50647, teksnya ada di P-7④.
 - **P-6.7**: D-13 (marker patroli, tunggu Geri c50631 dan K-10). Isi keputusan C-15 (Felix) dan isi §七 (C-26, keputusan Kayden 9/29) juga belum; yang sudah ditulis hanya catatan keadaannya.
 - **P-6.8**: semua item di sana masih menunggu keputusan Bambang (B-2, B-5, B-14, D-4, D-9, D-16, C-27, catatan versi dasar Spec v67).
 - Setelah Kent menjawab c50632: tambahkan 【补】 baru untuk transisi 9/11 dan baris Abort Case, lalu hitung ulang statistik 附表.
-- **P-13** (koreksi paragraf §八 `b28d0928005c` 「现共 5 张」 → 10 张).
 
 
 ### P-7 · Jawaban Alden OSD-116 c50647 (2026-09-28 15:11 +07)
@@ -70,7 +69,14 @@ Sudah dicek: OSD-116 s.d. c50648, NSE-1137 s.d. c50645, #nos-bo s.d. 16:36 (thre
 
 > 【2026-09-28 补】07.06.1 v41 D1：「写入已发布的件，可能当场生效，也可能只存成草稿、线上仍跑旧版…事后以回读为准——versionId 等于 activeVersionId 才算已生效」（04.6 v22 §3.2 第 4 条同）。本流程四件均未发布，现不适用；发布后改件按此回读。
 
-### P-13 · Koreksi paragraf §八 「现共 5 张」 (2026-09-28 malam)
+## Sudah ditulis
+
+### v55 (2026-09-28T16:02:46Z, akun pribadi Bambang, perintah 「Tulis P-13 ke build sheet」)
+P-13. Satu operasi `insertNodeAfter` setelah `b28d0928005c` (node baru `b28d09290060`); teks lama tidak diubah. JQL dijalankan ulang tepat sebelum tulis, hasilnya tetap 10 tiket dengan status yang sama. Bukti: `docs/evidence/2026-09-28-live-checks.md` E48.
+
+Teks lengkap yang sudah ditulis (arsip, jangan ditulis ulang):
+
+#### P-13 · Koreksi paragraf §八 「现共 5 张」 (2026-09-28 malam)
 
 Sudah dicek: build sheet v54 (paragraf `b28d0928005c` dan tabel 测试单登记 di atasnya), JQL Atlassian_Rovo akun Backend Operations `project = SSCSD AND issuetype = "Disciplinary Case"` (totalCount 10, tanpa halaman berikut; evidence E47), E37/E39; semua 2026-09-28.
 
@@ -80,8 +86,6 @@ Sudah dicek: build sheet v54 (paragraf `b28d0928005c` dan tabel 测试单登记 
 
 - Sengaja tidak ditulis: SSCSD-440 tidak ada di hasil. E37 mencatatnya sebagai persetujuan cuti F2, tetapi itu belum dicek langsung di Jira.
 - Sebelum ditulis: ambil versi terbaru build sheet dan jalankan ulang JQL; kalau jumlahnya berubah, perbarui teks.
-
-## Sudah ditulis
 
 ### v54 (2026-09-28T15:58:28Z, akun pribadi Bambang, perintah 「Tulis P-9 sampai P-12 ke build sheet」)
 P-9 (①②③), P-10 (①②③④), P-11 (①②), P-12 (①②). 18 operasi `insertNodeAfter`, semuanya tambahan; tidak ada teks lama yang diganti atau dihapus. Bukti: `docs/evidence/2026-09-28-live-checks.md` E46.
