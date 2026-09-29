@@ -37,6 +37,7 @@ Aturan ini ada karena kesalahan sebelumnya: kesimpulan tanpa dasar membuat peker
     - Setiap draf wajib memuat baris 「Sudah dicek: …」 yang menyebut sumber, batas bacanya (comment id atau ts terakhir), dan tanggal bacanya.
     - Kalau ada sumber yang belum dibaca penuh, sebutkan, dan **jangan kirim** draf sebelum sumber itu dibaca.
     - Pertanyaan ke orang lain hanya boleh diajukan untuk hal yang **tidak ada** di sumber mana pun. Hal yang sudah dijawab dikutip, bukan ditanyakan ulang.
+11. **Jangan melebar** (aturan Bambang, 2026-09-29). Baca dan cek hanya hal yang terkait langsung dan relevan dengan unit yang sedang dibangun. Tiket, halaman, atau alur lain tidak dibuka hanya karena ada link atau disebut sepintas. Aturan ini ada karena kesalahan nyata: saat menjalankan skill 2026-09-29, Claude membuka OSD-131 (S-19) dan menarik kesimpulan darinya, padahal tidak terkait dengan unit yang sedang dibangun.
 
 ---
 

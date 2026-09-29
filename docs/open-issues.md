@@ -181,15 +181,6 @@
 - **Perbaikan dikerjakan 2026-09-28** (perintah Bambang, evidence E44): N05 `9b2ea463`, N07 `5a66fd9c`, N20 `6971acbc`. Uji 17562/17563/17564: `description: null`, teks utuh di `message`. Delapan `throw` sisanya diuji 17565–17572 (evidence E45): hasil sama, jadi 11/11 sudah dijalankan. Masih terbuka: isi alert nos-ops belum terverifikasi.
 - **Status:** 已完成但未验收 (untuk S-05). Aturan 04.4.4 §五 sendiri tidak dipersoalkan.
 
-### K-18 · Penanda freeze S-05 menunjuk Spec v61, Spec sekarang v67
-- **OSD-116 c50009/c50013** (Felix, 2026-09-15): 「【OSD-FREEZE｜v1｜FROZEN】 {"specPageId":2036858900,"frozenPageVersion":61,…}」. Tidak ada penanda freeze yang lebih baru di OSD-116 (s.d. c50670, dicek 2026-09-29 dari salinan 9/26 + comment sesudahnya).
-- **Spec S-05** sekarang **v67** (2026-09-24, Felix). **Felix OSD-116 c50486**: perubahan v62→v67 「按建设期注记处理，不重走结构审计（与 c50445 处理原则一致）」; **Kayden c50445**: 「属建设期注记，Kayden 豁免留痕，不重审」.
-- **Alden OSD-131 c50577** (2026-09-26 17:57, perbaikan mesin N12 OS开发流, `versionId 1947478b`): 「验证：影子件 H7UFcpsz9HSamxBk…真跑两例——S-19 放行（exec 17246）；S-05 冻结 v61 对当前 v67 照退设计（exec 17247）」. Artinya, menurut uji Alden, mesin N12 akan mengembalikan S-05 ke 设计 kalau OSD-116 masuk ke 开发 lagi.
-- **Pembanding S-19, Zq OSD-131 c50544**: 「建设期注记豁免，改完重发冻结标记」 dan 「与 S-05 c50445／c50486 同一处理原则」. Untuk S-05, penerbitan ulang penanda freeze tidak terlihat di OSD-116.
-- Yang tidak diketahui: apakah mesin N13 (验收审计) juga membandingkan versi freeze. Halaman OS 开发流 Spec (1729200354) bagian N13 belum dibaca ulang untuk hal ini.
-- Terkait: build sheet P-6.8 「catatan versi dasar Spec v67」 (menunggu keputusan Bambang).
-- Claude tidak memilih. Yang bisa memutuskan: Owner Spec (Felix, penerbit freeze) dan Kayden (pemberi 豁免). **Status:** 待决策. Ditemukan saat nos-gate 2026-09-29.
-
 ## B. Tidak diketahui atau tidak bisa diakses
 
 | # | Hal | Status | Alasan / sumber |
