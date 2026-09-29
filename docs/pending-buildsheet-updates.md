@@ -18,7 +18,7 @@ Versi build sheet terakhir yang dibaca: **v58** (2026-09-29T06:08:12Z).
 Sisa yang **belum** ditulis setelah v58. Semua ditulis **sekaligus dalam satu versi** saat Bambang memerintahkan (permintaan Bambang, 2026-09-29).
 - **P-6.7**: D-13 (marker patroli, tunggu Geri c50631 dan K-10). Isi keputusan C-15 (Felix) dan isi §七 (C-26, keputusan Kayden 9/29) juga belum; yang sudah ditulis hanya catatan keadaannya.
 - **P-6.8**: semua item di sana masih menunggu keputusan Bambang (B-2, B-5, B-14, D-4, D-9, D-16, C-27, catatan versi dasar Spec v67).
-- **P-17**: transisi 9/11 setelah Kent c50705 (detail di bawah).
+- **P-17**: transisi 9/11 setelah Kent c50705, termasuk A-14 dari P-6.7 (detail di bawah).
 - **P-18**: kolom 状态 附表 diseragamkan ke enam label Anchor 04 §七.6, lalu 统计 dihitung ulang (detail di bawah). Dikerjakan **terakhir** dalam versi yang sama, supaya statistik menghitung status yang sudah final.
 
 ### P-17 · §二 baris transisi 9 dan 11 setelah Kent c50705 (draf belum dibuat)
@@ -26,6 +26,7 @@ Sisa yang **belum** ditulis setelah v58. Semua ditulis **sekaligus dalam satu ve
 - Dasar: Kent OSD-116 c50705 (2026-09-29, dibaca penuh): `SSCOS｜HR` untuk condition HR Ops & Data (Abort Case id 11 dan N07 Confirm duplicate); baris 附表 Abort Case sudah dapat 【补】 di v57 (P-15 ③).
 - Yang perlu: 【补】 di §二 baris transisi 9 dan 11 (kolom 允许执行者 / catatan) yang mencatat keputusan grup. Kalau condition sudah dipasang Bambang lewat UI sebelum ditulis, catat juga hasil baca ulangnya; kalau belum, tulis bahwa belum dipasang.
 - Ketegangan dengan 04.3 v35 §六 执法点 (「仅服务账号可转态」) tetap dicatat apa adanya, tidak didamaikan (K-9, open-issues).
+- **Digabung dari P-6.7 A-14 (C-10, D-2)** (2026-09-29): sumber baris Abort Case c50445, c50632, Felix c50644 (sudah tercatat di 附表, v53/v57); transisi 9 「仅服务账号」 vs Kayden c50445 「N07「确认重复」同口径」 (K-13); condition transisi 9/11 dan baca ulang `isConditional` setelah dipasang.
 - Sebelum dibuat: baca ulang build sheet §二, OSD-116 setelah c50705, 04.3 versi terbaru §六.
 
 ### P-18 · Kolom 状态 附表 ikut Anchor 04 §七.6, statistik dihitung ulang (draf belum dibuat)
@@ -616,9 +617,10 @@ Setelah semua status ditulis, **hitung ulang** statistik 附表 (A-03).
 
 ##### P-6.7 · Menunggu orang lain (jangan ditulis sebelum syaratnya terpenuhi)
 
+(2026-09-29: A-14 (C-10, D-2) dipindah ke **P-17** karena Kent sudah menjawab c50632 di c50705.)
+
 | Item | Isi | Menunggu |
 |---|---|---|
-| A-14 (C-10, D-2) | Baris 附表 Abort Case: sumber c50445, c50632, Felix c50644; transisi 9 「仅服务账号」 vs Kayden 「N07「确认重复」同口径」 (K-13); condition 9/11 dan baca ulang `isConditional` | Kent, jawaban c50632 (tulis bersama P-2) |
 | C-01 + §四 标题格式 | Nama Request Type dua bahasa dari Felix c50261 butir 1; yang tersisa: backfill 04.7 | Baca ulang 04.7 |
 | C-15 (keputusan) | Isi kartu: 到期日期, 纪律记录有效期 (负责跟进人 sudah dijawab Spec ⓪区 十, lihat P-9②) | Felix |
 | C-26 (isi) | Isi §七 | Keputusan Kayden (9/29) |
@@ -631,7 +633,7 @@ Setelah semua status ditulis, **hitung ulang** statistik 附表 (A-03).
 - **D-4:** catatan penyimpangan: exec 17290 tanpa penanda TEST.
 - **D-9:** 实读结论 ④ supervisor. Belum ada teks.
 - **D-16:** kutipan 「留存不删（04.5.3 §四）」 mungkin kurang tepat.
-- **C-27:** sticky note dan description N07 di n8n sudah basi (Felix c50639, K-11). Menulis ke n8n butuh izin terpisah.
+- ~~**C-27:**~~ **Selesai 2026-09-29**: sticky note dan description N07 dikoreksi di n8n (evidence E61, perintah Bambang 「Perbaiki catatan basi di N05 dan N07」), tercatat di build sheet v57 (P-16 ①, 【补】 `b28d09290089`).
 - **Catatan A-01:** apakah Spec v67 memicu kriteria 04.5 §6.1 「基线版本 ≠ 页面当前版本」? Inferensi, belum dikonfirmasi. Belum dijadikan item K.
 
 
