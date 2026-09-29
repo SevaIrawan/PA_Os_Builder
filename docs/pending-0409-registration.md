@@ -5,11 +5,11 @@ Diminta Alden OSD-116 c50647 (b): 「Please register N04, N05, N07 and N20 per 0
 **Status: draf, bukan izin menulis.** Registrasi ditulis Bambang sendiri ke 04.9 (1693089805) dan 04.9.7 (2117435433). Claude tidak menulis ke halaman itu.
 
 **Jawaban Alden OSD-116 c50692 (2026-09-29, evidence E58):**
-1. Format nama (K-3): 「follow 04.6 §2 item 3 — `{flow name}｜{node ID}｜n8n-{action}`, e.g. `纪律与绩效改进处置｜N04｜n8n-路由分发`. Please rename the four S-05 workflows in n8n first, then register them」. Nama di draf ini sudah diganti ke format itu. Bagian `{动作}` dibiarkan sama dengan nama sekarang; yang ditambah hanya awalan `n8n-`. Hanya contoh N04 yang ditulis Alden; tiga nama lain adalah penerapan format yang sama, **inferensi, belum dikonfirmasi**.
+1. Format nama (K-3): 「follow 04.6 §2 item 3 — `{flow name}｜{node ID}｜n8n-{action}`, e.g. `纪律与绩效改进处置｜N04｜n8n-路由分发`. Please rename the four S-05 workflows in n8n first, then register them」. Nama di draf ini sudah diganti ke format itu, dan **sudah diterapkan di n8n 2026-09-29** (evidence E59; versionId keempatnya tidak berubah). Bagian `{动作}` sama dengan nama lama; yang ditambah hanya awalan `n8n-`. Hanya contoh N04 yang ditulis Alden; untuk tiga lainnya format yang sama diterapkan oleh Claude atas perintah Bambang.
 2. Kolom 「Owner 部门」 (K-16): 「HR」.
 3. Baris Notify dan navigasi §三 04.9.7: sudah dikerjakan Alden (04.9 v129).
 
-**Urutan:** ganti nama 4 workflow di n8n dulu (butuh izin Bambang, lalu baca ulang), baru registrasi ditulis Bambang.
+**Urutan:** ganti nama di n8n **sudah dilakukan** (E59). Berikutnya registrasi ditulis Bambang.
 
 **Sebelum ditulis:** baca ulang keempat workflow lewat API. Kalau versionId, settings, atau jumlah node berubah, perbarui kolom 状态. Catatan: versionId hanya berubah kalau node/koneksi berubah; settings dibaca terpisah (E40; Geri NSE-1137 c50669). Di halaman, judul blok ditulis sebagai **H2** (di file ini H3 supaya struktur file tetap rapi). Link indeks diarahkan ke anchor H2 masing-masing di 04.9.7.
 
