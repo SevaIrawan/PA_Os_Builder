@@ -122,7 +122,7 @@ Halaman BLM Lite (2046460048, 2046460069, 2047705135, 1760198660) juga terbaca. 
 | 1693089805 | 04.9 | v124 (2026-09-28 16:40) | Dibaca penuh; dibanding salinan 26/9: hanya baris Grade/OS 开发流 dan pembaca N07. Baris indeks S-05 belum ada |
 | Slack #nos-bo thread 1790242043.098949, 1789704362.435989 | — | balasan terakhir 15:29 dan 16:36 | Dibaca sampai balasan terakhir (Alden: 04.6 §四 v22; 工程审标准清单 v2; 04.8 §四 v23) |
 | Tidak dibaca (bukan sumber S-05) | Grade build sheet, 04.9.5, S-19 build sheet, halaman F1, 招聘 Spec, 请假政策 | berubah 2026-09-28 | Milik alur lain; dilewati sengaja, disampaikan ke Bambang |
-| 2096463922 | Build sheet S-05 | v60 (2026-09-29T08:27Z) | Diaudit baris per baris 2026-09-28 (v52); hasil audit ditulis sebagai v53 dan sudah dibaca ulang (evidence E32) |
+| 2096463922 | Build sheet S-05 | v61 (2026-09-29T09:13Z) | Diaudit baris per baris 2026-09-28 (v52); hasil audit ditulis sebagai v53 dan sudah dibaca ulang (evidence E32) |
 
 ## Cek 2026-09-29 (nos-check, evidence `docs/evidence/2026-09-29-live-checks.md` E50–E54)
 CQL `lastmodified >= 2026-09-26` atas 51 pageId di file ini: 29 berubah. Nomor versi dari Atlassian_MCP (metadata dan riwayat versi). 「Isi perubahan」 diambil dari `diffConfluenceContentVersions` atau versionMessage halaman, **dikutip, bukan diringkas ulang maknanya**.

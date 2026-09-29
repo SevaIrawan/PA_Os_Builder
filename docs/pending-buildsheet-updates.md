@@ -9,16 +9,15 @@ Aturan:
 - Bahasa: Mandarin, mengikuti isi halaman.
 - Kalau item sudah ditulis ke build sheet, pindahkan ke bagian "Sudah ditulis" dan cantumkan versi halamannya.
 
-Versi build sheet terakhir yang dibaca: **v60** (2026-09-29T08:27:21Z).
+Versi build sheet terakhir yang dibaca: **v61** (2026-09-29T09:13:39Z).
 
 ---
 
 ## Antre
 
-Sisa yang **belum** ditulis setelah v60. Semua ditulis **sekaligus dalam satu versi** saat Bambang memerintahkan (permintaan Bambang, 2026-09-29).
+Sisa yang **belum** ditulis setelah v61. Semua ditulis **sekaligus dalam satu versi** saat Bambang memerintahkan (permintaan Bambang, 2026-09-29).
 - **P-6.7** (menunggu orang lain): C-01 (backfill nama RT di 04.7; masih belum per 04.7 v51, E69), C-26 (isi §七, keputusan Kayden), D-13 (marker patroli, Geri c50631 dan K-10). A-14 sudah dipindah ke P-17.
 - **P-6.8** (menunggu keputusan Bambang): B-5, B-14, D-4, D-9, D-16, A-01 (catatan versi dasar Spec v67). B-2 terjawab oleh draf P-18 (暗号表 `nos-s05-dup`); C-27 selesai (E61, v57).
-- **P-21** (DRAF, 2026-09-29): (a) koreksi versionId N05 di build sheet v60 (第五区 N05 块 dan 配置对应表 N05 行 menulis `dd065a45`; sekarang `664828ee`, UI save 08:17:58Z hanya sticky; pinData tes di-unpin Bambang 08:59:58Z; E76); (b) 偏差登记: perubahan N07/N05 2026-09-29 dilakukan件 dulu lalu registrasi, terbalik dari 04.9 §一 「先改登记再改件」; registrasi disusulkan 04.9 v138／04.9.7 v3 (E76); (c) 附表 「本流程 n8n 件 04.9 登记」: tambahkan bahwa blok N05/N07 diperbarui (04.9.7 v3, 04.9 v138).
 - **P-17**: transisi 9/11 setelah Kent c50705, termasuk A-14 dari P-6.7 (detail di bawah). **HOLD** (Bambang 2026-09-29: 「Kau hold dulu ini」): pemasangan condition 9/11 di UI Jira dan penulisan P-17 ditunda sampai Bambang melanjutkan.
 
 ### P-17 · §二 baris transisi 9 dan 11 setelah Kent c50705 (DRAF, 2026-09-29)
@@ -45,6 +44,13 @@ Digabung dari P-6.7 A-14 (C-10, D-2): sumber c50445, c50632, Felix c50644 (sudah
 - Sebelum ditulis: ambil build sheet terbaru, cek OSD-116 setelah c50705, 04.3 versi terbaru §六.
 
 ## Sudah ditulis
+
+### v61 (2026-09-29T09:13:39Z, akun pribadi Bambang, perintah 「Tulis P-21 ke build sheet dulu」)
+
+Ditulis sebagai **P-21** (3 `insertNodeAfter`; dryRun → skrip: setelah 3 sisipan dicabut, isi = v60 (beda hanya penulisan entity HTML); setiap sisipan tepat setelah titik tujuannya; baca ulang `diffConfluenceContentVersions` v60→v61: +5/−1, 3 hunk, hanya tiga paragraf ini; evidence E77).
+- (a) 第五区 N05 块, setelah `b28d092a0110`: 【2026-09-29 订正】 versionId sekarang `664828ee` (UI save 08:17:58Z, beda hanya sticky 16d99dee); pinData dilepas menurut pernyataan Bambang (08:59:58Z), isinya tidak terbaca MCP. Catatan: draf P-21 menyebut 「配置对应表 N05 行」 juga menulis `dd065a45`; saat dicek di v60, `dd065a45` hanya ada di blok N05, jadi hanya satu tempat yang dikoreksi.
+- (b) 偏差登记, setelah `b28d0928002b`: 【2026-09-29 补｜登记次序偏差】 dengan kutipan 04.9 v138 §一 「n8n 照登记实现，实况要变，先改登记再改件，不得反向以 n8n 实况倒改规则。」
+- (c) 附表 「本流程 n8n 件 04.9 登记」 kolom 解除判据, setelah `b28d0929008c`: 04.9.7 v2→v3 dan 04.9 v137→v138. Kolom 状态 tidak diubah (masih menulis 「04.9 v130／04.9.7 v2 已回读」).
 
 ### v60 (2026-09-29T08:27:21Z, akun pribadi Bambang, perintah 「Kau kerjakan step by step A sampai F」 butir C)
 
