@@ -18,7 +18,44 @@ Versi build sheet terakhir yang dibaca: **v59** (2026-09-29T06:51:23Z).
 Sisa yang **belum** ditulis setelah v59. Semua ditulis **sekaligus dalam satu versi** saat Bambang memerintahkan (permintaan Bambang, 2026-09-29).
 - **P-6.7** (menunggu orang lain): C-01 (backfill nama RT di 04.7; masih belum per 04.7 v51, E69), C-15 (Felix: 到期日期 dan 纪律记录有效期), C-26 (isi §七, keputusan Kayden), D-13 (marker patroli, Geri c50631 dan K-10). A-14 sudah dipindah ke P-17.
 - **P-6.8** (menunggu keputusan Bambang): B-5, B-14, D-4, D-9, D-16, A-01 (catatan versi dasar Spec v67). B-2 terjawab oleh draf P-18 (暗号表 `nos-s05-dup`); C-27 selesai (E61, v57).
+- **P-19**: field batch A sudah dibangun (Kent c50725, cek editmeta E72). Detail di bawah.
 - **P-17**: transisi 9/11 setelah Kent c50705, termasuk A-14 dari P-6.7 (detail di bawah). **HOLD** (Bambang 2026-09-29: 「Kau hold dulu ini」): pemasangan condition 9/11 di UI Jira dan penulisan P-17 ditunda sampai Bambang melanjutkan.
+
+### P-19 · Field batch A dibangun, Kent OSD-116 c50725 (DRAF, 2026-09-29)
+
+Sudah dicek (2026-09-29): OSD-116 s.d. **c50725** (dibaca penuh; tidak ada comment setelahnya); NSE-1137 s.d. c50702 (tidak ada yang baru); editmeta SSCSD-442 (E72); build sheet **v59** (salinan `scratchpad/p18/v59.html`): semua baris tabel yang menyebut c50658／主单字段／取消原因／Screen dibaca penuh. **Belum dibaca:** 04.10 §三 v23 (registrasi field; klaim Kent), layar 14761 (klaim Kent). Kalimat di draf yang bersandar pada dua hal itu ditulis sebagai 「Kent 所述」.
+
+Baris transisi 9 dan 11 (§二) juga menyebut 「取消原因」 belum ada. Tambahan untuk kedua baris itu **tidak** dimasukkan ke sini, tetapi ke P-17 (HOLD), supaya satu baris tidak dapat dua 【补】 terpisah.
+
+**① 附表 「主单专属 Screen 未建」 (`4e23eeaaa8cb`): kolom 状态 被阻塞 → 进行中, 【补】 di kolom catatan:**
+
+> 【2026-09-29 补】Kent OSD-116 c50725 答 c50658（批次 A）：「all 14 fields are built, optional on the shared SSCSD screen 14761 (tab 14832), and registered in 04.10 §三 (v23).」建造侧同日以 Backend Operations 账号读 SSCSD-442 editmeta 回读：14 个字段均在、均为选填、选项与 c50725 表一致（customfield_18326／18327／18329／18331／18333／18334／18328／18336／18337／18338／18335／18330／18332／18339）。屏 14761（tab 14832）与 04.10 §三 v23 登记系 Kent 所述，建造侧未另读。批次 B（Final Outcome、离职单关联状态、下游流程触发状态、Show Cause回复截止日期、入口字段）尚未申请；解除判据④ createmeta 回读未做。本行状态由「被阻塞」改为「进行中」，依 Anchor 04 §七.6；证据：c50725 与上述 editmeta 回读。
+
+**② §一 配置对应表 「主单专属 Screen」 (`aee027bb-…`): 状态 被阻塞 → 进行中, 【补】:**
+
+> 【2026-09-29 补】本行状态由「被阻塞」改为「进行中」，依 Anchor 04 §七.6；证据：批次 A 十四字段已建于共用屏并经 editmeta 回读（Kent OSD-116 c50725；见页首附表对应行 2026-09-29 补）；批次 B 未申请。
+
+**③ §一 配置对应表 N07 (`aaad9eef-…`): 状态tetap 进行中, 【补】:**
+
+> 【2026-09-29 补】上条「主单回写字段待 Kent（OSD-116 c50658）」已答：批次 A 已建（Kent c50725，editmeta 回读见页首附表「主单专属 Screen」行 2026-09-29 补）。Kent 原文：「You can switch the N07 writeFields from noWrite to these ids now.」截至本补，N07 writeFields 仍为 noWrite，未改。Kent 同条注意事项：选项值「Take the exact strings from this table or from editmeta, not from c50658」；纪律记录有效期「empty means 「永不自动失效」… Leave it empty rather than writing a sentinel date」。本行状态不变。
+
+**④ 附表 模式九 (`635936c72c8c`): 状态 tetap 已验证, 【补】:**
+
+> 【2026-09-29 补】上条「「HR 判定依据」已于 OSD-116 c50658 向 Kent 申请（批次 A 第 1 项），待建」：已建，「HR判定依据 · HR Decision Basis」customfield_18326（Kent c50725；editmeta 回读见「主单专属 Screen」行 2026-09-29 补）。N10／N14／N17 尚未建件。本行状态不变。
+
+**⑤ §一 配置对应表 N28 执行中止 (`dcef6713-…`): 状态 tetap 进行中, 【补】:**
+
+> 【2026-09-29 补】上条「「取消原因」为主单侧字段、尚未建」：已建，「取消原因（纪律处置） · Disciplinary Cancellation Reason」customfield_18331，选项 Duplicate Case (15986)／Withdrawn (15987)／Dismissed (15988)／员工已离职或案件失效 (15989)（Kent c50725，editmeta 回读）。Kent 原文：「The name differs from the OS dev flow's 「取消原因」 cf18151, which is text. Do not mix the two.」本流程尚无任一环节写入该字段。本行状态不变。
+
+**⑥ §二 transisi 3 Reject (`9924efe5-…`) dan 8 Withdraw (`377bc48a-…`), 【补】 yang sama di keduanya:**
+
+> 【2026-09-29 补】上文「该字段尚不存在」「该 Issue Type 现无属于 S-05 的取消原因字段」已不准确：「取消原因（纪律处置）」customfield_18331 已建（Kent OSD-116 c50725，editmeta 回读）。本转换 post function 仍只写 Resolution，未写该字段（上文实跑结果不变）；Spec 增补区 A「取消原因」由 N05／N06／N07／N28 使用，写入方式建造侧尚未配置。
+
+**⑦ §八 「带主体端到端／负向／权限测试」 (`5882ce8b-…`), 【补】:**
+
+> 【2026-09-29 补】上条缺口③「主单回写字段与专属 Screen 未建」：批次 A 字段已建于共用屏（Kent OSD-116 c50725，editmeta 回读）；专属 Screen 已改为共用屏（页首附表对应行 2026-09-29 补）；批次 B 未建。缺口①②不变。
+
+Tidak dimasukkan: C-15 (P-6.7, menunggu Felix soal 到期日期／纪律记录有效期). c50725 menyebut arti nilai kosong 纪律记录有效期, tetapi C-15 adalah pertanyaan ke Felix dan tidak didamaikan sendiri (CLAUDE.md §0-7).
 
 ### P-17 · §二 baris transisi 9 dan 11 setelah Kent c50705 (DRAF, 2026-09-29)
 
