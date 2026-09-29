@@ -52,7 +52,7 @@ Setiap blok di bawah = satu H2 di 04.9.7 (format mengikuti 04.9.3 v28).
 | 读取数据源 | Jira：本主单（对照探针，07.06.1 E16——读不到即抛错，不信任其后的 0 条结果）；本主单 comment 取 `[[nos-s05-subject:<accountId>]]`（由 N01／N03 写入，缺即抛错）；JQL `project = SSCSD AND issuetype = "Disciplinary Case" AND status in ("Pending Approval","Pending Sub-tickets") AND key != <本单>`；各候选单 comment 比对主体 accountId |
 | 输出动作 | 命中疑似重复 → 在本主单写 internal comment `[[nos-s05-dup:<本单 key>:<疑似原单 key>]]`（`sd.public.comment` internal）；不判定、不转态。返回 `issueKey`／`subjectAccountId`／`duplicateFound`／`matchedCaseKey`／`historicalDisciplinaryRecords`／`historicalRecordsStatus`。**历史纪律记录为占位**：固定输出 `[]`，Registry（N13）未建 |
 | 调用关系 | 被 N04 调用；不调用下游；写入经 Bot_SSC（`Write Duplicate Marker Comment (internal)`，UI 手工挂，UI 目视确认人 Bambang）；错误出口 **NOS \| Platform \| Error Handler (nos-ops)**（`VUIgv9Ujj1KEoIne`） |
-| 状态 | inactive｜`versionId 30b14fd2-370b-43ef-b360-2086a05da9b8`（2026-09-28T15:44:21Z，抛错文案去半角冒号），17 节点（含 sticky 3）；`errorWorkflow`＝`VUIgv9Ujj1KEoIne`，`callerPolicy`＝workflowsFromSameOwner（2026-09-28 经 UI 设置，人：Bambang；API 回读 updatedAt 2026-09-28T14:53:41Z）；无干跑记录；零评论／零候选两例未验（建造单第五区 2026-09-28 待验）。｜登记人：Bambang |
+| 状态 | inactive｜`versionId 30b14fd2-370b-43ef-b360-2086a05da9b8`（2026-09-29T05:30:22Z，过时注记订正；逻辑同 2026-09-28 抛错文案去半角冒号版），17 节点（含 sticky 3）；`errorWorkflow`＝`VUIgv9Ujj1KEoIne`，`callerPolicy`＝workflowsFromSameOwner（2026-09-28 经 UI 设置，人：Bambang；API 回读 updatedAt 2026-09-28T14:53:41Z）；无干跑记录；零评论／零候选两例未验（建造单第五区 2026-09-28 待验）。｜登记人：Bambang |
 
 ### 纪律与绩效改进处置｜N07｜n8n-审批卡发送
 
@@ -65,7 +65,7 @@ Setiap blok di bawah = satu H2 di 04.9.7 (format mengikuti 04.9.3 v28).
 | 读取数据源 | Jira：本主单 `status`／`issuetype`／`summary`（对照探针；非「Pending Approval」即抛错不发卡）；Data Table「NOS Platform Approval Cards」（`jdF8S9cV7ZIZowvw`）按 `idempotency_key`＋`flow_key` 查同一轮是否已发 |
 | 输出动作 | 构造审批卡交 Notify 发给审核人：通过·Show Cause／通过·Warning（等级＋判定依据）／通过·PIP（六参数＋判定依据）／通过·严重违纪／打回补件（第 1、2 轮）／确认重复（仅 N05 标记时）／拒绝（判定依据必填）。`flowKey`＝纪律与绩效改进处置，`idempotencyKey`＝`<主单>:r<轮次>`，`approverFieldId`＝`customfield_18061`，`auditVisibility`＝internal，`rejectNotice`＝none。标题以 `TEST｜` 起头时，卡首为 04.5.3 统一测试标识（加粗）。modal 字段全部 `noWrite`（主单字段待建，OSD-116 c50658）。本件自身不写 Jira |
 | 调用关系 | 调用 **NOS \| Platform \| Notify**（`eYOFfHfGUwpfg6ss`）；卡片回调由 **NOS \| Platform \| Slack Approval**（`6wdHhygWmyRFQAoX`）承接；读 Data Table `jdF8S9cV7ZIZowvw`；错误出口 **NOS \| Platform \| Error Handler (nos-ops)**（`VUIgv9Ujj1KEoIne`）。所调平台件只读未改 |
-| 状态 | inactive｜`versionId 3ecb5c28-2a8c-47a4-9141-906d3da3d584`（2026-09-28T15:45:25Z，抛错文案去半角冒号），11 节点；`errorWorkflow`＝`VUIgv9Ujj1KEoIne`，`callerPolicy`＝workflowsFromSameOwner。测试单实跑 SSCSD-435（2026-09-26）、SSCSD-437／438／439／441／442（2026-09-28），逐次记录见建造单第八区。未证：「Read Case」以 Bot_SSC 真读（测试工具强制 pin）、modal 回写、打回次数 +1（未建）。｜登记人：Bambang |
+| 状态 | inactive｜`versionId 3ecb5c28-2a8c-47a4-9141-906d3da3d584`（2026-09-29T05:30:27Z，过时注记订正；逻辑同 2026-09-28 抛错文案去半角冒号版），11 节点；`errorWorkflow`＝`VUIgv9Ujj1KEoIne`，`callerPolicy`＝workflowsFromSameOwner。测试单实跑 SSCSD-435（2026-09-26）、SSCSD-437／438／439／441／442（2026-09-28），逐次记录见建造单第八区。未证：「Read Case」以 Bot_SSC 真读（测试工具强制 pin）、modal 回写、打回次数 +1（未建）。｜登记人：Bambang |
 
 ### 纪律与绩效改进处置｜N20｜n8n-解雇自动开单与交接
 
