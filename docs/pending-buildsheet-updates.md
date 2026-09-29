@@ -81,7 +81,7 @@ Pegangan yang dipakai (inferensi, belum dikonfirmasi; Anchor 04 §七.6 tidak me
 | 10 | 部门值→Team Project 对照表与兜底。技术签 c49696 明写「部门值→板 key  | 待办 | **待决策** | Dua 🔲 di tabel perlu konfirmasi Felix |  |
 | 11 | Inz9／Marketing 两个 Collab 频道是否仍使用。两部门已并入 CRM（Alde | 待办 | **被阻塞** | Felix c50261 ④ sudah memutuskan; registrasi 04.11 menunggu Alden |  |
 | 12 | 测试期不得向 sscos-hr 发送 | 待办 | **未开始** | Notifikasi D (ke sscos-hr) belum dibangun; aturan uji mode belum dipasang | ❓ kalau dianggap aturan yang sudah diterapkan di N07 (DM), bisa 进行中 |
-| 13 | 主单专属 Screen 未建 | 待办 | **待决策** (usulan berubah dari 被阻塞) | Dicek 2026-09-29: sumber terbaru mengarah ke **layar bersama**, bukan layar khusus: #nos-bo 1790228926.781229 butir 5 (dikutip di c50658) 「挂 Disciplinary Case 那张共用屏时，设成选填直接做」; Alden c50647 (a) ① Approved By 「already on the Disciplinary Case edit screen」, ② field harus ada di 「Disciplinary Case edit screen」; field tiket utama lewat 04.10/Kent (c50647 (a)). 04.10 **v22** (hari ini) masih 「主单字段归 SSCSD/V1」 (K-15). Syarat ①–② baris ini (tempat daftar Screen + layar khusus) tidak dijawab langsung | ❓ baris ini bertentangan dengan arah sumber terbaru; apakah rencana layar khusus dipertahankan = keputusan Bambang (tidak didamaikan Claude) |
+| 13 | 主单专属 Screen 未建 | 待办 | **被阻塞** (Bambang 2026-09-29: 「Baris 13 ikut arah layar bersama」; sisa pekerjaan = field di layar bersama, menunggu Kent c50658) | Dicek 2026-09-29: sumber terbaru mengarah ke **layar bersama**, bukan layar khusus: #nos-bo 1790228926.781229 butir 5 (dikutip di c50658) 「挂 Disciplinary Case 那张共用屏时，设成选填直接做」; Alden c50647 (a) ① Approved By 「already on the Disciplinary Case edit screen」, ② field harus ada di 「Disciplinary Case edit screen」; field tiket utama lewat 04.10/Kent (c50647 (a)). 04.10 **v22** (hari ini) masih 「主单字段归 SSCSD/V1」 (K-15). Syarat ①–② baris ini (tempat daftar Screen + layar khusus) tidak dijawab langsung | ✓ diputuskan Bambang: ikut layar bersama; 【补】 khusus di bawah |
 | 14 | Kayden 两项提点未见 Felix 回复（c49740「提点」段，不构成退回）：①直属上级缺 | 待办 | **待决策** | Poin ① gugur (Kayden c50461); poin ② (Raymond) belum dijawab Felix |  |
 | 15 | 《Nexmax WFH工作规章制度（正式版）》无可追溯版本 | 待办 | **被阻塞** | Felix belum memberi lokasi dan versi resmi |  |
 | 16 | 请求级整单时限未定（04.7 两行 SLA 列均为「请求级整单时限 🔲 未定占位」）。04.7  | 待办 | **待决策** | Nilai SLA per request belum ditetapkan Felix |  |
@@ -111,7 +111,11 @@ Pegangan yang dipakai (inferensi, belum dikonfirmasi; Anchor 04 §七.6 tidak me
 | 40 | 本件与本页暗号接口契约表「先认领后动作」约束的适用 | 待办 | **待决策** | 双签未表态 |  |
 | 41 | 本流程 n8n 件 04.9 登记（索引行＋04.9.7 详情块） | 已完成但未验收 | **已完成但未验收** | v58 |  |
 
-Hitungan sementara (setelah cek ⚠ 2026-09-29, sebelum ❓ diputuskan): 共 42 行——被阻塞 12；待决策 13；已验证 6；未开始 6；已完成但未验收 3；进行中 2。
+Hitungan sementara (setelah cek ⚠ dan keputusan baris 13, 2026-09-29; sebelum ❓ diputuskan): 共 42 行——被阻塞 13；待决策 12；已验证 6；未开始 6；已完成但未验收 3；进行中 2。
+
+**【补】 khusus baris 13 (sel 解除判据, paragraf terakhir; menggantikan pola umum untuk baris ini):**
+
+> 【2026-09-29 补】建造人决定：本行不再建本流程专属 Screen，改依平台方向用 Disciplinary Case 共用屏——#nos-bo 1790228926.781229 第 5 点「挂 Disciplinary Case 那张共用屏时，设成选填直接做」；Alden OSD-116 c50647 (a)：①「Approved By … is already on the Disciplinary Case edit screen」②「Any field the card writes back must be on the Disciplinary Case edit screen first, otherwise Jira rejects the whole write」，主单字段按 04.10 三格交 Kent 建（已于 c50658 申请批次 A 八项，均请设为选填）。原解除判据①②（Screen 登记处、专属 Screen 与 Screen Scheme）自此不再追；③挂 Scheme 一项随之不发生；④createmeta 回读字段齐仍适用于共用屏。上文「他流程字段留在单上会误导填写人」这一后果在共用屏下仍存在，如实保留。04.10 v22 仍载「主单字段归 SSCSD/V1」（与 c50647 (a) 并存，建造侧不调和）。本行状态由「待办」改为「被阻塞」，依 Anchor 04 §七.6；证据：OSD-116 c50658（Kent 未答，字段未建）。
 
 **Pola 【补】 per baris (sel 解除判据, paragraf terakhir), contoh baris 1:**
 
@@ -121,7 +125,7 @@ Hitungan sementara (setelah cek ⚠ 2026-09-29, sebelum ❓ diputuskan): 共 42 
 
 > 【2026-09-29 补】自本版起本表「状态」列依 Anchor 04 §七.6 六个标签（已验证／已完成但未验收／进行中／待决策／被阻塞／未开始）登记，原「阻塞中／待办／已解封」各行改标依据见各行 2026-09-29 补。逐行机读：共 {n} 行——{hitungan final}。上方各段旧统计为当时口径，原文保留。
 
-- Baris ⚠ (0, 3, 4, 8, 13) **sudah dicek ulang 2026-09-29** (E69). 0, 3, 4, 8 tetap 被阻塞. 13 berubah menjadi 待决策 dan masuk daftar ❓.
+- Baris ⚠ (0, 3, 4, 8, 13) **sudah dicek ulang 2026-09-29** (E69). 0, 3, 4, 8 tetap 被阻塞. 13: Bambang memutuskan ikut layar bersama (2026-09-29) → 被阻塞 (menunggu Kent c50658), 【补】 khusus di atas.
 - Baris ❓ (7, 12, 26, 28, 29, 37) dan baris 34 menunggu pilihan Bambang.
 - Pertanyaan terbuka: tabel 「统计：24 个节点行」 di §五 (已建／可建／阻塞／待对端) ikut diseragamkan atau tidak.
 
