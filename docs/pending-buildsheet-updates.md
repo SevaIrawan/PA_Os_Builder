@@ -27,7 +27,7 @@ Sudah dicek (2026-09-29): build sheet **v58** §二 baris transisi 9 (`a1699b53-
 
 Digabung dari P-6.7 A-14 (C-10, D-2): sumber c50445, c50632, Felix c50644 (sudah di 附表 v53/v57); transisi 9 「仅服务账号」 vs Kayden c50445 「N07「确认重复」同口径」 (K-13); baca ulang `isConditional` setelah condition dipasang.
 
-**Prasyarat yang harus diisi Bambang sebelum ditulis:** apakah condition transisi 9 dan 11 sudah dipasang di UI Jira? Draf di bawah punya dua varian untuk kalimat terakhir.
+**Keadaan condition (dicek 2026-09-29):** build sheet v58 mencatat 「确认前 condition 不配」 (menunggu Kent); Kent baru menjawab c50705 (2026-09-29 12:52 +07). Cek API tidak bisa: semua 10 tiket tes Disciplinary Case (SSCSD-411–442) sudah di status akhir, jadi transisi 9/11 tidak muncul di daftar transisi mana pun; membuat tiket tes baru = menulis, butuh izin. Default tulis: **varian A (belum dipasang)**, kecuali Bambang memberi tahu sudah memasang. Catatan: condition = aturan izin transisi, termasuk kelas 「izin/visibilitas」 di daftar lima kelas Alden (masih draf, CLAUDE.md §3).
 
 **① §二 transisi 9, kolom 允许执行者, setelah `b28d09280040`:**
 
@@ -128,7 +128,7 @@ Hitungan (setelah cek ⚠, keputusan baris 13, dan baris ❓ memakai usulan — 
 - Baris ⚠ (0, 3, 4, 8, 13) **sudah dicek ulang 2026-09-29** (E69). 0, 3, 4, 8 tetap 被阻塞. 13: Bambang memutuskan ikut layar bersama (2026-09-29) → 被阻塞 (menunggu Kent c50658), 【补】 khusus di atas.
 - Baris ❓ (7, 12, 26, 28, 29, 37): **memakai usulan di tabel** (Bambang 2026-09-29: 「baris ❓ pakai usulanmu」) — 7 进行中, 12 未开始, 26 已完成但未验收, 28 未开始, 29 未开始, 37 被阻塞.
 - Baris 34 (Abort Case) mengikuti jawaban P-17: condition belum dipasang → 未开始; sudah dipasang dan dibaca ulang → label ditentukan dari hasil baca ulang.
-- Pertanyaan terbuka: tabel 「统计：24 个节点行」 di §五 (已建／可建／阻塞／待对端) ikut diseragamkan atau tidak.
+- **Cakupan diperluas (Bambang 2026-09-29: 「Intinya semua ikut aturan dan source yang ada」):** bukan hanya 附表. Semua kolom 「状态」 dan paragraf statistik di build sheet yang menilai keadaan (termasuk paragraf 「统计：24 个节点行」 di §一 配置对应表: 已建 4／可建或部分可建 13／阻塞 6／待对端 2, dan tabel lain yang punya kolom 状态) ikut enam label Anchor 04 §七.6 dengan pegangan yang sama. Inventaris tabel dan draf per baris dibuat berikutnya, ditunjukkan dulu sebelum ditulis.
 
 ## Sudah ditulis
 
