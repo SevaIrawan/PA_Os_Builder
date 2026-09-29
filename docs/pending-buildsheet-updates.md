@@ -9,22 +9,31 @@ Aturan:
 - Bahasa: Mandarin, mengikuti isi halaman.
 - Kalau item sudah ditulis ke build sheet, pindahkan ke bagian "Sudah ditulis" dan cantumkan versi halamannya.
 
-Versi build sheet terakhir yang dibaca: **v56** (2026-09-28T16:12:01Z).
+Versi build sheet terakhir yang dibaca: **v57** (2026-09-29T05:59:25Z).
 
 ---
 
 ## Antre
 
-Sisa yang **belum** ditulis setelah v56:
-- **P-16** (4 workflow: nama baru per aturan 04.6 §二-3, catatan basi N05/N07, versionId baru, folder S-05 belum ada).
-- **P-15** (Alden c50692: format nama n8n- dan Owner 部门 HR; c50695: field posisi NTP; c50691 ①: publish = aktif).
-- **P-14** (temuan skill harian 2026-09-29: entry terdaftar, marker klaim Geri, batch 1B live menurut Alden c50689).
+Sisa yang **belum** ditulis setelah v57:
 - **P-6.7**: D-13 (marker patroli, tunggu Geri c50631 dan K-10). Isi keputusan C-15 (Felix) dan isi §七 (C-26, keputusan Kayden 9/29) juga belum; yang sudah ditulis hanya catatan keadaannya.
 - **P-6.8**: semua item di sana masih menunggu keputusan Bambang (B-2, B-5, B-14, D-4, D-9, D-16, C-27, catatan versi dasar Spec v67).
-- Setelah Kent menjawab c50632: tambahkan 【补】 baru untuk transisi 9/11 dan baris Abort Case, lalu hitung ulang statistik 附表.
+- Kent sudah menjawab c50632 (**c50705**, 2026-09-29). Baris Abort Case sudah mendapat 【补】 di v57 (P-15 ③). Yang belum: 【补】 untuk baris transisi 9/11 di §二, dan hitung ulang statistik 附表.
+- Status baris 附表 「本流程 n8n 件 04.9 登记」 masih 「待办（建造侧提出）」 walau registrasi sudah ditulis dan dibaca ulang (04.9 v130, 04.9.7 v2). Perubahan label status menunggu keputusan Bambang.
 
 
-### P-14 · Temuan skill harian 2026-09-29 (nos-check, nos-gate, prebuild-scan, build)
+## Sudah ditulis
+
+### v57 (2026-09-29T05:59:25Z, akun pribadi Bambang, perintah 「Tulis P-14, P-15, P-16 ke build sheet」)
+
+Ditulis lewat Atlassian_MCP `updateConfluenceContent` snapshotToken `v:56`: dryRun (dibandingkan skrip dengan v56 + 12 sisipan: identik), tulis, lalu baca ulang `diffConfluenceContentVersions` v56→v57 (18 tambah, 6 hapus = 6 baris 附表 yang diperpanjang + 6 paragraf baru di §五; teks lama utuh; kolom status tidak berubah). Evidence E66, E67. localId baru: `b28d09290080`–`b28d0929008b`.
+
+Perubahan terhadap draf di bawah sebelum ditulis (berdasarkan cek ulang 2026-09-29, E66):
+- P-15 ③: kalimat 「c50632 截至 2026-09-29 仍未见 Kent 答复」 diganti kutipan **Kent c50705** (jawaban c50632) + 「按此配置转态条件并回读前，本行状态不变。」
+- P-14 ③: 「versionId 5a66fd9c 未变」 → 「时 versionId 5a66fd9c；其后仅订正注记与改名，见本区 N07 全名段下之补」 (versionId N07 sudah berubah ke 3ecb5c28 setelah koreksi catatan).
+- P-14 ②: disisipkan di sel 事项 setelah `b28d09280013` (mengikuti 【补】 sebelumnya di baris itu); P-14 ①: setelah `b28d0928000e`; P-14 ③: setelah `b28d0929000a` (paragraf terakhir blok N07).
+
+#### P-14 · Temuan skill harian 2026-09-29 (nos-check, nos-gate, prebuild-scan, build)
 
 Sudah dicek (2026-09-29): build sheet v56 (附表 baris 「离职侧「系统触发入口」…发布」 `cecfddc9c86e`, 「…『先认领后动作』约束的适用」, 「员工离职 Spec 系统触发接收入口」 `2383136a7379`, 「Trigger link 方向」 `15b49457487d`); OSD-116 s.d. c50695; NSE-1137 s.d. c50674 (c50673, c50674 dibaca penuh); OSD-116 c50689 (Alden, dibaca penuh, evidence E57); 04.9 v127, 04.9.3 v30, 04.4.1 v16, Notify 契约 v16, 04.9.1 v22, 04.5 v81 (diff dibaca penuh, evidence E52); n8n N07 (E56). #nos-bo: tidak ada pesan utama baru setelah 2026-09-26.
 
@@ -42,7 +51,7 @@ Sudah dicek (2026-09-29): build sheet v56 (附表 baris 「离职侧「系统触
 
 - Sebelum ditulis: ambil versi terbaru build sheet; cek ulang NSE-1137, OSD-116 dan 04.9/04.9.3. P-7④ (v56) masih menulis 「10/1 后回读实际记录格式」; setelah c50689 kalimat itu basi, dan ③ di atas yang mencatat keadaan barunya.
 
-### P-15 · Jawaban Alden OSD-116 c50692 dan c50695, platform NSE-1137 c50691 ① (2026-09-29 siang)
+#### P-15 · Jawaban Alden OSD-116 c50692 dan c50695, platform NSE-1137 c50691 ① (2026-09-29 siang)
 
 Sudah dicek (2026-09-29): OSD-116 s.d. **c50695** (c50689, c50692, c50695 dibaca penuh); NSE-1137 s.d. **c50693** (c50691 dan c50693 dibaca penuh; c50693 hanya soal N5/N6/N7 离职, tidak dipakai); 04.9 **v129** (diff v127→v129 dibaca penuh, evidence E58); build sheet v56 (baris 附表 yang dituju). #nos-bo tidak dicek ulang.
 
@@ -64,7 +73,7 @@ Sudah dicek (2026-09-29): OSD-116 s.d. **c50695** (c50689, c50692, c50695 dibaca
 
 - Sebelum ditulis: ambil versi terbaru build sheet; cek ulang OSD-116 (Kent c50632/c50658) dan 04.9 (registrasi sudah ditulis 2026-09-29: 04.9 v130, 04.9.7 v2; kalimat 「下一步…」 di ① sudah diganti dengan hasilnya, E64/E65). Status baris 「04.9 登记」 di 附表 diputuskan Bambang saat menulis.
 
-### P-16 · Nama, catatan, dan folder 4 workflow (2026-09-29 siang)
+#### P-16 · Nama, catatan, dan folder 4 workflow (2026-09-29 siang)
 
 Sudah dicek (2026-09-29): 04.6 v23 (§二-3, §3.2, §3.5, §3.9, dibaca penuh), 04.5.3 v18 (§一, dibaca penuh), 04.9 v129 §一, Spec S-05 v67 (tabel node), n8n `search_folders` dan `get_workflow_details` keempat workflow (evidence E59–E62); build sheet v56 §五 paragraf 「全名」 keempat workflow.
 
@@ -89,7 +98,6 @@ Sudah dicek (2026-09-29): 04.6 v23 (§二-3, §3.2, §3.5, §3.9, dibaca penuh),
 - Nama folder tidak ada di source mana pun. Claude tidak mengusulkan nama sendiri. Kalau folder sudah dibuat sebelum P-16 ditulis, ganti 【补】 ② dengan nama folder dan hasil baca ulangnya.
 - Paragraf lama 「全名 …」 tidak diubah (teks lama tidak dihapus); 【补】 di bawahnya yang mencatat nama baru.
 
-## Sudah ditulis
 
 ### v56 (2026-09-28T16:12:01Z, akun pribadi Bambang, perintah 「Tulis P-7 dan P-8 ke build sheet」)
 P-7 (①②③④, termasuk P-4③) dan P-8 (①③④; ② dibuang). 7 operasi `insertNodeAfter` (node baru `b28d09290070`～`0076`); teks lama tidak diubah. Bukti: `docs/evidence/2026-09-28-live-checks.md` E49.

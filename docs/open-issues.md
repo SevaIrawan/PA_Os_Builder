@@ -103,10 +103,11 @@
     - pemetaan HR←`SSCOS｜HR` adalah keputusan Kent (c49545);
     - Kent yang mengusulkan hak Abort untuk grup peran HR (c50228, c50255/c50257);
     - persetujuan harian sisi SSCSD dipegang Kent sebagai Schema Owner (Alden, #nos-bo 1790228926.781229). Ini masih draf dan belum masuk 04.10 (lihat K-1).
-  - **OSD-116 c50632** (Bambang, 2026-09-28 09:59 WIB, akun pribadi, ditujukan ke Kent, cc Alden, Felix, Kayden): minta konfirmasi pemakaian `SSCOS｜HR` untuk condition transisi 11 dan 9. Isi condition: service account + `SSCOS｜HR` + Project Owner SSCSD (04.3 §六). Urutan: tiket utama dulu, lalu sub-tiket (c50445). Selisih 3 orang vs 2 anggota ikut disebut. **Belum ada jawaban.**
+  - **OSD-116 c50632** (Bambang, 2026-09-28 09:59 WIB, akun pribadi, ditujukan ke Kent, cc Alden, Felix, Kayden): minta konfirmasi pemakaian `SSCOS｜HR` untuk condition transisi 11 dan 9. Isi condition: service account + `SSCOS｜HR` + Project Owner SSCSD (04.3 §六). Urutan: tiket utama dulu, lalu sub-tiket (c50445). Selisih 3 orang vs 2 anggota ikut disebut. **Dijawab Kent c50705** (lihat di bawah).
   - Catatan lama di build sheet (§二 baris transition 11): 「配置前须经 04.3 Owner（Kayden Lee）确认」. Konfirmasi itu sudah diberikan lewat c50445, tapi build sheet belum mencatatnya. Perlu dimasukkan ke `docs/pending-buildsheet-updates.md`.
 - **Felix_HR, OSD-116 c50644** (2026-09-28 11:55 +07, kepada Kent, cc Bambang, Alden, Kayden): 「盘点里 HR Ops & Data 是 3 人：Felix、Yuki、Tin（CAM）。Tin 现阶段只负责柬埔寨成员的 payroll 和招聘，不负责请假；绩效管理相关事项由 TL 直接负责，所以当时才没有加她进 SSCOS｜HR。该组保持 Felix 和 Yuki 两人即可，3 人与 2 人的差异就是这个原因。」 Felix menulisnya 「补充说明供你判断」, jadi keputusan memakai `SSCOS｜HR` tetap di tangan Kent.
-- **Status:** 待决策. Selisih 3 vs 2 sudah dijelaskan Felix (c50644). Konfirmasi Kent atas c50632 belum ada. Transisi 11 dan 9 belum dipasang condition.
+- **Kent, OSD-116 c50705** (2026-09-29 12:52 +07, dibaca penuh 2026-09-29): 「yes, use SSCOS｜HR for the HR Ops & Data transition condition (Abort Case id 11 and N07 Confirm duplicate), per 04.3 v35 §六. Read today: the group has exactly Felix and Yuki, which Felix confirmed is the right set (Tin stays out, c50644), and it is already the SSCSD Service Desk Team, so no new object is needed.」 Syarat: 「SSCOS｜HR is the HR department group, not a role group. If HR adds someone who is not HR Ops & Data, we split out a dedicated group at that point. When the NTP position field from c50695 exists, the people marked HR Ops & Data there and the members of this group must match — that is the check.」 「Order stays as in c50445」. Dicatat di build sheet v57 (P-15 ③).
+- **Status:** 未开始. Grup sudah diputuskan Kent (c50705). Condition transisi 11 dan 9 belum dipasang; pemasangan lewat UI Jira oleh Bambang, lalu baca ulang.
 
 ### K-10 · Kapan marker `nos-s05-term` ditulis (N20)
 - **Build sheet S-05** (2096463922), tabel 暗号接口契约表 baris 「离职交接认领与审计」: 「建离职单**之前**先写 S-05 侧」. Aturan tabel yang sama: 「先认领后动作：任何写入口在执行写动作**之前**先写认领 marker」.
@@ -145,7 +146,7 @@
 - **Kayden, OSD-116 c50445**: 「Abort Case（id 11）转态权限配给 HR Ops & Data 角色组；N07「确认重复」同口径」.
 - **04.3 v35 §六**, paragraf 执法点: 「Jira workflow Condition 不承担"限定哪个人有权批"的职责——它收紧为"仅服务账号可转态"」. Paragraf ini berdiri berdampingan dengan tabel izin di bagian yang sama, yang menambahkan 处置角色组.
 - Saat ini transisi 9 dijalankan oleh callback platform dengan akun layanan (c50558).
-- Terkait K-9: grup mana yang dipakai masih menunggu jawaban Kent atas c50632.
+- Terkait K-9: Kent c50705 (2026-09-29) memutuskan `SSCOS｜HR` untuk condition transisi 11 dan N07 Confirm duplicate 「per 04.3 v35 §六」. Kalimat 执法点 04.3 di atas tidak disebut Kent; Claude tidak mendamaikannya.
 - Sumber: audit A-14, C-10 (2026-09-28). **Status:** 待决策. Condition untuk transisi 9 dan 11 tidak dipasang sebelum ada jawaban.
 
 ### K-14 · Jalur manual sementara di 偏差登记
