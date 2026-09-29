@@ -72,6 +72,10 @@ Sudah dicek (2026-09-29): 04.6 v23 (§二-3, §3.2, §3.5, §3.9, dibaca penuh),
 
 > 【2026-09-29 补】四件已按 04.6 §二-3 改名（Alden OSD-116 c50692；n8n 回读 versionId 未变，见第六区改名条）。folder：04.6 §3.9「每流程一个 folder…新 workflow 直接建在所属流程 folder」；现 n8n 项目内 11 个 folder，无本流程 folder，四件均不在任何 folder（parentFolderId null）。建 folder 与移件须经 UI（MCP 无此操作），folder 名按 04.6 §3.9「中文｜English」待定，由建造人经 UI 处理。
 
+**② §五 N05 块与 N07 块 (masing-masing): ditambahkan**
+
+> 【2026-09-29 补】过时注记订正（建造人批准，Claude 经 n8n MCP，只改件说明与 sticky 文字，逻辑未改）：N05 件说明原写「needs dry-run + errorWorkflow + Alden approval」（errorWorkflow 已挂）、sticky 原写「Spec S-05 v62」→ 改为现状与 v67，versionId `30b14fd2-370b-43ef-b360-2086a05da9b8`（2026-09-29T05:30:22Z）；N07 件说明与 sticky 原写「Pattern-9 batch 1A」「Notify contract … v6」→ 改为「batches 1A and 1B live」「contract v7」并补 Alden c50689 决定行一句，versionId `3ecb5c28-2a8c-47a4-9141-906d3da3d584`（2026-09-29T05:30:27Z）。回读：其余节点、连线、settings 未变，active false。
+
 - Nama folder tidak ada di source mana pun. Claude tidak mengusulkan nama sendiri.
 - Soal N07 「审批卡发送」 vs nama node Spec 「HR三层审核」: dicatat di laporan ke Bambang, belum dimasukkan ke draf ini sampai Bambang memutuskan.
 
