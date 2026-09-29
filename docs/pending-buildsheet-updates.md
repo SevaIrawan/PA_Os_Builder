@@ -130,6 +130,82 @@ Hitungan (setelah cek ⚠, keputusan baris 13, dan baris ❓ memakai usulan — 
 - Baris 34 (Abort Case) mengikuti jawaban P-17: condition belum dipasang → 未开始; sudah dipasang dan dibaca ulang → label ditentukan dari hasil baca ulang.
 - **Cakupan diperluas (Bambang 2026-09-29: 「Intinya semua ikut aturan dan source yang ada」):** bukan hanya 附表. Semua kolom 「状态」 dan paragraf statistik di build sheet yang menilai keadaan (termasuk paragraf 「统计：24 个节点行」 di §一 配置对应表: 已建 4／可建或部分可建 13／阻塞 6／待对端 2, dan tabel lain yang punya kolom 状态) ikut enam label Anchor 04 §七.6 dengan pegangan yang sama. Inventaris tabel dan draf per baris dibuat berikutnya, ditunjukkan dulu sebelum ditulis.
 
+#### P-18 lanjutan · Tabel status lain di build sheet v58 (DRAF, 2026-09-29)
+
+Sudah dicek (2026-09-29): build sheet **v58** (masih versi terbaru, dicek `listConfluenceContentVersions`), semua 14 tabel di halaman diinventaris. Tabel yang punya kolom 「状态」: 附表 (42 baris, draf di atas), **暗号接口契约表** (8), **§一 配置对应表** (24), **§一 tabel objek** (8). Tabel lain tidak diubah: §二 状态链表 (kolom Jira status/ID, fakta konfigurasi), §八 测试单 「末态」 (nama status Jira tiket), §八 NTP-187 「结论」 (hasil cek per syarat), dan tabel lain tanpa kolom status. Bukti per baris diambil dari isi baris itu sendiri plus sumber yang sudah dibaca hari ini (04.9.7 v2, E59–E69, OSD-116 s.d. c50705). Pegangan label = yang disetujui Bambang.
+
+**A. 暗号接口契约表 (8 baris)**
+
+| Marker | Status sekarang | Usulan | Bukti |
+|---|---|---|---|
+| 主体标识 `nos-s05-subject` | 拟定·未建 (+补 9/28: sisi baca sudah di N05) | **进行中** | Sisi baca dibangun di N05 `LJwiAZFfnuq6tmju` (04.9.7 v2, E63); sisi tulis (N01/N03) belum |
+| 主单建单认领 `nos-s05-case` | 拟定·未建 | **未开始** | Belum ada件 yang menulis/membaca (P-6.8 B-5 tetap terbuka) |
+| 疑似重复标记 `nos-s05-dup` | 拟定·未建 | **进行中** | N05 punya node 「Write Duplicate Marker Comment (internal)」 (04.9.7 v2); jalur utama N05 belum diuji (E63). Ini sekaligus menjawab P-6.8 B-2 |
+| 子单编排认领 `nos-s05-sub` | 拟定·未建 | **未开始** | Belum dibangun |
+| 文书发出认领 `nos-s05-doc` | 拟定·未建 | **未开始** | Belum dibangun (N08/N12 belum) |
+| 离职交接认领与审计 `nos-s05-term` | 拟定·未建 (+订正 9/28) | **待决策** | N20 sudah menulis marker ini (04.9.7 v2; exec 17373); waktu penulisannya masih menunggu 双签 (附表 baris 40) |
+| 下游触发认领 `nos-s05-trigger` | 拟定·未建 | **被阻塞** | Pihak penerima S-06/S-15 belum punya Spec (HR 部门页 v40, E69) |
+| N07 审批动作认领 `nos-s05-review` | 拟定·未建 (+补 9/28: 不建) | **已验证** | Diputuskan tidak dibangun; fungsinya diganti 「已处理检查」 platform yang sudah live (Alden c50576 1A, c50689 1B) dan dipakai di tes SSCSD-437–442. Uji klik ganda tetap di 附表 baris 29 |
+
+Hitungan: 进行中 2, 未开始 3, 待决策 1, 被阻塞 1, 已验证 1.
+
+**B. §一 配置对应表 (24 baris node)**
+
+| Node | Status sekarang (ringkas) | Usulan | Bukti |
+|---|---|---|---|
+| N01 | 阻塞 (nama RT, link) | **被阻塞** | 04.7 v51 belum diisi nama dua bahasa (E69) |
+| N03 | 阻塞 (nama RT; hook) | **被阻塞** | Sama dengan N01 (04.7 v51); hook menunggu N03 dibangun dan dipublish |
+| N04 | 未建（可建） | **进行中** | Dibangun, inactive, terdaftar 04.9 v130/04.9.7 v2; 0 eksekusi; pemanggil N01/N03 belum (E63–E65) |
+| N05 | 未建（可建） | **进行中** | Dibangun, inactive, terdaftar; hanya jalur error yang diuji (17564/17565) (E63) |
+| N06 | 已建；权限待配 | **进行中** | Transisi dibangun dan dijalankan SSCSD-421; izin transisi belum dipasang |
+| N07 | Jira 侧已建；卡片件已建… | **进行中** | Kartu dibangun dan diuji SSCSD-435, 437–442; field tulis-balik menunggu Kent (c50658) |
+| N08 | 未建（可建） | **未开始** | — |
+| N09 | 部分可建；邮件路径阻塞 | **被阻塞** | Komponen email tidak ada di 04.4 v35 §十一 (E69) |
+| N10 | 未建（可建） | **未开始** | Field sub-ticket sudah ada (c50345), node belum |
+| N12 | 未建（可建） | **未开始** | Sama |
+| N13 | 阻塞 | **被阻塞** | Registry masih 「候选｜待N5」 (04.1 v47, 04.8 v23; E69) |
+| N25 | 未建（可建） | **未开始** | — |
+| N26 | 阻塞 | **被阻塞** | Sama dengan N13 |
+| N27 | 阻塞 | **被阻塞** | Sama dengan N13 |
+| N14 | 未建（可建） | **未开始** | — |
+| N15 | 未建（可建） | **未开始** | — |
+| N16 | 未建（可建）；兜底待 Felix | **未开始** | Keputusan Felix dilacak di 附表 baris 10 (待决策) |
+| N17 | 未建（可建） | **未开始** | — |
+| N20 | 未建（可建）(+补: 件已建) | **进行中** | Dibangun, inactive, dry-run 17373/17374; entry belum dipublish (E63) |
+| N21 | 未建（可建） | **未开始** | — |
+| N22 | 待办（S-06 待设计） | **被阻塞** | S-06 belum punya Spec (E69) |
+| N23 | 待办（S-15 待设计） | **被阻塞** | S-15 belum punya Spec (E69) |
+| N24 | 转换已建并实跑；字段与 automation 待建 | **进行中** | Transisi jalan (Done); field dan automation 模式五 belum |
+| N28 | 已建（UI）；未实跑 | **进行中** | Transisi dibangun; belum dijalankan; condition di-hold (P-17) |
+
+Hitungan: 被阻塞 8, 进行中 7, 未开始 9 (total 24).
+
+**C. §一 tabel objek (8 baris)**
+
+| Objek | Status sekarang | Usulan | Bukti |
+|---|---|---|---|
+| 主单 Issue Type | 已建·API 回读 | **已完成但未验收** | Dibangun dan dibaca ulang; verifikasi Alden ditunda (附表 baris 25/27) |
+| 主单 Workflow | 已建·回读 | **已完成但未验收** | Sama |
+| SSCSD Issue Type Scheme | 已挂 | **已完成但未验收** | Sama |
+| SSCSD Workflow Scheme | 已映射 | **已完成但未验收** | Sama |
+| 子单 Issue Type | 复用 | **已验证** | Objek bersama terdaftar 「生效」 di 04.10 v22 (Sub-ticket 14316) |
+| 任务卡 Issue Type | 复用 | **已验证** | 04.10 v22 (Task 10004, 生效) |
+| 执行卡 Workflow Scheme | 复用 | **已验证** | 04.10 v22 (scheme 13093, 生效, 已挂 HR) |
+| 主单专属 Screen | 待建 | **被阻塞** | Keputusan Bambang: ikut layar bersama; field menunggu Kent c50658 (sama dengan 附表 baris 13) |
+
+Hitungan: 已完成但未验收 4, 已验证 3, 被阻塞 1.
+
+**D. Paragraf statistik**
+- 附表: paragraf 统计 baru (draf di atas).
+- §一 「统计：24 个节点行…」: tambah 【补】 baru setelah paragraf lama (teks lama tidak dihapus):
+
+> 【2026-09-29 补】自本版起本表「状态」列依 Anchor 04 §七.6 六个标签登记，各行改标依据见各行 2026-09-29 补。逐行机读：24 个节点行——被阻塞 8（N01／N03／N09／N13／N26／N27／N22／N23）；进行中 7（N04／N05／N06／N07／N20／N24／N28）；未开始 9（N08／N10／N12／N25／N14／N15／N16／N17／N21）。上段「已建 4／可建或部分可建 13／阻塞 6／待对端 2」为 2026-09-18 口径，原文保留。
+
+**Pola 【补】 per baris** sama dengan 附表: 「【2026-09-29 补】本行状态由「…」改为「…」，依 Anchor 04 §七.6；证据：…」, ditaruh di akhir sel 状态 (untuk tiga tabel ini, sel 状态 sendiri yang memuat catatan) dan label baru ditulis di awal sel sebagai paragraf pertama. Teks lama tidak dihapus.
+
+Catatan: P-6.8 B-2 (status `nos-s05-dup`) terjawab oleh baris A-3 di atas.
+
+
 ## Sudah ditulis
 
 ### v58 (2026-09-29T06:08:12Z, akun pribadi Bambang, perintah 「Ganti status baris 04.9 登记 ke 已完成但未验收」)
