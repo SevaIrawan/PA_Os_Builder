@@ -21,15 +21,30 @@ Sisa yang **belum** ditulis setelah v58. Semua ditulis **sekaligus dalam satu ve
 - **P-17**: transisi 9/11 setelah Kent c50705, termasuk A-14 dari P-6.7 (detail di bawah).
 - **P-18**: kolom 状态 附表 diseragamkan ke enam label Anchor 04 §七.6, lalu 统计 dihitung ulang (detail di bawah). Dikerjakan **terakhir** dalam versi yang sama, supaya statistik menghitung status yang sudah final.
 
-### P-17 · §二 baris transisi 9 dan 11 setelah Kent c50705 (draf belum dibuat)
+### P-17 · §二 baris transisi 9 dan 11 setelah Kent c50705 (DRAF, 2026-09-29)
 
-- Dasar: Kent OSD-116 c50705 (2026-09-29, dibaca penuh): `SSCOS｜HR` untuk condition HR Ops & Data (Abort Case id 11 dan N07 Confirm duplicate); baris 附表 Abort Case sudah dapat 【补】 di v57 (P-15 ③).
-- Yang perlu: 【补】 di §二 baris transisi 9 dan 11 (kolom 允许执行者 / catatan) yang mencatat keputusan grup. Kalau condition sudah dipasang Bambang lewat UI sebelum ditulis, catat juga hasil baca ulangnya; kalau belum, tulis bahwa belum dipasang.
-- Ketegangan dengan 04.3 v35 §六 执法点 (「仅服务账号可转态」) tetap dicatat apa adanya, tidak didamaikan (K-9, open-issues).
-- **Digabung dari P-6.7 A-14 (C-10, D-2)** (2026-09-29): sumber baris Abort Case c50445, c50632, Felix c50644 (sudah tercatat di 附表, v53/v57); transisi 9 「仅服务账号」 vs Kayden c50445 「N07「确认重复」同口径」 (K-13); condition transisi 9/11 dan baca ulang `isConditional` setelah dipasang.
-- Sebelum dibuat: baca ulang build sheet §二, OSD-116 setelah c50705, 04.3 versi terbaru §六.
+Sudah dicek (2026-09-29): build sheet **v58** §二 baris transisi 9 (`a1699b53-…`) dan 11 (`1311cdec-…`) dibaca penuh; OSD-116 s.d. **c50705** (c50632, c50644, c50695, c50705 dibaca penuh; tidak ada comment setelah c50705); 04.3 **v36** (2026-09-29 02:16Z, Kayden): diff v35→v36 dibaca penuh, hanya kalimat 维护单 Owner (「治理页 Owner 矩阵」→「目标页面维护说明登记的 Owner」), §六 baris transisi tidak berubah.
 
-### P-18 · Kolom 状态 附表 ikut Anchor 04 §七.6, statistik dihitung ulang (draf belum dibuat)
+Digabung dari P-6.7 A-14 (C-10, D-2): sumber c50445, c50632, Felix c50644 (sudah di 附表 v53/v57); transisi 9 「仅服务账号」 vs Kayden c50445 「N07「确认重复」同口径」 (K-13); baca ulang `isConditional` setelah condition dipasang.
+
+**Prasyarat yang harus diisi Bambang sebelum ditulis:** apakah condition transisi 9 dan 11 sudah dipasang di UI Jira? Draf di bawah punya dua varian untuk kalimat terakhir.
+
+**① §二 transisi 9, kolom 允许执行者, setelah `b28d09280040`:**
+
+> 【2026-09-29 补】上条「待 Kent 答 OSD-116 c50632」已答：Kent OSD-116 c50705「yes, use SSCOS｜HR for the HR Ops & Data transition condition (Abort Case id 11 and N07 Confirm duplicate), per 04.3 v35 §六」；成员 Felix、Yuki，附条件见页首附表 Abort Case 行 2026-09-29 补。c50632 所提 condition 为「service account + SSCOS｜HR + SSCSD Project Owner」。本行原文「仅服务账号」与 Kayden c50445「N07「确认重复」同口径」仍并存；04.3 §六「执法点」段「Jira workflow Condition 不承担"限定哪个人有权批"的职责——它收紧为"仅服务账号可转态"」与同节转态权限表亦并存（04.3 现行 v36，v35→v36 未改 §六 转态行），建造侧不调和。本转换现由平台审批卡回调以服务账号执行（c50558）。〔varian A — belum dipasang〕condition 尚未配置。〔varian B — sudah dipasang〕condition 已于 {tanggal} 经 UI 配置（人：Bambang），允许：{isi}；API 回读 {bukti}。
+
+**② §二 transisi 11, kolom 允许执行者, setelah `b28d09280041`:**
+
+> 【2026-09-29 补】上条「已于 OSD-116 c50632 请 Kent 确认，截至 2026-09-28 未答」已答：Kent OSD-116 c50705 同意用 SSCOS｜HR（原文见本行上方页首附表 Abort Case 行 2026-09-29 补）；执行顺序「Order stays as in c50445: main ticket to Cancelled first, then the open sub-tickets.」〔varian A〕condition 尚未配置。〔varian B〕condition 已于 {tanggal} 经 UI 配置（人：Bambang），允许：{isi}；API 回读 {bukti}。
+
+**③ §二 transisi 11, kolom 本轮回读 (`db2a9eb1-…` 「UI 确认未挂 screen；待补 API 回读；未实跑」), setelah paragraf itu — hanya kalau varian B:**
+
+> 【2026-09-29 补】condition 配置后回读：{getTransitions / isConditional 结果，执行账号}。未实跑。
+
+- Dasar tidak mendamaikan: CLAUDE.md §0-7; K-9 dan K-13 di `docs/open-issues.md`.
+- Sebelum ditulis: ambil build sheet terbaru, cek OSD-116 setelah c50705, 04.3 versi terbaru §六.
+
+### P-18 · Kolom 状态 附表 ikut Anchor 04 §七.6, statistik dihitung ulang (DRAF, 2026-09-29)
 
 - Dasar: Anchor 04 §七.6 「事实只标为：已验证／已完成但未验收／进行中／待决策／被阻塞／未开始；附 Jira、Confluence、回读、测试或团队回复。」 dan aturan Bambang CLAUDE.md §0-13 (build sheet ikut dokumen asli).
 - Keadaan v58: hanya baris 「本流程 n8n 件 04.9 登记」 yang memakai label Anchor. Baris lain memakai 阻塞中／待办（…）／已解封（tanggal·dasar）／不适用. Paragraf 统计 menghitung dengan kosakata lama (terakhir: 「共 42 行；阻塞中 5 行；待办 28 行…；已解封 9 行」, 2026-09-28).
@@ -41,6 +56,74 @@ Sisa yang **belum** ditulis setelah v58. Semua ditulis **sekaligus dalam satu ve
 - Tabel 「统计：24 个节点行」 di §五 juga memakai kategori sendiri (已建／可建／阻塞／待对端); apakah ikut diseragamkan ditanyakan ke Bambang saat draf ditunjukkan.
 - Draf ditunjukkan dulu ke Bambang sebelum ditulis.
 
+**Draf usulan label (dari bukti yang tercatat di tiap baris build sheet v58, dibaca 2026-09-29).** Nomor # = urutan baris di 附表 v58. ⚠ = bukti di baris sudah lama, cek ulang sumbernya sebelum ditulis. ❓ = label lain juga masuk akal, Bambang yang memilih.
+
+Pegangan yang dipakai (inferensi, belum dikonfirmasi; Anchor 04 §七.6 tidak mendefinisikan tiap label):
+- 被阻塞: menunggu tindakan/jawaban pihak lain, bukan keputusan.
+- 待决策: menunggu keputusan (termasuk 「双签未表态」).
+- 未开始: pekerjaan pihak build yang belum dimulai.
+- 进行中: sebagian sudah dikerjakan.
+- 已完成但未验收: pihak build sudah selesai dan membaca ulang, tapi pemilik belum memeriksa.
+- 已验证: sudah terbukti dari jawaban tertulis pihak yang berwenang atau baca ulang, dan tidak menunggu pemeriksaan lagi.
+
+| # | 事项 (singkat) | Status sekarang | Usulan label | Bukti | Catatan |
+|---|---|---|---|---|---|
+| 0 | 纪律处分记录 Registry Project 无已裁决 key（04.1 §一 该行为「候选｜ | 阻塞中 | **被阻塞** | 04.1 §一 baris masih 「候选｜待N5」 (dibaca 2026-09-20, 04.1 v46) | ⚠ bukti terakhir 9/20: baca ulang 04.1 §一 dan 04.8 §三 |
+| 1 | NTP 岗位受控清单待标准化（T-5：「前两项已具备，岗位待标准化」）。技术签 c49696／c | 阻塞中 | **被阻塞** | Alden c50695: field posisi NTP belum dibuat (v57 【补】) |  |
+| 2 | 模式九组件扩展（N07 审批交互）。技术签 c49696 已定案：v5 已于 2026-08-2 | 已解封 | **已验证** | Alden c50576 (1A live), c50689 (1B live); N07 diuji SSCSD-435, 437–442 (§八) | sisa field/Screen dilacak di baris 13 dan c50658 |
+| 3 | 邮件收信与归档件未具备（T-5：「专用信箱＋收信件｜未具备（新平台件）」）。技术签列为冻结前须立 | 阻塞中 | **被阻塞** | Tidak ada kabar baru; kotak surat dan收信件 belum ada (T-5) | ⚠ belum dicek ulang sejak 9/15 |
+| 4 | 两个 Request Type 双语名称未确认（04.7 RT-HR-DISCIPLINARY- | 阻塞中 | **被阻塞** | 04.7 v46 (9/21): dua baris belum diisi nama dua bahasa | ⚠ P-6.7 C-01: baca ulang 04.7 dulu |
+| 5 | 七个部门 Collab 频道：bot 入频道与 04.11 登记。频道 ID 已由 Felix  | 待办 | **被阻塞** | Syarat ①③ terpenuhi (9/21); ② registrasi 04.11 menunggu Alden |  |
+| 6 | N09 附件回贴端到端未验（技术签列为上线前探针；Grade 通道二在建同形制）。Slack A | 待办 | **未开始** | N09 belum dibangun; e2e belum dijalankan |  |
+| 7 | 员工离职 Spec 系统触发接收入口（T-5：「缺口已登记，Owner Kent」）。Kent  | 待办 | **进行中** | Entry qa01CkZBQfx8eLsK sudah dibangun (Geri c50674), belum dipublish | ❓ tumpang tindih dengan baris 35; bisa juga 被阻塞 |
+| 8 | S-06（降级＋降薪）与 S-15（扣除薪水／花红处分执行）两份 Spec 均待设计，N22／N | 待办 | **被阻塞** | Spec S-06/S-15 belum ada (menurut isi baris) | ⚠ belum dicek ulang |
+| 9 | 测试档案（NTP）待核实 | 待办 | **被阻塞** | 5 dari 6 cek lolos; sisa 1 (Talent Status Kent) harus dibaca Kent sendiri |  |
+| 10 | 部门值→Team Project 对照表与兜底。技术签 c49696 明写「部门值→板 key  | 待办 | **待决策** | Dua 🔲 di tabel perlu konfirmasi Felix |  |
+| 11 | Inz9／Marketing 两个 Collab 频道是否仍使用。两部门已并入 CRM（Alde | 待办 | **被阻塞** | Felix c50261 ④ sudah memutuskan; registrasi 04.11 menunggu Alden |  |
+| 12 | 测试期不得向 sscos-hr 发送 | 待办 | **未开始** | Notifikasi D (ke sscos-hr) belum dibangun; aturan uji mode belum dipasang | ❓ kalau dianggap aturan yang sudah diterapkan di N07 (DM), bisa 进行中 |
+| 13 | 主单专属 Screen 未建 | 待办 | **被阻塞** | Syarat ① (jawaban tempat daftar Screen) belum ada | ⚠ cek apakah c50647 (a) / 04.10 sudah menjawab soal Screen |
+| 14 | Kayden 两项提点未见 Felix 回复（c49740「提点」段，不构成退回）：①直属上级缺 | 待办 | **待决策** | Poin ① gugur (Kayden c50461); poin ② (Raymond) belum dijawab Felix |  |
+| 15 | 《Nexmax WFH工作规章制度（正式版）》无可追溯版本 | 待办 | **被阻塞** | Felix belum memberi lokasi dan versi resmi |  |
+| 16 | 请求级整单时限未定（04.7 两行 SLA 列均为「请求级整单时限 🔲 未定占位」）。04.7  | 待办 | **待决策** | Nilai SLA per request belum ditetapkan Felix |  |
+| 17 | 形状 C 是否须配「已改道」出口 | 待办 | **待决策** | 双签未表态 |  |
+| 18 | N28 案件失效中止的执行人 | 已解封 | **已验证** | Kayden c50445; 04.3 v35 §六 dibaca (sisa dipindah ke baris 34) |  |
+| 19 | 现网 Resolution 值与 04.3 §7.1 不符（本轮实测）。04.3 §7.1 只允 | 待办 | **待决策** | 双签未表态 |  |
+| 20 | JSM 原生 SLA 未按 Spec C 表配置（本轮实测）。SSCSD-411 建成即挂上 J | 待办 | **未开始** | Arah sudah jelas (04.4 §8.1); konfigurasi belum dimulai |  |
+| 21 | 两个 scheme 的 id 本轮未核实 | 待办 | **待决策** | 双签未表态 (id scheme belum dikonfirmasi Alden) |  |
+| 22 | 主体标识 marker 是否跨流程共用同一 token。员工离职在 SSCSD 主单审计 com | 待办 | **待决策** | 双签未表态 |  |
+| 23 | 跨流程 link 源两份 Spec 写法不一致 | 已解封 | **已验证** | 04.2 §三 dikutip (2026-09-19) |  |
+| 24 | Notify 调用契约 §9.14 与 04.4.1 记载不一致 | 已解封 | **已验证** | Notify kontrak v14 dibaca (2026-09-28) |  |
+| 25 | SSCSD 主单侧建设与验收分工（谁建、谁验收） | 已解封 | **已验证** | Kent c50198, c50073 |  |
+| 26 | 本流程暗号／marker 精确语法（07.06 §三 (b) 六件套第 2 项） | 已解封 | **已完成但未验收** | Sintaks diputuskan pihak build mengikuti preseden, tercatat di 暗号表; belum ada pemeriksaan pemilik | ❓ bisa juga 已验证 |
+| 27 | 主单载体（Issue Type＋Workflow） | 已解封 | **已完成但未验收** | Dibangun dan dibaca ulang lewat API; verifikasi Alden ditunda; readback 3 transisi dan uji Abort Case belum |  |
+| 28 | N03 的 Slack 表单分派钩子 flow 值未登记 | 待办 | **未开始** | Menunggu N03 dipublish (N03 belum dibangun) | ❓ bisa juga 被阻塞 |
+| 29 | 四条原地转换使模式九重复裁决主锁失效 | 已解封 | **未开始** | Pihak build memutuskan tidak membangun sendiri; uji negatif klik ganda belum dijalankan (digabung ke e2e N07) | ❓ |
+| 30 | 本流程未登记为 B6 与 NTP 实体字段的消费方 | 待办 | **待决策** | 双签未表态 |  |
+| 31 | N03 是否须复用身份件未定 | 待办 | **待决策** | 双签未表态 |  |
+| 32 | 主单 Issue Type 命名与 04.0 §二／04.2 §一 的登记名不一致 | 待办 | **待决策** | 双签未表态 |  |
+| 33 | S-05 各 n8n 件切 active 的次序；Kayden 已裁「N14 通过之后、N15  | 待办 | **被阻塞** | Kayden sudah memutuskan, tapi belum ditulis ke OS 开发流 Spec (v40) |  |
+| 34 | Abort Case（id 11）转态权限配给 HR Ops & Data 角色组，N07「确认 | 待办 | **未开始** | Kent c50705 memutuskan grup; condition 9/11 belum dipasang | → kalau Bambang sudah memasang sebelum ditulis: ganti sesuai hasil baca ulang |
+| 35 | 离职侧「系统触发入口」qa01CkZBQfx8eLsK 发布 | 阻塞中 | **被阻塞** | Entry belum dipublish (Alden) |  |
+| 36 | upstreamSource 取值待 Geri 确认 | 已解封 | **已验证** | Geri c50507; enam input N20 ↔ entry dicocokkan lewat API |  |
+| 37 | 离职侧入口 Trigger link 的 inwardIssue／outwardIssue 方向 | 待办 | **被阻塞** | Geri c50507 setuju arah; cek visual menunggu run nyata pertama (entry belum dipublish) | ❓ bisa juga 进行中 |
+| 38 | 本件后续须建：D-10 通知 Direct Supervisor、经 B6 解析直属上级、挂 e | 待办 | **进行中** | errorWorkflow sudah; D-10 dan B6 belum |  |
+| 39 | Spec 增补区 A 表「离职单关联状态」由 N20／N21 系统写入 | 待办 | **待决策** | Pemetaan 3 nilai ↔ cf18140 tidak ada di Spec/build sheet |  |
+| 40 | 本件与本页暗号接口契约表「先认领后动作」约束的适用 | 待办 | **待决策** | 双签未表态 |  |
+| 41 | 本流程 n8n 件 04.9 登记（索引行＋04.9.7 详情块） | 已完成但未验收 | **已完成但未验收** | v58 |  |
+
+Hitungan sementara (sebelum ⚠/❓ diputuskan): 共 42 行——被阻塞 13；待决策 12；已验证 6；未开始 6；已完成但未验收 3；进行中 2。
+
+**Pola 【补】 per baris (sel 解除判据, paragraf terakhir), contoh baris 1:**
+
+> 【2026-09-29 补】本行状态由「阻塞中」改为「被阻塞」，依 Anchor 04 §七.6；证据：Alden OSD-116 c50695（岗位字段未建，见上条）。
+
+**Paragraf 统计 baru (setelah paragraf 统计 lama, teks lama tidak dihapus):**
+
+> 【2026-09-29 补】自本版起本表「状态」列依 Anchor 04 §七.6 六个标签（已验证／已完成但未验收／进行中／待决策／被阻塞／未开始）登记，原「阻塞中／待办／已解封」各行改标依据见各行 2026-09-29 补。逐行机读：共 {n} 行——{hitungan final}。上方各段旧统计为当时口径，原文保留。
+
+- Baris ⚠ (0, 3, 4, 8, 13) dicek ulang ke sumbernya dulu (aturan 11: hanya sumber yang disebut di baris itu).
+- Baris ❓ (7, 12, 26, 28, 29, 37) dan baris 34 menunggu pilihan Bambang.
+- Pertanyaan terbuka: tabel 「统计：24 个节点行」 di §五 (已建／可建／阻塞／待对端) ikut diseragamkan atau tidak.
 
 ## Sudah ditulis
 
