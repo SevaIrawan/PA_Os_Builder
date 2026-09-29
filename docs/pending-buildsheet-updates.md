@@ -15,11 +15,30 @@ Versi build sheet terakhir yang dibaca: **v58** (2026-09-29T06:08:12Z).
 
 ## Antre
 
-Sisa yang **belum** ditulis setelah v57:
+Sisa yang **belum** ditulis setelah v58. Semua ditulis **sekaligus dalam satu versi** saat Bambang memerintahkan (permintaan Bambang, 2026-09-29).
 - **P-6.7**: D-13 (marker patroli, tunggu Geri c50631 dan K-10). Isi keputusan C-15 (Felix) dan isi §七 (C-26, keputusan Kayden 9/29) juga belum; yang sudah ditulis hanya catatan keadaannya.
 - **P-6.8**: semua item di sana masih menunggu keputusan Bambang (B-2, B-5, B-14, D-4, D-9, D-16, C-27, catatan versi dasar Spec v67).
-- Kent sudah menjawab c50632 (**c50705**, 2026-09-29). Baris Abort Case sudah mendapat 【补】 di v57 (P-15 ③). Yang belum: 【补】 untuk baris transisi 9/11 di §二, dan hitung ulang statistik 附表.
-- **Kolom 状态 附表 belum ikut Anchor 04 §七.6** (CLAUDE.md §0-13). Baris lain masih memakai 阻塞中／待办／已解封／不适用; hanya baris 「本流程 n8n 件 04.9 登记」 yang sudah memakai label Anchor (v58). Paragraf 统计 juga masih menghitung dengan kosakata lama. Penggantian label per baris butuh bukti per baris; belum dikerjakan, tunggu perintah Bambang.
+- **P-17**: transisi 9/11 setelah Kent c50705 (detail di bawah).
+- **P-18**: kolom 状态 附表 diseragamkan ke enam label Anchor 04 §七.6, lalu 统计 dihitung ulang (detail di bawah). Dikerjakan **terakhir** dalam versi yang sama, supaya statistik menghitung status yang sudah final.
+
+### P-17 · §二 baris transisi 9 dan 11 setelah Kent c50705 (draf belum dibuat)
+
+- Dasar: Kent OSD-116 c50705 (2026-09-29, dibaca penuh): `SSCOS｜HR` untuk condition HR Ops & Data (Abort Case id 11 dan N07 Confirm duplicate); baris 附表 Abort Case sudah dapat 【补】 di v57 (P-15 ③).
+- Yang perlu: 【补】 di §二 baris transisi 9 dan 11 (kolom 允许执行者 / catatan) yang mencatat keputusan grup. Kalau condition sudah dipasang Bambang lewat UI sebelum ditulis, catat juga hasil baca ulangnya; kalau belum, tulis bahwa belum dipasang.
+- Ketegangan dengan 04.3 v35 §六 执法点 (「仅服务账号可转态」) tetap dicatat apa adanya, tidak didamaikan (K-9, open-issues).
+- Sebelum dibuat: baca ulang build sheet §二, OSD-116 setelah c50705, 04.3 versi terbaru §六.
+
+### P-18 · Kolom 状态 附表 ikut Anchor 04 §七.6, statistik dihitung ulang (draf belum dibuat)
+
+- Dasar: Anchor 04 §七.6 「事实只标为：已验证／已完成但未验收／进行中／待决策／被阻塞／未开始；附 Jira、Confluence、回读、测试或团队回复。」 dan aturan Bambang CLAUDE.md §0-13 (build sheet ikut dokumen asli).
+- Keadaan v58: hanya baris 「本流程 n8n 件 04.9 登记」 yang memakai label Anchor. Baris lain memakai 阻塞中／待办（…）／已解封（tanggal·dasar）／不适用. Paragraf 统计 menghitung dengan kosakata lama (terakhir: 「共 42 行；阻塞中 5 行；待办 28 行…；已解封 9 行」, 2026-09-28).
+- Cara kerja saat draf dibuat:
+  1. Baca build sheet versi terbaru, daftar **semua** baris 附表 dengan status sekarang dan 解除判据-nya.
+  2. Untuk tiap baris, tentukan label Anchor **dari bukti** (pageId/comment id/hasil API), bukan dari terjemahan kata lama. Kalau bukti tidak cukup untuk memilih label, baris itu ditandai dan ditanyakan ke Bambang, tidak ditebak.
+  3. Status lama tidak dihapus tanpa jejak: tiap baris yang diganti dapat 【补】 singkat 「状态由「…」改为「…」，依 Anchor 04 §七.6；证据：…」 (pola v58).
+  4. Setelah semua baris final, tambahkan 【补】 统计 baru (hitungan per enam label), paragraf 统计 lama tidak dihapus.
+- Tabel 「统计：24 个节点行」 di §五 juga memakai kategori sendiri (已建／可建／阻塞／待对端); apakah ikut diseragamkan ditanyakan ke Bambang saat draf ditunjukkan.
+- Draf ditunjukkan dulu ke Bambang sebelum ditulis.
 
 
 ## Sudah ditulis
