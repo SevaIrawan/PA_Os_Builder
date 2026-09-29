@@ -130,7 +130,7 @@ Hitungan (setelah cek ⚠, keputusan baris 13, dan baris ❓ memakai usulan — 
 - Baris 34 (Abort Case) mengikuti jawaban P-17: condition belum dipasang → 未开始; sudah dipasang dan dibaca ulang → label ditentukan dari hasil baca ulang.
 - **Cakupan diperluas (Bambang 2026-09-29: 「Intinya semua ikut aturan dan source yang ada」):** bukan hanya 附表. Semua kolom 「状态」 dan paragraf statistik di build sheet yang menilai keadaan (termasuk paragraf 「统计：24 个节点行」 di §一 配置对应表: 已建 4／可建或部分可建 13／阻塞 6／待对端 2, dan tabel lain yang punya kolom 状态) ikut enam label Anchor 04 §七.6 dengan pegangan yang sama. Inventaris tabel dan draf per baris dibuat berikutnya, ditunjukkan dulu sebelum ditulis.
 
-#### P-18 lanjutan · Tabel status lain di build sheet v58 (DRAF, 2026-09-29)
+#### P-18 lanjutan · Tabel status lain di build sheet v58 (DRAF, 2026-09-29; divalidasi E70)
 
 Sudah dicek (2026-09-29): build sheet **v58** (masih versi terbaru, dicek `listConfluenceContentVersions`), semua 14 tabel di halaman diinventaris. Tabel yang punya kolom 「状态」: 附表 (42 baris, draf di atas), **暗号接口契约表** (8), **§一 配置对应表** (24), **§一 tabel objek** (8). Tabel lain tidak diubah: §二 状态链表 (kolom Jira status/ID, fakta konfigurasi), §八 测试单 「末态」 (nama status Jira tiket), §八 NTP-187 「结论」 (hasil cek per syarat), dan tabel lain tanpa kolom status. Bukti per baris diambil dari isi baris itu sendiri plus sumber yang sudah dibaca hari ini (04.9.7 v2, E59–E69, OSD-116 s.d. c50705). Pegangan label = yang disetujui Bambang.
 
@@ -143,9 +143,9 @@ Sudah dicek (2026-09-29): build sheet **v58** (masih versi terbaru, dicek `listC
 | 疑似重复标记 `nos-s05-dup` | 拟定·未建 | **进行中** | N05 punya node 「Write Duplicate Marker Comment (internal)」 (04.9.7 v2); jalur utama N05 belum diuji (E63). Ini sekaligus menjawab P-6.8 B-2 |
 | 子单编排认领 `nos-s05-sub` | 拟定·未建 | **未开始** | Belum dibangun |
 | 文书发出认领 `nos-s05-doc` | 拟定·未建 | **未开始** | Belum dibangun (N08/N12 belum) |
-| 离职交接认领与审计 `nos-s05-term` | 拟定·未建 (+订正 9/28) | **待决策** | N20 sudah menulis marker ini (04.9.7 v2; exec 17373); waktu penulisannya masih menunggu 双签 (附表 baris 40) |
+| 离职交接认领与审计 `nos-s05-term` | 拟定·未建 (+订正 9/28) | **待决策** | Node penulis marker ini sudah ada di N20 (04.9.7 v2), tapi di dry-run 17373 langkah tulisnya di-pin, jadi marker belum pernah benar-benar ditulis ke Jira; waktu penulisannya masih menunggu 双签 (附表 baris 40) |
 | 下游触发认领 `nos-s05-trigger` | 拟定·未建 | **被阻塞** | Pihak penerima S-06/S-15 belum punya Spec (HR 部门页 v40, E69) |
-| N07 审批动作认领 `nos-s05-review` | 拟定·未建 (+补 9/28: 不建) | **已验证** | Diputuskan tidak dibangun; fungsinya diganti 「已处理检查」 platform yang sudah live (Alden c50576 1A, c50689 1B) dan dipakai di tes SSCSD-437–442. Uji klik ganda tetap di 附表 baris 29 |
+| N07 审批动作认领 `nos-s05-review` | 拟定·未建 (+补 9/28: 不建) | **已验证** | Diputuskan tidak dibangun; fungsinya diganti 「已处理检查」 platform yang sudah live (Alden c50576: 1A termasuk 「已处理检查」; c50689: 1B live, dan 「Bambang's tests … on SSCSD-437 to SSCSD-442 ran on the new version」 — klaim Alden, belum dicocokkan dengan catatan eksekusi). Uji klik ganda sendiri belum dijalankan, tetap di 附表 baris 29 |
 
 Hitungan: 进行中 2, 未开始 3, 待决策 1, 被阻塞 1, 已验证 1.
 
