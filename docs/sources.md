@@ -124,11 +124,36 @@ Halaman BLM Lite (2046460048, 2046460069, 2047705135, 1760198660) juga terbaca. 
 | Tidak dibaca (bukan sumber S-05) | Grade build sheet, 04.9.5, S-19 build sheet, halaman F1, 招聘 Spec, 请假政策 | berubah 2026-09-28 | Milik alur lain; dilewati sengaja, disampaikan ke Bambang |
 | 2096463922 | Build sheet S-05 | v53 (2026-09-28T07:07Z) | Diaudit baris per baris 2026-09-28 (v52); hasil audit ditulis sebagai v53 dan sudah dibaca ulang (evidence E32) |
 
+## Cek 2026-09-29 (nos-check, evidence `docs/evidence/2026-09-29-live-checks.md` E50–E54)
+CQL `lastmodified >= 2026-09-26` atas 51 pageId di file ini: 29 berubah. Nomor versi dari Atlassian_MCP (metadata dan riwayat versi). 「Isi perubahan」 diambil dari `diffConfluenceContentVersions` atau versionMessage halaman, **dikutip, bukan diringkas ulang maknanya**.
+
+| pageId | Judul | Terakhir dibaca repo | Versi 2026-09-29 | Isi perubahan |
+|---|---|---|---|---|
+| 1729888419 | 04.4.1 | v15 | **v16** (2026-09-28 16:48Z, Alden, tanpa pesan) | Diff dibaca penuh. Slack Approval: verifikasi tanda tangan pakai node asli 「开弹窗之前不经过 Code 节点」; klik yang perlu form membuka form 「正在加载」 dulu lalu diganti form asli; klik tanpa form mengubah kartu jadi 「处理中」. `modal` dapat jenis 选人 (`users`). `decisionLabel`: 「写进审批记录「决定」行（有决定名时该行只写决定名，不再加「通过／不通过」）」. Baru `modalTitle`／`modalIntro` 「经 Notify 发的审批卡暂不传这两个键」. Route Switch jadi delapan keluaran (baru: 7 `__hookmodal__`). |
+| 1603633175 | Notify 契约 | v15 | **v16** (2026-09-28 16:49Z, Alden) | Changelog baru 「v7：§9.14 ModalField 增选人（users）；审批记录「决定」行在按钮有 decisionLabel 时只写决定名…」. §9.1 `decisionLabel` dan §9.14 `t` diperbarui sama dengan 04.4.1 v16. |
+| 1764622422 | 04.9.1 | v21 | **v22** (2026-09-28 16:50Z, Alden) | Blok Slack Approval: status 「active（`ce9ea1f7-6d84-42cf-b6b4-029df8c4f93a`，70 节点，versionId＝activeVersionId；…原生验签…占位表单、不弹表单的按钮先显示「处理中」、流程件按钮弹窗、选人字段）」. |
+| 1693089805 | 04.9 | v124 | **v127** (v125 Alden 16:53Z tanpa pesan; v126 Geri 「索引：N7／N12 发布前回读与件说明订正（c50669）」; v127 Geri 「补登：员工离职｜上游触发入口（qa01CkZBQfx8eLsK）」) | Diff v124→v127: baris N7 dan N12 员工离职 ditambah 「2026-09-28 发布前回读」; **baris indeks baru** 「员工离职｜上游触发入口（S-05 等上游解雇 → 自动开单）｜业务件（主链）｜…·系统触发入口｜BO｜Geri｜inactive（…2026-09-29 补登…claim-before-create 未实施、状态占位节点待拆除）」; tabel Data Table `jdF8S9cV7ZIZowvw` ditambah kolom `objection_text` (N10). Baris indeks S-05 **belum ada**. |
+| 1765015618 | 04.9.3 | Sep 26 | **v30** (2026-09-28 23:16Z, Geri 「新增详情块：上游触发入口」) | Blok H2 baru untuk entry `qa01CkZBQfx8eLsK`: 六项入参, 「返回上游的形状（Bambang c50435）：ok／created／issueKey／reason；N20 只接受 ok:true 且带 issueKey（c50494），其余一律停机由人处理（c50672）」, 「★ 未闭：claim-before-create 尚未实施」, 「「待资料补齐」＝cf18140 为空，上游 S-05 N21 读同一字段判完成」. Baca ulang Geri 2026-09-29: `versionId 5e3ff7f7`. |
+| 1743716419 | 员工离职｜建造单 | 2026-09-26 | **v71** (v70 「第八区：N7／N12 发布前回读…」, v71 「第五区：补登 上游触发入口」) | Alur lain. Tidak dibaca isi, hanya versionMessage. |
+| 1676771343 | 04.3 | v35 | **v36** (2026-09-29 02:16Z) | Diff: tiga tempat 「治理页 Owner 矩阵」 → 「目标页面维护说明登记的 Owner」 (§三 dan 背景). §六 (处置角色组, Abort Case) tidak berubah. |
+| 1678573617 | 04.5 | v79 | **v81** (v80 dan v81, 2026-09-29) | Diff: 增补区 **C 表**: 「本表是该流程时限的唯一权威来源；建设时照本表把时限写进对应 n8n 件，并在建造单登记所依据的 Spec 版本，Spec 改版时随建设同步；机器不直接读取本表」 (sebelumnya 「机器直接读本表」). Field 5: GOV 维护单 「并附该清单 SSOT 页链接」. |
+| 1676640265 | 04.0 | Sep 19 (dibaca 9/26) | **v28** (v27, v28 2026-09-29) | versionMessage: Owner 维护单 dibaca dari 「目标页维护说明」, bukan 「治理页 Owner 矩阵」; GOV 「不阻塞主单或实体卡」. Isi tidak dibaca ulang. |
+| 1676738564 | 04.1 | Sep 19 | **v47** (2026-09-29) | versionMessage: GOV Project 「自动读取目标页维护说明登记的 Owner 指派处理」. Isi tidak dibaca ulang. |
+| 1676607500 | 04.2 | Sep 19 | **v41** (2026-09-29) | versionMessage: §六 「并附该清单 SSOT 页链接」, Owner dari 维护说明. Isi tidak dibaca ulang. |
+| 1695744021 | 07.03 | Sep 19 | **v60** (v59, v60 2026-09-29) | Panduan desain (bukan tahap build). versionMessage: 「清单 SSOT 页链接已附」. Isi tidak dibaca ulang. |
+| 1764163642 | 04.9.4 | Sep 26 | **v39** (2026-09-28, Alden) | Alur lain (OS 开发流). Tidak dibaca. |
+| 1765015681 | 04.9.5 | Sep 26 | **v51** (2026-09-28, Sinyee) | Alur lain (Grade). Tidak dibaca. |
+| 1742766267 | Grade｜建造单 | 2026-09-26 | **v192** (2026-09-28) | Alur lain. Tidak dibaca. |
+| 2076934175 | xLoop｜盘点与切分 | 2026-09-25 | **v15** (2026-09-28) | Bukan S-05. Tidak dibaca. |
+| 1674379396 | NOS｜知识库架构方案 | Jul 19 | **v3** (2026-09-26, 「页首改为旧稿提示（Alden 09-26）」) | Halaman kini 「旧稿，仅供参考」. |
+| Tidak berubah sejak dibaca | 04 (Anchor, Sep 05), 07.06 **v30**, Spec S-05 **v67**, 04.5.3 **v17**, 04.6 **v22**, 04.8 **v23**, 04.10 **v21**, 07.06.1 **v41**, 04.4 (Sep 27), 04.7 (Sep 24), 04.9.7 **v1** | — | — | — |
+| 2096463922 | Build sheet S-05 | v56 | v56 | Ditulis Claude 2026-09-28 (E46, E48, E49). |
+
 ## Jira
 | Objek | Connector / akun | Catatan |
 |---|---|---|
 | OSD-116 dan 198 comment-nya (s.d. c50670) | Atlassian_MCP / Bambang | Feature S-05, status 开发. Dibaca seluruhnya 2026-09-28 oleh agen pembaca (191 comment s.d. c50595), lalu dicek lagi: c50639, c50644, c50647 (Alden 15:11, jawaban c50595) dan c50648 (Alden 15:29, dua syarat Felix; aturan 04.4.1 「判定依据」) dibaca penuh. c50658 = pengajuan field tiket utama dari Bambang (lihat evidence E35). c50670 = pertanyaan registrasi 04.9 ke Alden (evidence E41) |
-| NSE-1137 dan 278 comment-nya (c48129–c50672) | Atlassian_MCP / Bambang | Tiket jalur 员工离职 (Geri). Dibaca seluruhnya 2026-09-26 dan 2026-09-28; c50645 (Alden, 2026-09-28 12:36 +07: keputusan 14315 fallback + `cf18140`). Dibaca ulang seluruhnya 2026-09-28 malam s.d. c50669: c50668 (Geri → Bambang, marker klaim `[[nos-resign-claim:<S-05 key>]]`, `ok:false` saat klaim ada tanpa tiket, pertanyaan butir 5 soal `callerPolicy` N20 dijawab Bambang **c50671** (dugaan, belum terbukti; evidence E42). Butir 3 (kode selain `ok:false`) dijawab **c50672**: `ok:false` biasa cukup; catatan node entry 「交接单五项」 yang usang juga disampaikan (evidence E43)); c50669 (Geri → Alden, 「versionId covers nodes and connections only」) |
+| NSE-1137 dan 280 comment-nya (c48129–c50674) | Atlassian_MCP / Bambang | Tiket jalur 员工离职 (Geri). Dibaca seluruhnya 2026-09-26 dan 2026-09-28; c50645 (Alden, 2026-09-28 12:36 +07: keputusan 14315 fallback + `cf18140`). Dibaca ulang seluruhnya 2026-09-28 malam s.d. c50669: c50668 (Geri → Bambang, marker klaim `[[nos-resign-claim:<S-05 key>]]`, `ok:false` saat klaim ada tanpa tiket, pertanyaan butir 5 soal `callerPolicy` N20 dijawab Bambang **c50671** (dugaan, belum terbukti; evidence E42). Butir 3 (kode selain `ok:false`) dijawab **c50672**: `ok:false` biasa cukup; catatan node entry 「交接单五项」 yang usang juga disampaikan (evidence E43)); c50669 (Geri → Alden, 「versionId covers nodes and connections only」). Dibaca 2026-09-29: c50673 (Geri → Alden, jawaban c50645) dan c50674 (Geri → Bambang: `callerPolicy` entry dipasang, `ok:false` biasa diterima, catatan `Upstream Called` diperbaiki; evidence E54) |
 | NSE-1143 dan 213 comment-nya (s.d. c50657) | Atlassian_MCP / Bambang | Tiket build Grade (Sinyee). Dibaca seluruhnya 2026-09-28 untuk K-3 dan K-16 (c48482: kolom 「建设归属」) |
 | SSCSD-435 | Atlassian_Rovo / Backend Operations | Tiket TEST kartu N07, dibuat 2026-09-26, berakhir Rejected/Rejected (lihat `docs/evidence/2026-09-26-live-checks.md` E10–E15) |
 | SSCSD-411, 421, 422, 423 | Atlassian_Rovo / Backend Operations | Akun pribadi Bambang **tidak bisa** melihat tiket ini (JQL ditolak, 2026-09-26) |
