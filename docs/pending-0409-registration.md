@@ -4,9 +4,12 @@ Diminta Alden OSD-116 c50647 (b): 「Please register N04, N05, N07 and N20 per 0
 
 **Status: draf, bukan izin menulis.** Registrasi ditulis Bambang sendiri ke 04.9 (1693089805) dan 04.9.7 (2117435433). Claude tidak menulis ke halaman itu.
 
-**Belum boleh ditulis sebelum Alden menjawab OSD-116 c50670:**
-1. Format nama (K-3): dengan atau tanpa `n8n-`. Kalau berubah, nama di n8n, baris indeks, dan judul H2 diganti bersamaan.
-2. Kolom 「Owner 部门」 (K-16): sekarang 🔲 di keempat baris.
+**Jawaban Alden OSD-116 c50692 (2026-09-29, evidence E58):**
+1. Format nama (K-3): 「follow 04.6 §2 item 3 — `{flow name}｜{node ID}｜n8n-{action}`, e.g. `纪律与绩效改进处置｜N04｜n8n-路由分发`. Please rename the four S-05 workflows in n8n first, then register them」. Nama di draf ini sudah diganti ke format itu. Bagian `{动作}` dibiarkan sama dengan nama sekarang; yang ditambah hanya awalan `n8n-`. Hanya contoh N04 yang ditulis Alden; tiga nama lain adalah penerapan format yang sama, **inferensi, belum dikonfirmasi**.
+2. Kolom 「Owner 部门」 (K-16): 「HR」.
+3. Baris Notify dan navigasi §三 04.9.7: sudah dikerjakan Alden (04.9 v129).
+
+**Urutan:** ganti nama 4 workflow di n8n dulu (butuh izin Bambang, lalu baca ulang), baru registrasi ditulis Bambang.
 
 **Sebelum ditulis:** baca ulang keempat workflow lewat API. Kalau versionId, settings, atau jumlah node berubah, perbarui kolom 状态. Catatan: versionId hanya berubah kalau node/koneksi berubah; settings dibaca terpisah (E40; Geri NSE-1137 c50669). Di halaman, judul blok ditulis sebagai **H2** (di file ini H3 supaya struktur file tetap rapi). Link indeks diarahkan ke anchor H2 masing-masing di 04.9.7.
 
@@ -16,16 +19,16 @@ Sudah dicek (draf awal): 04.9 v124 (§一, §1.3, §1.4, indeks, §三), 04.9.7 
 
 | Workflow 名 | 类目 | 所属流程 Spec ／ 被哪些流程调用 | Owner 部门 | 建设归属 | 状态 |
 | --- | --- | --- | --- | --- | --- |
-| [纪律与绩效改进处置｜N04｜路由分发](04.9.7 对应 H2 锚点) | 业务件（主链） | [纪律与绩效改进处置｜流程 Spec](https://nexmax.atlassian.net/wiki/spaces/NOSM/pages/2036858900/Spec)·N04（路由分发） | 🔲 | Bambang | inactive（骨架；调用方 N01／N03 未建） |
-| [纪律与绩效改进处置｜N05｜重复案件与历史记录检查](04.9.7 对应 H2 锚点) | 业务件（主链） | [纪律与绩效改进处置｜流程 Spec](https://nexmax.atlassian.net/wiki/spaces/NOSM/pages/2036858900/Spec)·N05（重复案件与历史记录检查） | 🔲 | Bambang | inactive（未干跑；历史纪律记录一半为占位，Registry 未建） |
-| [纪律与绩效改进处置｜N07｜审批卡发送](04.9.7 对应 H2 锚点) | 业务件（主链） | [纪律与绩效改进处置｜流程 Spec](https://nexmax.atlassian.net/wiki/spaces/NOSM/pages/2036858900/Spec)·N07（HR 三层审核·审批卡发送） | 🔲 | Bambang | inactive（测试单实跑 SSCSD-435／437–439／441／442；modal 回写待主单字段） |
-| [纪律与绩效改进处置｜N20｜解雇自动开单与交接](04.9.7 对应 H2 锚点) | 业务件（主链） | [纪律与绩效改进处置｜流程 Spec](https://nexmax.atlassian.net/wiki/spaces/NOSM/pages/2036858900/Spec)·N20（解雇自动开单与交接） | 🔲 | Bambang | inactive（干跑 17373／17374；所调离职入口未发布） |
+| [纪律与绩效改进处置｜N04｜n8n-路由分发](04.9.7 对应 H2 锚点) | 业务件（主链） | [纪律与绩效改进处置｜流程 Spec](https://nexmax.atlassian.net/wiki/spaces/NOSM/pages/2036858900/Spec)·N04（路由分发） | HR | Bambang | inactive（骨架；调用方 N01／N03 未建） |
+| [纪律与绩效改进处置｜N05｜n8n-重复案件与历史记录检查](04.9.7 对应 H2 锚点) | 业务件（主链） | [纪律与绩效改进处置｜流程 Spec](https://nexmax.atlassian.net/wiki/spaces/NOSM/pages/2036858900/Spec)·N05（重复案件与历史记录检查） | HR | Bambang | inactive（未干跑；历史纪律记录一半为占位，Registry 未建） |
+| [纪律与绩效改进处置｜N07｜n8n-审批卡发送](04.9.7 对应 H2 锚点) | 业务件（主链） | [纪律与绩效改进处置｜流程 Spec](https://nexmax.atlassian.net/wiki/spaces/NOSM/pages/2036858900/Spec)·N07（HR 三层审核·审批卡发送） | HR | Bambang | inactive（测试单实跑 SSCSD-435／437–439／441／442；modal 回写待主单字段） |
+| [纪律与绩效改进处置｜N20｜n8n-解雇自动开单与交接](04.9.7 对应 H2 锚点) | 业务件（主链） | [纪律与绩效改进处置｜流程 Spec](https://nexmax.atlassian.net/wiki/spaces/NOSM/pages/2036858900/Spec)·N20（解雇自动开单与交接） | HR | Bambang | inactive（干跑 17373／17374；所调离职入口未发布） |
 
 ## B. 04.9.7：加 4 个 H2 块
 
 Setiap blok di bawah = satu H2 di 04.9.7 (format mengikuti 04.9.3 v28).
 
-### 纪律与绩效改进处置｜N04｜路由分发
+### 纪律与绩效改进处置｜N04｜n8n-路由分发
 
 |  |  |
 | --- | --- |
@@ -38,7 +41,7 @@ Setiap blok di bawah = satu H2 di 04.9.7 (format mengikuti 04.9.3 v28).
 | 调用关系 | 调用 **纪律与绩效改进处置｜N05**（`LJwiAZFfnuq6tmju`）。N07 由谁调用尚未接（见建造单第五区 N07 行「已知未做③」）。错误出口 **NOS \| Platform \| Error Handler (nos-ops)**（`VUIgv9Ujj1KEoIne`） |
 | 状态 | inactive｜`versionId 0aad8ecb-e97e-4297-9908-b6c15559fdca`，2 节点；`errorWorkflow`＝`VUIgv9Ujj1KEoIne`，`callerPolicy`＝workflowsFromSameOwner（2026-09-28 经 UI 设置，人：Bambang；API 回读 updatedAt 2026-09-28T14:54:46Z）；无干跑记录。｜登记人：Bambang |
 
-### 纪律与绩效改进处置｜N05｜重复案件与历史记录检查
+### 纪律与绩效改进处置｜N05｜n8n-重复案件与历史记录检查
 
 |  |  |
 | --- | --- |
@@ -51,7 +54,7 @@ Setiap blok di bawah = satu H2 di 04.9.7 (format mengikuti 04.9.3 v28).
 | 调用关系 | 被 N04 调用；不调用下游；写入经 Bot_SSC（`Write Duplicate Marker Comment (internal)`，UI 手工挂，UI 目视确认人 Bambang）；错误出口 **NOS \| Platform \| Error Handler (nos-ops)**（`VUIgv9Ujj1KEoIne`） |
 | 状态 | inactive｜`versionId 9b2ea463-f6be-476e-88a5-b62c074af375`（2026-09-28T15:44:21Z，抛错文案去半角冒号），17 节点（含 sticky 3）；`errorWorkflow`＝`VUIgv9Ujj1KEoIne`，`callerPolicy`＝workflowsFromSameOwner（2026-09-28 经 UI 设置，人：Bambang；API 回读 updatedAt 2026-09-28T14:53:41Z）；无干跑记录；零评论／零候选两例未验（建造单第五区 2026-09-28 待验）。｜登记人：Bambang |
 
-### 纪律与绩效改进处置｜N07｜审批卡发送
+### 纪律与绩效改进处置｜N07｜n8n-审批卡发送
 
 |  |  |
 | --- | --- |
@@ -64,7 +67,7 @@ Setiap blok di bawah = satu H2 di 04.9.7 (format mengikuti 04.9.3 v28).
 | 调用关系 | 调用 **NOS \| Platform \| Notify**（`eYOFfHfGUwpfg6ss`）；卡片回调由 **NOS \| Platform \| Slack Approval**（`6wdHhygWmyRFQAoX`）承接；读 Data Table `jdF8S9cV7ZIZowvw`；错误出口 **NOS \| Platform \| Error Handler (nos-ops)**（`VUIgv9Ujj1KEoIne`）。所调平台件只读未改 |
 | 状态 | inactive｜`versionId 5a66fd9c-2630-4cae-8422-7d1099dbddc7`（2026-09-28T15:45:25Z，抛错文案去半角冒号），11 节点；`errorWorkflow`＝`VUIgv9Ujj1KEoIne`，`callerPolicy`＝workflowsFromSameOwner。测试单实跑 SSCSD-435（2026-09-26）、SSCSD-437／438／439／441／442（2026-09-28），逐次记录见建造单第八区。未证：「Read Case」以 Bot_SSC 真读（测试工具强制 pin）、modal 回写、打回次数 +1（未建）。｜登记人：Bambang |
 
-### 纪律与绩效改进处置｜N20｜解雇自动开单与交接
+### 纪律与绩效改进处置｜N20｜n8n-解雇自动开单与交接
 
 |  |  |
 | --- | --- |

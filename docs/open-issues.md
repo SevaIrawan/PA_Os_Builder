@@ -58,6 +58,7 @@
   - Praktik di n8n (`search_workflows` "n8n-"): hanya 15 workflow OS开发流 yang memakai `n8n-`. 员工离职, Grade, 请假 tidak. Geri NSE-1137 c48263 (2026-08-14): 「Aligning names to the 04.4 §10 convention meant renaming N4 in n8n to 员工离职｜N4｜审批卡发送」.
   - Ditanyakan ke Alden: OSD-116 **c50670** butir 1 (2026-09-28). Registrasi 04.9 S-05 menunggu jawaban ini.
 - **Cek ulang 2026-09-29 (nos-check):** Alden belum menjawab c50670 (OSD-116 terakhir c50670). Data baru: 04.9 v127 (Geri, 2026-09-28 23:16Z) mendaftarkan entry `qa01CkZBQfx8eLsK` dengan nama 「员工离职｜上游触发入口（S-05 等上游解雇 → 自动开单）」, tanpa `n8n-` dan tanpa ID node. Ini praktik Geri, bukan jawaban atas c50670. **Status:** 待决策, tidak berubah.
+- **Dijawab 2026-09-29 siang:** Alden OSD-116 **c50692**: 「follow 04.6 §2 item 3 — `{flow name}｜{node ID}｜n8n-{action}`, e.g. `纪律与绩效改进处置｜N04｜n8n-路由分发`. Please rename the four S-05 workflows in n8n first, then register them」; 「workflows already registered without the `n8n-` prefix keep their names」. 04.9 **v129** §一 sekarang: 「命名格式按 04.6 第二节第 3 条（`{流程名}｜{节点 ID}｜n8n-{动作}`，与 04.4 第十节同构）」 (evidence E58). **Status:** selesai untuk S-05 (dijawab pemilik 04.6/04.9). Pekerjaan lanjutan: ganti nama 4 workflow di n8n (butuh izin Bambang) lalu registrasi.
 
 ### K-4 · Letak tombol Manual Trigger untuk tiket pemeliharaan (维护单)
 - **04.4 模式二** (1677066244): 「处理人在主单/子单卡片上点"标记文档需更新"」
@@ -166,6 +167,7 @@
 - Untuk S-05: 04.7 RT-HR-DISCIPLINARY-* 「Owner 部门 Project」＝HR; Spec Owner Felix (HR HOD).
 - Ditanyakan ke Alden: OSD-116 **c50670** butir 2. **Status:** 待决策. Claude tidak mengisi.
 - **Cek ulang 2026-09-29:** belum ada jawaban. Baris indeks baru entry Geri di 04.9 v127 mengisi kolom itu 「BO」 (Geri). Ini praktik alur 员工离职, bukan jawaban untuk S-05. **Status:** 待决策, tidak berubah.
+- **Dijawab 2026-09-29 siang:** Alden OSD-116 **c50692**: 「Index column 「Owner 部门」: HR.」 **Status:** selesai untuk S-05. Definisi kolom itu sendiri tetap tidak tertulis di 04.9.
 
 ### K-17 · Teks error di N05, N07, N20 memuat titik dua ASCII
 - **Aturan:** 04.4.4 §五 (2102067228): 「抛错文本一律不含半角冒号 —— n8n 在最后一个半角冒号处劈开 error 文本，前半永久丢失」. Kasus yang sama: Alden NSE-1137 c50349 (N3 离职), Geri c50584 (N7 离职, exec 17235).
