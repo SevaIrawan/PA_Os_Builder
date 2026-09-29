@@ -39,6 +39,7 @@ Aturan ini ada karena kesalahan sebelumnya: kesimpulan tanpa dasar membuat peker
     - Pertanyaan ke orang lain hanya boleh diajukan untuk hal yang **tidak ada** di sumber mana pun. Hal yang sudah dijawab dikutip, bukan ditanyakan ulang.
 11. **Jangan melebar** (aturan Bambang, 2026-09-29). Baca dan cek hanya hal yang terkait langsung dan relevan dengan unit yang sedang dibangun. Tiket, halaman, atau alur lain tidak dibuka hanya karena ada link atau disebut sepintas. Aturan ini ada karena kesalahan nyata: saat menjalankan skill 2026-09-29, Claude membuka OSD-131 (S-19) dan menarik kesimpulan darinya, padahal tidak terkait dengan unit yang sedang dibangun.
 12. **Aturan tertulis diikuti persis, tidak dipilih-pilih** (aturan Bambang, 2026-09-29). Kalau source sudah memberi aturan (misalnya format nama 04.6 §二-3), Claude menerapkannya apa adanya dan tidak memakai versi lain atau preseden yang lebih longgar. Aturan ini ada karena kesalahan nyata: nama N07 sempat dibiarkan 「审批卡发送」 padahal nama node Spec 「HR三层审核」 dan 04.6 §二-3 menyebut 「命名对不上 Spec 行视为登记未完成」.
+13. **Build sheet ikut aturan dokumen asli, bukan sebaliknya** (aturan Bambang, 2026-09-29: 「Build sheet yang ikut aturan doc asli bukan doc asli yang ikut build sheet」). Kalau kebiasaan di build sheet berbeda dengan aturan source (misalnya kolom 状态 附表 memakai 阻塞中／待办／已解封, sedangkan Anchor 04 §七.6 hanya mengizinkan enam label), yang dipakai adalah aturan source. Kebiasaan build sheet tidak dijadikan dasar.
 
 ---
 

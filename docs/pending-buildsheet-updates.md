@@ -9,7 +9,7 @@ Aturan:
 - Bahasa: Mandarin, mengikuti isi halaman.
 - Kalau item sudah ditulis ke build sheet, pindahkan ke bagian "Sudah ditulis" dan cantumkan versi halamannya.
 
-Versi build sheet terakhir yang dibaca: **v57** (2026-09-29T05:59:25Z).
+Versi build sheet terakhir yang dibaca: **v58** (2026-09-29T06:08:12Z).
 
 ---
 
@@ -19,10 +19,14 @@ Sisa yang **belum** ditulis setelah v57:
 - **P-6.7**: D-13 (marker patroli, tunggu Geri c50631 dan K-10). Isi keputusan C-15 (Felix) dan isi §七 (C-26, keputusan Kayden 9/29) juga belum; yang sudah ditulis hanya catatan keadaannya.
 - **P-6.8**: semua item di sana masih menunggu keputusan Bambang (B-2, B-5, B-14, D-4, D-9, D-16, C-27, catatan versi dasar Spec v67).
 - Kent sudah menjawab c50632 (**c50705**, 2026-09-29). Baris Abort Case sudah mendapat 【补】 di v57 (P-15 ③). Yang belum: 【补】 untuk baris transisi 9/11 di §二, dan hitung ulang statistik 附表.
-- Status baris 附表 「本流程 n8n 件 04.9 登记」 masih 「待办（建造侧提出）」 walau registrasi sudah ditulis dan dibaca ulang (04.9 v130, 04.9.7 v2). Perubahan label status menunggu keputusan Bambang.
+- **Kolom 状态 附表 belum ikut Anchor 04 §七.6** (CLAUDE.md §0-13). Baris lain masih memakai 阻塞中／待办／已解封／不适用; hanya baris 「本流程 n8n 件 04.9 登记」 yang sudah memakai label Anchor (v58). Paragraf 统计 juga masih menghitung dengan kosakata lama. Penggantian label per baris butuh bukti per baris; belum dikerjakan, tunggu perintah Bambang.
 
 
 ## Sudah ditulis
+
+### v58 (2026-09-29T06:08:12Z, akun pribadi Bambang, perintah 「Ganti status baris 04.9 登记 ke 已完成但未验收」)
+
+附表 baris 「本流程 n8n 件 04.9 登记」: sel 状态 `b28d0928001d` 「待办（建造侧提出）」 → 「已完成但未验收（04.9 v130／04.9.7 v2 已回读；Alden 未验收）」; sel 解除判据 ditambah 【2026-09-29 补】 `b28d0929008c` (status lama, dasar Anchor 04 §七.6 dikutip, bukti, catatan bahwa baris lain dan 统计 belum diseragamkan). dryRun dibandingkan skrip (hanya dua node berubah); baca ulang diff v57→v58: 1 tambah / 1 hapus. Evidence E68.
 
 ### v57 (2026-09-29T05:59:25Z, akun pribadi Bambang, perintah 「Tulis P-14, P-15, P-16 ke build sheet」)
 
