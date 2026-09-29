@@ -68,20 +68,20 @@ Pegangan yang dipakai (inferensi, belum dikonfirmasi; Anchor 04 §七.6 tidak me
 
 | # | 事项 (singkat) | Status sekarang | Usulan label | Bukti | Catatan |
 |---|---|---|---|---|---|
-| 0 | 纪律处分记录 Registry Project 无已裁决 key（04.1 §一 该行为「候选｜ | 阻塞中 | **被阻塞** | 04.1 §一 baris masih 「候选｜待N5」 (dibaca 2026-09-20, 04.1 v46) | ⚠ bukti terakhir 9/20: baca ulang 04.1 §一 dan 04.8 §三 |
+| 0 | 纪律处分记录 Registry Project 无已裁决 key（04.1 §一 该行为「候选｜ | 阻塞中 | **被阻塞** | Dicek 2026-09-29: 04.1 **v47** §一 baris 纪律处分记录 masih 「候选｜待N5」, key dan Owner 🔲; 04.8 **v23** §三 「归属 Project」 masih 「🔲 候选｜待N5」 | ✓ dicek ulang (E69) |
 | 1 | NTP 岗位受控清单待标准化（T-5：「前两项已具备，岗位待标准化」）。技术签 c49696／c | 阻塞中 | **被阻塞** | Alden c50695: field posisi NTP belum dibuat (v57 【补】) |  |
 | 2 | 模式九组件扩展（N07 审批交互）。技术签 c49696 已定案：v5 已于 2026-08-2 | 已解封 | **已验证** | Alden c50576 (1A live), c50689 (1B live); N07 diuji SSCSD-435, 437–442 (§八) | sisa field/Screen dilacak di baris 13 dan c50658 |
-| 3 | 邮件收信与归档件未具备（T-5：「专用信箱＋收信件｜未具备（新平台件）」）。技术签列为冻结前须立 | 阻塞中 | **被阻塞** | Tidak ada kabar baru; kotak surat dan收信件 belum ada (T-5) | ⚠ belum dicek ulang sejak 9/15 |
-| 4 | 两个 Request Type 双语名称未确认（04.7 RT-HR-DISCIPLINARY- | 阻塞中 | **被阻塞** | 04.7 v46 (9/21): dua baris belum diisi nama dua bahasa | ⚠ P-6.7 C-01: baca ulang 04.7 dulu |
+| 3 | 邮件收信与归档件未具备（T-5：「专用信箱＋收信件｜未具备（新平台件）」）。技术签列为冻结前须立 | 阻塞中 | **被阻塞** | Dicek 2026-09-29: 04.4 **v35** §十一 共享组件索引 (7 komponen) tidak memuat komponen email, bahkan sebagai 「在建」; Spec v67 (T-5) tidak berubah sejak 9/24; OSD-116 (salinan s.d. 9/26 + c50558–c50705) tidak ada jawaban soal kotak surat | ✓ dicek ulang (E69) |
+| 4 | 两个 Request Type 双语名称未确认（04.7 RT-HR-DISCIPLINARY- | 阻塞中 | **被阻塞** | Dicek 2026-09-29: 04.7 **v51** (tidak berubah sejak 9/24): SUBMIT masih 「双语Request Type／Slack展示名称待流程Owner确认」, EVENT belum punya nama dua bahasa (nama dari Felix c50261 belum masuk 04.7) | ✓ dicek ulang (E69); juga menjawab P-6.7 C-01 |
 | 5 | 七个部门 Collab 频道：bot 入频道与 04.11 登记。频道 ID 已由 Felix  | 待办 | **被阻塞** | Syarat ①③ terpenuhi (9/21); ② registrasi 04.11 menunggu Alden |  |
 | 6 | N09 附件回贴端到端未验（技术签列为上线前探针；Grade 通道二在建同形制）。Slack A | 待办 | **未开始** | N09 belum dibangun; e2e belum dijalankan |  |
 | 7 | 员工离职 Spec 系统触发接收入口（T-5：「缺口已登记，Owner Kent」）。Kent  | 待办 | **进行中** | Entry qa01CkZBQfx8eLsK sudah dibangun (Geri c50674), belum dipublish | ❓ tumpang tindih dengan baris 35; bisa juga 被阻塞 |
-| 8 | S-06（降级＋降薪）与 S-15（扣除薪水／花红处分执行）两份 Spec 均待设计，N22／N | 待办 | **被阻塞** | Spec S-06/S-15 belum ada (menurut isi baris) | ⚠ belum dicek ulang |
+| 8 | S-06（降级＋降薪）与 S-15（扣除薪水／花红处分执行）两份 Spec 均待设计，N22／N | 待办 | **被阻塞** | Dicek 2026-09-29: HR｜盘点与切分 (1745158181) **v40**: S-06 (Low, 「待该体系明确后再排期」) dan S-15 (High) masih kandidat tanpa link Spec; CQL judul 「降级／扣除／花红／S-06／S-15」 di NOSM = 0 halaman (probe pembanding: judul 「纪律」 menemukan Spec S-05, jadi pencarian judul berfungsi) | ✓ dicek ulang (E69) |
 | 9 | 测试档案（NTP）待核实 | 待办 | **被阻塞** | 5 dari 6 cek lolos; sisa 1 (Talent Status Kent) harus dibaca Kent sendiri |  |
 | 10 | 部门值→Team Project 对照表与兜底。技术签 c49696 明写「部门值→板 key  | 待办 | **待决策** | Dua 🔲 di tabel perlu konfirmasi Felix |  |
 | 11 | Inz9／Marketing 两个 Collab 频道是否仍使用。两部门已并入 CRM（Alde | 待办 | **被阻塞** | Felix c50261 ④ sudah memutuskan; registrasi 04.11 menunggu Alden |  |
 | 12 | 测试期不得向 sscos-hr 发送 | 待办 | **未开始** | Notifikasi D (ke sscos-hr) belum dibangun; aturan uji mode belum dipasang | ❓ kalau dianggap aturan yang sudah diterapkan di N07 (DM), bisa 进行中 |
-| 13 | 主单专属 Screen 未建 | 待办 | **被阻塞** | Syarat ① (jawaban tempat daftar Screen) belum ada | ⚠ cek apakah c50647 (a) / 04.10 sudah menjawab soal Screen |
+| 13 | 主单专属 Screen 未建 | 待办 | **待决策** (usulan berubah dari 被阻塞) | Dicek 2026-09-29: sumber terbaru mengarah ke **layar bersama**, bukan layar khusus: #nos-bo 1790228926.781229 butir 5 (dikutip di c50658) 「挂 Disciplinary Case 那张共用屏时，设成选填直接做」; Alden c50647 (a) ① Approved By 「already on the Disciplinary Case edit screen」, ② field harus ada di 「Disciplinary Case edit screen」; field tiket utama lewat 04.10/Kent (c50647 (a)). 04.10 **v22** (hari ini) masih 「主单字段归 SSCSD/V1」 (K-15). Syarat ①–② baris ini (tempat daftar Screen + layar khusus) tidak dijawab langsung | ❓ baris ini bertentangan dengan arah sumber terbaru; apakah rencana layar khusus dipertahankan = keputusan Bambang (tidak didamaikan Claude) |
 | 14 | Kayden 两项提点未见 Felix 回复（c49740「提点」段，不构成退回）：①直属上级缺 | 待办 | **待决策** | Poin ① gugur (Kayden c50461); poin ② (Raymond) belum dijawab Felix |  |
 | 15 | 《Nexmax WFH工作规章制度（正式版）》无可追溯版本 | 待办 | **被阻塞** | Felix belum memberi lokasi dan versi resmi |  |
 | 16 | 请求级整单时限未定（04.7 两行 SLA 列均为「请求级整单时限 🔲 未定占位」）。04.7  | 待办 | **待决策** | Nilai SLA per request belum ditetapkan Felix |  |
@@ -111,7 +111,7 @@ Pegangan yang dipakai (inferensi, belum dikonfirmasi; Anchor 04 §七.6 tidak me
 | 40 | 本件与本页暗号接口契约表「先认领后动作」约束的适用 | 待办 | **待决策** | 双签未表态 |  |
 | 41 | 本流程 n8n 件 04.9 登记（索引行＋04.9.7 详情块） | 已完成但未验收 | **已完成但未验收** | v58 |  |
 
-Hitungan sementara (sebelum ⚠/❓ diputuskan): 共 42 行——被阻塞 13；待决策 12；已验证 6；未开始 6；已完成但未验收 3；进行中 2。
+Hitungan sementara (setelah cek ⚠ 2026-09-29, sebelum ❓ diputuskan): 共 42 行——被阻塞 12；待决策 13；已验证 6；未开始 6；已完成但未验收 3；进行中 2。
 
 **Pola 【补】 per baris (sel 解除判据, paragraf terakhir), contoh baris 1:**
 
@@ -121,7 +121,7 @@ Hitungan sementara (sebelum ⚠/❓ diputuskan): 共 42 行——被阻塞 13；
 
 > 【2026-09-29 补】自本版起本表「状态」列依 Anchor 04 §七.6 六个标签（已验证／已完成但未验收／进行中／待决策／被阻塞／未开始）登记，原「阻塞中／待办／已解封」各行改标依据见各行 2026-09-29 补。逐行机读：共 {n} 行——{hitungan final}。上方各段旧统计为当时口径，原文保留。
 
-- Baris ⚠ (0, 3, 4, 8, 13) dicek ulang ke sumbernya dulu (aturan 11: hanya sumber yang disebut di baris itu).
+- Baris ⚠ (0, 3, 4, 8, 13) **sudah dicek ulang 2026-09-29** (E69). 0, 3, 4, 8 tetap 被阻塞. 13 berubah menjadi 待决策 dan masuk daftar ❓.
 - Baris ❓ (7, 12, 26, 28, 29, 37) dan baris 34 menunggu pilihan Bambang.
 - Pertanyaan terbuka: tabel 「统计：24 个节点行」 di §五 (已建／可建／阻塞／待对端) ikut diseragamkan atau tidak.
 
