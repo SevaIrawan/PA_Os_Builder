@@ -150,7 +150,7 @@ CQL `lastmodified >= 2026-09-26` atas 51 pageId di file ini: 29 berubah. Nomor v
 | 1690927120 | 04.6 | v22 | **v23** (2026-09-29 05:24Z) | Dibaca penuh 2026-09-29 siang. Diff hanya §四 (GOV 维护单件 membaca Owner dari 维护说明). §二-3 penamaan dan §3.9 folder tidak berubah. |
 | 1693089805 | 04.9 | v127 | **v129** (2026-09-29, Alden) | Diff v127→v129 dibaca: §一 「名称一致」 mengikuti 04.6 §二-3 (`n8n-`); baris Notify + S-05; navigasi 04.9.7 (evidence E58). |
 | Tidak berubah sejak dibaca | 04 (Anchor, Sep 05), 07.06 **v30**, Spec S-05 **v67** (dicek ulang 2026-09-29 siang), 04.5.3 ~~v17~~ (lihat baris v18), 04.6 ~~v22~~ (lihat baris v23), 04.8 **v23** (dicek ulang 2026-09-29 sore), 04.10 ~~v21~~ → **v22** (2026-09-29 05:41Z, Kent; masih 「主单字段归 SSCSD/V1」), 07.06.1 **v41**, 04.4 ~~(Sep 27)~~ → **v35** (2026-09-29 05:24Z, §四), 04.7 **v51** (Sep 24, dicek ulang 2026-09-29), 04.1 → **v47** (2026-09-29 02:55Z, §三 GOV Owner), 04.3 → **v36** (2026-09-29 02:16Z, kalimat 维护单 Owner), HR｜盘点与切分 **v40** (E69), 04.9.7 ~~v1~~ (lihat baris v2) | — | — | — |
-| 2096463922 | Build sheet S-05 | v56 | **v58** (2026-09-29 06:08Z, Bambang via Claude) | v57: P-14–P-16 (E67); v58: status baris 04.9 登记 (E68). v56 ditulis Claude 2026-09-28 (E46, E48, E49). |
+| 2096463922 | Build sheet S-05 | v56 | **v59** (2026-09-29 06:51Z, Bambang via Claude) | v57: P-14–P-16 (E67); v58: status baris 04.9 登记 (E68); v59: P-18 semua kolom 状态 ke enam label Anchor 04 §七.6 (E71). v56 ditulis Claude 2026-09-28 (E46, E48, E49). |
 | 2117435433 | 04.9.7 | v1 | **v2** (2026-09-29 05:51Z, Bambang via Claude) | Registrasi 4 blok H2 S-05 (E64). |
 | 1693089805 | 04.9 | v129 | **v130** (2026-09-29 05:54Z, Bambang via Claude) | 4 baris indeks S-05, §三 0→4, §四 nama N07 (E65). |
 

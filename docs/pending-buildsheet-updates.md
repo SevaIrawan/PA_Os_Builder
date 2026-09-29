@@ -9,17 +9,16 @@ Aturan:
 - Bahasa: Mandarin, mengikuti isi halaman.
 - Kalau item sudah ditulis ke build sheet, pindahkan ke bagian "Sudah ditulis" dan cantumkan versi halamannya.
 
-Versi build sheet terakhir yang dibaca: **v58** (2026-09-29T06:08:12Z).
+Versi build sheet terakhir yang dibaca: **v59** (2026-09-29T06:51:23Z).
 
 ---
 
 ## Antre
 
-Sisa yang **belum** ditulis setelah v58. Semua ditulis **sekaligus dalam satu versi** saat Bambang memerintahkan (permintaan Bambang, 2026-09-29).
+Sisa yang **belum** ditulis setelah v59. Semua ditulis **sekaligus dalam satu versi** saat Bambang memerintahkan (permintaan Bambang, 2026-09-29).
 - **P-6.7** (menunggu orang lain): C-01 (backfill nama RT di 04.7; masih belum per 04.7 v51, E69), C-15 (Felix: 到期日期 dan 纪律记录有效期), C-26 (isi §七, keputusan Kayden), D-13 (marker patroli, Geri c50631 dan K-10). A-14 sudah dipindah ke P-17.
 - **P-6.8** (menunggu keputusan Bambang): B-5, B-14, D-4, D-9, D-16, A-01 (catatan versi dasar Spec v67). B-2 terjawab oleh draf P-18 (暗号表 `nos-s05-dup`); C-27 selesai (E61, v57).
 - **P-17**: transisi 9/11 setelah Kent c50705, termasuk A-14 dari P-6.7 (detail di bawah). **HOLD** (Bambang 2026-09-29: 「Kau hold dulu ini」): pemasangan condition 9/11 di UI Jira dan penulisan P-17 ditunda sampai Bambang melanjutkan.
-- **P-18** (draf siap, divalidasi E70): semua kolom 状态 di build sheet diseragamkan ke enam label Anchor 04 §七.6 — 附表 (42), 暗号表 (8), §一 配置对应表 (24), §一 tabel objek (8) — plus 【补】 statistik baru untuk 附表 dan §一. Dikerjakan **terakhir** dalam versi yang sama, supaya statistik menghitung status yang sudah final. Baris Abort Case (附表 34) mengikuti P-17 (hold → 未开始).
 
 ### P-17 · §二 baris transisi 9 dan 11 setelah Kent c50705 (DRAF, 2026-09-29)
 
@@ -44,7 +43,13 @@ Digabung dari P-6.7 A-14 (C-10, D-2): sumber c50445, c50632, Felix c50644 (sudah
 - Dasar tidak mendamaikan: CLAUDE.md §0-7; K-9 dan K-13 di `docs/open-issues.md`.
 - Sebelum ditulis: ambil build sheet terbaru, cek OSD-116 setelah c50705, 04.3 versi terbaru §六.
 
-### P-18 · Kolom 状态 附表 ikut Anchor 04 §七.6, statistik dihitung ulang (DRAF, 2026-09-29)
+## Sudah ditulis
+
+### v59 (2026-09-29T06:51:23Z, akun pribadi Bambang, perintah 「Tulis P-18 ke build sheet」)
+
+Ditulis lewat Atlassian_MCP `updateConfluenceContent` snapshotToken `v:58`, 164 operasi: 附表 41 baris (sel 状态 diganti label baru + 【补】 di akhir sel 解除判据; baris 41 tidak diubah karena sudah di v58), 暗号表 8 + §一 配置对应表 24 + tabel objek 8 (label baru disisipkan sebagai paragraf pertama sel 状态, 【补】 di akhir sel; teks lama tetap), plus dua 【补】 statistik (附表 setelah `b28d0928001f`, §一 setelah `b28d0928003d`). localId baru `b28d09290104`–`b28d0929018e`. dryRun dibandingkan skrip dengan v58 + 164 operasi: identik. Baca ulang v59 penuh: identik dengan hasil dryRun, 164/164 node ada. Evidence E71. Hitungan: 附表 42 = 已验证 6／已完成但未验收 3／进行中 2／待决策 12／被阻塞 13／未开始 6; 暗号表 8 = 进行中 2／未开始 3／待决策 1／被阻塞 1／已验证 1; 配置对应表 24 = 进行中 7／被阻塞 8／未开始 9; tabel objek 8 = 已完成但未验收 4／已验证 3／被阻塞 1.
+
+#### P-18 · Kolom 状态 附表 ikut Anchor 04 §七.6, statistik dihitung ulang (DRAF, 2026-09-29)
 
 - Dasar: Anchor 04 §七.6 「事实只标为：已验证／已完成但未验收／进行中／待决策／被阻塞／未开始；附 Jira、Confluence、回读、测试或团队回复。」 dan aturan Bambang CLAUDE.md §0-13 (build sheet ikut dokumen asli).
 - Keadaan v58: hanya baris 「本流程 n8n 件 04.9 登记」 yang memakai label Anchor. Baris lain memakai 阻塞中／待办（…）／已解封（tanggal·dasar）／不适用. Paragraf 统计 menghitung dengan kosakata lama (terakhir: 「共 42 行；阻塞中 5 行；待办 28 行…；已解封 9 行」, 2026-09-28).
@@ -130,7 +135,7 @@ Hitungan (setelah cek ⚠, keputusan baris 13, dan baris ❓ memakai usulan — 
 - Baris 34 (Abort Case) mengikuti jawaban P-17: condition belum dipasang → 未开始; sudah dipasang dan dibaca ulang → label ditentukan dari hasil baca ulang.
 - **Cakupan diperluas (Bambang 2026-09-29: 「Intinya semua ikut aturan dan source yang ada」):** bukan hanya 附表. Semua kolom 「状态」 dan paragraf statistik di build sheet yang menilai keadaan (termasuk paragraf 「统计：24 个节点行」 di §一 配置对应表: 已建 4／可建或部分可建 13／阻塞 6／待对端 2, dan tabel lain yang punya kolom 状态) ikut enam label Anchor 04 §七.6 dengan pegangan yang sama. Inventaris tabel dan draf per baris dibuat berikutnya, ditunjukkan dulu sebelum ditulis.
 
-#### P-18 lanjutan · Tabel status lain di build sheet v58 (DRAF, 2026-09-29; divalidasi E70)
+##### P-18 lanjutan · Tabel status lain di build sheet v58 (DRAF, 2026-09-29; divalidasi E70)
 
 Sudah dicek (2026-09-29): build sheet **v58** (masih versi terbaru, dicek `listConfluenceContentVersions`), semua 14 tabel di halaman diinventaris. Tabel yang punya kolom 「状态」: 附表 (42 baris, draf di atas), **暗号接口契约表** (8), **§一 配置对应表** (24), **§一 tabel objek** (8). Tabel lain tidak diubah: §二 状态链表 (kolom Jira status/ID, fakta konfigurasi), §八 测试单 「末态」 (nama status Jira tiket), §八 NTP-187 「结论」 (hasil cek per syarat), dan tabel lain tanpa kolom status. Bukti per baris diambil dari isi baris itu sendiri plus sumber yang sudah dibaca hari ini (04.9.7 v2, E59–E69, OSD-116 s.d. c50705). Pegangan label = yang disetujui Bambang.
 
@@ -206,7 +211,6 @@ Hitungan: 已完成但未验收 4, 已验证 3, 被阻塞 1.
 Catatan: P-6.8 B-2 (status `nos-s05-dup`) terjawab oleh baris A-3 di atas.
 
 
-## Sudah ditulis
 
 ### v58 (2026-09-29T06:08:12Z, akun pribadi Bambang, perintah 「Ganti status baris 04.9 登记 ke 已完成但未验收」)
 
