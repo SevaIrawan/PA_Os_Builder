@@ -141,15 +141,14 @@ Kalau standarnya tidak ada, buat laporan dengan format **标准缺口回报** (e
 
 ## 6. Tes
 
-Sumber: 04.5.3 (1729626578, lastModified 2026-09-28, v17). Dibandingkan dengan versi 2026-09-25, yang berubah hanya syarat 2 pada pengecualian 「收件人就是主体」 di §二. Aturan di bawah tidak berubah (dicek 2026-09-28, audit D-17). Bagian 测试 di build sheet S-05 memuat versi yang lebih lama. Kalau keduanya berbeda, **04.5.3 terbaru yang dibaca**.
+Sumber: 04.5.3 (1729626578, **v18**, 2026-09-29 05:12Z, dibaca penuh 2026-09-29). v17→v18 hanya mengubah whitelist Slack di §二: 丙 (#nos-governance) dihapus, 乙 ditambah 「OS 开发流一族（时效件、N10 对齐）的测试发 #nos-ops；成批的卡片测试优先发甲」, dan daftar larangan jadi lima (evidence E60). Bagian 测试 di build sheet S-05 memuat versi yang lebih lama. Kalau keduanya berbeda, **04.5.3 terbaru yang dibaca**.
 - Tiket tes Jira wajib punya **dua penanda**, 「两项须同时具备，任一缺失视为未标识」 (04.5.3 §三): judul diawali `TEST｜`, **dan** subjek tiket menunjuk ke arsip tes.
   - Build sheet S-05 mencatat bahwa tes struktur tanpa subjek (SSCSD-411, dengan preseden GPM) hanya memenuhi penanda pertama. Ini ketegangan dengan 04.5.3, lihat `docs/open-issues.md` K-7. Claude tidak memutuskannya.
 - Tiket tes di SSCSD untuk S-05 dibiarkan di status akhirnya dan tidak dihapus (build sheet S-05, 测试单登记). Untuk project arsip dan buku besar berlaku aturan di §3.
-- Whitelist Slack (04.5.3 §二):
+- Whitelist Slack (04.5.3 §二, v18):
   - 甲: DM diri sendiri
-  - 乙: #nos-bo (C0BRSTNNY4A), #nos-ops (C0BBT5ZC9L6)
-  - 丙: #nos-governance (C0C0S5CD1S9), 「OS 开发流一族（时效件、N10 对齐）的测试频道」
-- **Dilarang mengirim ke:** #sscos-hr (C0BHL8AE68G), #epic-nse-1045-squad (C0BKUAGTKP1), #general (C06411GVD5K).
+  - 乙: #nos-bo (C0BRSTNNY4A), #nos-ops (C0BBT5ZC9L6). 「成批的卡片测试优先发甲」.
+- **Dilarang mengirim ke (「红线五处不发」):** #sscos-hr (C0BHL8AE68G), #epic-nse-1045-squad (C0BKUAGTKP1), #general (C06411GVD5K), #nos-governance (C0C0S5CD1S9), #nos-flow-alignment (C0BU1LY53NE).
 - Penanda tes di Slack: `🧪 【SSCOS 测试 · 请勿处理 ｜ TEST — do not action】`.
 - `test_workflow` n8n akan benar-benar mengirim. Nonaktifkan node tulis/kirim, atau isi pinData secara eksplisit (07.06.1 E6).
   - Cara membuktikannya (07.06.1 E6 验收, versi 2026-09-26): baca ulang objek tujuan, lalu periksa **setiap node yang menulis atau mengirim**. Node yang benar-benar jalan menghasilkan balasan sungguhan (nomor tiket, ts pesan) dan butuh ratusan milidetik. Waktu 0 berarti node itu di-pin atau dinonaktifkan. 「执行记录顶层的 pinData 字段不作判据」.

@@ -146,7 +146,10 @@ CQL `lastmodified >= 2026-09-26` atas 51 pageId di file ini: 29 berubah. Nomor v
 | 1742766267 | Grade｜建造单 | 2026-09-26 | **v192** (2026-09-28) | Alur lain. Tidak dibaca. |
 | 2076934175 | xLoop｜盘点与切分 | 2026-09-25 | **v15** (2026-09-28) | Bukan S-05. Tidak dibaca. |
 | 1674379396 | NOS｜知识库架构方案 | Jul 19 | **v3** (2026-09-26, 「页首改为旧稿提示（Alden 09-26）」) | Halaman kini 「旧稿，仅供参考」. |
-| Tidak berubah sejak dibaca | 04 (Anchor, Sep 05), 07.06 **v30**, Spec S-05 **v67**, 04.5.3 **v17**, 04.6 **v22**, 04.8 **v23**, 04.10 **v21**, 07.06.1 **v41**, 04.4 (Sep 27), 04.7 (Sep 24), 04.9.7 **v1** | — | — | — |
+| 1729626578 | 04.5.3 | v17 | **v18** (2026-09-29 05:12Z, Alden) | Dibaca penuh 2026-09-29 siang. Diff: whitelist 丙 #nos-governance dihapus; 「红线五处不发」 menambah #nos-governance (C0C0S5CD1S9) dan #nos-flow-alignment (C0BU1LY53NE). CLAUDE.md §6 sudah disesuaikan. |
+| 1690927120 | 04.6 | v22 | **v23** (2026-09-29 05:24Z) | Dibaca penuh 2026-09-29 siang. Diff hanya §四 (GOV 维护单件 membaca Owner dari 维护说明). §二-3 penamaan dan §3.9 folder tidak berubah. |
+| 1693089805 | 04.9 | v127 | **v129** (2026-09-29, Alden) | Diff v127→v129 dibaca: §一 「名称一致」 mengikuti 04.6 §二-3 (`n8n-`); baris Notify + S-05; navigasi 04.9.7 (evidence E58). |
+| Tidak berubah sejak dibaca | 04 (Anchor, Sep 05), 07.06 **v30**, Spec S-05 **v67** (dicek ulang 2026-09-29 siang), 04.5.3 ~~v17~~ (lihat baris v18), 04.6 ~~v22~~ (lihat baris v23), 04.8 **v23**, 04.10 **v21**, 07.06.1 **v41**, 04.4 (Sep 27), 04.7 (Sep 24), 04.9.7 **v1** | — | — | — |
 | 2096463922 | Build sheet S-05 | v56 | v56 | Ditulis Claude 2026-09-28 (E46, E48, E49). |
 
 ## Jira

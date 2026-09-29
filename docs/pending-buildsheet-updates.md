@@ -16,6 +16,7 @@ Versi build sheet terakhir yang dibaca: **v56** (2026-09-28T16:12:01Z).
 ## Antre
 
 Sisa yang **belum** ditulis setelah v56:
+- **P-16** (cek aturan 4 workflow: tidak ada folder S-05).
 - **P-15** (Alden c50692: format nama n8n- dan Owner 部门 HR; c50695: field posisi NTP; c50691 ①: publish = aktif).
 - **P-14** (temuan skill harian 2026-09-29: entry terdaftar, marker klaim Geri, batch 1B live menurut Alden c50689).
 - **P-6.7**: D-13 (marker patroli, tunggu Geri c50631 dan K-10). Isi keputusan C-15 (Felix) dan isi §七 (C-26, keputusan Kayden 9/29) juga belum; yang sudah ditulis hanya catatan keadaannya.
@@ -62,6 +63,17 @@ Sudah dicek (2026-09-29): OSD-116 s.d. **c50695** (c50689, c50692, c50695 dibaca
 > 【2026-09-29 补】平台事实（Alden NSE-1137 c50691 第 1 点，离职 N7／N12 发布申请）：「On this instance, publishing a piece activates it; there is no "published but active: false" state」。本流程四件现均未发布（activeVersionId null）；发布即启用，故发布时点同受本行次序约束。本行状态不变。
 
 - Sebelum ditulis: ambil versi terbaru build sheet; cek ulang OSD-116 (Kent c50632/c50658) dan 04.9. Kalau keempat workflow sudah diganti nama, sebut nama barunya di ①.
+
+### P-16 · Cek aturan 4 workflow setelah ganti nama (2026-09-29 siang)
+
+Sudah dicek (2026-09-29): 04.6 v23 (§二-3, §3.2, §3.5, §3.9, dibaca penuh), 04.5.3 v18 (§一, dibaca penuh), 04.9 v129 §一, Spec S-05 v67 (tabel node), n8n `search_folders` dan `get_workflow_details` keempat workflow (evidence E59, E60).
+
+**① §五, blok N04/N05/N07/N20 (satu 【补】 per blok, atau satu 【补】 di bawah blok terakhir): ditambahkan**
+
+> 【2026-09-29 补】四件已按 04.6 §二-3 改名（Alden OSD-116 c50692；n8n 回读 versionId 未变，见第六区改名条）。folder：04.6 §3.9「每流程一个 folder…新 workflow 直接建在所属流程 folder」；现 n8n 项目内 11 个 folder，无本流程 folder，四件均不在任何 folder（parentFolderId null）。建 folder 与移件须经 UI（MCP 无此操作），folder 名按 04.6 §3.9「中文｜English」待定，由建造人经 UI 处理。
+
+- Nama folder tidak ada di source mana pun. Claude tidak mengusulkan nama sendiri.
+- Soal N07 「审批卡发送」 vs nama node Spec 「HR三层审核」: dicatat di laporan ke Bambang, belum dimasukkan ke draf ini sampai Bambang memutuskan.
 
 ## Sudah ditulis
 
