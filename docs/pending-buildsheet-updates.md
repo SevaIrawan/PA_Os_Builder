@@ -16,7 +16,7 @@ Versi build sheet terakhir yang dibaca: **v56** (2026-09-28T16:12:01Z).
 ## Antre
 
 Sisa yang **belum** ditulis setelah v56:
-- **P-14** (temuan skill harian 2026-09-29: entry terdaftar, marker klaim Geri, perubahan Slack Approval).
+- **P-14** (temuan skill harian 2026-09-29: entry terdaftar, marker klaim Geri, batch 1B live menurut Alden c50689).
 - **P-6.7**: D-13 (marker patroli, tunggu Geri c50631 dan K-10). Isi keputusan C-15 (Felix) dan isi §七 (C-26, keputusan Kayden 9/29) juga belum; yang sudah ditulis hanya catatan keadaannya.
 - **P-6.8**: semua item di sana masih menunggu keputusan Bambang (B-2, B-5, B-14, D-4, D-9, D-16, C-27, catatan versi dasar Spec v67).
 - Setelah Kent menjawab c50632: tambahkan 【补】 baru untuk transisi 9/11 dan baris Abort Case, lalu hitung ulang statistik 附表.
@@ -24,7 +24,7 @@ Sisa yang **belum** ditulis setelah v56:
 
 ### P-14 · Temuan skill harian 2026-09-29 (nos-check, nos-gate, prebuild-scan, build)
 
-Sudah dicek (2026-09-29): build sheet v56 (附表 baris 「离职侧「系统触发入口」…发布」 `cecfddc9c86e`, 「…『先认领后动作』约束的适用」, 「员工离职 Spec 系统触发接收入口」 `2383136a7379`, 「Trigger link 方向」 `15b49457487d`); OSD-116 s.d. c50670; NSE-1137 s.d. c50674 (c50673, c50674 dibaca penuh); 04.9 v127, 04.9.3 v30, 04.4.1 v16, Notify 契约 v16, 04.9.1 v22, 04.5 v81 (diff dibaca penuh, evidence E52); n8n N07 (E56). #nos-bo: tidak ada pesan utama baru setelah 2026-09-26.
+Sudah dicek (2026-09-29): build sheet v56 (附表 baris 「离职侧「系统触发入口」…发布」 `cecfddc9c86e`, 「…『先认领后动作』约束的适用」, 「员工离职 Spec 系统触发接收入口」 `2383136a7379`, 「Trigger link 方向」 `15b49457487d`); OSD-116 s.d. c50689; NSE-1137 s.d. c50674 (c50673, c50674 dibaca penuh); OSD-116 c50689 (Alden, dibaca penuh, evidence E57); 04.9 v127, 04.9.3 v30, 04.4.1 v16, Notify 契约 v16, 04.9.1 v22, 04.5 v81 (diff dibaca penuh, evidence E52); n8n N07 (E56). #nos-bo: tidak ada pesan utama baru setelah 2026-09-26.
 
 **① 页首附表 baris 「离职侧「系统触发入口」qa01CkZBQfx8eLsK 发布」, sel 「解除判据」: ditambahkan**
 
@@ -36,9 +36,9 @@ Sudah dicek (2026-09-29): build sheet v56 (附表 baris 「离职侧「系统触
 
 **③ §五 N07 块: ditambahkan**
 
-> 【2026-09-29 补】平台侧 Slack Approval 于 2026-09-28 16:50Z 前后改版（04.4.1 v16、Notify 契约 v16「v7」、04.9.1 v22：active，versionId ce9ea1f7，70 节点）：需弹表单的点击先开「正在加载」占位表单再换真表单；不弹表单的按钮先把卡片改为「处理中」；审批记录「决定」行「有决定名时该行只写决定名，不再加「通过／不通过」」。N07 各按钮均已带 decisionLabel（API 回读 2026-09-29，versionId 5a66fd9c 未变），打回补件将显示「打回补件 · Return for info」。本页第八区 2026-09-28 N07 实跑（二）均早于该改版，新交互未以 N07 卡实测（建造侧拟：下一轮 N07 实跑时一并验）。
+> 【2026-09-29 补】Alden OSD-116 c50689：「batch 1B is live (ahead of 10/1)」——需弹表单的按钮先开「Loading」表单再换真表单；不弹表单的按钮先显示「Processing」；「When a button has decisionLabel, the "Decision" line of the approval record shows only that label (e.g. 打回补件), with no 通过／不通过 in front」（契约：04.4.1 v16、Notify 契约 v16「v7」）。同条：「S-05 does not need to change anything… N07 is ready on the platform side. Bambang's tests last night on SSCSD-437 to SSCSD-442 ran on the new version and all worked.」（Alden 所述，建造侧未另核执行记录）。N07 各按钮均已带 decisionLabel（API 回读 2026-09-29，versionId 5a66fd9c 未变），打回补件显示「打回补件 · Return for info」。
 
-- Sebelum ditulis: ambil versi terbaru build sheet; cek ulang NSE-1137, OSD-116, 04.9/04.9.3 dan Slack Approval.
+- Sebelum ditulis: ambil versi terbaru build sheet; cek ulang NSE-1137, OSD-116 dan 04.9/04.9.3. P-7④ (v56) masih menulis 「10/1 后回读实际记录格式」; setelah c50689 kalimat itu basi, dan ③ di atas yang mencatat keadaan barunya.
 
 ## Sudah ditulis
 
