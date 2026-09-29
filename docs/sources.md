@@ -174,3 +174,5 @@ CQL `lastmodified >= 2026-09-26` atas 51 pageId di file ini: 29 berubah. Nomor v
 |---|---|---|
 | 1647870014 | 00｜知识库治理 (space NW) | Rovo 404, MCP 403 "Space is restricted" (laporan agent pembaca, bukti mentah tidak disimpan) |
 | 1656783199 | 05｜页面结构与字段词汇表 (space NW) | Rovo 404, MCP 403 "Space is restricted" (laporan agent pembaca, bukti mentah tidak disimpan) |
+
+| 1693089805, 2117435433 | 04.9 dan 04.9.7 (2026-09-29 sore) | 04.9 v137 dibaca (§一 penuh, diff v130→v137); 04.9.7 v2 penuh | Ditulis: 04.9.7 **v3**, 04.9 **v138** (akun pribadi Bambang, E76) |

@@ -18,6 +18,7 @@ Versi build sheet terakhir yang dibaca: **v60** (2026-09-29T08:27:21Z).
 Sisa yang **belum** ditulis setelah v60. Semua ditulis **sekaligus dalam satu versi** saat Bambang memerintahkan (permintaan Bambang, 2026-09-29).
 - **P-6.7** (menunggu orang lain): C-01 (backfill nama RT di 04.7; masih belum per 04.7 v51, E69), C-26 (isi §七, keputusan Kayden), D-13 (marker patroli, Geri c50631 dan K-10). A-14 sudah dipindah ke P-17.
 - **P-6.8** (menunggu keputusan Bambang): B-5, B-14, D-4, D-9, D-16, A-01 (catatan versi dasar Spec v67). B-2 terjawab oleh draf P-18 (暗号表 `nos-s05-dup`); C-27 selesai (E61, v57).
+- **P-21** (DRAF, 2026-09-29): (a) koreksi versionId N05 di build sheet v60 (第五区 N05 块 dan 配置对应表 N05 行 menulis `dd065a45`; sekarang `664828ee`, UI save 08:17:58Z hanya sticky; pinData tes di-unpin Bambang 08:59:58Z; E76); (b) 偏差登记: perubahan N07/N05 2026-09-29 dilakukan件 dulu lalu registrasi, terbalik dari 04.9 §一 「先改登记再改件」; registrasi disusulkan 04.9 v138／04.9.7 v3 (E76); (c) 附表 「本流程 n8n 件 04.9 登记」: tambahkan bahwa blok N05/N07 diperbarui (04.9.7 v3, 04.9 v138).
 - **P-17**: transisi 9/11 setelah Kent c50705, termasuk A-14 dari P-6.7 (detail di bawah). **HOLD** (Bambang 2026-09-29: 「Kau hold dulu ini」): pemasangan condition 9/11 di UI Jira dan penulisan P-17 ditunda sampai Bambang melanjutkan.
 
 ### P-17 · §二 baris transisi 9 dan 11 setelah Kent c50705 (DRAF, 2026-09-29)
