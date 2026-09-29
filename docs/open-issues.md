@@ -38,6 +38,10 @@
   - **Field arsip (NTP/TCL):** aturan persetujuan resmi sekarang ada di **04.8 §四 v23** (lihat CLAUDE.md §3). Ini bukan lima kelas Alden secara utuh; hanya berlaku untuk field arsip.
   - **Field tiket utama SSCSD:** Alden OSD-116 c50647 (a): 「only the risk categories (making a field required on the shared screen, changing a shared object others already rely on, and the like) come to me」. Halaman 04.10 v21 belum memuat ini (lihat K-15).
   - **04.10 v21** tetap tanpa lima kelas. Status K-1 untuk objek lain (Jira bersama selain field arsip): 待决策.
+- **Update 2026-09-29 (thread 1789704362.435989 balasan 17–19 dibaca penuh):**
+  - Kayden (1790647364.406809, 09:02): 「一、04.10 范围重划，我点头。主单侧的字段、屏、workflow、scheme 也进 04.10 同一张表、同一套第五节流程，日常 Kent 以 Schema Owner 审批，Alden 只在五类风险点头。」 Kayden menarik kembali pendapatnya tanggal 23 dan mengikuti koreksi Alden tanggal 24.
+  - Kent (1790661147.814659, 12:52): 三处逐字稿 dan 判定标准 v4 dimasukkan ke Canvas F0C32N7MYR1 v4; pemasangan ke 04.10 oleh pelaksana Kayden. Canvas v4 belum dibaca Claude.
+  - **Status:** keputusan 已验证 (jawaban tertulis Kayden). Pemasangan di halaman 04.10: 进行中 (belum terlihat; terakhir dibaca v22).
 
 ### K-2 · Siapa yang memutuskan audit 切分 (N5) dan 验收 (N14)
 - **Anchor 04 §一/§二** dan **OS 开发流 Spec N5/N14** (1729200354): 「Kayden 或 Alden」 (OR).
@@ -160,6 +164,7 @@
 - Alden adalah Owner SSCSD/V1, jadi c50647 bisa dibaca sebagai pelimpahan dari Owner. Tapi halaman 04.10 belum diubah, dan perubahan cakupan di Canvas 04.10 v3 masih menunggu 「点头」 Kayden (K-1). **Inferensi, belum dikonfirmasi.** Claude tidak mendamaikan.
 - **Format permintaan** (04.10 §五 langkah 1): Task di Project BO, ditugaskan ke Schema Owner, tiga isian 「要什么／哪条流程 Spec 哪一行需要／为何现有共享对象不够用」; 「口头／Slack 私聊不受理」.
 - **Status:** 待决策. Sebelum mengajukan Task ke Kent, tanyakan ke Bambang apakah konflik ini perlu disebut di Task.
+- **Update 2026-09-29:** konflik selesai lewat keputusan Kayden (#nos-bo 1790647364.406809, lihat K-1): field tiket utama SSCSD masuk 04.10 dan disetujui Kent. Kent membangun batch A dan mendaftarkannya di 04.10 §三 v23 (OSD-116 c50725; halaman v23 belum dibaca Claude). **Status:** 已验证 (keputusan); perubahan teks cakupan di 04.10: 进行中.
 
 ### K-16 · Isi kolom 「Owner 部门」 di indeks 04.9 untuk S-05
 - **04.9 v124** (1693089805): kolom 「Owner 部门」 ada di header indeks, tapi tidak didefinisikan di §一 maupun di halaman lain (CQL NOSM, #nos-bo, OSD-116, NSE-1137, NSE-1143; dicek 2026-09-28).

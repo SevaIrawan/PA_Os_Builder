@@ -98,7 +98,7 @@ Selain aturan dasar itu, ada dua aturan tambahan dari source:
   - notifikasi ke karyawan sungguhan atau pengiriman nyata pertama
   - mengaktifkan workflow (juga butuh persetujuan Owner platform)
   - 「记不清是否在清单内，就先问」
-- **Lima kelas yang butuh persetujuan Alden. Statusnya masih DRAF**: judulnya sendiri 「权责判定标准初稿」 (#nos-bo, thread 1789704362.435989, balasan 1790159495.872119, Alden, 2026-09-23). Kent memasukkannya ke Canvas draf 04.10 v3 (F0C32N7MYR1, balasan 1790163869.066139). Draf ini **belum ada** di 04.10: dicek ulang 2026-09-28 pada versi lastModified Sep 26, tidak ada kata 五类/审批线/权限／可见性/启用自动化/>20. Canvas v3 (dibaca penuh 2026-09-28) masih berlabel 「提案 v3」 dan menandai cakupan 主单侧 sebagai 〔待定〕. Alden (1790228926.781229) meminta Kayden 「点头」 atas perubahan cakupan; sampai balasan terakhir thread (2026-09-25) belum ada jawaban Kayden.
+- **Lima kelas yang butuh persetujuan Alden. Sudah diputuskan Kayden; halaman 04.10 belum diubah.** Asalnya draf 「权责判定标准初稿」 (#nos-bo, thread 1789704362.435989, balasan 1790159495.872119, Alden, 2026-09-23). Kayden, balasan 1790647364.406809 (2026-09-29 09:02): 「04.10 范围重划，我点头。主单侧的字段、屏、workflow、scheme 也进 04.10 同一张表、同一套第五节流程，日常 Kent 以 Schema Owner 审批，Alden 只在五类风险点头。」 Kent, balasan 1790661147.814659 (12:52): 三处逐字稿 dan 判定标准 v4 ada di Canvas F0C32N7MYR1 v4 untuk dipasang oleh pelaksana Kayden. Canvas v4 **belum dibaca** Claude; halaman 04.10 belum memuat perubahan ini (terakhir dibaca v22).
   1. mengubah objek bersama yang sudah dipakai alur lain, **bila perubahan itu mengubah perilaku alur lain** (「且改完会改变别人的行为」)
   2. izin/visibilitas
   3. penghapusan
