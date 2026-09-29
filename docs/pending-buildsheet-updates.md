@@ -9,19 +9,47 @@ Aturan:
 - Bahasa: Mandarin, mengikuti isi halaman.
 - Kalau item sudah ditulis ke build sheet, pindahkan ke bagian "Sudah ditulis" dan cantumkan versi halamannya.
 
-Versi build sheet terakhir yang dibaca: **v59** (2026-09-29T06:51:23Z).
+Versi build sheet terakhir yang dibaca: **v60** (2026-09-29T08:27:21Z).
 
 ---
 
 ## Antre
 
-Sisa yang **belum** ditulis setelah v59. Semua ditulis **sekaligus dalam satu versi** saat Bambang memerintahkan (permintaan Bambang, 2026-09-29).
-- **P-6.7** (menunggu orang lain): C-01 (backfill nama RT di 04.7; masih belum per 04.7 v51, E69), C-15 (Felix: 到期日期 dan 纪律记录有效期), C-26 (isi §七, keputusan Kayden), D-13 (marker patroli, Geri c50631 dan K-10). A-14 sudah dipindah ke P-17.
+Sisa yang **belum** ditulis setelah v60. Semua ditulis **sekaligus dalam satu versi** saat Bambang memerintahkan (permintaan Bambang, 2026-09-29).
+- **P-6.7** (menunggu orang lain): C-01 (backfill nama RT di 04.7; masih belum per 04.7 v51, E69), C-26 (isi §七, keputusan Kayden), D-13 (marker patroli, Geri c50631 dan K-10). A-14 sudah dipindah ke P-17.
 - **P-6.8** (menunggu keputusan Bambang): B-5, B-14, D-4, D-9, D-16, A-01 (catatan versi dasar Spec v67). B-2 terjawab oleh draf P-18 (暗号表 `nos-s05-dup`); C-27 selesai (E61, v57).
-- **P-19**: field batch A sudah dibangun (Kent c50725, cek editmeta E72). Detail di bawah.
 - **P-17**: transisi 9/11 setelah Kent c50705, termasuk A-14 dari P-6.7 (detail di bawah). **HOLD** (Bambang 2026-09-29: 「Kau hold dulu ini」): pemasangan condition 9/11 di UI Jira dan penulisan P-17 ditunda sampai Bambang melanjutkan.
 
-### P-19 · Field batch A dibangun, Kent OSD-116 c50725 (DRAF, 2026-09-29)
+### P-17 · §二 baris transisi 9 dan 11 setelah Kent c50705 (DRAF, 2026-09-29)
+
+Sudah dicek (2026-09-29): build sheet **v58** §二 baris transisi 9 (`a1699b53-…`) dan 11 (`1311cdec-…`) dibaca penuh; OSD-116 s.d. **c50705** (c50632, c50644, c50695, c50705 dibaca penuh; tidak ada comment setelah c50705); 04.3 **v36** (2026-09-29 02:16Z, Kayden): diff v35→v36 dibaca penuh, hanya kalimat 维护单 Owner (「治理页 Owner 矩阵」→「目标页面维护说明登记的 Owner」), §六 baris transisi tidak berubah.
+
+Digabung dari P-6.7 A-14 (C-10, D-2): sumber c50445, c50632, Felix c50644 (sudah di 附表 v53/v57); transisi 9 「仅服务账号」 vs Kayden c50445 「N07「确认重复」同口径」 (K-13); baca ulang `isConditional` setelah condition dipasang.
+
+**Keadaan condition (dicek 2026-09-29):** build sheet v58 mencatat 「确认前 condition 不配」 (menunggu Kent); Kent baru menjawab c50705 (2026-09-29 12:52 +07). Cek API tidak bisa: semua 10 tiket tes Disciplinary Case (SSCSD-411–442) sudah di status akhir, jadi transisi 9/11 tidak muncul di daftar transisi mana pun; membuat tiket tes baru = menulis, butuh izin. Default tulis: **varian A (belum dipasang)**, kecuali Bambang memberi tahu sudah memasang. Catatan: condition = aturan izin transisi, termasuk kelas 「izin/visibilitas」 di daftar lima kelas Alden (masih draf, CLAUDE.md §3).
+
+**① §二 transisi 9, kolom 允许执行者, setelah `b28d09280040`:**
+
+> 【2026-09-29 补】上条「待 Kent 答 OSD-116 c50632」已答：Kent OSD-116 c50705「yes, use SSCOS｜HR for the HR Ops & Data transition condition (Abort Case id 11 and N07 Confirm duplicate), per 04.3 v35 §六」；成员 Felix、Yuki，附条件见页首附表 Abort Case 行 2026-09-29 补。c50632 所提 condition 为「service account + SSCOS｜HR + SSCSD Project Owner」。本行原文「仅服务账号」与 Kayden c50445「N07「确认重复」同口径」仍并存；04.3 §六「执法点」段「Jira workflow Condition 不承担"限定哪个人有权批"的职责——它收紧为"仅服务账号可转态"」与同节转态权限表亦并存（04.3 现行 v36，v35→v36 未改 §六 转态行），建造侧不调和。本转换现由平台审批卡回调以服务账号执行（c50558）。〔varian A — belum dipasang〕condition 尚未配置。〔varian B — sudah dipasang〕condition 已于 {tanggal} 经 UI 配置（人：Bambang），允许：{isi}；API 回读 {bukti}。
+
+**② §二 transisi 11, kolom 允许执行者, setelah `b28d09280041`:**
+
+> 【2026-09-29 补】上条「已于 OSD-116 c50632 请 Kent 确认，截至 2026-09-28 未答」已答：Kent OSD-116 c50705 同意用 SSCOS｜HR（原文见本行上方页首附表 Abort Case 行 2026-09-29 补）；执行顺序「Order stays as in c50445: main ticket to Cancelled first, then the open sub-tickets.」〔varian A〕condition 尚未配置。〔varian B〕condition 已于 {tanggal} 经 UI 配置（人：Bambang），允许：{isi}；API 回读 {bukti}。
+
+**③ §二 transisi 11, kolom 本轮回读 (`db2a9eb1-…` 「UI 确认未挂 screen；待补 API 回读；未实跑」), setelah paragraf itu — hanya kalau varian B:**
+
+> 【2026-09-29 补】condition 配置后回读：{getTransitions / isConditional 结果，执行账号}。未实跑。
+
+- Dasar tidak mendamaikan: CLAUDE.md §0-7; K-9 dan K-13 di `docs/open-issues.md`.
+- Sebelum ditulis: ambil build sheet terbaru, cek OSD-116 setelah c50705, 04.3 versi terbaru §六.
+
+## Sudah ditulis
+
+### v60 (2026-09-29T08:27:21Z, akun pribadi Bambang, perintah 「Kau kerjakan step by step A sampai F」 butir C)
+
+Ditulis sebagai **P-20** (28 operasi: 23 sisip, 5 ganti label; dryRun → skrip: identik dengan v59 setelah sisipan dicabut dan label dikembalikan; baca ulang v60 = dryRun, 23/23 node baru ada; evidence E75). P-20 mencakup seluruh P-19 di bawah, dengan ③ diperbarui (N07 sudah tidak noWrite), ditambah: N07 改件 dan tes SSCSD-448～450 (E73), N05 perbaikan E9 dan tes 18082 (E74), 订正 C-15 (到期日期／纪律记录有效期 sudah ada di Spec, tidak perlu ditanyakan), 订正 「离职单关联状态」 (待决策→未开始; pemetaan ada di Spec A + NSE-1137 c50645), 定案 「先认领后动作」 (待决策→被阻塞; menunggu claim-before-create Geri, 04.9.3 v30), 暗号表 `nos-s05-term` (待决策→进行中), baris 测试单登记 SSCSD-448/449/450, statistik 附表 (已验证 6／已完成但未验收 3／进行中 3／待决策 10／被阻塞 13／未开始 7). Catatan: pesan versi menulis 「四行改标」; yang benar 5 label (附表 3, 暗号表 1, 载体对象表 1).
+
+#### P-19 · Field batch A dibangun, Kent OSD-116 c50725 (DRAF, 2026-09-29)
 
 Sudah dicek (2026-09-29): OSD-116 s.d. **c50725** (dibaca penuh; tidak ada comment setelahnya); NSE-1137 s.d. c50702 (tidak ada yang baru); editmeta SSCSD-442 (E72); build sheet **v59** (salinan `scratchpad/p18/v59.html`): semua baris tabel yang menyebut c50658／主单字段／取消原因／Screen dibaca penuh. **Belum dibaca:** 04.10 §三 v23 (registrasi field; klaim Kent), layar 14761 (klaim Kent). Kalimat di draf yang bersandar pada dua hal itu ditulis sebagai 「Kent 所述」.
 
@@ -57,30 +85,6 @@ Baris transisi 9 dan 11 (§二) juga menyebut 「取消原因」 belum ada. Tamb
 
 Tidak dimasukkan: C-15 (P-6.7, menunggu Felix soal 到期日期／纪律记录有效期). c50725 menyebut arti nilai kosong 纪律记录有效期, tetapi C-15 adalah pertanyaan ke Felix dan tidak didamaikan sendiri (CLAUDE.md §0-7).
 
-### P-17 · §二 baris transisi 9 dan 11 setelah Kent c50705 (DRAF, 2026-09-29)
-
-Sudah dicek (2026-09-29): build sheet **v58** §二 baris transisi 9 (`a1699b53-…`) dan 11 (`1311cdec-…`) dibaca penuh; OSD-116 s.d. **c50705** (c50632, c50644, c50695, c50705 dibaca penuh; tidak ada comment setelah c50705); 04.3 **v36** (2026-09-29 02:16Z, Kayden): diff v35→v36 dibaca penuh, hanya kalimat 维护单 Owner (「治理页 Owner 矩阵」→「目标页面维护说明登记的 Owner」), §六 baris transisi tidak berubah.
-
-Digabung dari P-6.7 A-14 (C-10, D-2): sumber c50445, c50632, Felix c50644 (sudah di 附表 v53/v57); transisi 9 「仅服务账号」 vs Kayden c50445 「N07「确认重复」同口径」 (K-13); baca ulang `isConditional` setelah condition dipasang.
-
-**Keadaan condition (dicek 2026-09-29):** build sheet v58 mencatat 「确认前 condition 不配」 (menunggu Kent); Kent baru menjawab c50705 (2026-09-29 12:52 +07). Cek API tidak bisa: semua 10 tiket tes Disciplinary Case (SSCSD-411–442) sudah di status akhir, jadi transisi 9/11 tidak muncul di daftar transisi mana pun; membuat tiket tes baru = menulis, butuh izin. Default tulis: **varian A (belum dipasang)**, kecuali Bambang memberi tahu sudah memasang. Catatan: condition = aturan izin transisi, termasuk kelas 「izin/visibilitas」 di daftar lima kelas Alden (masih draf, CLAUDE.md §3).
-
-**① §二 transisi 9, kolom 允许执行者, setelah `b28d09280040`:**
-
-> 【2026-09-29 补】上条「待 Kent 答 OSD-116 c50632」已答：Kent OSD-116 c50705「yes, use SSCOS｜HR for the HR Ops & Data transition condition (Abort Case id 11 and N07 Confirm duplicate), per 04.3 v35 §六」；成员 Felix、Yuki，附条件见页首附表 Abort Case 行 2026-09-29 补。c50632 所提 condition 为「service account + SSCOS｜HR + SSCSD Project Owner」。本行原文「仅服务账号」与 Kayden c50445「N07「确认重复」同口径」仍并存；04.3 §六「执法点」段「Jira workflow Condition 不承担"限定哪个人有权批"的职责——它收紧为"仅服务账号可转态"」与同节转态权限表亦并存（04.3 现行 v36，v35→v36 未改 §六 转态行），建造侧不调和。本转换现由平台审批卡回调以服务账号执行（c50558）。〔varian A — belum dipasang〕condition 尚未配置。〔varian B — sudah dipasang〕condition 已于 {tanggal} 经 UI 配置（人：Bambang），允许：{isi}；API 回读 {bukti}。
-
-**② §二 transisi 11, kolom 允许执行者, setelah `b28d09280041`:**
-
-> 【2026-09-29 补】上条「已于 OSD-116 c50632 请 Kent 确认，截至 2026-09-28 未答」已答：Kent OSD-116 c50705 同意用 SSCOS｜HR（原文见本行上方页首附表 Abort Case 行 2026-09-29 补）；执行顺序「Order stays as in c50445: main ticket to Cancelled first, then the open sub-tickets.」〔varian A〕condition 尚未配置。〔varian B〕condition 已于 {tanggal} 经 UI 配置（人：Bambang），允许：{isi}；API 回读 {bukti}。
-
-**③ §二 transisi 11, kolom 本轮回读 (`db2a9eb1-…` 「UI 确认未挂 screen；待补 API 回读；未实跑」), setelah paragraf itu — hanya kalau varian B:**
-
-> 【2026-09-29 补】condition 配置后回读：{getTransitions / isConditional 结果，执行账号}。未实跑。
-
-- Dasar tidak mendamaikan: CLAUDE.md §0-7; K-9 dan K-13 di `docs/open-issues.md`.
-- Sebelum ditulis: ambil build sheet terbaru, cek OSD-116 setelah c50705, 04.3 versi terbaru §六.
-
-## Sudah ditulis
 
 ### v59 (2026-09-29T06:51:23Z, akun pribadi Bambang, perintah 「Tulis P-18 ke build sheet」)
 
