@@ -16,10 +16,10 @@ Versi build sheet terakhir yang dibaca: **v58** (2026-09-29T06:08:12Z).
 ## Antre
 
 Sisa yang **belum** ditulis setelah v58. Semua ditulis **sekaligus dalam satu versi** saat Bambang memerintahkan (permintaan Bambang, 2026-09-29).
-- **P-6.7**: D-13 (marker patroli, tunggu Geri c50631 dan K-10). Isi keputusan C-15 (Felix) dan isi §七 (C-26, keputusan Kayden 9/29) juga belum; yang sudah ditulis hanya catatan keadaannya.
-- **P-6.8**: semua item di sana masih menunggu keputusan Bambang (B-2, B-5, B-14, D-4, D-9, D-16, C-27, catatan versi dasar Spec v67).
+- **P-6.7** (menunggu orang lain): C-01 (backfill nama RT di 04.7; masih belum per 04.7 v51, E69), C-15 (Felix: 到期日期 dan 纪律记录有效期), C-26 (isi §七, keputusan Kayden), D-13 (marker patroli, Geri c50631 dan K-10). A-14 sudah dipindah ke P-17.
+- **P-6.8** (menunggu keputusan Bambang): B-5, B-14, D-4, D-9, D-16, A-01 (catatan versi dasar Spec v67). B-2 terjawab oleh draf P-18 (暗号表 `nos-s05-dup`); C-27 selesai (E61, v57).
 - **P-17**: transisi 9/11 setelah Kent c50705, termasuk A-14 dari P-6.7 (detail di bawah). **HOLD** (Bambang 2026-09-29: 「Kau hold dulu ini」): pemasangan condition 9/11 di UI Jira dan penulisan P-17 ditunda sampai Bambang melanjutkan.
-- **P-18**: kolom 状态 附表 diseragamkan ke enam label Anchor 04 §七.6, lalu 统计 dihitung ulang (detail di bawah). Dikerjakan **terakhir** dalam versi yang sama, supaya statistik menghitung status yang sudah final.
+- **P-18** (draf siap, divalidasi E70): semua kolom 状态 di build sheet diseragamkan ke enam label Anchor 04 §七.6 — 附表 (42), 暗号表 (8), §一 配置对应表 (24), §一 tabel objek (8) — plus 【补】 statistik baru untuk 附表 dan §一. Dikerjakan **terakhir** dalam versi yang sama, supaya statistik menghitung status yang sudah final. Baris Abort Case (附表 34) mengikuti P-17 (hold → 未开始).
 
 ### P-17 · §二 baris transisi 9 dan 11 setelah Kent c50705 (DRAF, 2026-09-29)
 
