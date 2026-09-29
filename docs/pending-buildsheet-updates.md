@@ -58,7 +58,7 @@ Digabung dari P-6.7 A-14 (C-10, D-2): sumber c50445, c50632, Felix c50644 (sudah
 
 **Draf usulan label (dari bukti yang tercatat di tiap baris build sheet v58, dibaca 2026-09-29).** Nomor # = urutan baris di 附表 v58. ⚠ = bukti di baris sudah lama, cek ulang sumbernya sebelum ditulis. ❓ = label lain juga masuk akal, Bambang yang memilih.
 
-Pegangan yang dipakai (inferensi, belum dikonfirmasi; Anchor 04 §七.6 tidak mendefinisikan tiap label):
+Pegangan yang dipakai (Anchor 04 §七.6 tidak mendefinisikan tiap label; pegangan ini **disetujui Bambang 2026-09-29**: 「Setuju pegangan arti label」):
 - 被阻塞: menunggu tindakan/jawaban pihak lain, bukan keputusan.
 - 待决策: menunggu keputusan (termasuk 「双签未表态」).
 - 未开始: pekerjaan pihak build yang belum dimulai.
@@ -111,7 +111,7 @@ Pegangan yang dipakai (inferensi, belum dikonfirmasi; Anchor 04 §七.6 tidak me
 | 40 | 本件与本页暗号接口契约表「先认领后动作」约束的适用 | 待办 | **待决策** | 双签未表态 |  |
 | 41 | 本流程 n8n 件 04.9 登记（索引行＋04.9.7 详情块） | 已完成但未验收 | **已完成但未验收** | v58 |  |
 
-Hitungan sementara (setelah cek ⚠ dan keputusan baris 13, 2026-09-29; sebelum ❓ diputuskan): 共 42 行——被阻塞 13；待决策 12；已验证 6；未开始 6；已完成但未验收 3；进行中 2。
+Hitungan (setelah cek ⚠, keputusan baris 13, dan baris ❓ memakai usulan — Bambang 2026-09-29; baris 34 masih bergantung pada jawaban condition P-17): 共 42 行——被阻塞 13；待决策 12；已验证 6；未开始 6；已完成但未验收 3；进行中 2。
 
 **【补】 khusus baris 13 (sel 解除判据, paragraf terakhir; menggantikan pola umum untuk baris ini):**
 
@@ -126,7 +126,8 @@ Hitungan sementara (setelah cek ⚠ dan keputusan baris 13, 2026-09-29; sebelum 
 > 【2026-09-29 补】自本版起本表「状态」列依 Anchor 04 §七.6 六个标签（已验证／已完成但未验收／进行中／待决策／被阻塞／未开始）登记，原「阻塞中／待办／已解封」各行改标依据见各行 2026-09-29 补。逐行机读：共 {n} 行——{hitungan final}。上方各段旧统计为当时口径，原文保留。
 
 - Baris ⚠ (0, 3, 4, 8, 13) **sudah dicek ulang 2026-09-29** (E69). 0, 3, 4, 8 tetap 被阻塞. 13: Bambang memutuskan ikut layar bersama (2026-09-29) → 被阻塞 (menunggu Kent c50658), 【补】 khusus di atas.
-- Baris ❓ (7, 12, 26, 28, 29, 37) dan baris 34 menunggu pilihan Bambang.
+- Baris ❓ (7, 12, 26, 28, 29, 37): **memakai usulan di tabel** (Bambang 2026-09-29: 「baris ❓ pakai usulanmu」) — 7 进行中, 12 未开始, 26 已完成但未验收, 28 未开始, 29 未开始, 37 被阻塞.
+- Baris 34 (Abort Case) mengikuti jawaban P-17: condition belum dipasang → 未开始; sudah dipasang dan dibaca ulang → label ditentukan dari hasil baca ulang.
 - Pertanyaan terbuka: tabel 「统计：24 个节点行」 di §五 (已建／可建／阻塞／待对端) ikut diseragamkan atau tidak.
 
 ## Sudah ditulis
