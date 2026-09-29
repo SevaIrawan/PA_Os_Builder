@@ -48,7 +48,7 @@ Sudah dicek (2026-09-29): OSD-116 s.d. **c50695** (c50689, c50692, c50695 dibaca
 
 **① 页首附表 baris 「本流程 n8n 件 04.9 登记」, sel 「解除判据」 (setelah `b28d09290072`): ditambahkan**
 
-> 【2026-09-29 补】Alden OSD-116 c50692 答 c50670：①件名「follow 04.6 §2 item 3 — {flow name}｜{node ID}｜n8n-{action}, e.g. 纪律与绩效改进处置｜N04｜n8n-路由分发. Please rename the four S-05 workflows in n8n first, then register them」；04.9 v129 §一「名称一致」同步改为「命名格式按 04.6 第二节第 3 条（{流程名}｜{节点 ID}｜n8n-{动作}，与 04.4 第十节同构）」。②索引「Owner 部门」：「HR」。③「The two items on the 04.9 main page are done」——04.9 v129 实读：Notify 索引行已含「纪律与绩效改进处置」，§三 导航已有 04.9.7 行。四件已于 2026-09-29 在 n8n 改名（建造人批准，Claude 经 n8n MCP，只改名称；回读 versionId 未变），现名：「纪律与绩效改进处置｜N04｜n8n-路由分发」「…｜N05｜n8n-重复案件与历史记录检查」「…｜N07｜n8n-HR三层审核」「…｜N20｜n8n-解雇自动开单与交接」（N07 先改为「…｜N07｜n8n-审批卡发送」，同日再依 Spec 节点名改定，见第五区 N07 块）。下一步：04.9 索引行＋04.9.7 H2 块登记（建造人本人写入）→ 回读。本行状态不变。
+> 【2026-09-29 补】Alden OSD-116 c50692 答 c50670：①件名「follow 04.6 §2 item 3 — {flow name}｜{node ID}｜n8n-{action}, e.g. 纪律与绩效改进处置｜N04｜n8n-路由分发. Please rename the four S-05 workflows in n8n first, then register them」；04.9 v129 §一「名称一致」同步改为「命名格式按 04.6 第二节第 3 条（{流程名}｜{节点 ID}｜n8n-{动作}，与 04.4 第十节同构）」。②索引「Owner 部门」：「HR」。③「The two items on the 04.9 main page are done」——04.9 v129 实读：Notify 索引行已含「纪律与绩效改进处置」，§三 导航已有 04.9.7 行。四件已于 2026-09-29 在 n8n 改名（建造人批准，Claude 经 n8n MCP，只改名称；回读 versionId 未变），现名：「纪律与绩效改进处置｜N04｜n8n-路由分发」「…｜N05｜n8n-重复案件与历史记录检查」「…｜N07｜n8n-HR三层审核」「…｜N20｜n8n-解雇自动开单与交接」（N07 先改为「…｜N07｜n8n-审批卡发送」，同日再依 Spec 节点名改定，见第五区 N07 块）。2026-09-29 已登记（建造人批准，Claude 经 Atlassian_MCP 以建造人个人账号写入）：04.9.7 v2 加四个 H2 详情块；04.9 v130 索引加四行（Owner 部门 HR、建设归属 Bambang）、§三 04.9.7 块数 0→4、§四 审批卡库读者 N07 改现名；两页均已回读（v129→v130 diff 仅此三处）。
 
 **② 页首附表 baris 「NTP 岗位受控清单待标准化」, sel 「解除判据」 (setelah `807487b7caef`): ditambahkan**
 
@@ -62,7 +62,7 @@ Sudah dicek (2026-09-29): OSD-116 s.d. **c50695** (c50689, c50692, c50695 dibaca
 
 > 【2026-09-29 补】平台事实（Alden NSE-1137 c50691 第 1 点，离职 N7／N12 发布申请）：「On this instance, publishing a piece activates it; there is no "published but active: false" state」。本流程四件现均未发布（activeVersionId null）；发布即启用，故发布时点同受本行次序约束。本行状态不变。
 
-- Sebelum ditulis: ambil versi terbaru build sheet; cek ulang OSD-116 (Kent c50632/c50658) dan 04.9 (kalau registrasi sudah ditulis Bambang, ganti kalimat 「下一步…」 di ① dengan hasil registrasinya).
+- Sebelum ditulis: ambil versi terbaru build sheet; cek ulang OSD-116 (Kent c50632/c50658) dan 04.9 (registrasi sudah ditulis 2026-09-29: 04.9 v130, 04.9.7 v2; kalimat 「下一步…」 di ① sudah diganti dengan hasilnya, E64/E65). Status baris 「04.9 登记」 di 附表 diputuskan Bambang saat menulis.
 
 ### P-16 · Nama, catatan, dan folder 4 workflow (2026-09-29 siang)
 

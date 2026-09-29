@@ -2,14 +2,14 @@
 
 Diminta Alden OSD-116 c50647 (b): 「Please register N04, N05, N07 and N20 per 04.9 §一: a row in the main-page index and a block in 04.9.7.」
 
-**Status: draf, bukan izin menulis.** Registrasi ditulis Bambang sendiri ke 04.9 (1693089805) dan 04.9.7 (2117435433). Claude tidak menulis ke halaman itu.
+**Status: SUDAH DITULIS 2026-09-29** atas perintah Bambang 「Ok sekarang kau tulis registrasi tersebut」, lewat Atlassian_MCP (akun pribadi Bambang): 04.9.7 **v2** (bagian B, evidence E64) dan 04.9 **v130** (bagian A dan C, evidence E65). Keduanya sudah dibaca ulang. Bagian D tidak ditulis (catatan saja). File ini sekarang arsip draf.
 
 **Jawaban Alden OSD-116 c50692 (2026-09-29, evidence E58):**
 1. Format nama (K-3): 「follow 04.6 §2 item 3 — `{flow name}｜{node ID}｜n8n-{action}`, e.g. `纪律与绩效改进处置｜N04｜n8n-路由分发`. Please rename the four S-05 workflows in n8n first, then register them」. Nama di draf ini sudah diganti ke format itu, dan **sudah diterapkan di n8n 2026-09-29** (evidence E59; versionId keempatnya tidak berubah). Bagian `{动作}` sama dengan nama lama; yang ditambah hanya awalan `n8n-`. Hanya contoh N04 yang ditulis Alden; untuk tiga lainnya format yang sama diterapkan oleh Claude atas perintah Bambang. Bagian `{动作}` = nama node di tabel node Spec v67 (04.6 §二-3 「命名对不上 Spec 行视为登记未完成」): N04 「路由分发」, N05 「重复案件与历史记录检查」, N07 「HR三层审核」 (diganti dari 「审批卡发送」 2026-09-29 05:34Z, E62), N20 「解雇自动开单与交接」.
 2. Kolom 「Owner 部门」 (K-16): 「HR」.
 3. Baris Notify dan navigasi §三 04.9.7: sudah dikerjakan Alden (04.9 v129).
 
-**Urutan:** ganti nama di n8n **sudah dilakukan** (E59). Berikutnya registrasi ditulis Bambang.
+**Urutan:** ganti nama di n8n **sudah dilakukan** (E59). Registrasi **sudah ditulis** (E64, E65).
 
 **Link indeks:** tulis blok H2 di 04.9.7 dulu, baru baris indeks. Format link sama dengan baris lain: `https://nexmax.atlassian.net/wiki/spaces/NOSM/pages/2117435433/04.9.7#<judul H2 yang di-encode>` (contoh bentuknya ada di baris 员工离职 yang menuju 04.9.3).
 
