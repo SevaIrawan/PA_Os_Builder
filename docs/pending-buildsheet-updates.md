@@ -16,7 +16,7 @@ Versi build sheet terakhir yang dibaca: **v56** (2026-09-28T16:12:01Z).
 ## Antre
 
 Sisa yang **belum** ditulis setelah v56:
-- **P-16** (cek aturan 4 workflow: tidak ada folder S-05).
+- **P-16** (4 workflow: nama baru per aturan 04.6 §二-3, catatan basi N05/N07, versionId baru, folder S-05 belum ada).
 - **P-15** (Alden c50692: format nama n8n- dan Owner 部门 HR; c50695: field posisi NTP; c50691 ①: publish = aktif).
 - **P-14** (temuan skill harian 2026-09-29: entry terdaftar, marker klaim Geri, batch 1B live menurut Alden c50689).
 - **P-6.7**: D-13 (marker patroli, tunggu Geri c50631 dan K-10). Isi keputusan C-15 (Felix) dan isi §七 (C-26, keputusan Kayden 9/29) juga belum; yang sudah ditulis hanya catatan keadaannya.
@@ -48,7 +48,7 @@ Sudah dicek (2026-09-29): OSD-116 s.d. **c50695** (c50689, c50692, c50695 dibaca
 
 **① 页首附表 baris 「本流程 n8n 件 04.9 登记」, sel 「解除判据」 (setelah `b28d09290072`): ditambahkan**
 
-> 【2026-09-29 补】Alden OSD-116 c50692 答 c50670：①件名「follow 04.6 §2 item 3 — {flow name}｜{node ID}｜n8n-{action}, e.g. 纪律与绩效改进处置｜N04｜n8n-路由分发. Please rename the four S-05 workflows in n8n first, then register them」；04.9 v129 §一「名称一致」同步改为「命名格式按 04.6 第二节第 3 条（{流程名}｜{节点 ID}｜n8n-{动作}，与 04.4 第十节同构）」。②索引「Owner 部门」：「HR」。③「The two items on the 04.9 main page are done」——04.9 v129 实读：Notify 索引行已含「纪律与绩效改进处置」，§三 导航已有 04.9.7 行。四件已于 2026-09-29 在 n8n 改名（建造人批准，Claude 经 n8n MCP，只改名称；回读 versionId 未变）：「纪律与绩效改进处置｜N04｜n8n-路由分发」「…｜N05｜n8n-重复案件与历史记录检查」「…｜N07｜n8n-HR三层审核」「…｜N20｜n8n-解雇自动开单与交接」。下一步：04.9 索引行＋04.9.7 H2 块登记（建造人本人写入）→ 回读。本行状态不变。
+> 【2026-09-29 补】Alden OSD-116 c50692 答 c50670：①件名「follow 04.6 §2 item 3 — {flow name}｜{node ID}｜n8n-{action}, e.g. 纪律与绩效改进处置｜N04｜n8n-路由分发. Please rename the four S-05 workflows in n8n first, then register them」；04.9 v129 §一「名称一致」同步改为「命名格式按 04.6 第二节第 3 条（{流程名}｜{节点 ID}｜n8n-{动作}，与 04.4 第十节同构）」。②索引「Owner 部门」：「HR」。③「The two items on the 04.9 main page are done」——04.9 v129 实读：Notify 索引行已含「纪律与绩效改进处置」，§三 导航已有 04.9.7 行。四件已于 2026-09-29 在 n8n 改名（建造人批准，Claude 经 n8n MCP，只改名称；回读 versionId 未变），现名：「纪律与绩效改进处置｜N04｜n8n-路由分发」「…｜N05｜n8n-重复案件与历史记录检查」「…｜N07｜n8n-HR三层审核」「…｜N20｜n8n-解雇自动开单与交接」（N07 先改为「…｜N07｜n8n-审批卡发送」，同日再依 Spec 节点名改定，见第五区 N07 块）。下一步：04.9 索引行＋04.9.7 H2 块登记（建造人本人写入）→ 回读。本行状态不变。
 
 **② 页首附表 baris 「NTP 岗位受控清单待标准化」, sel 「解除判据」 (setelah `807487b7caef`): ditambahkan**
 
@@ -62,24 +62,32 @@ Sudah dicek (2026-09-29): OSD-116 s.d. **c50695** (c50689, c50692, c50695 dibaca
 
 > 【2026-09-29 补】平台事实（Alden NSE-1137 c50691 第 1 点，离职 N7／N12 发布申请）：「On this instance, publishing a piece activates it; there is no "published but active: false" state」。本流程四件现均未发布（activeVersionId null）；发布即启用，故发布时点同受本行次序约束。本行状态不变。
 
-- Sebelum ditulis: ambil versi terbaru build sheet; cek ulang OSD-116 (Kent c50632/c50658) dan 04.9. Kalau keempat workflow sudah diganti nama, sebut nama barunya di ①.
+- Sebelum ditulis: ambil versi terbaru build sheet; cek ulang OSD-116 (Kent c50632/c50658) dan 04.9 (kalau registrasi sudah ditulis Bambang, ganti kalimat 「下一步…」 di ① dengan hasil registrasinya).
 
-### P-16 · Cek aturan 4 workflow setelah ganti nama (2026-09-29 siang)
+### P-16 · Nama, catatan, dan folder 4 workflow (2026-09-29 siang)
 
-Sudah dicek (2026-09-29): 04.6 v23 (§二-3, §3.2, §3.5, §3.9, dibaca penuh), 04.5.3 v18 (§一, dibaca penuh), 04.9 v129 §一, Spec S-05 v67 (tabel node), n8n `search_folders` dan `get_workflow_details` keempat workflow (evidence E59, E60).
+Sudah dicek (2026-09-29): 04.6 v23 (§二-3, §3.2, §3.5, §3.9, dibaca penuh), 04.5.3 v18 (§一, dibaca penuh), 04.9 v129 §一, Spec S-05 v67 (tabel node), n8n `search_folders` dan `get_workflow_details` keempat workflow (evidence E59–E62); build sheet v56 §五 paragraf 「全名」 keempat workflow.
 
-**① §五, blok N04/N05/N07/N20 (satu 【补】 per blok, atau satu 【补】 di bawah blok terakhir): ditambahkan**
+**① §五, setelah paragraf 「全名」 masing-masing workflow: ditambahkan (4 【补】)**
 
-> 【2026-09-29 补】四件已按 04.6 §二-3 改名（Alden OSD-116 c50692；n8n 回读 versionId 未变，见第六区改名条）。folder：04.6 §3.9「每流程一个 folder…新 workflow 直接建在所属流程 folder」；现 n8n 项目内 11 个 folder，无本流程 folder，四件均不在任何 folder（parentFolderId null）。建 folder 与移件须经 UI（MCP 无此操作），folder 名按 04.6 §3.9「中文｜English」待定，由建造人经 UI 处理。
+- setelah `2e76b79f037e` (N04):
+> 【2026-09-29 补】件名依 04.6 §二-3（`{流程名}｜{Spec 节点 ID}｜n8n-{动作}`，Alden OSD-116 c50692）改为「纪律与绩效改进处置｜N04｜n8n-路由分发」（建造人批准，Claude 经 n8n MCP，只改名称；2026-09-29T05:20:42Z；回读 versionId `0aad8ecb-e97e-4297-9908-b6c15559fdca` 未变，settings 未变，active false）。
 
-**② §五 N05 块与 N07 块 (masing-masing): ditambahkan**
+- setelah `2b95937564f9` (N05):
+> 【2026-09-29 补】件名依 04.6 §二-3 改为「纪律与绩效改进处置｜N05｜n8n-重复案件与历史记录检查」（2026-09-29T05:24:15Z，只改名称，versionId 未变）。同日订正过时注记（只改件说明与 sticky 文字，逻辑未改）：件说明原写「needs dry-run + errorWorkflow + Alden approval」（errorWorkflow 已挂）、sticky 原写「Spec S-05 v62」→ 改为现状与 v67；现 versionId `30b14fd2-370b-43ef-b360-2086a05da9b8`（2026-09-29T05:30:22Z），其余节点、连线、settings 未变，active false。
 
-> 【2026-09-29 补】过时注记订正（建造人批准，Claude 经 n8n MCP，只改件说明与 sticky 文字，逻辑未改）：N05 件说明原写「needs dry-run + errorWorkflow + Alden approval」（errorWorkflow 已挂）、sticky 原写「Spec S-05 v62」→ 改为现状与 v67，versionId `30b14fd2-370b-43ef-b360-2086a05da9b8`（2026-09-29T05:30:22Z）；N07 件说明与 sticky 原写「Pattern-9 batch 1A」「Notify contract … v6」→ 改为「batches 1A and 1B live」「contract v7」并补 Alden c50689 决定行一句，versionId `3ecb5c28-2a8c-47a4-9141-906d3da3d584`（2026-09-29T05:30:27Z）。回读：其余节点、连线、settings 未变，active false。
+- setelah `5e0726a1c002` (N07):
+> 【2026-09-29 补】件名依 04.6 §二-3 先改为「纪律与绩效改进处置｜N07｜n8n-审批卡发送」（05:24:24Z），再依同条「命名对不上 Spec 行视为登记未完成」对齐 Spec v67 节点表「N07 HR三层审核」，改定为「纪律与绩效改进处置｜N07｜n8n-HR三层审核」（建造人指示，05:34:52Z）。同日订正过时注记（只改文字）：件说明与 sticky「Pattern-9 batch 1A」「Notify contract … v6」→「batches 1A and 1B live」「contract v7」，并补 Alden c50689 决定行一句。现 versionId `3ecb5c28-2a8c-47a4-9141-906d3da3d584`（05:30:27Z；改名不改 versionId），其余节点、连线、settings 未变，active false。
 
-- Nama folder tidak ada di source mana pun. Claude tidak mengusulkan nama sendiri.
-**③ §五 N07 块: ditambahkan**
+- setelah `c5cf66408cfa` (N20):
+> 【2026-09-29 补】件名依 04.6 §二-3 改为「纪律与绩效改进处置｜N20｜n8n-解雇自动开单与交接」（2026-09-29T05:24:27Z，只改名称；回读 versionId `6971acbc-2413-4b1c-b3b7-2a501c1c9ea7` 未变，settings 未变，active false）。
 
-> 【2026-09-29 补】N07 件名依 04.6 §二-3「命名对不上 Spec 行视为登记未完成」对齐 Spec v67 节点表「N07 HR三层审核」，由「纪律与绩效改进处置｜N07｜n8n-审批卡发送」改为「纪律与绩效改进处置｜N07｜n8n-HR三层审核」（建造人指示，2026-09-29T05:34:52Z；回读 versionId `3ecb5c28-2a8c-47a4-9141-906d3da3d584` 未变）。
+**② §五, setelah 【补】 N20 di atas: ditambahkan (folder)**
+
+> 【2026-09-29 补】folder：04.6 §3.9「每流程一个 folder…新 workflow 直接建在所属流程 folder」（04.5.3 §一-1 同）。2026-09-29 实读 n8n 项目内 11 个 folder，无本流程 folder；四件均不在任何 folder（parentFolderId null）。建 folder 与移件须经 UI（MCP 无此操作）；folder 名按 04.6 §3.9「中文｜English」，待定。
+
+- Nama folder tidak ada di source mana pun. Claude tidak mengusulkan nama sendiri. Kalau folder sudah dibuat sebelum P-16 ditulis, ganti 【补】 ② dengan nama folder dan hasil baca ulangnya.
+- Paragraf lama 「全名 …」 tidak diubah (teks lama tidak dihapus); 【补】 di bawahnya yang mencatat nama baru.
 
 ## Sudah ditulis
 
