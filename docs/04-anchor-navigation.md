@@ -30,14 +30,14 @@ Sumber:
 |---|---|---|---|---|---|
 | 1 | 盘点与切分 | N1 → N2 → N3 | Epic | HOD departemen (N3) | — |
 | 2 | 切分审计 | N4 (mesin, n8n) → N5 (manusia) | Epic | Kayden **atau** Alden | OR (lihat kontradiksi K-2) |
-| 3 | 设计 | N6 (spawn Feature) → N7 | Feature | HOD / Owner alur | — |
+| 3 | 设计 | N6 (spawn Feature dari Epic; Spec v40: 「N6 spawn 流程卡（Epic）」) → N7 | Epic → Feature | HOD / Owner alur | — |
 | 4 | 结构审计 | N8 (mesin) → N9 (manusia) | Feature | Tanda tangan bisnis Kayden **dan** teknis Alden | AND |
-| 5 | 对齐 | N10 (brief mesin) → N11 | Feature | Anchor 04 §二: 「流程 Owner；跨部门时含相关 HOD／管理层」. N11: tanda tangan oleh HOD lintas departemen (lajur N11); pemutus dan freeze oleh Owner alur (「对齐裁决人（＝该流程 Owner）」) | — |
+| 5 | 对齐 | N10 (brief mesin) → N11 | Feature | Anchor 04 §二: 「流程 Owner；跨部门时含相关 HOD／管理层」. N11: tanda tangan oleh HOD lintas departemen (lajur N11); pemutus dan freeze oleh Owner alur (「获授权的 N11 对齐裁决人（＝该流程 Owner，规则见 07.05）」, Spec 1729200354 v40) | — |
 | 6 | 开发 | N12 | Feature | Anchor 04 §二: 「Alden／BO 建造 Owner」. Lajur N12 di 1729200354: 「BO 建设团队」 | — |
 | 7 | 验收审计 | N13 (mesin) → N14 (manusia) | Feature | Kayden **atau** Alden | OR (lihat kontradiksi K-2) |
 | 8 | 上线 | N15 → N16 (penutupan) | Feature → Epic | Anchor 04 §二: 「流程 Owner＋BO 建造 Owner」. Lajur N15 di 1729200354: 「部门 HOD」; 执行载体: 「部门 HOD 与 BO 协作完成宣贯、上线…」 | — |
 
-Aturan yang sama untuk ketiga audit (Anchor 04 §二): 「机器通过不等于 Gate 通过」. Kalau mesin menolak, item otomatis dikembalikan ke tahap kerja sebelumnya. Kalau mesin meloloskan, item tetap di status audit dan menunggu keputusan manusia. Semua keputusan dicatat hanya di Jira Epic/Feature Comment, **bukan di Slack**.
+Aturan yang sama untuk ketiga audit (Anchor 04 §二): 「机器通过不等于 Gate 通过」. Kalau mesin menolak, item otomatis dikembalikan ke tahap kerja sebelumnya. Kalau mesin meloloskan, item tetap di status audit dan menunggu keputusan manusia. Semua keputusan dicatat hanya di Jira Epic/Feature Comment, **bukan di Slack** (Anchor 04 **§三**: 「三个审计 Gate 不使用 Slack：机器报告与人工裁决只追加到对应 Jira Epic／Feature Comment」).
 
 ### Marker yang dapat dibaca mesin (hanya yang terlihat di source)
 
@@ -49,7 +49,7 @@ Aturan yang sama untuk ketiga audit (Anchor 04 §二): 「机器通过不等于 
 | `OSD-CUT-SPAWN/v2` | Epic Comment N6 | 1729200354 §三 N6 |
 | `【OSD-FREEZE｜v1｜FROZEN】` | Freeze N11. Contoh nyata: OSD-116 c50009/c50013 | 07.05 (1744306526); OSD-116 |
 
-Daftar lengkap marker ada di **04.12 / 机读标记总清单 (pageId 2091876367)**. Halaman itu **belum dibaca** di repo ini, jadi daftar di atas **tidak lengkap**.
+Daftar lengkap marker ada di **04.12 / 机读标记总清单 (pageId 2091876367)**. Halaman itu sudah dibaca penuh 2026-09-28 (`docs/sources.md`, baris 04.12; open-issues U-2): isinya hanya marker OS 开发流 (OSD-*), tidak mengatur `[[nos-…]]`. Versi sekarang v7 (2026-09-30) belum dibaca.
 
 ## 3. Skill per tahap: dari mana sumbernya
 
@@ -63,7 +63,7 @@ Di NOS, Skill adalah bagian 「正式 Skill 原文」 di halaman panduan 07.x. S
 | N8/N9 | 结构审计: mesin / tanda tangan bisnis / tanda tangan teknis | 07.04 (1744896004) §十 | Final | Tidak (peran Kayden/Alden) |
 | N10/N11 | 跨部门对齐 Skill | 07.05 (1744306526) §七 | Sisi manusia berlaku | Tidak (peran Owner) |
 | **N12** | **流程建设 Skill** | **07.06 (1730347066) §八** | 「正式原文」 | **Ya: `.claude/skills/build`** |
-| N13/N14 | 验收审计 | 07.07 (1744896024) | Placeholder, belum ada Skill | Tidak |
+| N13/N14 | 验收审计 | 07.07 (1744896024) | v5 (2026-09-29): 「状态：草稿，未生效」; §九 memuat Skill N13/N14 yang 「生效状态：草稿，未生效」 | Tidak |
 | sebelum N15 | 使用者指南设计 Skill | 07.08 (1736736804) | Placeholder, belum berlaku | Tidak |
 
 Alasan hanya Skill build yang dibuat: Bambang adalah builder BO untuk S-05 (OSD-116 c50071, Kent: "Build per the build skill (07.06)"). Skill tahap lain milik peran lain.
@@ -80,7 +80,7 @@ Isi aturannya ada di Anchor 04 §五 (lihat `docs/anchor-04.md`). Tempat mendaft
 | Entitas / arsip | 04.8 | 1690140756 |
 | n8n workflow / Data Table | 04.9 (三位一体) | 1693089805 |
 | Objek bersama Jira | 04.10 | 1738735636 |
-| Slack Channel | 04.11 (berdasarkan Channel ID) | 1764524046 (**belum dibaca**) |
+| Slack Channel | 04.11 (berdasarkan Channel ID) | 1764524046 (dibaca penuh 2026-09-28, `docs/sources.md`; versi sekarang v8 2026-09-30 belum dibaca) |
 | Objek yang tidak punya tempat daftar | Lapor dengan format 07 §三, jangan buat tempat daftar sendiri | 07.06.1 §六-4 |
 
 ## 5. Ke mana bertanya

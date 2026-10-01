@@ -32,7 +32,7 @@ Setelah drift lolos, **ikuti isi halaman saat ini**, bukan ringkasan di file ini
 - Konfigurasi dan tes Jira (SSCSD dan lainnya) → **Atlassian_Rovo** (Backend Operations). Assignee ditulis eksplisit.
 - Comment Feature (contoh OSD-116) dan edit build sheet → **Atlassian_MCP** (akun pribadi Bambang).
 - **Setiap penulisan** (comment, edit halaman, transisi, membuat tiket, mengubah n8n) → tunjukkan draf, akun, dan dampaknya, lalu **tunggu persetujuan Bambang**. Setelah menulis, **baca ulang**.
-- Tindakan yang tidak bisa dibatalkan dan lima kelas Alden (masih draf) → CLAUDE.md §3 dan `docs/open-issues.md` K-1.
+- Tindakan yang tidak bisa dibatalkan dan lima kelas Alden (04.10 §2.1) → CLAUDE.md §3 dan `docs/open-issues.md` K-1.
 
 ## Keluaran standar
 - Status setiap item hanya boleh memakai enam label dari Anchor 04 「AI 机器执行合同」, dan setiap item menyebut sumbernya.

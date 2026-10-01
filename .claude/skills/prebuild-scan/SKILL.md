@@ -40,7 +40,7 @@ Kent menulis bahwa daftar ini sudah dia masukkan ke 「build skill」 milik tim.
    | ② | 衔接契约清不清＋跟 Jira 一致没 | Kontrak dengan node dan alur lain (input, output, nilai kembalian, marker, link type): tertulis di mana, dan sama dengan yang ada di Jira atau n8n? |
    | ③ | 判据可判＋运行时真值有没有 | Setiap syarat keputusan di Spec: bisa dihitung mesin? Datanya benar-benar ada saat node berjalan (field terisi, NTP terbaca oleh akun yang menjalankan)? |
    | ④ | 依赖（上游件／外部平台／数据源）就绪没 | Workflow hulu, komponen platform (Notify, Slack Approval, B6, Error Handler), dan sumber data: sudah publish atau aktif? Terdaftar di 04.9 dan 04.4 §十一? |
-   | ⑤ | 要动的页件我有没有权限（查 restriction） | Akun mana yang akan dipakai (CLAUDE.md §2), dan apakah akun itu bisa membaca atau menulis objek tersebut? Termasuk batas tulis Bambang (CLAUDE.md §3) dan lima kelas Alden (masih draf, K-1). |
+   | ⑤ | 要动的页件我有没有权限（查 restriction） | Akun mana yang akan dipakai (CLAUDE.md §2), dan apakah akun itu bisa membaca atau menulis objek tersebut? Termasuk batas tulis Bambang (CLAUDE.md §3) dan lima kelas Alden (04.10 §2.1, K-1). |
    | ⑥ | 异常缺位边界覆盖没 | Jalur error, nilai kosong, atasan tidak terbaca, klik ganda, ulang jalan, hasil 0 (07.06.1 E9, E16): tertulis di Spec dan tertangani? |
    | ⑦ | 测试前置（夹具／测试档案／sandbox）有没有 | Tiket TEST, arsip tes NTP, whitelist Slack (04.5.3), cara pin atau matikan node tulis (07.06.1 E6): sudah siap? |
 

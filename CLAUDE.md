@@ -1,7 +1,7 @@
 # CLAUDE.md: PA_Os_Builder
 
 Repo ini adalah tempat kerja Claude untuk membantu **Bambang** membangun alur NOS (Nexmax Operating System) sebagai builder BO.
-Semua isi file ini diambil dari source yang tercatat di `docs/sources.md`, dibaca pada 2026-09-26. Setiap aturan menyebut sumbernya.
+Semua isi file ini diambil dari source yang tercatat di `docs/sources.md`. Bacaan pertama 2026-09-26; bagian yang dibaca belakangan menyebut tanggal bacanya sendiri (terakhir 2026-10-01). Setiap aturan menyebut sumbernya.
 
 ---
 
@@ -26,7 +26,7 @@ Aturan ini ada karena kesalahan sebelumnya: kesimpulan tanpa dasar membuat peker
 7. **Konflik antar-source tidak didamaikan sendiri** (Anchor 04, 权威使用原则). Catat di `docs/open-issues.md` lalu tanyakan.
 8. **File di `docs/` hanya snapshot atau peta.** Isinya bukan pengganti membaca halaman Confluence saat bekerja. Sebelum menulis ke halaman mana pun, ambil dulu versi terbarunya (07 §二「先查后写」).
 9. **Tanya dulu sebelum bertindak** (preferensi Bambang). Kalau ragu, tanyakan. Jangan berasumsi.
-10. **Baca semua source dulu sebelum membuat apa pun** (aturan Bambang, 2026-09-28). Aturan ini ada karena kesalahan nyata: OSD-116 c50595 (a) menanyakan ke Alden field dan Screen N07, padahal Alden sudah menjawabnya di #nos-bo 1790228926.781229 butir 5. Pesan itu bahkan sudah dikutip di file ini (§3), tapi butir 5-nya tidak dibaca.
+10. **Baca semua source dulu sebelum membuat apa pun** (aturan Bambang, 2026-09-28). Aturan ini ada karena kesalahan nyata: OSD-116 c50595 (a) menanyakan ke Alden field dan Screen N07, padahal Alden sudah menjawabnya di #nos-bo 1790228926.781229 butir 5. Pesan itu bahkan sudah dikutip di file ini (§3), tapi butir 5-nya tidak dibaca. 【Koreksi 2026-10-01, audit】 butir 5 menjawab jalurnya (「现在就请 Kent 按五类判、走第五节流程建」); sesudah itu Alden OSD-116 c50558 menulis 「审批卡回写的主单字段与 Screen（c50234 第 2 项）是前置，这件我另外回复」, dan c50647 (a) menjawab c50595 (a) dengan daftar field yang lebih luas daripada 「5 个主单字段」.
     Sebelum membuat draf pertanyaan, comment, keputusan, rekomendasi, atau perubahan konfigurasi:
     - Cari topiknya di **semua** tempat berikut, dan baca **penuh**, bukan potongan:
       - seluruh comment tiket Jira terkait (OSD-116, NSE-1137, dan tiket lain yang disebut);
@@ -90,7 +90,7 @@ Batas akses yang sudah terbukti:
 - Claude **hanya boleh menulis atau mengedit dua hal**, dan hanya **atas izin Bambang**:
   1. **Halaman build sheet yang sudah dibuat Bambang.** Saat ini: 纪律与绩效改进处置｜建造单 (2096463922).
   2. **Repo ini** (PA_Os_Builder).
-- **Spec mana pun tidak boleh diedit oleh Claude, dalam bentuk apa pun.** Termasuk dua tindakan yang menurut 07.06 §八 / 04.5 §五 boleh dilakukan pihak build (「①状态区生命周期更新；②引用区『对应建造单』链接回填」). Keduanya **tidak** dilakukan Claude, dan juga **tidak ditawarkan**.
+- **Spec mana pun tidak boleh diedit oleh Claude, dalam bentuk apa pun.** Termasuk dua tindakan yang menurut 07.06 §八 / 04.5 §五 boleh dilakukan pihak build (07.06 §八: 「①状态区生命周期更新；②引用区“对应建造单”链接回填」; 04.5 §五 v83: 「①状态区生命周期更新（含校验执行记录补登）；②引用区「对应建造单」链接回填」). Keduanya **tidak** dilakukan Claude, dan juga **tidak ditawarkan**.
 - Semua halaman atau sistem lain (Confluence selain build sheet Bambang, Jira, Slack, n8n) **tidak ditulis oleh Claude**. Kalau suatu saat perlu, Bambang yang akan meminta secara eksplisit.
 - **Draf bukan izin.** Kalau Bambang minta draf, Claude hanya menunjukkan isi draf. Claude tidak menawarkan untuk menjalankannya dan tidak menulis apa pun.
 
@@ -104,7 +104,7 @@ Selain aturan dasar itu, ada dua aturan tambahan dari source:
   - notifikasi ke karyawan sungguhan atau pengiriman nyata pertama
   - mengaktifkan workflow (juga butuh persetujuan Owner platform)
   - 「记不清是否在清单内，就先问」
-- **Lima kelas yang butuh persetujuan Alden: sudah resmi di 04.10 §2.1** (1738735636, v24 Kent 2026-09-30 08:54Z dengan versionMessage 「…Kent判定标准草案v4与Alden09-24订正，Kayden09-29点头」; versi sekarang v25, dibaca lewat diff v22→v25 pada 2026-10-01). Teks halaman:
+- **Lima kelas yang butuh persetujuan Alden: sudah resmi di 04.10 §2.1** (1738735636, v24 ditulis Kayden, accountId 60c85cad2bd2140069d5a716, 2026-09-30 08:54Z; Kayden di #nos-bo 1790758963.536509: 「*04.10 → v24*（Kent 的 v4 逐字落地）」; versionMessage 「…Kent判定标准草案v4与Alden09-24订正，Kayden09-29点头」; versi sekarang v25, ditulis Kent 2026-09-30 09:46Z tanpa pesan; dibaca lewat diff v22→v25 pada 2026-10-01). Teks halaman:
   > 「须 Alden 点头的五类（不分项目 · 按风险）：① 改一个已有别的流程在用的共享对象、且改完会改变别人的行为（改选项/取值、共用屏设必填、改共用 workflow 转换或条件、缩小共用字段作用范围）；② 权限与可见性（permission scheme、issue security、门户对员工露出什么）；③ 删除；④ 自动化件切上线；⑤ 批量改真实数据（余额、档案这类，超过 20 条）。其余 BO 按标准自判、当场登记，Alden 事后抽查。」
   - Cakupan 04.10 sekarang mencakup tiket utama: 「执行卡／子单侧与 SSCSD 主单侧的共享对象（字段、屏幕、Workflow、Scheme）都登在本页、走第五节同一套流程；Registry 实体字段归 04.8 §5。」 Tabel RACI §2.1-B, kolom A (最终裁决) dan C (须点头), dikutip per baris:
     - 「SSCSD 主单侧字段／屏幕／Workflow／Scheme」: A 「Kent」, C 「Alden（仅命中「五类」时，如共用屏设必填、改共用 workflow 转换或条件）」
@@ -115,8 +115,8 @@ Selain aturan dasar itu, ada dua aturan tambahan dari source:
   - Yang boleh dibuat BO sendiri (§2.1-C): 「执行卡/子单侧与 SSCSD 主单侧——BO 可自建字段、挂本流程屏、往共用屏加选填，建成当场登 §三；命中「五类」的先找 Alden。…权限与可见性一律须 Alden。」
   - Jalur eskalasi (§五): 「命中第二节「须 Alden 点头的五类」任一类→Alden（不分主单侧、执行卡侧）」.
   - 07.06 v31 (Kayden, 2026-09-30) menambah baris 归口表 yang sama: 「按 04.10 第二节判定标准自判；自建边界见 07.06.1 六-2…命中 04.10 第二节「须 Alden 点头的五类」的，在本卡留言 @Alden」, dengan batas waktu 「1 个工作日」.
-  - Riwayat: draf awal 「权责判定标准初稿」 (#nos-bo thread 1789704362.435989, balasan 1790159495.872119, Alden, 2026-09-23); Kayden setuju di balasan 1790647364.406809 (2026-09-29). Canvas F0C32N7MYR1 v4 tidak dibaca. Dasar memakai halaman 04.10: Anchor 04 权威使用原则 「Jira 是进度事实，Confluence 当前权威页是规则事实」.
-- **Aturan persetujuan untuk field arsip karyawan (NTP/TCL)**: sekarang ada di 04.8 §四 (v23, 2026-09-28, dibaca penuh 2026-09-28): 「改已在用的档案字段（改选项或取值、设必填、缩小作用范围）、涉及档案可见性（issue security、权限）、删除字段、批量改真实档案超过 20 条，须平台 Owner 确认；其余（为本流程新增字段、挂本流程的屏、设为选填）由 Schema Owner 按 04.10 第五节建立并在第五节登记，平台 Owner 事后抽查。」 Alden (#nos-bo thread 1789704362.435989, 2026-09-28 16:36): 「过渡做法到此结束」. Aturan sementara sebelumnya (「审批线写出来前照昨天那句先找我」, 1790228926.781229; 「BO 起草、我点头、再建」, 1790160397.275109) sudah digantikan.
+  - Riwayat (#nos-bo thread 1789704362.435989): draf awal dari Kent, balasan 1789972890.634399 (2026-09-21): 「权责判定标准（复盘④ / B-013 裁落 04.10§二）初稿已出」 (Canvas F0C32N7MYR1). Daftar lima kelas berasal dari tanggapan Alden, balasan 1790159495.872119 (2026-09-23). Kayden setuju di balasan 1790647364.406809 (2026-09-29). Isi Canvas F0C32N7MYR1 versi sekarang (judul 「04.10§二 权责判定标准·提案 v4」) tidak dibaca. Dasar memakai halaman 04.10: Anchor 04 权威使用原则 「Jira 是进度事实，Confluence 当前权威页是规则事实」.
+- **Aturan persetujuan untuk field arsip karyawan (NTP/TCL)**: sekarang ada di 04.8 §四 (v23, 2026-09-28, dibaca penuh 2026-09-28; teks ini tidak berubah sampai v26 2026-09-30, dicek lewat diff v23→v26 pada 2026-10-01): 「改已在用的档案字段（改选项或取值、设必填、缩小作用范围）、涉及档案可见性（issue security、权限）、删除字段、批量改真实档案超过 20 条，须平台 Owner 确认；其余（为本流程新增字段、挂本流程的屏、设为选填）由 Schema Owner 按 04.10 第五节建立并在第五节登记，平台 Owner 事后抽查。」 Alden (#nos-bo thread 1789704362.435989, 2026-09-28 16:36): 「过渡做法到此结束」. Aturan sementara sebelumnya (「审批线写出来前照昨天那句先找我」, 1790228926.781229; 「BO 起草、我点头、再建」, 1790160397.275109) sudah digantikan.
 - Untuk semua butir di atas, Claude memberi tahu Bambang. Keputusan akhir tetap di tangan Bambang. Lihat `docs/open-issues.md` K-1.
 
 Larangan mutlak:
@@ -156,7 +156,7 @@ Kalau standarnya tidak ada, buat laporan dengan format **标准缺口回报** (e
 Sumber: 04.5.3 (1729626578, **v23**, 2026-09-30 13:55Z, Alden). Versi v18 dibaca penuh 2026-09-29; perubahan v18→v23 dibaca lewat diff pada 2026-10-01: whitelist 乙 diganti #nos-test, ditambah aturan Notify `testMode`, dan profil tes sebagai atasan kini menghasilkan `SUPERVISOR_TEST_PROFILE`. Bagian 测试 di build sheet S-05 memuat versi yang lebih lama. Kalau keduanya berbeda, **04.5.3 terbaru yang dibaca**.
 - Tiket tes Jira wajib punya **dua penanda**, 「两项须同时具备，任一缺失视为未标识」 (04.5.3 §三): judul diawali `TEST｜`, **dan** subjek tiket menunjuk ke arsip tes.
   - Build sheet S-05 mencatat bahwa tes struktur tanpa subjek (SSCSD-411, dengan preseden GPM) hanya memenuhi penanda pertama. Ini ketegangan dengan 04.5.3, lihat `docs/open-issues.md` K-7. Claude tidak memutuskannya.
-- Tiket tes di SSCSD untuk S-05 dibiarkan di status akhirnya dan tidak dihapus (build sheet S-05, 测试单登记). Untuk project arsip dan buku besar berlaku aturan di §3.
+- Tiket tes di SSCSD untuk S-05 tidak dihapus (build sheet S-05, 测试单登记). Sebagian besar dibiarkan di status akhirnya; SSCSD-448 dan 449 berstatus 「Pending Sub-tickets（非终态）」 dengan 处置 「留存不删；Complete 仅服务账号，本侧不推」 (build sheet v61). Untuk project arsip dan buku besar berlaku aturan di §3.
 - Whitelist Slack (04.5.3 §二, v23):
   - 甲: DM diri sendiri
   - 乙: #nos-test (C0C5K9AKU4A). 「测试专用频道，各流程测试期的 Slack 通知一律发这里…成批的卡片测试优先发甲。已在用 #nos-bo（C0BRSTNNY4A）或 #nos-ops（C0BBT5ZC9L6）测试的件可沿用原去处，下次修改该件时改发 #nos-test；新建的件与新开始的测试一律发 #nos-test。」
