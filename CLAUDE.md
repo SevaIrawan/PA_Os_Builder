@@ -106,11 +106,17 @@ Selain aturan dasar itu, ada dua aturan tambahan dari source:
   - 「记不清是否在清单内，就先问」
 - **Lima kelas yang butuh persetujuan Alden: sudah resmi di 04.10 §2.1** (1738735636, v24 Kent 2026-09-30 08:54Z dengan versionMessage 「…Kent判定标准草案v4与Alden09-24订正，Kayden09-29点头」; versi sekarang v25, dibaca lewat diff v22→v25 pada 2026-10-01). Teks halaman:
   > 「须 Alden 点头的五类（不分项目 · 按风险）：① 改一个已有别的流程在用的共享对象、且改完会改变别人的行为（改选项/取值、共用屏设必填、改共用 workflow 转换或条件、缩小共用字段作用范围）；② 权限与可见性（permission scheme、issue security、门户对员工露出什么）；③ 删除；④ 自动化件切上线；⑤ 批量改真实数据（余额、档案这类，超过 20 条）。其余 BO 按标准自判、当场登记，Alden 事后抽查。」
-  - Cakupan 04.10 sekarang mencakup tiket utama: 「执行卡／子单侧与 SSCSD 主单侧的共享对象（字段、屏幕、Workflow、Scheme）都登在本页、走第五节同一套流程；Registry 实体字段归 04.8 §5。」 Persetujuan akhir (A) untuk field/layar/Workflow/Scheme kedua sisi: Kent; Alden 「仅命中「五类」时」 (§2.1-B).
+  - Cakupan 04.10 sekarang mencakup tiket utama: 「执行卡／子单侧与 SSCSD 主单侧的共享对象（字段、屏幕、Workflow、Scheme）都登在本页、走第五节同一套流程；Registry 实体字段归 04.8 §5。」 Tabel RACI §2.1-B, kolom A (最终裁决) dan C (须点头), dikutip per baris:
+    - 「SSCSD 主单侧字段／屏幕／Workflow／Scheme」: A 「Kent」, C 「Alden（仅命中「五类」时，如共用屏设必填、改共用 workflow 转换或条件）」
+    - 「执行卡/子单侧字段」: A 「Kent」, C 「Alden（仅命中「五类」时）」
+    - 「执行卡 Workflow Scheme 13093（Team Project）」: A 「Kent」, C 「Alden（仅命中「五类」时）」
+    - 「挂屏 Screen」: A 「屏 Owner」, C 「Alden（共用屏设必填属「五类」①）」
+    - 「权限与可见性（permission scheme／issue security · 含 NTP/TCL 档案）」: A 「Alden」
   - Yang boleh dibuat BO sendiri (§2.1-C): 「执行卡/子单侧与 SSCSD 主单侧——BO 可自建字段、挂本流程屏、往共用屏加选填，建成当场登 §三；命中「五类」的先找 Alden。…权限与可见性一律须 Alden。」
   - Jalur eskalasi (§五): 「命中第二节「须 Alden 点头的五类」任一类→Alden（不分主单侧、执行卡侧）」.
   - 07.06 v31 (Kayden, 2026-09-30) menambah baris 归口表 yang sama: 「按 04.10 第二节判定标准自判；自建边界见 07.06.1 六-2…命中 04.10 第二节「须 Alden 点头的五类」的，在本卡留言 @Alden」, dengan batas waktu 「1 个工作日」.
-  - Riwayat: draf awal 「权责判定标准初稿」 (#nos-bo thread 1789704362.435989, balasan 1790159495.872119, Alden, 2026-09-23); Kayden setuju di balasan 1790647364.406809 (2026-09-29). Canvas F0C32N7MYR1 v4 tidak dibaca; yang berlaku adalah halaman 04.10.- **Aturan persetujuan untuk field arsip karyawan (NTP/TCL)**: sekarang ada di 04.8 §四 (v23, 2026-09-28, dibaca penuh 2026-09-28): 「改已在用的档案字段（改选项或取值、设必填、缩小作用范围）、涉及档案可见性（issue security、权限）、删除字段、批量改真实档案超过 20 条，须平台 Owner 确认；其余（为本流程新增字段、挂本流程的屏、设为选填）由 Schema Owner 按 04.10 第五节建立并在第五节登记，平台 Owner 事后抽查。」 Alden (#nos-bo thread 1789704362.435989, 2026-09-28 16:36): 「过渡做法到此结束」. Aturan sementara sebelumnya (「审批线写出来前照昨天那句先找我」, 1790228926.781229; 「BO 起草、我点头、再建」, 1790160397.275109) sudah digantikan.
+  - Riwayat: draf awal 「权责判定标准初稿」 (#nos-bo thread 1789704362.435989, balasan 1790159495.872119, Alden, 2026-09-23); Kayden setuju di balasan 1790647364.406809 (2026-09-29). Canvas F0C32N7MYR1 v4 tidak dibaca. Dasar memakai halaman 04.10: Anchor 04 权威使用原则 「Jira 是进度事实，Confluence 当前权威页是规则事实」.
+- **Aturan persetujuan untuk field arsip karyawan (NTP/TCL)**: sekarang ada di 04.8 §四 (v23, 2026-09-28, dibaca penuh 2026-09-28): 「改已在用的档案字段（改选项或取值、设必填、缩小作用范围）、涉及档案可见性（issue security、权限）、删除字段、批量改真实档案超过 20 条，须平台 Owner 确认；其余（为本流程新增字段、挂本流程的屏、设为选填）由 Schema Owner 按 04.10 第五节建立并在第五节登记，平台 Owner 事后抽查。」 Alden (#nos-bo thread 1789704362.435989, 2026-09-28 16:36): 「过渡做法到此结束」. Aturan sementara sebelumnya (「审批线写出来前照昨天那句先找我」, 1790228926.781229; 「BO 起草、我点头、再建」, 1790160397.275109) sudah digantikan.
 - Untuk semua butir di atas, Claude memberi tahu Bambang. Keputusan akhir tetap di tangan Bambang. Lihat `docs/open-issues.md` K-1.
 
 Larangan mutlak:
