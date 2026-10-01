@@ -10,10 +10,10 @@ Aturan (CLAUDE.md §0.15, §3):
 | No. | File | Tiket · Comment yang dibalas | Dari | Topik | Status |
 |---|---|---|---|---|---|
 | 1 | [01-OSD-131-c51053.md](01-OSD-131-c51053.md) | OSD-131 · c51053 poin 三 (sekaligus c51054 poin 三) | Alden (cc Zefansstr) | Apakah S-05 menghitung catatan berturut-turut (连续) | Siap kirim |
-| 2 | — | OSD-116 · c50989 | Alden (ke Kent dan Bambang) | Security level Disciplinary Case; baris assignee di build sheet | Belum siap: draf lama belum dicek ulang per kalimat |
+| 2 | [02-OSD-116-c50989.md](02-OSD-116-c50989.md) | OSD-116 · c50989 | Alden (ke Kent dan Bambang) | Security level Disciplinary Case; baris assignee di build sheet | Siap kirim |
 | 3 | — | OSD-131 · c50993 | Alden | Pembagian tugas Registry (kerangka project, Issue Type, field 纪律处分记录) | Belum siap: belum ada draf yang valid |
 | 4 | — | OSD-131 · c51023 poin 二 (diminta lagi di c51054) | Zefansstr | Mencocokkan 查询口径 sebelum masuk 04.8 | Belum siap: belum ada draf yang valid |
 
-File untuk no. 2–4 baru dibuat setelah drafnya dicek per kalimat dan siap kirim.
+File untuk no. 3–4 baru dibuat setelah drafnya dicek per kalimat dan siap kirim.
 
 Terakhir diperbarui: 2026-10-01.
