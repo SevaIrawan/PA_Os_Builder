@@ -42,6 +42,12 @@
   - Kayden (1790647364.406809, 09:02): 「一、04.10 范围重划，我点头。主单侧的字段、屏、workflow、scheme 也进 04.10 同一张表、同一套第五节流程，日常 Kent 以 Schema Owner 审批，Alden 只在五类风险点头。」 Kayden menarik kembali pendapatnya tanggal 23 dan mengikuti koreksi Alden tanggal 24.
   - Kent (1790661147.814659, 12:52): 三处逐字稿 dan 判定标准 v4 dimasukkan ke Canvas F0C32N7MYR1 v4; pemasangan ke 04.10 oleh pelaksana Kayden. Canvas v4 belum dibaca Claude.
   - **Status:** keputusan 已验证 (jawaban tertulis Kayden). Pemasangan di halaman 04.10: 进行中 (belum terlihat; terakhir dibaca v22).
+- **Update 2026-10-01 (diff 04.10 v22→v25 dibaca penuh lewat Atlassian_MCP `diffConfluenceContentVersions`):**
+  - 04.10 **v24** (Kent, 2026-09-30 08:54Z), versionMessage: 「①页首权威边界：主单侧共享对象改为登本页、走第五节同一流程；②第一节不承载表删「主单侧对象」行；③第五节升级线「涉SSCSD主单侧→Alden」改为「命中第二节五类任一类→Alden」；④第二节新增2.1共享对象判定标准（判定树、权责表与须Alden点头的五类、自建界），原登记规则改为2.2不动。依据：Kent判定标准草案v4与Alden09-24订正，Kayden09-29点头。」 v25 (Kent, 09:46Z) tanpa pesan.
+  - Teks lima kelas di §2.1 v25: 「须 Alden 点头的五类（不分项目 · 按风险）：① 改一个已有别的流程在用的共享对象、且改完会改变别人的行为（改选项/取值、共用屏设必填、改共用 workflow 转换或条件、缩小共用字段作用范围）；② 权限与可见性（permission scheme、issue security、门户对员工露出什么）；③ 删除；④ 自动化件切上线；⑤ 批量改真实数据（余额、档案这类，超过 20 条）。其余 BO 按标准自判、当场登记，Alden 事后抽查。」
+  - 07.06 **v31** (Kayden, 2026-09-30) menambah baris 归口表 yang merujuk ke 04.10 §2 dan 「须 Alden 点头的五类」 (diff v30→v32 dibaca 2026-10-01).
+  - **Status bagian lima kelas / cakupan 04.10:** 已验证 (teks halaman 04.10 v25). Kalimat 「Pemasangan di halaman 04.10: 进行中」 di atas sudah basi.
+  - **Bagian K-1 yang lain tetap terbuka:** perbedaan 1587347525 (「③不可逆动作先经 Alden 确认」) dan 07.06.1 §六-2 (「拍板的人就是这位开发者本人」) tidak disentuh perubahan 04.10. Claude tidak mendamaikannya. **Status:** 待决策.
 
 ### K-2 · Siapa yang memutuskan audit 切分 (N5) dan 验收 (N14)
 - **Anchor 04 §一/§二** dan **OS 开发流 Spec N5/N14** (1729200354): 「Kayden 或 Alden」 (OR).
@@ -166,6 +172,9 @@
 - **Format permintaan** (04.10 §五 langkah 1): Task di Project BO, ditugaskan ke Schema Owner, tiga isian 「要什么／哪条流程 Spec 哪一行需要／为何现有共享对象不够用」; 「口头／Slack 私聊不受理」.
 - **Status:** 待决策. Sebelum mengajukan Task ke Kent, tanyakan ke Bambang apakah konflik ini perlu disebut di Task.
 - **Update 2026-09-29:** konflik selesai lewat keputusan Kayden (#nos-bo 1790647364.406809, lihat K-1): field tiket utama SSCSD masuk 04.10 dan disetujui Kent. Kent membangun batch A dan mendaftarkannya di 04.10 §三 v23 (OSD-116 c50725; halaman v23 belum dibaca Claude). **Status:** 已验证 (keputusan); perubahan teks cakupan di 04.10: 进行中.
+- **Update 2026-10-01 (diff 04.10 v22→v25 dibaca penuh):** halaman sekarang menulis 「执行卡／子单侧与 SSCSD 主单侧的共享对象（字段、屏幕、Workflow、Scheme）都登在本页、走第五节同一套流程；Registry 实体字段归 04.8 §5。」 Kalimat lama 「主单字段归 SSCSD/V1」 dan baris 「主单侧对象…Owner：Alden」 sudah dihapus (v24). Di §2.1-B, untuk 「SSCSD 主单侧字段／屏幕／Workflow／Scheme」: A = Kent, R = 「BO 建造人」, C = 「Alden（仅命中「五类」时…）」.
+  - Batch A S-05 terdaftar di §三 v25: 14 baris customfield_18326–18339, semuanya 「生效 Green」, 「挂 SSCSD 共享编辑屏 14761（tab 14832）选填」, sumber 「OSD-116 c50658（Bambang 04.10 三格申请）／c50647、c50648（Alden：主单字段走 04.10 由 Kent 批建）／Kent 09-29 批」. Approved By `customfield_18061` juga terdaftar dengan pemanggil 「S-05 N07 HR 三层审核（件未启用）」.
+  - **Status:** 已验证. Konflik 04.10 v21 vs Alden c50647 sudah tidak ada di teks halaman.
 
 ### K-16 · Isi kolom 「Owner 部门」 di indeks 04.9 untuk S-05
 - **04.9 v124** (1693089805): kolom 「Owner 部门」 ada di header indeks, tapi tidak didefinisikan di §一 maupun di halaman lain (CQL NOSM, #nos-bo, OSD-116, NSE-1137, NSE-1143; dicek 2026-09-28).

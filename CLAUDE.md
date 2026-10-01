@@ -76,7 +76,7 @@ Siapa pemutus di setiap Gate: lihat `docs/04-anchor-navigation.md` §2.
 Batas akses yang sudah terbukti:
 - Akun pribadi Bambang **tidak bisa melihat** tiket SSCSD yang diuji. Atlassian_MCP `searchJiraIssuesUsingJql` dengan `key in (SSCSD-411, SSCSD-421, SSCSD-422, SSCSD-423)` mengembalikan 「Issue does not exist or you do not have permission to see it」 (diamati di sesi 2026-09-26).
 - Akun Backend Operations punya scope Jira `read:jira-work`/`write:jira-work` saja, **tanpa hak konfigurasi**. Konfigurasi dilakukan manual lewat UI lalu diverifikasi lewat API (build sheet S-05, 本轮实建与回读).
-- Di **UI** Jira, akun BO punya menu **Jira admin settings** (System, Jira apps, Spaces, Work items) dan **User management** (pernyataan Bambang 「aku admin disana」 + screenshot, 2026-09-26). Jadi batas di atas berlaku untuk API. Konfigurasi lewat UI dikerjakan Bambang. Punya akses admin **tidak sama** dengan boleh: membuat group baru butuh persetujuan level site (Kent OSD-116 c49545), dan perubahan izin/visibilitas termasuk lima kelas Alden yang masih draf (§3).
+- Di **UI** Jira, akun BO punya menu **Jira admin settings** (System, Jira apps, Spaces, Work items) dan **User management** (pernyataan Bambang 「aku admin disana」 + screenshot, 2026-09-26). Jadi batas di atas berlaku untuk API. Konfigurasi lewat UI dikerjakan Bambang. Punya akses admin **tidak sama** dengan boleh: membuat group baru butuh persetujuan level site (Kent OSD-116 c49545), dan perubahan izin/visibilitas termasuk lima kelas Alden (04.10 §2.1, lihat §3).
 - Menulis ke Confluence lewat akun BO berarti **mengganti seluruh halaman**. Risikonya, isi bisa rusak tanpa ketahuan. Itulah alasan build sheet diedit lewat akun pribadi (build sheet S-05 偏差登记).
 - Assignee harus ditulis eksplisit saat membuat tiket SSCSD. Kalau tidak, tiket otomatis diberikan ke Alden (build sheet S-05, 本轮踩坑).
 
@@ -104,15 +104,13 @@ Selain aturan dasar itu, ada dua aturan tambahan dari source:
   - notifikasi ke karyawan sungguhan atau pengiriman nyata pertama
   - mengaktifkan workflow (juga butuh persetujuan Owner platform)
   - 「记不清是否在清单内，就先问」
-- **Lima kelas yang butuh persetujuan Alden. Sudah diputuskan Kayden; halaman 04.10 belum diubah.** Asalnya draf 「权责判定标准初稿」 (#nos-bo, thread 1789704362.435989, balasan 1790159495.872119, Alden, 2026-09-23). Kayden, balasan 1790647364.406809 (2026-09-29 09:02): 「04.10 范围重划，我点头。主单侧的字段、屏、workflow、scheme 也进 04.10 同一张表、同一套第五节流程，日常 Kent 以 Schema Owner 审批，Alden 只在五类风险点头。」 Kent, balasan 1790661147.814659 (12:52): 三处逐字稿 dan 判定标准 v4 ada di Canvas F0C32N7MYR1 v4 untuk dipasang oleh pelaksana Kayden. Canvas v4 **belum dibaca** Claude; halaman 04.10 belum memuat perubahan ini (terakhir dibaca v22).
-  1. mengubah objek bersama yang sudah dipakai alur lain, **bila perubahan itu mengubah perilaku alur lain** (「且改完会改变别人的行为」)
-  2. izin/visibilitas
-  3. penghapusan
-  4. mengaktifkan otomasi
-  5. data asli >20 record
-
-  Di pesan yang sama: persetujuan harian 04.10 dipegang 「由 Kent 以 Schema Owner 审批」. Alden menegaskannya lagi pada 2026-09-24 (balasan 1790228926.781229): sisi 主单 SSCSD masuk 04.10 di bawah persetujuan Kent, 「我只在五类风险时点头」.
-- **Aturan persetujuan untuk field arsip karyawan (NTP/TCL)**: sekarang ada di 04.8 §四 (v23, 2026-09-28, dibaca penuh 2026-09-28): 「改已在用的档案字段（改选项或取值、设必填、缩小作用范围）、涉及档案可见性（issue security、权限）、删除字段、批量改真实档案超过 20 条，须平台 Owner 确认；其余（为本流程新增字段、挂本流程的屏、设为选填）由 Schema Owner 按 04.10 第五节建立并在第五节登记，平台 Owner 事后抽查。」 Alden (#nos-bo thread 1789704362.435989, 2026-09-28 16:36): 「过渡做法到此结束」. Aturan sementara sebelumnya (「审批线写出来前照昨天那句先找我」, 1790228926.781229; 「BO 起草、我点头、再建」, 1790160397.275109) sudah digantikan.
+- **Lima kelas yang butuh persetujuan Alden: sudah resmi di 04.10 §2.1** (1738735636, v24 Kent 2026-09-30 08:54Z dengan versionMessage 「…Kent判定标准草案v4与Alden09-24订正，Kayden09-29点头」; versi sekarang v25, dibaca lewat diff v22→v25 pada 2026-10-01). Teks halaman:
+  > 「须 Alden 点头的五类（不分项目 · 按风险）：① 改一个已有别的流程在用的共享对象、且改完会改变别人的行为（改选项/取值、共用屏设必填、改共用 workflow 转换或条件、缩小共用字段作用范围）；② 权限与可见性（permission scheme、issue security、门户对员工露出什么）；③ 删除；④ 自动化件切上线；⑤ 批量改真实数据（余额、档案这类，超过 20 条）。其余 BO 按标准自判、当场登记，Alden 事后抽查。」
+  - Cakupan 04.10 sekarang mencakup tiket utama: 「执行卡／子单侧与 SSCSD 主单侧的共享对象（字段、屏幕、Workflow、Scheme）都登在本页、走第五节同一套流程；Registry 实体字段归 04.8 §5。」 Persetujuan akhir (A) untuk field/layar/Workflow/Scheme kedua sisi: Kent; Alden 「仅命中「五类」时」 (§2.1-B).
+  - Yang boleh dibuat BO sendiri (§2.1-C): 「执行卡/子单侧与 SSCSD 主单侧——BO 可自建字段、挂本流程屏、往共用屏加选填，建成当场登 §三；命中「五类」的先找 Alden。…权限与可见性一律须 Alden。」
+  - Jalur eskalasi (§五): 「命中第二节「须 Alden 点头的五类」任一类→Alden（不分主单侧、执行卡侧）」.
+  - 07.06 v31 (Kayden, 2026-09-30) menambah baris 归口表 yang sama: 「按 04.10 第二节判定标准自判；自建边界见 07.06.1 六-2…命中 04.10 第二节「须 Alden 点头的五类」的，在本卡留言 @Alden」, dengan batas waktu 「1 个工作日」.
+  - Riwayat: draf awal 「权责判定标准初稿」 (#nos-bo thread 1789704362.435989, balasan 1790159495.872119, Alden, 2026-09-23); Kayden setuju di balasan 1790647364.406809 (2026-09-29). Canvas F0C32N7MYR1 v4 tidak dibaca; yang berlaku adalah halaman 04.10.- **Aturan persetujuan untuk field arsip karyawan (NTP/TCL)**: sekarang ada di 04.8 §四 (v23, 2026-09-28, dibaca penuh 2026-09-28): 「改已在用的档案字段（改选项或取值、设必填、缩小作用范围）、涉及档案可见性（issue security、权限）、删除字段、批量改真实档案超过 20 条，须平台 Owner 确认；其余（为本流程新增字段、挂本流程的屏、设为选填）由 Schema Owner 按 04.10 第五节建立并在第五节登记，平台 Owner 事后抽查。」 Alden (#nos-bo thread 1789704362.435989, 2026-09-28 16:36): 「过渡做法到此结束」. Aturan sementara sebelumnya (「审批线写出来前照昨天那句先找我」, 1790228926.781229; 「BO 起草、我点头、再建」, 1790160397.275109) sudah digantikan.
 - Untuk semua butir di atas, Claude memberi tahu Bambang. Keputusan akhir tetap di tangan Bambang. Lihat `docs/open-issues.md` K-1.
 
 Larangan mutlak:
@@ -149,15 +147,16 @@ Kalau standarnya tidak ada, buat laporan dengan format **标准缺口回报** (e
 
 ## 6. Tes
 
-Sumber: 04.5.3 (1729626578, **v18**, 2026-09-29 05:12Z, dibaca penuh 2026-09-29). v17→v18 hanya mengubah whitelist Slack di §二: 丙 (#nos-governance) dihapus, 乙 ditambah 「OS 开发流一族（时效件、N10 对齐）的测试发 #nos-ops；成批的卡片测试优先发甲」, dan daftar larangan jadi lima (evidence E60). Bagian 测试 di build sheet S-05 memuat versi yang lebih lama. Kalau keduanya berbeda, **04.5.3 terbaru yang dibaca**.
+Sumber: 04.5.3 (1729626578, **v23**, 2026-09-30 13:55Z, Alden). Versi v18 dibaca penuh 2026-09-29; perubahan v18→v23 dibaca lewat diff pada 2026-10-01: whitelist 乙 diganti #nos-test, ditambah aturan Notify `testMode`, dan profil tes sebagai atasan kini menghasilkan `SUPERVISOR_TEST_PROFILE`. Bagian 测试 di build sheet S-05 memuat versi yang lebih lama. Kalau keduanya berbeda, **04.5.3 terbaru yang dibaca**.
 - Tiket tes Jira wajib punya **dua penanda**, 「两项须同时具备，任一缺失视为未标识」 (04.5.3 §三): judul diawali `TEST｜`, **dan** subjek tiket menunjuk ke arsip tes.
   - Build sheet S-05 mencatat bahwa tes struktur tanpa subjek (SSCSD-411, dengan preseden GPM) hanya memenuhi penanda pertama. Ini ketegangan dengan 04.5.3, lihat `docs/open-issues.md` K-7. Claude tidak memutuskannya.
 - Tiket tes di SSCSD untuk S-05 dibiarkan di status akhirnya dan tidak dihapus (build sheet S-05, 测试单登记). Untuk project arsip dan buku besar berlaku aturan di §3.
-- Whitelist Slack (04.5.3 §二, v18):
+- Whitelist Slack (04.5.3 §二, v23):
   - 甲: DM diri sendiri
-  - 乙: #nos-bo (C0BRSTNNY4A), #nos-ops (C0BBT5ZC9L6). 「成批的卡片测试优先发甲」.
+  - 乙: #nos-test (C0C5K9AKU4A). 「测试专用频道，各流程测试期的 Slack 通知一律发这里…成批的卡片测试优先发甲。已在用 #nos-bo（C0BRSTNNY4A）或 #nos-ops（C0BBT5ZC9L6）测试的件可沿用原去处，下次修改该件时改发 #nos-test；新建的件与新开始的测试一律发 #nos-test。」
 - **Dilarang mengirim ke (「红线五处不发」):** #sscos-hr (C0BHL8AE68G), #epic-nse-1045-squad (C0BKUAGTKP1), #general (C06411GVD5K), #nos-governance (C0C0S5CD1S9), #nos-flow-alignment (C0BU1LY53NE).
 - Penanda tes di Slack: `🧪 【SSCOS 测试 · 请勿处理 ｜ TEST — do not action】`.
+  - Workflow yang mengirim lewat Notify (04.5.3 §三, v23): 「测试期调 Notify 时传 `testMode: true`，Notify 自动把组与频道消息改投 #nos-test、第一行加统一标识（审批卡注入首个 block），流程侧不必自做改投与标识，也不要重复加」.
 - `test_workflow` n8n akan benar-benar mengirim. Nonaktifkan node tulis/kirim, atau isi pinData secara eksplisit (07.06.1 E6).
   - Cara membuktikannya (07.06.1 E6 验收, versi 2026-09-26): baca ulang objek tujuan, lalu periksa **setiap node yang menulis atau mengirim**. Node yang benar-benar jalan menghasilkan balasan sungguhan (nomor tiket, ts pesan) dan butuh ratusan milidetik. Waktu 0 berarti node itu di-pin atau dinonaktifkan. 「执行记录顶层的 pinData 字段不作判据」.
 
