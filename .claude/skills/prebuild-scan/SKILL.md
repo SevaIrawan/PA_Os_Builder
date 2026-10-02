@@ -42,7 +42,16 @@ Kent menulis bahwa daftar ini sudah dia masukkan ke 「build skill」 milik tim.
    | ④ | 依赖（上游件／外部平台／数据源）就绪没 | Workflow hulu, komponen platform (Notify, Slack Approval, B6, Error Handler), dan sumber data: sudah publish atau aktif? Terdaftar di 04.9 dan 04.4 §十一? |
    | ⑤ | 要动的页件我有没有权限（查 restriction） | Akun mana yang akan dipakai (CLAUDE.md §2), dan apakah akun itu bisa membaca atau menulis objek tersebut? Termasuk batas tulis Bambang (CLAUDE.md §3) dan lima kelas Alden (04.10 §2.1, K-1). |
    | ⑥ | 异常缺位边界覆盖没 | Jalur error, nilai kosong, atasan tidak terbaca, klik ganda, ulang jalan, hasil 0 (07.06.1 E9, E16): tertulis di Spec dan tertangani? |
-   | ⑦ | 测试前置（夹具／测试档案／sandbox）有没有 | Tiket TEST, arsip tes NTP, whitelist Slack (04.5.3), cara pin atau matikan node tulis (07.06.1 E6): sudah siap? |
+   | ⑦ | 测试前置（夹具／测试档案／sandbox）有没有 | Tiket TEST, arsip tes NTP, tujuan tes Slack (lihat 「Aturan tujuan tes Slack」 di bawah), cara pin atau matikan node tulis (07.06.1 E6): sudah siap? |
+
+   **Aturan tujuan tes Slack** (berlaku sejak 2026-09-30). Sumber: Alden #nos-test (C0C5K9AKU4A) ts 1790755901.568309 dan reply ts 1790758596.267839; 04.5.3 v23 §二 (whitelist 甲/乙) dan §三 (「经 Notify 发送的件」). Sebelum dipakai, baca 04.5.3 versi terbaru. Kalau isinya berbeda dengan ringkasan ini, yang berlaku 04.5.3.
+   - **Workflow baru dan tes yang baru dimulai:** pesan tes Slack ke grup atau channel dikirim ke **#nos-test (C0C5K9AKU4A)**. Jangan dikirim ke #nos-bo atau #nos-ops.
+   - **Workflow yang sudah dalam tes sebelum 2026-09-30:** boleh tetap memakai tujuan lama (#nos-bo C0BRSTNNY4A atau #nos-ops C0BBT5ZC9L6). **Saat workflow itu diubah berikutnya**, tujuan tesnya wajib dipindah ke #nos-test.
+   - **Tes lewat DM:** hanya ke orang yang menjalankan tes (甲). Tes kartu dalam jumlah banyak sebaiknya ke DM sendiri.
+   - **Penanda:** baris pertama setiap pesan tes 「🧪 【SSCOS 测试 · 请勿处理 ｜ TEST — do not action】」. Untuk kartu persetujuan, penanda disisipkan di section block pertama (tebal).
+   - **Workflow yang mengirim lewat Notify:** kirim `testMode: true`. Notify yang mengalihkan pesan grup dan channel ke #nos-test dan menambahkan penanda, jadi **jangan menambahkan penanda sendiri** supaya tidak dobel. Penerima DM tetap mengikuti 甲.
+   - **Lima channel terlarang:** #sscos-hr (C0BHL8AE68G), #epic-nse-1045-squad (C0BKUAGTKP1), #general (C06411GVD5K), #nos-governance (C0C0S5CD1S9), #nos-flow-alignment (C0BU1LY53NE).
+   - **Yang diperiksa di ⑦:** apakah workflow yang akan dites atau diubah sudah mengikuti butir di atas. Kalau workflow itu sudah dalam tes sebelum 2026-09-30 dan sekarang akan diubah, pemindahan ke #nos-test (dan ke `testMode` kalau lewat Notify) masuk daftar kerja perubahan itu.
 
 2. **Pisahkan hasilnya.**
    - **Sudah ada jawabannya di source:** kutip, jangan ditanyakan.
