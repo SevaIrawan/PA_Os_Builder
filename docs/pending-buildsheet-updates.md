@@ -17,7 +17,7 @@ Versi build sheet terakhir yang dibaca: **v66** (2026-10-02T04:20:25Z).
 
 Sisa yang **belum** ditulis setelah v61. Semua ditulis **sekaligus dalam satu versi** saat Bambang memerintahkan (permintaan Bambang, 2026-09-29).
 - **P-6.7** (menunggu orang lain): C-01 (backfill nama RT di 04.7; masih belum per 04.7 v51, E69), C-26 (isi §七, keputusan Kayden), D-13 (marker patroli, Geri c50631 dan K-10). A-14 sudah dipindah ke P-17.
-- **P-6.8** (menunggu keputusan Bambang): B-14, A-01 (catatan versi dasar Spec v67). D-4 (P-22) dan D-9 (P-23) ditulis di v65; D-16 (P-24) ditulis di v66 (2026-10-02). A-01 sudah dikirim sebagai pertanyaan ke Kayden (业务签) dan Alden (技术签): OSD-116 **c51067** (2026-10-02, `docs/draft-replies/06-…`); catatan kepala build sheet (「v63～v67 逐版差异本侧未比对」) baru diperbarui setelah mereka menjawab; B-14 di-hold bersama P-17 (butuh UI n8n). B-2 terjawab oleh draf P-18 (暗号表 `nos-s05-dup`); C-27 selesai (E61, v57).
+- **P-6.8** (menunggu keputusan Bambang): B-14, A-01 (catatan versi dasar Spec v67). D-4 (P-22) dan D-9 (P-23) ditulis di v65; D-16 (P-24) ditulis di v66 (2026-10-02). A-01 sudah dikirim sebagai pertanyaan ke Kayden (业务签) dan Alden (技术签): OSD-116 **c51067** (2026-10-02, `docs/draft-replies/06-…`); catatan kepala build sheet (「v63～v67 逐版差异本侧未比对」) baru diperbarui setelah mereka menjawab; B-14: cek UI n8n selesai 2026-10-02 (lihat detail B-14 di bawah); sisa ④ menunggu Kent c50989, ⑤ butuh izin tes terpisah. B-2 terjawab oleh draf P-18 (暗号表 `nos-s05-dup`); C-27 selesai (E61, v57).
 - **B-5** (dicek saat prebuild-scan N01, bukan keputusan Bambang): dipindah dari P-6.8 pada 2026-10-02 (perintah Bambang 「Iya, pindahkan lalu commit」). Detail di bawah P-6.8.
 - **P-17**: transisi 9/11 setelah Kent c50705, termasuk A-14 dari P-6.7 (detail di bawah). **HOLD** (Bambang 2026-09-29: 「Kau hold dulu ini」): pemasangan condition 9/11 di UI Jira dan penulisan P-17 ditunda sampai Bambang melanjutkan.
   - **Update 2026-10-02:** dimulai (「kita mulai P17」). Konfigurasi UI dibatalkan tanpa disimpan karena Project Owner SSCSD (Alden, 04.1 v48 §一) tidak bisa dipilih di pemilih Users. Ditanyakan ke Kent dan Alden: OSD-116 **c51072**. Menunggu jawaban; condition belum dipasang (E79–E85, `docs/evidence/2026-10-02-live-checks.md`).
@@ -868,6 +868,13 @@ Setelah semua status ditulis, **hitung ulang** statistik 附表 (A-03).
 ##### P-6.8 · Belum diputuskan Bambang (tidak masuk antrean tulis)
 - **B-2:** teks 「写入侧已实建」 untuk `nos-s05-dup`, dan perubahan status 「拟定·未建」→「已建·inactive」.
 - **B-14:** tiga syarat E16 v40 dan penilaian probe N05. Kutipan harus dicocokkan dengan v40 dulu.
+  - **Update 2026-10-02** (perintah Bambang 「Kita kerjakan B-14」; E86–E88): 07.06.1 sekarang v44; E16 tidak berubah sejak v40. Penilaian N05 (`LJwiAZFfnuq6tmju`, versionId `664828ee`) terhadap E16:
+    - ① identitas sama dengan gerbang, kredensial件: **terpenuhi**. `Confirm Case Visible (control probe)` dan `Search Open S-05 Cases` sama-sama Bot_SSC (Jira write), UI 目视 Bambang.
+    - ② tiket yang diketahui ada, bukan `mypermissions`: **terpenuhi**. Probe membaca case itu sendiri di SSCSD.
+    - ③ jangkar 承重对象 didaftarkan di build sheet: jangkar = case yang diproses (bukan tiket tetap). Perlu didaftarkan atau tidak: inferensi, belum dikonfirmasi.
+    - ④ project dengan security level → 「生产同类对象计数下限」: **terbuka**, bergantung keputusan Kent atas OSD-116 c50989 (level sendiri + level recusal untuk Disciplinary Case).
+    - ⑤ latihan 「看不见」 dengan identitas lain: **belum dilakukan** (17565 hanya pin `key` kosong, E45). Butuh izin terpisah; kredensial baru hanya oleh admin platform (07.06.1 D4).
+  - Draf 【补】 build sheet baris N05 belum dibuat; menunggu perintah Bambang.
 - ~~**D-4:**~~ **Ditulis v65** sebagai P-22 (2026-10-02).
 - ~~**D-9:**~~ **Ditulis v65** sebagai P-23 (2026-10-02).
 - ~~**D-16:**~~ **Ditulis v66** sebagai P-24 (2026-10-02).
