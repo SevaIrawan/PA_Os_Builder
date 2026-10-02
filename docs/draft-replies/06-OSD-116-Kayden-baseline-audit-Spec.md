@@ -2,7 +2,7 @@
 
 | Item | Isi |
 |---|---|
-| Status | Draf, diaudit ulang 2026-10-02 (baca utuh semua sumber, lihat 「Sudah dicek」). Belum dikirim |
+| Status | Terkirim 2026-10-02 12:14 +07 sebagai OSD-116 **c51067** (perintah Bambang 「kirim no. 6」). Dibaca ulang: penulis Bambang (akun pribadi), tiga mention terpasang, isi sama dengan teks di bawah; OSD-116 total 214 |
 | Tujuan | Comment baru di OSD-116 |
 | Akun pengirim | Atlassian_MCP, akun pribadi Bambang (712020:0ec04d28-9941-4568-b144-a1c4f2dcf138) |
 | Yang ditanya | Kayden, 业务签 (60c85cad2bd2140069d5a716), dan Alden, 技术签 (5b666de62c9bd83c037070ae); cc Felix_HR (712020:e5c38f7f-4fa8-4c37-a08e-029af3a09a87) |
