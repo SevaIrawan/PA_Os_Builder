@@ -9,7 +9,7 @@ Aturan:
 - Bahasa: Mandarin, mengikuti isi halaman.
 - Kalau item sudah ditulis ke build sheet, pindahkan ke bagian "Sudah ditulis" dan cantumkan versi halamannya.
 
-Versi build sheet terakhir yang dibaca: **v61** (2026-09-29T09:13:39Z).
+Versi build sheet terakhir yang dibaca: **v65** (2026-10-02T04:11:48Z).
 
 ---
 
@@ -17,24 +17,8 @@ Versi build sheet terakhir yang dibaca: **v61** (2026-09-29T09:13:39Z).
 
 Sisa yang **belum** ditulis setelah v61. Semua ditulis **sekaligus dalam satu versi** saat Bambang memerintahkan (permintaan Bambang, 2026-09-29).
 - **P-6.7** (menunggu orang lain): C-01 (backfill nama RT di 04.7; masih belum per 04.7 v51, E69), C-26 (isi §七, keputusan Kayden), D-13 (marker patroli, Geri c50631 dan K-10). A-14 sudah dipindah ke P-17.
-- **P-6.8** (menunggu keputusan Bambang): B-5, B-14, D-9, D-16, A-01 (catatan versi dasar Spec v67). D-4 dipindah ke P-22 (2026-10-02). B-2 terjawab oleh draf P-18 (暗号表 `nos-s05-dup`); C-27 selesai (E61, v57).
+- **P-6.8** (menunggu keputusan Bambang): B-5, B-14, D-16, A-01 (catatan versi dasar Spec v67). D-4 (P-22) dan D-9 (P-23) ditulis di v65 (2026-10-02). B-2 terjawab oleh draf P-18 (暗号表 `nos-s05-dup`); C-27 selesai (E61, v57).
 - **P-17**: transisi 9/11 setelah Kent c50705, termasuk A-14 dari P-6.7 (detail di bawah). **HOLD** (Bambang 2026-09-29: 「Kau hold dulu ini」): pemasangan condition 9/11 di UI Jira dan penulisan P-17 ditunda sampai Bambang melanjutkan.
-
-- **P-22**: D-4, catatan penyimpangan exec 17290 tanpa penanda TEST (detail di bawah). Disimpan atas perintah Bambang 2026-10-02 「Simpan ke antrean」.
-
-### P-22 · Blok 【2026-09-26 N07 实跑】: exec 17290 tanpa penanda TEST (D-4, DRAF 2026-10-02)
-
-Sudah dicek (2026-10-02): n8n `search_executions` N07 `77PepnEWGqTOCI61` (19 eksekusi, 17290 paling awal); `get_execution` 11 eksekusi pengirim kartu (17290 penuh; 17295, 17506, 17508, 17510, 17554, 17556, 17949, 17954, 17956, 18025 node Build N07 Card / Payload For Notify); 04.5.3 v16 (berlaku 2026-09-26) dan v23 dibaca penuh, §三 sama; Notify contract v18 dibaca penuh; build sheet v64 (blok N07 实跑 2026-09-26, 2026-09-28 (一)(二), 「N07 件改件两次」②, 建设备注 N07 2026-09-26 补); evidence E11, E13, E38, E39.
-
-Hasil per eksekusi (penerima semua DM `D0BUSQHBJF2`, whitelist 甲): 17290 tanpa penanda; 17295, 17506, 17508, 17510 penanda di baris pertama `body`, tidak tebal (sudah tercatat di 「N07 件改件两次」②); 17554 dst. penanda di `title`, tebal. Yang belum tercatat hanya 17290.
-
-**Letak:** setelah poin 「执行 17290：发卡成功…」 di blok 【2026-09-26 N07 实跑】.
-
-> 【2026-10-02 补｜偏差如实登记】执行 17290 所发审批卡**未带** 04.5.3 第三节统一测试标识：n8n 执行记录「Build N07 Card」输出 body＝「Case: SSCSD-435\n审核轮次 · Review round: 1」，无标识行（2026-10-02 实读）。成因：本件测试标识于 2026-09-26T13:14:30Z 方经 update_workflow 加入（versionId `4e076465`，见建设备注「N07 审批卡发送」2026-09-26 补），17290 跑于 13:10:04Z，用的是加入前的版本。当时现行 04.5.3 v16（2026-09-25）第三节已载「测试模式发出的每条 Slack 消息必带 `🧪 【SSCOS 测试 · 请勿处理 ｜ TEST — do not action】`」，不分私信与频道。收件人为建造人本人 DM（白名单甲），未外发。本件全部 11 次发卡执行逐次实读：仅 17290 无标识；17295 起均带，其中 17295／17506／17508／17510 标识在正文首行、未加粗，已于 2026-09-28 改件（versionId `5c304eb6`，见建设备注「N07 件改件两次」②）。
-
-- Terjemahan: kartu exec 17290 tidak membawa penanda tes karena penanda baru ditambahkan pukul 13:14:30Z, sedangkan 17290 jalan pukul 13:10:04Z. Aturan v16 saat itu sudah mewajibkan penanda di setiap pesan Slack mode tes. Penerimanya DM builder sendiri. Dari 11 kartu, hanya 17290 tanpa penanda.
-- Sebelum ditulis: ambil build sheet terbaru dan pastikan poin 「执行 17290：发卡成功…」 masih ada; cocokkan ulang local-id titik sisip.
-- Belum dicek: render kartu 17290 di Slack (data n8n hanya payload ke Notify).
 
 ### P-17 · §二 baris transisi 9 dan 11 setelah Kent c50705 (DRAF, 2026-09-29)
 
@@ -60,6 +44,13 @@ Digabung dari P-6.7 A-14 (C-10, D-2): sumber c50445, c50632, Felix c50644 (sudah
 - Sebelum ditulis: ambil build sheet terbaru, cek OSD-116 setelah c50705, 04.3 versi terbaru §六.
 
 ## Sudah ditulis
+
+### v65 (2026-10-02T04:11:48Z, akun pribadi Bambang, perintah 「Tulis langsung sahaja P22 dan P23」)
+
+Ditulis sebagai **P-22** dan **P-23** (2 `insertNodeAfter`, snapshot `v:64`; dryRun → setelah 2 sisipan dicabut, isi = v64; baca ulang `diffConfluenceContentVersions` v64→v65: +3/−1, 2 hunk, hanya dua paragraf ini; penulis v65 = 712020:0ec04d28… lewat `listConfluenceContentVersions`).
+- **P-22 (D-4)**, local-id `b28d0a010034`, setelah `65e569eed07a` (poin 「执行 17290：发卡成功…」 di blok 【2026-09-26 N07 实跑】): 【2026-10-02 补｜偏差如实登记】 exec 17290 tanpa penanda tes 04.5.3 §三. Dasar: n8n `search_executions` N07 (19 eksekusi) dan `get_execution` 11 eksekusi pengirim kartu; 04.5.3 v16 dan v23 §三; evidence E11 (penanda ditambahkan 13:14:30Z, versionId `4e076465`), E38.
+- **P-23 (D-9)**, local-id `b28d0a010035`, setelah `b28d0a010006` (baris 附表 「测试档案（NTP）待核实」, kolom 解除判据): 【2026-10-02 订正】 kalimat 2026-10-01 「现有来源未写明（推断为 Lifecycle Stage…）」 tidak berlaku; 04.4.2 v15 §三/§四 menulis tiga syarat atasan sah (Lifecycle Stage 15625/15626/15803; bukan TEST｜; tepat satu arsip NTP). NTP-187 cf17996 = Kent dibaca ulang 2026-10-02 (akun Backend Operations). Kolom 「依赖谁」 dan 「不做的后果」 ikut dikoreksi dalam teks yang sama.
+- Isi asli D-9 dari audit 2026-09-28 tidak tercatat di repo; P-23 hanya mengoreksi kalimat yang terbukti salah terhadap source.
 
 ### v61 (2026-09-29T09:13:39Z, akun pribadi Bambang, perintah 「Tulis P-21 ke build sheet dulu」)
 
@@ -862,8 +853,8 @@ Setelah semua status ditulis, **hitung ulang** statistik 附表 (A-03).
 - **B-2:** teks 「写入侧已实建」 untuk `nos-s05-dup`, dan perubahan status 「拟定·未建」→「已建·inactive」.
 - **B-5:** `nos-s05-case` 「事件入口取 S-19 侧主单 key」 vs baris 附表 「S-19 侧建在绩效卡」. Inferensi, belum dikonfirmasi. Usul: diperiksa saat prebuild-scan N01.
 - **B-14:** tiga syarat E16 v40 dan penilaian probe N05. Kutipan harus dicocokkan dengan v40 dulu.
-- ~~**D-4:**~~ Dipindah ke antrean **P-22** (2026-10-02).
-- **D-9:** 实读结论 ④ supervisor. Belum ada teks.
+- ~~**D-4:**~~ **Ditulis v65** sebagai P-22 (2026-10-02).
+- ~~**D-9:**~~ **Ditulis v65** sebagai P-23 (2026-10-02).
 - **D-16:** kutipan 「留存不删（04.5.3 §四）」 mungkin kurang tepat.
 - ~~**C-27:**~~ **Selesai 2026-09-29**: sticky note dan description N07 dikoreksi di n8n (evidence E61, perintah Bambang 「Perbaiki catatan basi di N05 dan N07」), tercatat di build sheet v57 (P-16 ①, 【补】 `b28d09290089`).
 - **Catatan A-01:** apakah Spec v67 memicu kriteria 04.5 §6.1 「基线版本 ≠ 页面当前版本」? Inferensi, belum dikonfirmasi. Belum dijadikan item K.
