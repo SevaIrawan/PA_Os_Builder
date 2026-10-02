@@ -20,8 +20,17 @@ Sisa yang **belum** ditulis setelah v61. Semua ditulis **sekaligus dalam satu ve
 - **P-6.8** (menunggu keputusan Bambang): B-14, A-01 (catatan versi dasar Spec v67). D-4 (P-22) dan D-9 (P-23) ditulis di v65; D-16 (P-24) ditulis di v66 (2026-10-02). A-01 sudah dikirim sebagai pertanyaan ke Kayden (业务签) dan Alden (技术签): OSD-116 **c51067** (2026-10-02, `docs/draft-replies/06-…`); catatan kepala build sheet (「v63～v67 逐版差异本侧未比对」) baru diperbarui setelah mereka menjawab; B-14 di-hold bersama P-17 (butuh UI n8n). B-2 terjawab oleh draf P-18 (暗号表 `nos-s05-dup`); C-27 selesai (E61, v57).
 - **B-5** (dicek saat prebuild-scan N01, bukan keputusan Bambang): dipindah dari P-6.8 pada 2026-10-02 (perintah Bambang 「Iya, pindahkan lalu commit」). Detail di bawah P-6.8.
 - **P-17**: transisi 9/11 setelah Kent c50705, termasuk A-14 dari P-6.7 (detail di bawah). **HOLD** (Bambang 2026-09-29: 「Kau hold dulu ini」): pemasangan condition 9/11 di UI Jira dan penulisan P-17 ditunda sampai Bambang melanjutkan.
+  - **Update 2026-10-02:** dimulai (「kita mulai P17」). Konfigurasi UI dibatalkan tanpa disimpan karena Project Owner SSCSD (Alden, 04.1 v48 §一) tidak bisa dipilih di pemilih Users. Ditanyakan ke Kent dan Alden: OSD-116 **c51072**. Menunggu jawaban; condition belum dipasang (E79–E85, `docs/evidence/2026-10-02-live-checks.md`).
 
 ### P-17 · §二 baris transisi 9 dan 11 setelah Kent c50705 (DRAF, 2026-09-29)
+
+**Keadaan 2026-10-02 (E79–E85):**
+- Kondisi awal (UI, screenshot Bambang): transisi 9 dan 11 belum punya aturan Restrict transition; Perform actions 1 di keduanya; Properties kosong; toggle Customer transitions OFF di 9, tidak tampil di 11. Workflow hanya dipakai Disciplinary Case (1 scheme, 1 project); Last Updated Sep 18, 2026.
+- Isi condition yang dicoba sesuai c50632 (disetujui Kent c50705): 「Restrict who can move a request」 dengan grup `SSCOS｜Service Accounts` + `SSCOS｜HR` + Project Owner SSCSD. Grup bisa dipilih; Project Owner (Alden) tidak bisa: pemilih Users hanya assignee/reporter (sama dengan NSE-1143 c48435, Kent c48441 「已确认是平台/权限问题」). Dibatalkan, tidak disimpan.
+- Dua teks yang tidak didamaikan (CLAUDE.md §0.7): Alden NSE-1143 c48475 「口径：主单侧用严格版 —— 只放服务账号，不放 Administrators。」「主单侧全部适用这条规则」 vs 04.3 v36 §六 执行中止 「仅服务账号、该主单所在 Project 的 Owner，与该 Spec 增补区 B 登记的处置角色组」.
+- Ditanyakan ke Kent dan Alden: OSD-116 c51072 (opsi a: dua grup saja; b: Project Owner lewat grup/role yang ditunjuk; usulan a).
+- Cara baca ulang setelah dipasang: Atlassian_Rovo `getTransitionsForJiraIssue` SSCSD-448 transisi 11 `includeUnavailableTransitions` → harus `isConditional: true`, `isAvailable: false` untuk akun BO. Transisi 9 tidak bisa dibaca ulang tanpa tiket di Pending Approval (membuat tiket tes butuh izin terpisah).
+- Varian draf ①–③ di bawah ditulis sebelum c51072. Isi 「允许：{isi}」 menunggu jawaban c51072.
 
 Sudah dicek (2026-09-29): build sheet **v58** §二 baris transisi 9 (`a1699b53-…`) dan 11 (`1311cdec-…`) dibaca penuh; OSD-116 s.d. **c50705** (c50632, c50644, c50695, c50705 dibaca penuh; tidak ada comment setelah c50705); 04.3 **v36** (2026-09-29 02:16Z, Kayden): diff v35→v36 dibaca penuh, hanya kalimat 维护单 Owner (「治理页 Owner 矩阵」→「目标页面维护说明登记的 Owner」), §六 baris transisi tidak berubah.
 

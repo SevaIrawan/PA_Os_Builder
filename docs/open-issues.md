@@ -119,6 +119,7 @@
 - **Felix_HR, OSD-116 c50644** (2026-09-28 11:55 +07, kepada Kent, cc Bambang, Alden, Kayden): 「盘点里 HR Ops & Data 是 3 人：Felix、Yuki、Tin（CAM）。Tin 现阶段只负责柬埔寨成员的 payroll 和招聘，不负责请假；绩效管理相关事项由 TL 直接负责，所以当时才没有加她进 SSCOS｜HR。该组保持 Felix 和 Yuki 两人即可，3 人与 2 人的差异就是这个原因。」 Felix menulisnya 「补充说明供你判断」, jadi keputusan memakai `SSCOS｜HR` tetap di tangan Kent.
 - **Kent, OSD-116 c50705** (2026-09-29 12:52 +07, dibaca penuh 2026-09-29): 「yes, use SSCOS｜HR for the HR Ops & Data transition condition (Abort Case id 11 and N07 Confirm duplicate), per 04.3 v35 §六. Read today: the group has exactly Felix and Yuki, which Felix confirmed is the right set (Tin stays out, c50644), and it is already the SSCSD Service Desk Team, so no new object is needed.」 Syarat: 「SSCOS｜HR is the HR department group, not a role group. If HR adds someone who is not HR Ops & Data, we split out a dedicated group at that point. When the NTP position field from c50695 exists, the people marked HR Ops & Data there and the members of this group must match — that is the check.」 「Order stays as in c50445」. Dicatat di build sheet v57 (P-15 ③).
 - **Status:** 未开始. Grup sudah diputuskan Kent (c50705). Condition transisi 11 dan 9 belum dipasang; pemasangan lewat UI Jira oleh Bambang, lalu baca ulang.
+- **Update 2026-10-02:** pemasangan dimulai lalu dibatalkan tanpa disimpan. Project Owner SSCSD menurut 04.1 v48 §一 = 「Alden（V1 平台持有）」, tetapi pemilih Users di editor workflow tidak mengembalikan akun (sama dengan Grade, NSE-1143 c48435). Alden NSE-1143 c48475: 「口径：主单侧用严格版 —— 只放服务账号，不放 Administrators。」「主单侧全部适用这条规则」; 04.3 v36 §六 mengizinkan Project Owner dan 处置角色组. Tidak didamaikan. Ditanyakan ke Kent dan Alden di OSD-116 **c51072**. **Status:** 进行中 (menunggu jawaban c51072). Bukti E79–E85.
 
 ### K-10 · Kapan marker `nos-s05-term` ditulis (N20)
 - **Build sheet S-05** (2096463922), tabel 暗号接口契约表 baris 「离职交接认领与审计」: 「建离职单**之前**先写 S-05 侧」. Aturan tabel yang sama: 「先认领后动作：任何写入口在执行写动作**之前**先写认领 marker」.
@@ -161,6 +162,7 @@
 - Saat ini transisi 9 dijalankan oleh callback platform dengan akun layanan (c50558).
 - Terkait K-9: Kent c50705 (2026-09-29) memutuskan `SSCOS｜HR` untuk condition transisi 11 dan N07 Confirm duplicate 「per 04.3 v35 §六」. Kalimat 执法点 04.3 di atas tidak disebut Kent; Claude tidak mendamaikannya.
 - Sumber: audit A-14, C-10 (2026-09-28). **Status:** 待决策. Condition untuk transisi 9 dan 11 tidak dipasang sebelum ada jawaban.
+- **Update 2026-10-02:** Kent c50705 menyebut transisi 9 secara eksplisit (「Abort Case id 11 and N07 Confirm duplicate」). Paragraf 执法点 04.3 v36 §六 tetap tidak didamaikan Claude. Pemasangan menunggu jawaban OSD-116 c51072 (lihat K-9).
 
 ### K-14 · Jalur manual sementara di 偏差登记
 - **Build sheet v52**, 偏差登记 (baris ±198): mengutip jalur manual sementara dari Felix c49317.
