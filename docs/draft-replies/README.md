@@ -13,5 +13,6 @@ Aturan (CLAUDE.md §0.15, §3):
 | 2 | [02-OSD-116-c50989.md](02-OSD-116-c50989.md) | OSD-116 · c50989 | Alden (ke Kent dan Bambang) | Security level Disciplinary Case; baris assignee di build sheet | Terkirim 2026-10-02 sebagai OSD-116 c51056 |
 | 3 | [03-OSD-131-c50993.md](03-OSD-131-c50993.md) | OSD-131 · c50993 | Alden | Pembagian tugas Registry (kerangka project, Issue Type, field 纪律处分记录) | Terkirim 2026-10-02 sebagai OSD-131 c51057 |
 | 4 | [04-OSD-131-c51023.md](04-OSD-131-c51023.md) | OSD-131 · c51023 poin 二 (diminta lagi di c51054) | Zefansstr | Mencocokkan 查询口径 sebelum masuk 04.8 | Terkirim 2026-10-02 sebagai OSD-131 c51058 |
+| 5 | [05-0408-纪律处分记录-查询口径.md](05-0408-纪律处分记录-查询口径.md) | Bukan balasan comment: teks untuk 04.8 baris 纪律处分记录 (dasar: OSD-131 c50993 bagian 三) | — | Teks 查询口径 sisi S-05 | Draf, belum dievaluasi detail. Tidak ditulis ke 04.8 oleh Claude |
 
 Terakhir diperbarui: 2026-10-02.
