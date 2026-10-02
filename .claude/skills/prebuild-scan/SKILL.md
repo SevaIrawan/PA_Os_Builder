@@ -53,6 +53,13 @@ Kent menulis bahwa daftar ini sudah dia masukkan ke 「build skill」 milik tim.
    - **Lima channel terlarang:** #sscos-hr (C0BHL8AE68G), #epic-nse-1045-squad (C0BKUAGTKP1), #general (C06411GVD5K), #nos-governance (C0C0S5CD1S9), #nos-flow-alignment (C0BU1LY53NE).
    - **Yang diperiksa di ⑦:** apakah workflow yang akan dites atau diubah sudah mengikuti butir di atas. Kalau workflow itu sudah dalam tes sebelum 2026-09-30 dan sekarang akan diubah, pemindahan ke #nos-test (dan ke `testMode` kalau lewat Notify) masuk daftar kerja perubahan itu.
 
+   **Node dengan Jira Trigger** (diperiksa di ① dan ④ kalau node yang akan dibangun atau diubah memakai `jiraTrigger`). Sumber: 04.6 v27 §3.3 「Jira 双凭据范式」; Geri NSE-1137 c51051 (2026-10-01); 07.06.1 v44 E4, E14; Alden OSD-116 c50989 poin 3(3). Baca versi terbaru sumber-sumber ini sebelum dipakai.
+   - **Kredensial:** node `jiraTrigger` memakai 「Jira Admin (webhook)」 (`LQCTgGaCS5lZ84O2`, login sebagai akun Alden), hanya untuk mendaftarkan webhook. Semua node tulis memakai Bot_SSC. Kutipan 04.6 §3.3: 「事件监听（jiraTrigger 注册）→ Admin webhook 凭据，仅注册用途；一切写入节点 → 服务账号 Bot_SSC」.
+   - **Kesalahan yang tidak kelihatan saat build:** n8n otomatis memasang `Bot_SSC (Jira write)` di node Jira Trigger. Akibatnya publish gagal dengan 「403 You do not have permission to create WebHook」. Kutipan Geri: 「it fails only at publish — not at build time and not in a dry run」. Jadi kredensial node trigger dicek **sebelum** minta publish, bukan menunggu error.
+   - **Events:** setelah node `jiraTrigger` disimpan di editor, buka di UI dan pastikan events masih ada, lalu uji dengan satu event Jira sungguhan (07.06.1 E4). Peringatan validator 「only allowed when: jiraVersion="cloudOAuth2"」 adalah peringatan palsu; jangan ganti Jira Version (07.06.1 E14).
+   - **Visibilitas tiket:** kalau tiket yang didengarkan memakai security level, akun di balik kredensial webhook (sekarang akun Alden) harus termasuk di level itu, juga di level recusal. Kalau tidak, trigger tidak menerima event (Alden OSD-116 c50989 poin 3(3)).
+   - **Yang diperiksa:** daftar node `jiraTrigger` beserta kredensial yang dipasang, dicek per node. Kalau kredensialnya masih Bot_SSC atau belum pasti, penggantiannya masuk daftar kerja.
+
 2. **Pisahkan hasilnya.**
    - **Sudah ada jawabannya di source:** kutip, jangan ditanyakan.
    - **Kekurangan yang bisa dikerjakan sendiri** dalam batas tulis: masukkan ke daftar kerja.
