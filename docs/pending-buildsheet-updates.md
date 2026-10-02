@@ -17,7 +17,7 @@ Versi build sheet terakhir yang dibaca: **v66** (2026-10-02T04:20:25Z).
 
 Sisa yang **belum** ditulis setelah v61. Semua ditulis **sekaligus dalam satu versi** saat Bambang memerintahkan (permintaan Bambang, 2026-09-29).
 - **P-6.7** (menunggu orang lain): C-01 (backfill nama RT di 04.7; masih belum per 04.7 v51, E69), C-26 (isi §七, keputusan Kayden), D-13 (marker patroli, Geri c50631 dan K-10). A-14 sudah dipindah ke P-17.
-- **P-6.8** (menunggu keputusan Bambang): B-5, B-14, A-01 (catatan versi dasar Spec v67). D-4 (P-22) dan D-9 (P-23) ditulis di v65; D-16 (P-24) ditulis di v66 (2026-10-02). A-01 sudah dijadikan draf pertanyaan ke Kayden (`docs/draft-replies/06-…`, belum dikirim); B-14 di-hold bersama P-17 (butuh UI n8n). B-2 terjawab oleh draf P-18 (暗号表 `nos-s05-dup`); C-27 selesai (E61, v57).
+- **P-6.8** (menunggu keputusan Bambang): B-5, B-14, A-01 (catatan versi dasar Spec v67). D-4 (P-22) dan D-9 (P-23) ditulis di v65; D-16 (P-24) ditulis di v66 (2026-10-02). A-01 sudah dikirim sebagai pertanyaan ke Kayden (业务签) dan Alden (技术签): OSD-116 **c51067** (2026-10-02, `docs/draft-replies/06-…`); catatan kepala build sheet (「v63～v67 逐版差异本侧未比对」) baru diperbarui setelah mereka menjawab; B-14 di-hold bersama P-17 (butuh UI n8n). B-2 terjawab oleh draf P-18 (暗号表 `nos-s05-dup`); C-27 selesai (E61, v57).
 - **P-17**: transisi 9/11 setelah Kent c50705, termasuk A-14 dari P-6.7 (detail di bawah). **HOLD** (Bambang 2026-09-29: 「Kau hold dulu ini」): pemasangan condition 9/11 di UI Jira dan penulisan P-17 ditunda sampai Bambang melanjutkan.
 
 ### P-17 · §二 baris transisi 9 dan 11 setelah Kent c50705 (DRAF, 2026-09-29)
@@ -863,6 +863,6 @@ Setelah semua status ditulis, **hitung ulang** statistik 附表 (A-03).
 - ~~**D-9:**~~ **Ditulis v65** sebagai P-23 (2026-10-02).
 - ~~**D-16:**~~ **Ditulis v66** sebagai P-24 (2026-10-02).
 - ~~**C-27:**~~ **Selesai 2026-09-29**: sticky note dan description N07 dikoreksi di n8n (evidence E61, perintah Bambang 「Perbaiki catatan basi di N05 dan N07」), tercatat di build sheet v57 (P-16 ①, 【补】 `b28d09290089`).
-- **Catatan A-01:** apakah Spec v67 memicu kriteria 04.5 §6.1 「基线版本 ≠ 页面当前版本」? Inferensi, belum dikonfirmasi. Belum dijadikan item K.
+- **Catatan A-01:** apakah Spec v67 memicu kriteria 04.5 §6.1 「基线版本 ≠ 页面当前版本」? Inferensi, belum dikonfirmasi. Belum dijadikan item K. **Update 2026-10-02:** ditanyakan ke Kayden dan Alden di OSD-116 c51067 (diff v58→v59, v59→v61, v61→v62, v62→v67 sudah dibaca; temuan tambahan: baris v24 terhapus di v59). Menunggu jawaban.
 
 
