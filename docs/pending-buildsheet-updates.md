@@ -9,7 +9,7 @@ Aturan:
 - Bahasa: Mandarin, mengikuti isi halaman.
 - Kalau item sudah ditulis ke build sheet, pindahkan ke bagian "Sudah ditulis" dan cantumkan versi halamannya.
 
-Versi build sheet terakhir yang dibaca: **v66** (2026-10-02T04:20:25Z).
+Versi build sheet terakhir yang dibaca: **v68** (2026-10-02T13:58:41Z; HTML lengkap dibaca 2026-10-03 untuk localId P-17, P-26, P-27).
 
 ---
 
@@ -25,10 +25,41 @@ Sisa yang **belum** ditulis setelah v61. Semua ditulis **sekaligus dalam satu ve
   - SSCSD-450 comment 50761 (penulis Backend Operations, 2026-09-29 15:03) isinya memang `[[nos-s05-subject:712020:0ec04d28-9941-4568-b144-a1c4f2dcf138]]`, yaitu akun pribadi Bambang, bukan cf17995 NTP-187.
   - JQL `cf[17995] = "712020:0ec04d28…"` → 0. Ini **bukan** bukti akun itu tidak punya profil, karena akun BO hanya melihat profil dengan cf17995/cf17997 = dirinya (07.06.1 E16).
   - Yang perlu dikoreksi: keterangan di catatan N05 真跑. Dampaknya pada hasil uji N05 18082 (marker subjek menunjuk akun yang bukan NTP-187) belum dinilai; nilai dulu sebelum menulis 【补】.
+  - **Update 2026-10-03:** dampak dinilai (exec 18082 dibaca penuh; 04.5.3 v23 penuh; Spec v67 增补区 A penuh; judul SSCSD-450 dibaca lewat Rovo/BO). Draf siap tulis: **### P-26** di bawah. Perintah Bambang: 「Masukkan ke antrean P-26 dulu… tunggu perintah ku untuk tulis ke build sheet」.
+- **P-27** (baru 2026-10-03): run N20 → qa01 (exec 19333/19334) untuk Alden NSE-1137 c51080, dilaporkan c51115 (E99–E104). Draf siap tulis: **### P-27** di bawah.
 - **P-17**: transisi 9/11 setelah Kent c50705, termasuk A-14 dari P-6.7 (detail di bawah). **HOLD** (Bambang 2026-09-29: 「Kau hold dulu ini」): pemasangan condition 9/11 di UI Jira dan penulisan P-17 ditunda sampai Bambang melanjutkan.
   - **Update 2026-10-02:** dimulai (「kita mulai P17」). Konfigurasi UI dibatalkan tanpa disimpan karena Project Owner SSCSD (Alden, 04.1 v48 §一) tidak bisa dipilih di pemilih Users. Ditanyakan ke Kent dan Alden: OSD-116 **c51072**. Menunggu jawaban; condition belum dipasang (E79–E85, `docs/evidence/2026-10-02-live-checks.md`).
+  - **Update 2026-10-03:** Alden c51088 menjawab (opsi a). Condition dipasang lewat UI (E105–E108), dilaporkan OSD-116 c51117. Varian draf ①–③ 2026-09-29 di bawah **digantikan** oleh draf siap tulis 2026-10-03 (blok pertama di **### P-17**).
 
 ### P-17 · §二 baris transisi 9 dan 11 setelah Kent c50705 (DRAF, 2026-09-29)
+
+**DRAF SIAP TULIS (2026-10-03, menggantikan varian ①–③ di bawah).** Dasar: Alden OSD-116 c51088; pemasangan 2026-10-03 (E105–E107); laporan c51117 (E108). Titik sisip = localId di build sheet **v68**. Status sel diganti hanya kalau Bambang menyetujui butir ⑥.
+
+**① 页首附表 baris 「Abort Case（id 11）转态权限配给 HR Ops & Data 角色组…」, setelah `b28d0a010046`:**
+
+> 【2026-10-03 补】Alden OSD-116 c51088（2026-10-02）答 c51072：「Go with your suggestion (a): only the two groups, SSCOS｜Service Accounts and SSCOS｜HR, with no separate entry for the Project Owner. The 04.3 §6 cell says only these three may move the ticket; it is an upper limit, not a requirement to configure all three.」「Keep Customer transitions off on both transitions」；回读要求「read the condition parameters back with POST /rest/api/3/workflows as in c48531」。2026-10-03 建造人以 Backend Operations 账号经 Jira UI 于转换 9、11 各加一条「Restrict who can move a request」：Restrict to groups＝SSCOS｜Service Accounts、SSCOS｜HR，无其他限制项、无第二条规则（编辑器显示「Restrict transition 1」「MUST BE ALL (1)」「Only 2 groups affect the visibility of this transition」）；两转换 Customer transitions 均为关；Path、Perform actions（1）、Properties 未动；「Update workflow」提示「Workflow updated」，无状态迁移步骤。回读：SSCSD-448（Pending Sub-tickets）以 Backend Operations 读可用转换，Abort Case (11) 由 isConditional false／isAvailable true 变为 isConditional true／isAvailable false（Backend Operations 不在两组内），Complete (10) 未变；转换 9 无 Pending Approval 态 TEST 单，API 不可读，以保存后重开编辑器目视确认。POST /rest/api/3/workflows 参数回读未做（本侧无可调用该端点的工具），已于 OSD-116 c51117 请 Alden 回读或示下做法。Abort Case (11) 未实跑。本行状态由「未开始」改为「已完成但未验收」，依 Anchor 04 §七.6；证据：c51088、c51117、上述回读。
+
+**② §二 transisi 9, kolom 允许执行者, setelah `b28d0a010061`:**
+
+> 【2026-10-03 补】上条「Project Owner 一项待 OSD-116 c51072」已答：Alden c51088 定为只用两组（SSCOS｜Service Accounts＋SSCOS｜HR），不另列 Project Owner。condition 已于 2026-10-03 经 UI 配置（建造人，Backend Operations），详见页首附表「Abort Case（id 11）…」行 2026-10-03 补；本转换 Customer transitions 仍为关。本行原文「仅服务账号」与 Kayden c50445「同口径」、04.3 §六「执法点」段并存一事，建造侧仍不调和。
+
+**③ §二 transisi 11, kolom 允许执行者, setelah `b28d0a010062`:**
+
+> 【2026-10-03 补】condition 已于 2026-10-03 配置（只用两组，Alden c51088）：SSCSD-448 读得 isConditional true、isAvailable false（Backend Operations，2026-10-03）；详见页首附表「Abort Case（id 11）…」行 2026-10-03 补。另：2026-10-03 编辑器于本转换显示 Customer transitions 开关，状态为关；OSD-116 c51072 曾写「Abort Case shows no toggle」，已于 c51117 更正。
+
+**④ 第八区 「尚未测试」 baris 四条终态转换, setelah `b28d0a010019`:**
+
+> 【2026-10-03 补】condition 已于 2026-10-03 配置（见页首附表「Abort Case（id 11）…」行 2026-10-03 补）；Abort Case (11) 仍未实跑。
+
+**⑤ 第八区 「尚未测试」 baris 三条转换的属性 API 回读, setelah `b28d0a01001a`:**
+
+> 【2026-10-03 补】condition 配置后重读：Abort Case (11) isConditional true、isAvailable false（SSCSD-448，Backend Operations，2026-10-03）；转换 9 无 Pending Approval 态单据，API 未重读。condition 参数值（POST /rest/api/3/workflows）未回读，见 OSD-116 c51117。
+
+**⑥ (perlu persetujuan terpisah) 页首附表 baris yang sama, sel status `63652e279248` 「未开始」 → 「已完成但未验收」.** Dasar: Anchor 04 §七.6 (enam label); preseden P-18 (sel status diganti, alasan dicatat di 【补】). Kalau tidak disetujui, kalimat 「本行状态由…改为…」 di ① dibuang.
+
+Sudah dicek (2026-10-03): OSD-116 s.d. c51106 (c51088, c51072 penuh); NSE-1143 c48435–c48531 (c48475, c48487, c48531 penuh); build sheet v68 HTML (paragraf 268–276, 1105–1145, 1330–1338); SSCSD-448 transisi sebelum/sesudah (Rovo/BO).
+
+---
 
 **Keadaan 2026-10-02 (E79–E85):**
 - Kondisi awal (UI, screenshot Bambang): transisi 9 dan 11 belum punya aturan Restrict transition; Perform actions 1 di keduanya; Properties kosong; toggle Customer transitions OFF di 9, tidak tampil di 11. Workflow hanya dipakai Disciplinary Case (1 scheme, 1 project); Last Updated Sep 18, 2026.
@@ -58,6 +89,32 @@ Digabung dari P-6.7 A-14 (C-10, D-2): sumber c50445, c50632, Felix c50644 (sudah
 
 - Dasar tidak mendamaikan: CLAUDE.md §0-7; K-9 dan K-13 di `docs/open-issues.md`.
 - Sebelum ditulis: ambil build sheet terbaru, cek OSD-116 setelah c50705, 04.3 versi terbaru §六.
+
+### P-26 · Koreksi catatan 【2026-09-29 N05 真跑】 (DRAF SIAP TULIS, 2026-10-03)
+
+Dasar: build sheet v68 paragraf `b28d092a0112`; N05 exec 18082 (n8n `get_execution`, dibaca penuh); NTP-187 cf17995 (Rovo/BO, 2026-10-03); 04.5.3 v23 §二/§三 (dibaca penuh 2026-10-03); Spec S-05 v67 增补区 A (dibaca penuh 2026-10-03); judul SSCSD-450 (Rovo/BO). Prinsip: build sheet mengikuti source (CLAUDE.md §0.13).
+
+**Satu paragraf, setelah `b28d092a0112` (catatan N05 真跑, 第八区):**
+
+> 【2026-10-03 订正｜原文保留不删】上文 N05 真跑 前置所记「comment 50761，NTP-187 cf17995 所指账号」不实：①comment 50761 之 marker 为 [[nos-s05-subject:712020:0ec04d28-9941-4568-b144-a1c4f2dcf138]]，系建造人 Bambang 个人账号；NTP-187 cf17995 为 Backend Operations（712020:a93fd17c-5a69-4f06-8c8e-9a58f117a4bd），2026-10-03 以 Backend Operations 实读，JQL cf[17995] 命中 NTP-187 一张。该 marker 未按本页暗号接口契约表主体标识行「accountId（NTP 档案 cf17995 所指账号）」写入。②执行 18082 实读（n8n get_execution）：N05 无读取 NTP 的节点；两候选 SSCSD-449／448 均无主体 marker，「Mark Candidate Match Result」两次 candidateAccountId null、isMatch false，故 duplicateFound=false 来自「候选无 marker」，非账号比对。本次实跑覆盖「候选无 marker → 不重复」一支；「候选有 marker → 比对命中／不命中」两支未真跑。上文「两候选 isMatch false → N05 Result duplicateFound=false」之结果不变。③依 04.5.3 v23 第三节 Jira 侧双标识：「两项须同时具备，任一缺失视为未标识」，第 2 项「主体标识：测试单的主体标识字段（04.5 增补区 A 所指定）指向测试档案，不指向任何真实员工」；S-05 Spec v67 增补区 A：「员工姓名／工号（主体标识）…由系统根据 NTP 员工资料自动带出…构成主单标题第二段」。SSCSD-450 标题「TEST｜S-05 N07 字段回写测试 · W3 拒绝」无主体标识段，且本流程测试未使用第二节「收件人就是主体」例外（见第八区 2026-09-28 补）。故 SSCSD-450 仅满足标题标识，不构成带主体测试，与 SSCSD-411 同属无主体的结构测试；本页不声称其双标识已满足。
+
+Terjemahan Indonesia ada di chat 2026-10-03 (isi sama).
+
+### P-27 · Run N20 → qa01 untuk Alden NSE-1137 c51080 (DRAF SIAP TULIS, 2026-10-03)
+
+Dasar: Alden NSE-1137 c51080; exec 19333/19334 (E100); baca ulang Jira dan N20 (E101, E102); error workflow (E103); laporan c51115 (E104). Titik sisip = localId build sheet v68.
+
+**① 页首附表 baris 「离职侧「系统触发入口」qa01CkZBQfx8eLsK 发布」, setelah `b28d0a010047`:**
+
+> 【2026-10-03 补】Alden NSE-1137 c51080（2026-10-02）答 Geri c51066：「When a sub-workflow has a published version, the caller runs the published version (confirmed on the platform side).」「A published workflow cannot keep an enabled call node pointing at an unpublished one — n8n refuses the publish (proven on 11/09). So N20 can only be published after qa01.」问 2「publish now: not yet. Our suggestion is to publish it in the same batch that enables its write nodes, and before S-05 N20 is published.」；并请建造人做一次 N20 运行（「with N20's own write nodes kept off」）。2026-10-03 建造人手动运行未发布的 N20（执行 19333，详见第八区 2026-10-03 记录）：入口出现子执行 19334（mode integrated，parentExecution 19333），返回 ok:false。执行记录不载 versionId；入口无发布版本（activeVersionId null），现行 versionId 2fe54c1e（2026-10-02 03:09Z 保存，早于运行），故所运行者为该保存版本系推定、非 n8n 记录。已于 NSE-1137 c51115 回报。本行状态不变（入口仍未发布）。
+
+**② 第八区, catatan baru setelah paragraf P-26 (yang disisip setelah `b28d092a0112`); kalau P-26 tidak ditulis, setelah `b28d092a0112`:**
+
+> 【2026-10-03 N20→入口 未发布调用实跑】执行 19333（n8n UI，建造人操作；N20 未发布，versionId 6971acbc；仅 pin「N20 Trigger」与「Write Triggered Marker Comment (internal)」，「Create Trigger Link (S-05 to resignation)」停用）：入参 caseKey SSCSD-442、employeeAccountId 712020:a93fd17c…（NTP-187 cf17995）、judgmentType 纪律违规，judgmentRef 与 upstreamEvent 均以 TEST｜ 开头。「Read S-05 Case Comments」254 ms 真读（1 条，c50666）→ alreadyTriggered false → Map 15846 → Call 619 ms，子执行 19334（入口，mode integrated）：「Lookup Subject Profile (NTP)」307 ms 得 NTP-187「TEST｜Ali」，「Get Upstream Case Comments」157 ms，六个写入节点 0 ms（停用），「Return Created」回 ok:false → N20 止于「Check Entry Result」（error）。回读：SSCSD-442 仍 1 条 comment、无 issue link；2026-10-03 无新建离职单（JQL，Backend Operations）；N20 pin 已撤（updatedAt 2026-10-03T03:32:42Z，versionId 仍 6971acbc）；错误工作流 VUIgv9Ujj1KEoIne 无对应执行（UI 目视，最新仍 2026-10-01 执行 18720）。另：同日先前执行 19330（子执行 19331）经 test_workflow 且「Read S-05 Case Comments」一并 pin，不作本项证据。
+
+Sudah dicek (2026-10-03): NSE-1137 s.d. c51107 (c51066, c51078, c51080 penuh); build sheet v68 HTML paragraf 276–289, 1448–1462.
+
+---
 
 ## Sudah ditulis
 
