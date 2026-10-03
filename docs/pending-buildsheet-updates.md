@@ -19,9 +19,35 @@ Sisa yang **belum** ditulis setelah v61. Semua ditulis **sekaligus dalam satu ve
 - **P-6.7** (menunggu orang lain): C-01 (backfill nama RT di 04.7; masih belum per 04.7 v51, E69), C-26 (isi §七, keputusan Kayden), D-13 (marker patroli, Geri c50631 dan K-10). A-14 sudah dipindah ke P-17.
 - **P-6.8** (menunggu keputusan Bambang): B-14, A-01 (catatan versi dasar Spec v67). D-4 (P-22) dan D-9 (P-23) ditulis di v65; D-16 (P-24) ditulis di v66 (2026-10-02). A-01 sudah dikirim sebagai pertanyaan ke Kayden (业务签) dan Alden (技术签): OSD-116 **c51067** (2026-10-02, `docs/draft-replies/06-…`); catatan kepala build sheet (「v63～v67 逐版差异本侧未比对」) baru diperbarui setelah mereka menjawab; B-14: cek UI n8n selesai 2026-10-02 (lihat detail B-14 di bawah); sisa ④ menunggu Kent c50989, ⑤ butuh izin tes terpisah. B-2 terjawab oleh draf P-18 (暗号表 `nos-s05-dup`); C-27 selesai (E61, v57).
 - **B-5** (dicek saat prebuild-scan N01, bukan keputusan Bambang): dipindah dari P-6.8 pada 2026-10-02 (perintah Bambang 「Iya, pindahkan lalu commit」). Detail di bawah P-6.8.
-- **P-25** (baru 2026-10-02, teks 【补】 belum dibuat): build sheet baris 附表 「主单载体（Issue Type＋Workflow）」 dan §二 「证据边界」 menulis 「现仅余 Create (1) 未经 API 回读」. Dicek lewat UI 2026-10-02 (E89): Create tanpa rule (Validate details dan Perform actions kosong), Restrict transition tidak tersedia untuk transisi awal, Properties kosong, Customer transitions OFF, Event Issue Created. API memang tidak bisa membaca transisi awal, jadi buktinya UI 目视 (Bambang). Screen tidak tampil di panel editor; catatan lama 「UI 确认未挂 screen」 (2026-09-18) tetap.
+- **P-25** (2026-10-02; **dicek ulang 2026-10-03 pada v70**): sebagian **sudah tertulis di v68** (E93): 附表 「主单载体」 `b28d0a010050` dan §一 `b28d0a010054` sudah memuat cek UI Create (1). Yang belum: tiga tempat yang masih berbunyi 「仅余 Create (1)」 tanpa catatan lanjutan (§二 证据边界 `b28d0a010016`, 第八区 `b28d0a01001a`, 九区 `b28d0a01001c`). Draf siap tulis: **### P-25** di bawah.
 - P-17, P-26, P-27: sudah ditulis di **v69** dan **v70** (2026-10-03), lihat bagian "Sudah ditulis".
 - **P-28** (baru 2026-10-03, draf siap tulis di bawah): status baris 附表 Abort Case 「已完成但未验收」 → 「已验证」 setelah Alden OSD-116 c51121 membaca ulang condition 9/11 dengan `POST /rest/api/3/workflows`. Perintah Bambang: 「Masuk antrian dulu」.
+- **P-29** (baru 2026-10-03, = B-14 dari P-6.8): penilaian probe N05 terhadap 07.06.1 E16, ditambah rujukan ke koreksi P-26. Draf siap tulis: **### P-29** di bawah.
+- **P-30** (baru 2026-10-03, = K-10): status baris 附表 「本件与本页暗号接口契约表『先认领后动作』约束的适用」 (sel `12362d6f7898` = 「被阻塞」). Build sheet `b28d0a010010`: 「本补不改状态，状态是否随之改变由建造人定」. **Menunggu keputusan Bambang**; teks dibuat sesudah diputuskan.
+
+### P-25 · Catatan 「仅余 Create (1)」 yang tersisa (DRAF SIAP TULIS, 2026-10-03)
+
+Dasar: E89 (2026-10-02, UI 目视 Bambang); build sheet v68 sudah memuat `b28d0a010050` (附表 「主单载体」) dan `b28d0a010054`. Dicek pada v70: tiga tempat di bawah belum punya catatan lanjutan.
+
+**① §二 证据边界, setelah `b28d0a010016`:**
+
+> 【2026-10-03 补】上文「现仅余 Create (1) 未经 API 回读」：初始转换 API 不可读；Create (1) 已于 2026-10-02 经 Jira UI 目视核对（建造人），见页首附表「主单载体（Issue Type＋Workflow）」行 2026-10-02 补。
+
+**② 第八区 「尚未测试」 baris atribut transisi, setelah paragraf P-28 ③ (yang disisip setelah `b28d0a030005`); kalau P-28 tidak ditulis, setelah `b28d0a030005`:**
+
+> 【2026-10-03 补】上文「本行仅余 Create (1)」：Create (1) 已于 2026-10-02 经 Jira UI 目视核对（见页首附表「主单载体」行 2026-10-02 补）；初始转换 API 不可读，故不另作 API 回读。
+
+**③ 九区, setelah `b28d0a01001c`:**
+
+> 【2026-10-03 补】上文②「仅余 Create (1)」：Create (1) 已于 2026-10-02 经 Jira UI 目视核对（见页首附表「主单载体」行 2026-10-02 补）。
+
+### P-29 · B-14: probe N05 dinilai terhadap 07.06.1 E16 (DRAF SIAP TULIS, 2026-10-03)
+
+Dasar: E86 (07.06.1 v44, E16 tidak berubah sejak v40), E87–E88 (struktur N05 dan kredensial lewat UI); n8n `search_workflows` 2026-10-03: N05 `updatedAt` 2026-09-29T08:59:58Z (sama dengan E87); P-26 (v69 `b28d0a030006`). Titik sisip: 第一区 baris N05, setelah `b28d092a0107` (catatan 「主路径已真实执行一次」).
+
+> 【2026-10-03 补】本件（LJwiAZFfnuq6tmju，versionId 664828ee）对照 07.06.1 E16（v44；E16 自 v40 未变）逐项核：①「对照探针用运行件挂的凭据跑，不用人的账号代测」——「Confirm Case Visible (control probe)」与「Search Open S-05 Cases」凭证均为 Bot_SSC (Jira write)（2026-10-02 UI 目视，建造人）：满足；②探针查一张已知存在的单、不以 mypermissions 代替——探针读本次 Case 本身（Jira get，key 为空即抛错）：满足；③探针单为承重对象，「须在建造单登记它的用途」——本件探针对象为每次处理的 Case 本身、非固定单，是否仍须登记，未裁；④单据级 issue security 下「探针改用「生产同类对象计数下限」」——取决于 Disciplinary Case 的保密档位（OSD-116 c50989、Kent 提案 c51106、Alden c51123），未定；⑤另演练一次「看不见」、「断言闸报错而不是放行」——未做（执行 17565 仅 pin key 为空），须另行授权，新凭证仅由平台管理员建（07.06.1 D4）。上文执行 18082「未命中」系两候选均无主体 marker 所致，见第八区 2026-10-03 订正。本行状态不变。
+
+---
 
 ### P-28 · Alden c51121: condition 9/11 terbaca ulang, status → 已验证 (DRAF SIAP TULIS, 2026-10-03)
 
