@@ -9,25 +9,37 @@ Aturan:
 - Bahasa: Mandarin, mengikuti isi halaman.
 - Kalau item sudah ditulis ke build sheet, pindahkan ke bagian "Sudah ditulis" dan cantumkan versi halamannya.
 
-Versi build sheet terakhir yang dibaca: **v70** (2026-10-03T05:03:10Z, baca ulang sesudah penulisan).
+Versi build sheet terakhir yang dibaca: **v71** (2026-10-03T08:30:07Z, baca ulang sesudah penulisan).
 
 ---
 
 ## Antre
 
-Sisa yang **belum** ditulis setelah v61. Semua ditulis **sekaligus dalam satu versi** saat Bambang memerintahkan (permintaan Bambang, 2026-09-29).
+Sisa yang **belum** ditulis (dicek ulang 2026-10-03 sesudah v71). P-17, P-26, P-27 ditulis di v69/v70; P-25, P-28, P-29, P-30, P-31, P-32 ditulis di **v71** (lihat "Sudah ditulis"). Yang tersisa di bawah ini semuanya **menunggu orang lain**; tidak ada draf yang siap tulis. Semua ditulis **sekaligus dalam satu versi** saat Bambang memerintahkan (permintaan Bambang, 2026-09-29).
 - **P-6.7** (menunggu orang lain; **divalidasi ulang 2026-10-03**, E116): C-01 (backfill nama RT di 04.7; masih belum per **04.7 v54**), C-26 (isi §七; keputusan Kayden 9/29 sudah ada dan sudah tercatat di `b28d0a01002d`, yang ditunggu sekarang teks halaman 03, masih v4 placeholder), D-13 (marker patroli; bagian Geri c50631 sudah dijawab c50668 dan tertulis di v57, sisanya bergantung K-10 yang 被阻塞; isi D-13 hanya tercatat satu baris tabel sejak commit 61a90a6, draf teksnya tidak ada). A-14 sudah dipindah ke P-17. C-15 sudah ditulis di v60 (P-20), dihapus dari daftar tunggu.
-- **P-6.8** (menunggu keputusan Bambang): B-14 sudah menjadi **P-29**; A-01: catatan kepala build sheet sekarang menjadi **P-31** (Alden c51082 sudah menjawab, Kayden belum). D-4 (P-22) dan D-9 (P-23) ditulis di v65; D-16 (P-24) ditulis di v66 (2026-10-02). A-01 sudah dikirim sebagai pertanyaan ke Kayden (业务签) dan Alden (技术签): OSD-116 **c51067** (2026-10-02, `docs/draft-replies/06-…`); catatan kepala build sheet (「v63～v67 逐版差异本侧未比对」) baru diperbarui setelah mereka menjawab; B-14: cek UI n8n selesai 2026-10-02 (lihat detail B-14 di bawah); sisa ④ menunggu Kent c50989, ⑤ butuh izin tes terpisah. B-2 terjawab oleh draf P-18 (暗号表 `nos-s05-dup`); C-27 selesai (E61, v57).
+- **P-6.8** (sisa: A-01 menunggu 业务签 Kayden; dicek sampai OSD-116 c51123): B-14 sudah ditulis sebagai **P-29** (v71); catatan 技术签 Alden c51082 sudah ditulis sebagai **P-31** (v71). Kalau Kayden menjawab, catatan baru menyusul. D-4 (P-22) dan D-9 (P-23) ditulis di v65; D-16 (P-24) ditulis di v66 (2026-10-02). A-01 sudah dikirim sebagai pertanyaan ke Kayden (业务签) dan Alden (技术签): OSD-116 **c51067** (2026-10-02, `docs/draft-replies/06-…`); catatan kepala build sheet (「v63～v67 逐版差异本侧未比对」) baru diperbarui setelah mereka menjawab; B-14: cek UI n8n selesai 2026-10-02 (lihat detail B-14 di bawah); sisa ④ menunggu Kent c50989, ⑤ butuh izin tes terpisah. B-2 terjawab oleh draf P-18 (暗号表 `nos-s05-dup`); C-27 selesai (E61, v57).
 - **B-5** (dicek saat prebuild-scan N01, bukan keputusan Bambang): dipindah dari P-6.8 pada 2026-10-02 (perintah Bambang 「Iya, pindahkan lalu commit」). Detail di bawah P-6.8.
-- **P-25** (2026-10-02; **dicek ulang 2026-10-03 pada v70**): sebagian **sudah tertulis di v68** (E93): 附表 「主单载体」 `b28d0a010050` dan §一 `b28d0a010054` sudah memuat cek UI Create (1). Yang belum: tiga tempat yang masih berbunyi 「仅余 Create (1)」 tanpa catatan lanjutan (§二 证据边界 `b28d0a010016`, 第八区 `b28d0a01001a`, 九区 `b28d0a01001c`). Draf siap tulis: **### P-25** di bawah.
-- P-17, P-26, P-27: sudah ditulis di **v69** dan **v70** (2026-10-03), lihat bagian "Sudah ditulis".
-- **P-28** (baru 2026-10-03, draf siap tulis di bawah): status baris 附表 Abort Case 「已完成但未验收」 → 「已验证」 setelah Alden OSD-116 c51121 membaca ulang condition 9/11 dengan `POST /rest/api/3/workflows`. Perintah Bambang: 「Masuk antrian dulu」.
-- **P-29** (baru 2026-10-03, = B-14 dari P-6.8): penilaian probe N05 terhadap 07.06.1 E16, ditambah rujukan ke koreksi P-26. Draf siap tulis: **### P-29** di bawah.
-- **P-31** (baru 2026-10-03, perintah Bambang 「sekalian update semua」): `b28d0a010041` 「截至 c51072 未答」 sudah usang; Alden OSD-116 c51082 memberi 技术签 (butir 1, 4, 6 dikecualikan, page v67), Kayden (业务签) belum menjawab sampai c51123. Draf siap tulis: **### P-31** di bawah.
-- **P-32** (baru 2026-10-03, perintah yang sama): `b28d09280004` 「04.7 v51…仍载「缺位由HR Ops & Data代为受理」，与 Spec v67 不一致」 sudah usang; 04.7 v54 sudah disamakan dengan Spec (Alden c51082 butir 四). Draf siap tulis: **### P-32** di bawah.
-- **P-30** (baru 2026-10-03, = K-10): status baris 附表 「本件与本页暗号接口契约表『先认领后动作』约束的适用」 tetap **「被阻塞」** (keputusan Bambang 「Pilih a」, 2026-10-03, sesudah membaca Geri NSE-1137 c51128), alasan diperbarui. Draf siap tulis: **### P-30** di bawah.
 
-### P-25 · Catatan 「仅余 Create (1)」 yang tersisa (DRAF SIAP TULIS, 2026-10-03)
+## Sudah ditulis
+
+### v71 (2026-10-03T08:30:07Z, akun pribadi Bambang, perintah 「Tulis semua antrean ke build sheet sekarang」)
+
+P-25, P-28, P-29, P-30, P-31, P-32: 10 operasi (1 `replaceNode`, 9 `insertNodeAfter`), snapshotToken `v:70`. dryRun dua kali (yang pertama: dua sisipan sesudah `b28d0a030005` terbalik, urutan operasi ditukar). Baca ulang v71 (HTML penuh): 9 sisipan masing-masing 1 kali dan bersebelahan dengan anchor; sel `63652e279248` = 「已验证」; v71 tanpa sisipan dan dengan status dikembalikan = v70; v71 = hasil dryRun (evidence E117).
+
+| Item | localId baru | Sesudah |
+|---|---|---|
+| P-28 ① | (ganti) `63652e279248` 「已完成但未验收」→「已验证」 | — |
+| P-28 ② | `b28d0a031001` | `b28d0a030009` |
+| P-28 ③ | `b28d0a031002` | `b28d0a030005` |
+| P-25 ② | `b28d0a031003` | `b28d0a031002` |
+| P-25 ① | `b28d0a031004` | `b28d0a010016` |
+| P-25 ③ | `b28d0a031005` | `b28d0a01001c` |
+| P-29 | `b28d0a031006` | `b28d092a0107` |
+| P-30 | `b28d0a031007` | `b28d0a010048` |
+| P-31 | `b28d0a031008` | `b28d0a010041` |
+| P-32 | `b28d0a031009` | `b28d09290116` |
+
+#### P-25 · Catatan 「仅余 Create (1)」 yang tersisa (DITULIS v71; draf asli, 2026-10-03)
 
 Dasar: E89 (2026-10-02, UI 目视 Bambang); build sheet v68 sudah memuat `b28d0a010050` (附表 「主单载体」) dan `b28d0a010054`. Dicek pada v70: tiga tempat di bawah belum punya catatan lanjutan.
 
@@ -43,7 +55,7 @@ Dasar: E89 (2026-10-02, UI 目视 Bambang); build sheet v68 sudah memuat `b28d0a
 
 > 【2026-10-03 补】上文②「仅余 Create (1)」：Create (1) 已于 2026-10-02 经 Jira UI 目视核对（见页首附表「主单载体」行 2026-10-02 补）。
 
-### P-29 · B-14: probe N05 dinilai terhadap 07.06.1 E16 (DRAF SIAP TULIS, 2026-10-03; dikoreksi 2026-10-03 sesudah validasi: v44→v45, wording ②, isi ④)
+#### P-29 · B-14: probe N05 dinilai terhadap 07.06.1 E16 (DITULIS v71; draf asli, 2026-10-03; dikoreksi 2026-10-03 sesudah validasi: v44→v45, wording ②, isi ④)
 
 Dasar: E86 (07.06.1 v44, E16 tidak berubah sejak v40), **E116 (07.06.1 v45 dibaca penuh 2026-10-03; pesan versi v45 hanya E12/E5; teks E16 dicocokkan dengan kutipan draf)**, OSD-116 c50989 dan c51123 (dibaca penuh 2026-10-03), E87–E88 (struktur N05 dan kredensial lewat UI); n8n `search_workflows` 2026-10-03: N05 `updatedAt` 2026-09-29T08:59:58Z (sama dengan E87); P-26 (v69 `b28d0a030006`). Titik sisip: 第一区 baris N05, setelah `b28d092a0107` (catatan 「主路径已真实执行一次」).
 
@@ -51,7 +63,7 @@ Dasar: E86 (07.06.1 v44, E16 tidak berubah sejak v40), **E116 (07.06.1 v45 dibac
 
 ---
 
-### P-31 · A-01: 技术签 Alden c51082 (DRAF SIAP TULIS, 2026-10-03)
+#### P-31 · A-01: 技术签 Alden c51082 (DITULIS v71; draf asli, 2026-10-03)
 
 Dasar: build sheet v70 `b28d0a010041` (「截至 c51072 未答」); Alden OSD-116 **c51082** (2026-10-02 16:42 +0700, dibaca penuh 2026-10-03); OSD-116 dibaca sampai c51123 (total 221): tidak ada jawaban Kayden. Titik sisip: setelah `b28d0a010041` (kepala halaman).
 
@@ -59,7 +71,7 @@ Dasar: build sheet v70 `b28d0a010041` (「截至 c51072 未答」); Alden OSD-11
 
 ---
 
-### P-32 · 04.7 v54: kalimat 「缺位由HR Ops & Data代为受理」 sudah diganti (DRAF SIAP TULIS, 2026-10-03)
+#### P-32 · 04.7 v54: kalimat 「缺位由HR Ops & Data代为受理」 sudah diganti (DITULIS v71; draf asli, 2026-10-03)
 
 Dasar: build sheet v70 `b28d09280004` (「另记：04.7 v51（2026-09-24）RT-HR-DISCIPLINARY-SUBMIT 行仍载「缺位由HR Ops & Data代为受理」，与 Spec v67 不一致」); 04.7 **v54** (2026-10-02T09:41Z, dibaca penuh 2026-10-03; pesan versi 「RT-HR-DISCIPLINARY-SUBMIT 提交资格与 S-05 Spec v67 同步：缺位不设代为受理，系统拦截告警、HR 修档案后重新提交」); Alden OSD-116 c51082 butir 四. Titik sisip: setelah `b28d09290116` (paragraf terakhir sel yang sama). Status baris (待决策, karena 提点② Felix) tidak diubah.
 
@@ -67,7 +79,7 @@ Dasar: build sheet v70 `b28d09280004` (「另记：04.7 v51（2026-09-24）RT-HR
 
 ---
 
-### P-30 · K-10: alasan 「被阻塞」 diperbarui (DRAF SIAP TULIS, 2026-10-03)
+#### P-30 · K-10: alasan 「被阻塞」 diperbarui (DITULIS v71; draf asli, 2026-10-03)
 
 Dasar: build sheet v70 `b28d0a010010` (「本补不改状态，状态是否随之改变由建造人定」); Geri NSE-1137 c50804, c51066, **c51128** (dibaca penuh 2026-10-03; validasi ulang 2026-10-03: kutipan cocok, tidak ada comment sesudah c51128); Alden c51080; Anchor 04 §七 (阻塞对象、阻塞人、恢复条件). Keputusan Bambang: 「Pilih a」. Sel status `12362d6f7898` tidak diubah. Titik sisip: setelah `b28d0a010048` (paragraf terakhir baris itu).
 
@@ -75,7 +87,7 @@ Dasar: build sheet v70 `b28d0a010010` (「本补不改状态，状态是否随�
 
 ---
 
-### P-28 · Alden c51121: condition 9/11 terbaca ulang, status → 已验证 (DRAF SIAP TULIS, 2026-10-03)
+#### P-28 · Alden c51121: condition 9/11 terbaca ulang, status → 已验证 (DITULIS v71; draf asli, 2026-10-03)
 
 Dasar: Alden OSD-116 **c51121** (2026-10-03 13:47 +0700, dibaca penuh): 「I read back NOS: Disciplinary Workflow (version 2) with POST /rest/api/3/workflows」; 「This matches c51088, so this item can be closed.」 Titik sisip = localId build sheet **v70** (dibaca ulang 2026-10-03 sesudah penulisan v70).
 
@@ -90,10 +102,6 @@ Dasar: Alden OSD-116 **c51121** (2026-10-03 13:47 +0700, dibaca penuh): 「I rea
 > 【2026-10-03 补】上条「condition 参数值（POST /rest/api/3/workflows）未回读」已由 Alden OSD-116 c51121 回读：转换 9、11 各一条「Restrict who can move a request」，groupIds＝SSCOS｜Service Accounts、SSCOS｜HR，无 users／roles／其他 condition；两转换均无 customer-transition property。
 
 Terjemahan Indonesia ada di chat 2026-10-03.
-
----
-
-## Sudah ditulis
 
 ### v70 (2026-10-03T05:03:10Z, akun pribadi Bambang, perintah 「Ya ganti statusnya sekarang」)
 
