@@ -23,7 +23,7 @@ Sisa yang **belum** ditulis setelah v61. Semua ditulis **sekaligus dalam satu ve
 - P-17, P-26, P-27: sudah ditulis di **v69** dan **v70** (2026-10-03), lihat bagian "Sudah ditulis".
 - **P-28** (baru 2026-10-03, draf siap tulis di bawah): status baris 附表 Abort Case 「已完成但未验收」 → 「已验证」 setelah Alden OSD-116 c51121 membaca ulang condition 9/11 dengan `POST /rest/api/3/workflows`. Perintah Bambang: 「Masuk antrian dulu」.
 - **P-29** (baru 2026-10-03, = B-14 dari P-6.8): penilaian probe N05 terhadap 07.06.1 E16, ditambah rujukan ke koreksi P-26. Draf siap tulis: **### P-29** di bawah.
-- **P-30** (baru 2026-10-03, = K-10): status baris 附表 「本件与本页暗号接口契约表『先认领后动作』约束的适用」 (sel `12362d6f7898` = 「被阻塞」). Build sheet `b28d0a010010`: 「本补不改状态，状态是否随之改变由建造人定」. **Menunggu keputusan Bambang**; teks dibuat sesudah diputuskan.
+- **P-30** (baru 2026-10-03, = K-10): status baris 附表 「本件与本页暗号接口契约表『先认领后动作』约束的适用」 tetap **「被阻塞」** (keputusan Bambang 「Pilih a」, 2026-10-03, sesudah membaca Geri NSE-1137 c51128), alasan diperbarui. Draf siap tulis: **### P-30** di bawah.
 
 ### P-25 · Catatan 「仅余 Create (1)」 yang tersisa (DRAF SIAP TULIS, 2026-10-03)
 
@@ -46,6 +46,14 @@ Dasar: E89 (2026-10-02, UI 目视 Bambang); build sheet v68 sudah memuat `b28d0a
 Dasar: E86 (07.06.1 v44, E16 tidak berubah sejak v40), E87–E88 (struktur N05 dan kredensial lewat UI); n8n `search_workflows` 2026-10-03: N05 `updatedAt` 2026-09-29T08:59:58Z (sama dengan E87); P-26 (v69 `b28d0a030006`). Titik sisip: 第一区 baris N05, setelah `b28d092a0107` (catatan 「主路径已真实执行一次」).
 
 > 【2026-10-03 补】本件（LJwiAZFfnuq6tmju，versionId 664828ee）对照 07.06.1 E16（v44；E16 自 v40 未变）逐项核：①「对照探针用运行件挂的凭据跑，不用人的账号代测」——「Confirm Case Visible (control probe)」与「Search Open S-05 Cases」凭证均为 Bot_SSC (Jira write)（2026-10-02 UI 目视，建造人）：满足；②探针查一张已知存在的单、不以 mypermissions 代替——探针读本次 Case 本身（Jira get，key 为空即抛错）：满足；③探针单为承重对象，「须在建造单登记它的用途」——本件探针对象为每次处理的 Case 本身、非固定单，是否仍须登记，未裁；④单据级 issue security 下「探针改用「生产同类对象计数下限」」——取决于 Disciplinary Case 的保密档位（OSD-116 c50989、Kent 提案 c51106、Alden c51123），未定；⑤另演练一次「看不见」、「断言闸报错而不是放行」——未做（执行 17565 仅 pin key 为空），须另行授权，新凭证仅由平台管理员建（07.06.1 D4）。上文执行 18082「未命中」系两候选均无主体 marker 所致，见第八区 2026-10-03 订正。本行状态不变。
+
+---
+
+### P-30 · K-10: alasan 「被阻塞」 diperbarui (DRAF SIAP TULIS, 2026-10-03)
+
+Dasar: build sheet v70 `b28d0a010010` (「本补不改状态，状态是否随之改变由建造人定」); Geri NSE-1137 c50804, c51066, **c51128** (dibaca penuh 2026-10-03); Alden c51080; Anchor 04 §七 (阻塞对象、阻塞人、恢复条件). Keputusan Bambang: 「Pilih a」. Sel status `12362d6f7898` tidak diubah. Titik sisip: setelah `b28d0a010048` (paragraf terakhir baris itu).
+
+> 【2026-10-03 补】上文「状态是否随之改变由建造人定」：建造人定为维持「被阻塞」，阻塞理由更新如下。入口认领已建并经干跑（Geri NSE-1137 c50804：「claim-before-create is built」，执行 18138／18137／18132）；callerPolicy 与上游读权已于执行 19333／19334 实证（Geri c51128：「Closed on my side」）。未证者为写：Geri c51128「Still open, and it is the half that matters most: write access on the upstream project. Every write node was off, so nothing proved Bot_SSC can post the claim comment onto an S-05 case. That resolves on the first run with writes enabled, and it is worth doing deliberately on a TEST case」；入口「Write Claim (Upstream Case)」仍停用（Geri c51066）；入口未发布，发布「in the same batch that enables its write nodes, and before S-05 N20 is published」（Alden c51080）。阻塞对象：入口认领写入 S-05 主单；阻塞人：Geri（入口写入节点启用）、Alden（发布放行）；恢复条件：入口写入节点启用后于 TEST 单实跑，认领 comment 写入 S-05 主单并回读成功。本行状态不变（被阻塞）。
 
 ---
 
