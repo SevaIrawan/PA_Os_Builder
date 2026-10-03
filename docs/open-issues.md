@@ -160,6 +160,7 @@
 - **Felix, OSD-116 c50486**: 「S-05 Spec 已完成对应修订，页面现 v67（内部版本 v28）」.
 - Sumber: audit build sheet v52, temuan A-07 (2026-09-28). Isi baris 04.7 dibaca oleh agen audit; Claude tidak membuka ulang sendiri.
 - Claude tidak mendamaikan. Menurut catatan build sheet, isi baris kandidat itu wewenang Owner alur. **Status:** 待决策.
+- **Update 2026-10-03 (perintah Bambang 「Ya update K-12 lalu commit」):** konflik sudah selesai di sumber. **04.7 v54** (2026-10-02T09:41Z, pesan versi 「RT-HR-DISCIPLINARY-SUBMIT 提交资格与 S-05 Spec v67 同步：缺位不设代为受理，系统拦截告警、HR 修档案后重新提交」; dibaca penuh oleh Claude 2026-10-03, E116): baris SUBMIT sekarang 「若系统无法解析出该员工的 Direct Supervisor，系统拦截提交并告警，转 HR 修正档案后重新提交，不设代为受理」. **Alden OSD-116 c51082** butir 四 (Owner 04.7): 「这页归我，已改成与 Spec 一致（04.7 v54），建造侧以 v54 为准」. Tercatat di build sheet v71 (P-32, `b28d0a031009`). **Status:** 已验证.
 
 ### K-13 · Siapa yang boleh menjalankan transisi 9 (确认重复)
 - **Build sheet v52 §二**, baris transisi 9, kolom 允许执行者: 「仅服务账号」.
