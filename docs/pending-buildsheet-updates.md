@@ -1016,7 +1016,7 @@ Setelah semua status ditulis, **hitung ulang** statistik 附表 (A-03).
 | C-01 + §四 标题格式 | Nama Request Type dua bahasa dari Felix c50261 butir 1; yang tersisa: backfill 04.7 (dicek 2026-10-03: 04.7 **v54** baris SUBMIT masih 「双语Request Type／Slack展示名称待流程Owner确认」, EVENT belum ada nama dua bahasa) | Baca ulang 04.7 |
 | ~~C-15 (keputusan)~~ | ~~Isi kartu: 到期日期, 纪律记录有效期~~ **Sudah ditulis v60** sebagai 订正 C-15 di P-20 (ada di Spec, tidak perlu ditanyakan). Dihapus dari daftar tunggu 2026-10-03 | — |
 | C-26 (isi) | Isi §七 | ~~Keputusan Kayden (9/29)~~ Keputusan sudah ada (#nos-bo 1790648322.803329), tercatat di `b28d0a01002d`. Sekarang menunggu teks halaman 03 (1677000718, dicek 2026-10-03: masih v4, placeholder, 2026-09-16) |
-| D-13 | Marker patroli 卡死／漏账 (hanya baris ini yang ada sejak 61a90a6; tidak ada draf teks) | Geri c50631 sudah dijawab c50668 (tertulis v57); sisa: K-10 (被阻塞) |
+| D-13 | Marker patroli 卡死／漏账 (hanya baris ini yang ada sejak 61a90a6; tidak ada draf teks) | Geri c50631 sudah dijawab c50668 (tertulis v57); sisa: K-10 (被阻塞; Geri c51140 menanyakan tanggal aktivasi node tulis ke Alden/Kent, belum dijawab per 2026-10-03) |
 
 ##### P-6.8 · Belum diputuskan Bambang (tidak masuk antrean tulis)
 - **B-2:** teks 「写入侧已实建」 untuk `nos-s05-dup`, dan perubahan status 「拟定·未建」→「已建·inactive」.
