@@ -9,7 +9,7 @@ Aturan:
 - Bahasa: Mandarin, mengikuti isi halaman.
 - Kalau item sudah ditulis ke build sheet, pindahkan ke bagian "Sudah ditulis" dan cantumkan versi halamannya.
 
-Versi build sheet terakhir yang dibaca: **v68** (2026-10-02T13:58:41Z; HTML lengkap dibaca 2026-10-03 untuk localId P-17, P-26, P-27).
+Versi build sheet terakhir yang dibaca: **v70** (2026-10-03T05:03:10Z, baca ulang sesudah penulisan).
 
 ---
 
@@ -20,16 +20,29 @@ Sisa yang **belum** ditulis setelah v61. Semua ditulis **sekaligus dalam satu ve
 - **P-6.8** (menunggu keputusan Bambang): B-14, A-01 (catatan versi dasar Spec v67). D-4 (P-22) dan D-9 (P-23) ditulis di v65; D-16 (P-24) ditulis di v66 (2026-10-02). A-01 sudah dikirim sebagai pertanyaan ke Kayden (业务签) dan Alden (技术签): OSD-116 **c51067** (2026-10-02, `docs/draft-replies/06-…`); catatan kepala build sheet (「v63～v67 逐版差异本侧未比对」) baru diperbarui setelah mereka menjawab; B-14: cek UI n8n selesai 2026-10-02 (lihat detail B-14 di bawah); sisa ④ menunggu Kent c50989, ⑤ butuh izin tes terpisah. B-2 terjawab oleh draf P-18 (暗号表 `nos-s05-dup`); C-27 selesai (E61, v57).
 - **B-5** (dicek saat prebuild-scan N01, bukan keputusan Bambang): dipindah dari P-6.8 pada 2026-10-02 (perintah Bambang 「Iya, pindahkan lalu commit」). Detail di bawah P-6.8.
 - **P-25** (baru 2026-10-02, teks 【补】 belum dibuat): build sheet baris 附表 「主单载体（Issue Type＋Workflow）」 dan §二 「证据边界」 menulis 「现仅余 Create (1) 未经 API 回读」. Dicek lewat UI 2026-10-02 (E89): Create tanpa rule (Validate details dan Perform actions kosong), Restrict transition tidak tersedia untuk transisi awal, Properties kosong, Customer transitions OFF, Event Issue Created. API memang tidak bisa membaca transisi awal, jadi buktinya UI 目视 (Bambang). Screen tidak tampil di panel editor; catatan lama 「UI 确认未挂 screen」 (2026-09-18) tetap.
-- **P-26** (baru 2026-10-03, teks 【补】 belum dibuat; dicatat atas perintah Bambang 「Remark dulu yang salah di build sheet untuk diperbaiki nanti, masukan list dulu」): build sheet v68, catatan 【2026-09-29 N05 真跑】 (执行 18082), menulis 「Backend Operations 于 SSCSD-450 写主体 marker [[nos-s05-subject:712020:0ec04d28-9941-4568-b144-a1c4f2dcf138]]（comment 50761，NTP-187 cf17995 所指账号）」. Keterangan 「NTP-187 cf17995 所指账号」 **salah**. Dibaca 2026-10-03 lewat Atlassian_Rovo (akun Backend Operations):
-  - NTP-187 cf17995 = Backend Operations `712020:a93fd17c-5a69-4f06-8c8e-9a58f117a4bd`. JQL `cf[17995] = "712020:a93fd17c…"` → totalCount 1 (NTP-187). Baris lain di build sheet yang sama juga menulis 「NTP-187 的 cf17995 正是建造账号（Backend Operations）」.
-  - SSCSD-450 comment 50761 (penulis Backend Operations, 2026-09-29 15:03) isinya memang `[[nos-s05-subject:712020:0ec04d28-9941-4568-b144-a1c4f2dcf138]]`, yaitu akun pribadi Bambang, bukan cf17995 NTP-187.
-  - JQL `cf[17995] = "712020:0ec04d28…"` → 0. Ini **bukan** bukti akun itu tidak punya profil, karena akun BO hanya melihat profil dengan cf17995/cf17997 = dirinya (07.06.1 E16).
-  - Yang perlu dikoreksi: keterangan di catatan N05 真跑. Dampaknya pada hasil uji N05 18082 (marker subjek menunjuk akun yang bukan NTP-187) belum dinilai; nilai dulu sebelum menulis 【补】.
-  - **Update 2026-10-03:** dampak dinilai (exec 18082 dibaca penuh; 04.5.3 v23 penuh; Spec v67 增补区 A penuh; judul SSCSD-450 dibaca lewat Rovo/BO). Draf siap tulis: **### P-26** di bawah. Perintah Bambang: 「Masukkan ke antrean P-26 dulu… tunggu perintah ku untuk tulis ke build sheet」.
-- **P-27** (baru 2026-10-03): run N20 → qa01 (exec 19333/19334) untuk Alden NSE-1137 c51080, dilaporkan c51115 (E99–E104). Draf siap tulis: **### P-27** di bawah.
-- **P-17**: transisi 9/11 setelah Kent c50705, termasuk A-14 dari P-6.7 (detail di bawah). **HOLD** (Bambang 2026-09-29: 「Kau hold dulu ini」): pemasangan condition 9/11 di UI Jira dan penulisan P-17 ditunda sampai Bambang melanjutkan.
-  - **Update 2026-10-02:** dimulai (「kita mulai P17」). Konfigurasi UI dibatalkan tanpa disimpan karena Project Owner SSCSD (Alden, 04.1 v48 §一) tidak bisa dipilih di pemilih Users. Ditanyakan ke Kent dan Alden: OSD-116 **c51072**. Menunggu jawaban; condition belum dipasang (E79–E85, `docs/evidence/2026-10-02-live-checks.md`).
-  - **Update 2026-10-03:** Alden c51088 menjawab (opsi a). Condition dipasang lewat UI (E105–E108), dilaporkan OSD-116 c51117. Varian draf ①–③ 2026-09-29 di bawah **digantikan** oleh draf siap tulis 2026-10-03 (blok pertama di **### P-17**).
+- P-17, P-26, P-27: sudah ditulis di **v69** dan **v70** (2026-10-03), lihat bagian "Sudah ditulis".
+
+## Sudah ditulis
+
+### v70 (2026-10-03T05:03:10Z, akun pribadi Bambang, perintah 「Ya ganti statusnya sekarang」)
+
+- P-17 ⑥: sel status `63652e279248` 「未开始」 → 「已完成但未验收」 (`replaceNode`), ditambah paragraf `b28d0a030009` setelah `b28d0a030001` yang mencatat alasan perubahan (paragraf ① v69 masih berbunyi 「本行状态不变」). Baca ulang: sel = 「已完成但未验收」, paragraf bersebelahan dengan `b28d0a030001`, sisa halaman = v69. Bukti E110.
+
+### v69 (2026-10-03T04:56:39Z, akun pribadi Bambang, perintah 「Antrean 3 tadi aja kau update sekarang ke buildsheet」)
+
+- P-17 ①–⑤ (`b28d0a030001`–`b28d0a030005`), P-26 (`b28d0a030006`), P-27 ② (`b28d0a030007`, sesudah P-26), P-27 ① (`b28d0a030008`). P-17 ⑥ tidak ditulis di versi ini (belum disetujui); kalimat perubahan status di ① diganti 「本行状态不变」. Dua kali dryRun (yang pertama menghasilkan urutan P-26/N20 terbalik, diperbaiki). Baca ulang: 8 paragraf ada dan teksnya sama dengan draf; sisa halaman = v68. Bukti E109.
+- Butir di Antre saat ditulis (disalin apa adanya):
+
+  - **P-26** (baru 2026-10-03, teks 【补】 belum dibuat; dicatat atas perintah Bambang 「Remark dulu yang salah di build sheet untuk diperbaiki nanti, masukan list dulu」): build sheet v68, catatan 【2026-09-29 N05 真跑】 (执行 18082), menulis 「Backend Operations 于 SSCSD-450 写主体 marker [[nos-s05-subject:712020:0ec04d28-9941-4568-b144-a1c4f2dcf138]]（comment 50761，NTP-187 cf17995 所指账号）」. Keterangan 「NTP-187 cf17995 所指账号」 **salah**. Dibaca 2026-10-03 lewat Atlassian_Rovo (akun Backend Operations):
+    - NTP-187 cf17995 = Backend Operations `712020:a93fd17c-5a69-4f06-8c8e-9a58f117a4bd`. JQL `cf[17995] = "712020:a93fd17c…"` → totalCount 1 (NTP-187). Baris lain di build sheet yang sama juga menulis 「NTP-187 的 cf17995 正是建造账号（Backend Operations）」.
+    - SSCSD-450 comment 50761 (penulis Backend Operations, 2026-09-29 15:03) isinya memang `[[nos-s05-subject:712020:0ec04d28-9941-4568-b144-a1c4f2dcf138]]`, yaitu akun pribadi Bambang, bukan cf17995 NTP-187.
+    - JQL `cf[17995] = "712020:0ec04d28…"` → 0. Ini **bukan** bukti akun itu tidak punya profil, karena akun BO hanya melihat profil dengan cf17995/cf17997 = dirinya (07.06.1 E16).
+    - Yang perlu dikoreksi: keterangan di catatan N05 真跑. Dampaknya pada hasil uji N05 18082 (marker subjek menunjuk akun yang bukan NTP-187) belum dinilai; nilai dulu sebelum menulis 【补】.
+    - **Update 2026-10-03:** dampak dinilai (exec 18082 dibaca penuh; 04.5.3 v23 penuh; Spec v67 增补区 A penuh; judul SSCSD-450 dibaca lewat Rovo/BO). Draf siap tulis: **### P-26** di bawah. Perintah Bambang: 「Masukkan ke antrean P-26 dulu… tunggu perintah ku untuk tulis ke build sheet」.
+  - **P-27** (baru 2026-10-03): run N20 → qa01 (exec 19333/19334) untuk Alden NSE-1137 c51080, dilaporkan c51115 (E99–E104). Draf siap tulis: **### P-27** di bawah.
+  - **P-17**: transisi 9/11 setelah Kent c50705, termasuk A-14 dari P-6.7 (detail di bawah). **HOLD** (Bambang 2026-09-29: 「Kau hold dulu ini」): pemasangan condition 9/11 di UI Jira dan penulisan P-17 ditunda sampai Bambang melanjutkan.
+    - **Update 2026-10-02:** dimulai (「kita mulai P17」). Konfigurasi UI dibatalkan tanpa disimpan karena Project Owner SSCSD (Alden, 04.1 v48 §一) tidak bisa dipilih di pemilih Users. Ditanyakan ke Kent dan Alden: OSD-116 **c51072**. Menunggu jawaban; condition belum dipasang (E79–E85, `docs/evidence/2026-10-02-live-checks.md`).
+    - **Update 2026-10-03:** Alden c51088 menjawab (opsi a). Condition dipasang lewat UI (E105–E108), dilaporkan OSD-116 c51117. Varian draf ①–③ 2026-09-29 di bawah **digantikan** oleh draf siap tulis 2026-10-03 (blok pertama di **### P-17**).
 
 ### P-17 · §二 baris transisi 9 dan 11 setelah Kent c50705 (DRAF, 2026-09-29)
 
@@ -59,7 +72,6 @@ Sisa yang **belum** ditulis setelah v61. Semua ditulis **sekaligus dalam satu ve
 
 Sudah dicek (2026-10-03): OSD-116 s.d. c51106 (c51088, c51072 penuh); NSE-1143 c48435–c48531 (c48475, c48487, c48531 penuh); build sheet v68 HTML (paragraf 268–276, 1105–1145, 1330–1338); SSCSD-448 transisi sebelum/sesudah (Rovo/BO).
 
----
 
 **Keadaan 2026-10-02 (E79–E85):**
 - Kondisi awal (UI, screenshot Bambang): transisi 9 dan 11 belum punya aturan Restrict transition; Perform actions 1 di keduanya; Properties kosong; toggle Customer transitions OFF di 9, tidak tampil di 11. Workflow hanya dipakai Disciplinary Case (1 scheme, 1 project); Last Updated Sep 18, 2026.
@@ -116,7 +128,6 @@ Sudah dicek (2026-10-03): NSE-1137 s.d. c51107 (c51066, c51078, c51080 penuh); b
 
 ---
 
-## Sudah ditulis
 
 ### v66 (2026-10-02T04:20:25Z, akun pribadi Bambang, perintah 「Tulis langsung ke build sheet, update antrean lalu commit」)
 
