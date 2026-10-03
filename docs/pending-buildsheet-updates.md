@@ -21,6 +21,25 @@ Sisa yang **belum** ditulis setelah v61. Semua ditulis **sekaligus dalam satu ve
 - **B-5** (dicek saat prebuild-scan N01, bukan keputusan Bambang): dipindah dari P-6.8 pada 2026-10-02 (perintah Bambang 「Iya, pindahkan lalu commit」). Detail di bawah P-6.8.
 - **P-25** (baru 2026-10-02, teks 【补】 belum dibuat): build sheet baris 附表 「主单载体（Issue Type＋Workflow）」 dan §二 「证据边界」 menulis 「现仅余 Create (1) 未经 API 回读」. Dicek lewat UI 2026-10-02 (E89): Create tanpa rule (Validate details dan Perform actions kosong), Restrict transition tidak tersedia untuk transisi awal, Properties kosong, Customer transitions OFF, Event Issue Created. API memang tidak bisa membaca transisi awal, jadi buktinya UI 目视 (Bambang). Screen tidak tampil di panel editor; catatan lama 「UI 确认未挂 screen」 (2026-09-18) tetap.
 - P-17, P-26, P-27: sudah ditulis di **v69** dan **v70** (2026-10-03), lihat bagian "Sudah ditulis".
+- **P-28** (baru 2026-10-03, draf siap tulis di bawah): status baris 附表 Abort Case 「已完成但未验收」 → 「已验证」 setelah Alden OSD-116 c51121 membaca ulang condition 9/11 dengan `POST /rest/api/3/workflows`. Perintah Bambang: 「Masuk antrian dulu」.
+
+### P-28 · Alden c51121: condition 9/11 terbaca ulang, status → 已验证 (DRAF SIAP TULIS, 2026-10-03)
+
+Dasar: Alden OSD-116 **c51121** (2026-10-03 13:47 +0700, dibaca penuh): 「I read back NOS: Disciplinary Workflow (version 2) with POST /rest/api/3/workflows」; 「This matches c51088, so this item can be closed.」 Titik sisip = localId build sheet **v70** (dibaca ulang 2026-10-03 sesudah penulisan v70).
+
+**① Sel status 页首附表 baris 「Abort Case（id 11）转态权限配给…」, `63652e279248`:** 「已完成但未验收」 → 「已验证」 (`replaceNode`).
+
+**② 附表 baris yang sama, setelah `b28d0a030009`:**
+
+> 【2026-10-03 补】Alden OSD-116 c51121（2026-10-03）以 POST /rest/api/3/workflows 回读 NOS: Disciplinary Workflow（version 2）：「Cancel as Duplicate (9) and Abort Case (11) each carry exactly one "Restrict who can move a request" condition. Its groupIds are two groups: SSCOS｜Service Accounts and SSCOS｜HR. No users, roles or other conditions.」「Neither transition has the customer-transition property, so both are closed to customers.」「This matches c51088, so this item can be closed.」本行状态由「已完成但未验收」改为「已验证」，依 Anchor 04 §七.6；证据：c51121。Abort Case (11) 实跑仍未做，由第八区「尚未测试」行跟踪，不在本行范围。
+
+**③ 第八区 「尚未测试」 baris atribut transisi, setelah `b28d0a030005`:**
+
+> 【2026-10-03 补】上条「condition 参数值（POST /rest/api/3/workflows）未回读」已由 Alden OSD-116 c51121 回读：转换 9、11 各一条「Restrict who can move a request」，groupIds＝SSCOS｜Service Accounts、SSCOS｜HR，无 users／roles／其他 condition；两转换均无 customer-transition property。
+
+Terjemahan Indonesia ada di chat 2026-10-03.
+
+---
 
 ## Sudah ditulis
 
