@@ -16,13 +16,15 @@ Versi build sheet terakhir yang dibaca: **v70** (2026-10-03T05:03:10Z, baca ulan
 ## Antre
 
 Sisa yang **belum** ditulis setelah v61. Semua ditulis **sekaligus dalam satu versi** saat Bambang memerintahkan (permintaan Bambang, 2026-09-29).
-- **P-6.7** (menunggu orang lain): C-01 (backfill nama RT di 04.7; masih belum per 04.7 v51, E69), C-26 (isi §七, keputusan Kayden), D-13 (marker patroli, Geri c50631 dan K-10). A-14 sudah dipindah ke P-17.
-- **P-6.8** (menunggu keputusan Bambang): B-14, A-01 (catatan versi dasar Spec v67). D-4 (P-22) dan D-9 (P-23) ditulis di v65; D-16 (P-24) ditulis di v66 (2026-10-02). A-01 sudah dikirim sebagai pertanyaan ke Kayden (业务签) dan Alden (技术签): OSD-116 **c51067** (2026-10-02, `docs/draft-replies/06-…`); catatan kepala build sheet (「v63～v67 逐版差异本侧未比对」) baru diperbarui setelah mereka menjawab; B-14: cek UI n8n selesai 2026-10-02 (lihat detail B-14 di bawah); sisa ④ menunggu Kent c50989, ⑤ butuh izin tes terpisah. B-2 terjawab oleh draf P-18 (暗号表 `nos-s05-dup`); C-27 selesai (E61, v57).
+- **P-6.7** (menunggu orang lain; **divalidasi ulang 2026-10-03**, E116): C-01 (backfill nama RT di 04.7; masih belum per **04.7 v54**), C-26 (isi §七; keputusan Kayden 9/29 sudah ada dan sudah tercatat di `b28d0a01002d`, yang ditunggu sekarang teks halaman 03, masih v4 placeholder), D-13 (marker patroli; bagian Geri c50631 sudah dijawab c50668 dan tertulis di v57, sisanya bergantung K-10 yang 被阻塞; isi D-13 hanya tercatat satu baris tabel sejak commit 61a90a6, draf teksnya tidak ada). A-14 sudah dipindah ke P-17. C-15 sudah ditulis di v60 (P-20), dihapus dari daftar tunggu.
+- **P-6.8** (menunggu keputusan Bambang): B-14 sudah menjadi **P-29**; A-01: catatan kepala build sheet sekarang menjadi **P-31** (Alden c51082 sudah menjawab, Kayden belum). D-4 (P-22) dan D-9 (P-23) ditulis di v65; D-16 (P-24) ditulis di v66 (2026-10-02). A-01 sudah dikirim sebagai pertanyaan ke Kayden (业务签) dan Alden (技术签): OSD-116 **c51067** (2026-10-02, `docs/draft-replies/06-…`); catatan kepala build sheet (「v63～v67 逐版差异本侧未比对」) baru diperbarui setelah mereka menjawab; B-14: cek UI n8n selesai 2026-10-02 (lihat detail B-14 di bawah); sisa ④ menunggu Kent c50989, ⑤ butuh izin tes terpisah. B-2 terjawab oleh draf P-18 (暗号表 `nos-s05-dup`); C-27 selesai (E61, v57).
 - **B-5** (dicek saat prebuild-scan N01, bukan keputusan Bambang): dipindah dari P-6.8 pada 2026-10-02 (perintah Bambang 「Iya, pindahkan lalu commit」). Detail di bawah P-6.8.
 - **P-25** (2026-10-02; **dicek ulang 2026-10-03 pada v70**): sebagian **sudah tertulis di v68** (E93): 附表 「主单载体」 `b28d0a010050` dan §一 `b28d0a010054` sudah memuat cek UI Create (1). Yang belum: tiga tempat yang masih berbunyi 「仅余 Create (1)」 tanpa catatan lanjutan (§二 证据边界 `b28d0a010016`, 第八区 `b28d0a01001a`, 九区 `b28d0a01001c`). Draf siap tulis: **### P-25** di bawah.
 - P-17, P-26, P-27: sudah ditulis di **v69** dan **v70** (2026-10-03), lihat bagian "Sudah ditulis".
 - **P-28** (baru 2026-10-03, draf siap tulis di bawah): status baris 附表 Abort Case 「已完成但未验收」 → 「已验证」 setelah Alden OSD-116 c51121 membaca ulang condition 9/11 dengan `POST /rest/api/3/workflows`. Perintah Bambang: 「Masuk antrian dulu」.
 - **P-29** (baru 2026-10-03, = B-14 dari P-6.8): penilaian probe N05 terhadap 07.06.1 E16, ditambah rujukan ke koreksi P-26. Draf siap tulis: **### P-29** di bawah.
+- **P-31** (baru 2026-10-03, perintah Bambang 「sekalian update semua」): `b28d0a010041` 「截至 c51072 未答」 sudah usang; Alden OSD-116 c51082 memberi 技术签 (butir 1, 4, 6 dikecualikan, page v67), Kayden (业务签) belum menjawab sampai c51123. Draf siap tulis: **### P-31** di bawah.
+- **P-32** (baru 2026-10-03, perintah yang sama): `b28d09280004` 「04.7 v51…仍载「缺位由HR Ops & Data代为受理」，与 Spec v67 不一致」 sudah usang; 04.7 v54 sudah disamakan dengan Spec (Alden c51082 butir 四). Draf siap tulis: **### P-32** di bawah.
 - **P-30** (baru 2026-10-03, = K-10): status baris 附表 「本件与本页暗号接口契约表『先认领后动作』约束的适用」 tetap **「被阻塞」** (keputusan Bambang 「Pilih a」, 2026-10-03, sesudah membaca Geri NSE-1137 c51128), alasan diperbarui. Draf siap tulis: **### P-30** di bawah.
 
 ### P-25 · Catatan 「仅余 Create (1)」 yang tersisa (DRAF SIAP TULIS, 2026-10-03)
@@ -41,17 +43,33 @@ Dasar: E89 (2026-10-02, UI 目视 Bambang); build sheet v68 sudah memuat `b28d0a
 
 > 【2026-10-03 补】上文②「仅余 Create (1)」：Create (1) 已于 2026-10-02 经 Jira UI 目视核对（见页首附表「主单载体」行 2026-10-02 补）。
 
-### P-29 · B-14: probe N05 dinilai terhadap 07.06.1 E16 (DRAF SIAP TULIS, 2026-10-03)
+### P-29 · B-14: probe N05 dinilai terhadap 07.06.1 E16 (DRAF SIAP TULIS, 2026-10-03; dikoreksi 2026-10-03 sesudah validasi: v44→v45, wording ②, isi ④)
 
-Dasar: E86 (07.06.1 v44, E16 tidak berubah sejak v40), E87–E88 (struktur N05 dan kredensial lewat UI); n8n `search_workflows` 2026-10-03: N05 `updatedAt` 2026-09-29T08:59:58Z (sama dengan E87); P-26 (v69 `b28d0a030006`). Titik sisip: 第一区 baris N05, setelah `b28d092a0107` (catatan 「主路径已真实执行一次」).
+Dasar: E86 (07.06.1 v44, E16 tidak berubah sejak v40), **E116 (07.06.1 v45 dibaca penuh 2026-10-03; pesan versi v45 hanya E12/E5; teks E16 dicocokkan dengan kutipan draf)**, OSD-116 c50989 dan c51123 (dibaca penuh 2026-10-03), E87–E88 (struktur N05 dan kredensial lewat UI); n8n `search_workflows` 2026-10-03: N05 `updatedAt` 2026-09-29T08:59:58Z (sama dengan E87); P-26 (v69 `b28d0a030006`). Titik sisip: 第一区 baris N05, setelah `b28d092a0107` (catatan 「主路径已真实执行一次」).
 
-> 【2026-10-03 补】本件（LJwiAZFfnuq6tmju，versionId 664828ee）对照 07.06.1 E16（v44；E16 自 v40 未变）逐项核：①「对照探针用运行件挂的凭据跑，不用人的账号代测」——「Confirm Case Visible (control probe)」与「Search Open S-05 Cases」凭证均为 Bot_SSC (Jira write)（2026-10-02 UI 目视，建造人）：满足；②探针查一张已知存在的单、不以 mypermissions 代替——探针读本次 Case 本身（Jira get，key 为空即抛错）：满足；③探针单为承重对象，「须在建造单登记它的用途」——本件探针对象为每次处理的 Case 本身、非固定单，是否仍须登记，未裁；④单据级 issue security 下「探针改用「生产同类对象计数下限」」——取决于 Disciplinary Case 的保密档位（OSD-116 c50989、Kent 提案 c51106、Alden c51123），未定；⑤另演练一次「看不见」、「断言闸报错而不是放行」——未做（执行 17565 仅 pin key 为空），须另行授权，新凭证仅由平台管理员建（07.06.1 D4）。上文执行 18082「未命中」系两候选均无主体 marker 所致，见第八区 2026-10-03 订正。本行状态不变。
+> 【2026-10-03 补】本件（LJwiAZFfnuq6tmju，versionId 664828ee）对照 07.06.1 E16（v45；E16 自 v40 未变）逐项核：①「对照探针用运行件挂的凭据跑，不用人的账号代测」——「Confirm Case Visible (control probe)」与「Search Open S-05 Cases」凭证均为 Bot_SSC (Jira write)（2026-10-02 UI 目视，建造人）：满足；②探针查一张已知存在的单、不以 mypermissions 代替——探针读本次 Case 本身（Jira get，返回无 key 即抛错）：满足；③探针单为承重对象，「须在建造单登记它的用途」——本件探针对象为每次处理的 Case 本身、非固定单，是否仍须登记，未裁；④E16「对挂了单据级安全级别的 project」探针改用「生产同类对象计数下限」：SSCSD 已有 issue security scheme（HR Restricted／Finance Restricted），Disciplinary Case 现无级别（Alden OSD-116 c50989）；Kent c51106 阶段 1 拟加「HR 机密」档，Alden c51123 已就该档成员表态。本件探针是否须改用计数下限，未裁；⑤另演练一次「看不见」、「断言闸报错而不是放行」——未做（执行 17565 仅 pin key 为空），须另行授权，新凭证仅由平台管理员建（07.06.1 D4）。上文执行 18082「未命中」系两候选均无主体 marker 所致，见第八区 2026-10-03 订正。本行状态不变。
+
+---
+
+### P-31 · A-01: 技术签 Alden c51082 (DRAF SIAP TULIS, 2026-10-03)
+
+Dasar: build sheet v70 `b28d0a010041` (「截至 c51072 未答」); Alden OSD-116 **c51082** (2026-10-02 16:42 +0700, dibaca penuh 2026-10-03); OSD-116 dibaca sampai c51123 (total 221): tidak ada jawaban Kayden. Titik sisip: setelah `b28d0a010041` (kepala halaman).
+
+> 【2026-10-03 补】上句「截至 c51072 未答」已更：Alden OSD-116 c51082（2026-10-02）技术签对第 1、4、6 项均裁「技术签豁免」，并载「以上三项以本留言为技术签裁决人豁免留痕，对应页面 page v67。业务签请 Kayden 另行裁定。两签都定了之后，请 Felix 按最新页面重发 OSD-FREEZE，建造侧以新冻结标记为准。」业务签（Kayden）截至 OSD-116 c51123 未答。
+
+---
+
+### P-32 · 04.7 v54: kalimat 「缺位由HR Ops & Data代为受理」 sudah diganti (DRAF SIAP TULIS, 2026-10-03)
+
+Dasar: build sheet v70 `b28d09280004` (「另记：04.7 v51（2026-09-24）RT-HR-DISCIPLINARY-SUBMIT 行仍载「缺位由HR Ops & Data代为受理」，与 Spec v67 不一致」); 04.7 **v54** (2026-10-02T09:41Z, dibaca penuh 2026-10-03; pesan versi 「RT-HR-DISCIPLINARY-SUBMIT 提交资格与 S-05 Spec v67 同步：缺位不设代为受理，系统拦截告警、HR 修档案后重新提交」); Alden OSD-116 c51082 butir 四. Titik sisip: setelah `b28d09290116` (paragraf terakhir sel yang sama). Status baris (待决策, karena 提点② Felix) tidak diubah.
+
+> 【2026-10-03 补】上文「另记：04.7 v51…仍载「缺位由HR Ops & Data代为受理」，与 Spec v67 不一致」已不成立：04.7 v54（2026-10-02）该行现载「若系统无法解析出该员工的 Direct Supervisor，系统拦截提交并告警，转 HR 修正档案后重新提交，不设代为受理」；Alden OSD-116 c51082 第四项：「这页归我，已改成与 Spec 一致（04.7 v54），建造侧以 v54 为准」。本行状态不变。
 
 ---
 
 ### P-30 · K-10: alasan 「被阻塞」 diperbarui (DRAF SIAP TULIS, 2026-10-03)
 
-Dasar: build sheet v70 `b28d0a010010` (「本补不改状态，状态是否随之改变由建造人定」); Geri NSE-1137 c50804, c51066, **c51128** (dibaca penuh 2026-10-03); Alden c51080; Anchor 04 §七 (阻塞对象、阻塞人、恢复条件). Keputusan Bambang: 「Pilih a」. Sel status `12362d6f7898` tidak diubah. Titik sisip: setelah `b28d0a010048` (paragraf terakhir baris itu).
+Dasar: build sheet v70 `b28d0a010010` (「本补不改状态，状态是否随之改变由建造人定」); Geri NSE-1137 c50804, c51066, **c51128** (dibaca penuh 2026-10-03; validasi ulang 2026-10-03: kutipan cocok, tidak ada comment sesudah c51128); Alden c51080; Anchor 04 §七 (阻塞对象、阻塞人、恢复条件). Keputusan Bambang: 「Pilih a」. Sel status `12362d6f7898` tidak diubah. Titik sisip: setelah `b28d0a010048` (paragraf terakhir baris itu).
 
 > 【2026-10-03 补】上文「状态是否随之改变由建造人定」：建造人定为维持「被阻塞」，阻塞理由更新如下。入口认领已建并经干跑（Geri NSE-1137 c50804：「claim-before-create is built」，执行 18138／18137／18132）；callerPolicy 与上游读权已于执行 19333／19334 实证（Geri c51128：「Closed on my side」）。未证者为写：Geri c51128「Still open, and it is the half that matters most: write access on the upstream project. Every write node was off, so nothing proved Bot_SSC can post the claim comment onto an S-05 case. That resolves on the first run with writes enabled, and it is worth doing deliberately on a TEST case」；入口「Write Claim (Upstream Case)」仍停用（Geri c51066）；入口未发布，发布「in the same batch that enables its write nodes, and before S-05 N20 is published」（Alden c51080）。阻塞对象：入口认领写入 S-05 主单；阻塞人：Geri（入口写入节点启用）、Alden（发布放行）；恢复条件：入口写入节点启用后于 TEST 单实跑，认领 comment 写入 S-05 主单并回读成功。本行状态不变（被阻塞）。
 
@@ -987,14 +1005,14 @@ Setelah semua status ditulis, **hitung ulang** statistik 附表 (A-03).
 
 | Item | Isi | Menunggu |
 |---|---|---|
-| C-01 + §四 标题格式 | Nama Request Type dua bahasa dari Felix c50261 butir 1; yang tersisa: backfill 04.7 | Baca ulang 04.7 |
-| C-15 (keputusan) | Isi kartu: 到期日期, 纪律记录有效期 (负责跟进人 sudah dijawab Spec ⓪区 十, lihat P-9②) | Felix |
-| C-26 (isi) | Isi §七 | Keputusan Kayden (9/29) |
-| D-13 | Marker patroli 卡死／漏账 | Geri c50631 dan K-10 |
+| C-01 + §四 标题格式 | Nama Request Type dua bahasa dari Felix c50261 butir 1; yang tersisa: backfill 04.7 (dicek 2026-10-03: 04.7 **v54** baris SUBMIT masih 「双语Request Type／Slack展示名称待流程Owner确认」, EVENT belum ada nama dua bahasa) | Baca ulang 04.7 |
+| ~~C-15 (keputusan)~~ | ~~Isi kartu: 到期日期, 纪律记录有效期~~ **Sudah ditulis v60** sebagai 订正 C-15 di P-20 (ada di Spec, tidak perlu ditanyakan). Dihapus dari daftar tunggu 2026-10-03 | — |
+| C-26 (isi) | Isi §七 | ~~Keputusan Kayden (9/29)~~ Keputusan sudah ada (#nos-bo 1790648322.803329), tercatat di `b28d0a01002d`. Sekarang menunggu teks halaman 03 (1677000718, dicek 2026-10-03: masih v4, placeholder, 2026-09-16) |
+| D-13 | Marker patroli 卡死／漏账 (hanya baris ini yang ada sejak 61a90a6; tidak ada draf teks) | Geri c50631 sudah dijawab c50668 (tertulis v57); sisa: K-10 (被阻塞) |
 
 ##### P-6.8 · Belum diputuskan Bambang (tidak masuk antrean tulis)
 - **B-2:** teks 「写入侧已实建」 untuk `nos-s05-dup`, dan perubahan status 「拟定·未建」→「已建·inactive」.
-- **B-14:** tiga syarat E16 v40 dan penilaian probe N05. Kutipan harus dicocokkan dengan v40 dulu.
+- **B-14:** **sudah menjadi P-29** (2026-10-03). Tiga syarat E16 v40 dan penilaian probe N05. Kutipan harus dicocokkan dengan v40 dulu.
   - **Update 2026-10-02** (perintah Bambang 「Kita kerjakan B-14」; E86–E88): 07.06.1 sekarang v44; E16 tidak berubah sejak v40. Penilaian N05 (`LJwiAZFfnuq6tmju`, versionId `664828ee`) terhadap E16:
     - ① identitas sama dengan gerbang, kredensial件: **terpenuhi**. `Confirm Case Visible (control probe)` dan `Search Open S-05 Cases` sama-sama Bot_SSC (Jira write), UI 目视 Bambang.
     - ② tiket yang diketahui ada, bukan `mypermissions`: **terpenuhi**. Probe membaca case itu sendiri di SSCSD.
@@ -1006,7 +1024,7 @@ Setelah semua status ditulis, **hitung ulang** statistik 附表 (A-03).
 - ~~**D-9:**~~ **Ditulis v65** sebagai P-23 (2026-10-02).
 - ~~**D-16:**~~ **Ditulis v66** sebagai P-24 (2026-10-02).
 - ~~**C-27:**~~ **Selesai 2026-09-29**: sticky note dan description N07 dikoreksi di n8n (evidence E61, perintah Bambang 「Perbaiki catatan basi di N05 dan N07」), tercatat di build sheet v57 (P-16 ①, 【补】 `b28d09290089`).
-- **Catatan A-01:** apakah Spec v67 memicu kriteria 04.5 §6.1 「基线版本 ≠ 页面当前版本」? Inferensi, belum dikonfirmasi. Belum dijadikan item K. **Update 2026-10-02:** ditanyakan ke Kayden dan Alden di OSD-116 c51067 (diff v58→v59, v59→v61, v61→v62, v62→v67 sudah dibaca; temuan tambahan: baris v24 terhapus di v59). Menunggu jawaban.
+- **Catatan A-01:** apakah Spec v67 memicu kriteria 04.5 §6.1 「基线版本 ≠ 页面当前版本」? Inferensi, belum dikonfirmasi. Belum dijadikan item K. **Update 2026-10-02:** ditanyakan ke Kayden dan Alden di OSD-116 c51067 (diff v58→v59, v59→v61, v61→v62, v62→v67 sudah dibaca; temuan tambahan: baris v24 terhapus di v59). Menunggu jawaban. **Update 2026-10-03:** Alden menjawab 技术签 di **c51082** (butir 1, 4, 6 「技术签豁免」, page v67); Kayden (业务签) belum menjawab sampai c51123. Catatan kepala build sheet → **P-31**.
 
 ##### B-5 · Dicek saat prebuild-scan N01 (dipindah dari P-6.8, 2026-10-02)
 
